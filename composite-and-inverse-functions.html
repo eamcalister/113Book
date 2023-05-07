@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-11T17:45:40-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Composite and Inverse Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="graphs-of-functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="introduction-to-functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="graphs-of-functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="introduction-to-functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Contributors</a></li>
+<li><a href="preface-our-goals.html" data-scroll="preface-our-goals" class="internal">Our Goals</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3" class="internal">Features of the Text</a></li>
+<li><a href="preface-for-students.html" data-scroll="preface-for-students" class="internal">Students!  Read this!</a></li>
+<li><a href="preface-for-instructors.html" data-scroll="preface-for-instructors" class="internal">Instructors!  Read this!</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="arithmetic-with-numbers.html" data-scroll="arithmetic-with-numbers" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a><ul>
+<li><a href="Sec1_1_add_subt_mult.html" data-scroll="Sec1_1_add_subt_mult" class="internal">Addition, Subtraction, and Multiplication</a></li>
+<li><a href="Sec1_2_division_and_fractions.html" data-scroll="Sec1_2_division_and_fractions" class="internal">Division and Fractions</a></li>
+<li><a href="Sec1_3_exponents.html" data-scroll="Sec1_3_exponents" class="internal">Exponents</a></li>
+<li><a href="Sec1_4_order_of_operations.html" data-scroll="Sec1_4_order_of_operations" class="internal">Parentheses and Order of Operations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-expressions.html" data-scroll="algebraic-expressions" class="internal"><span class="codenumber">2</span> <span class="title">Algebraic Expressions</span></a><ul>
+<li><a href="Sec2_1_examples-of-alg-expressions.html" data-scroll="Sec2_1_examples-of-alg-expressions" class="internal">Examples of Algebraic Expressions</a></li>
+<li><a href="Sec2_2_equivalent-expressions.html" data-scroll="Sec2_2_equivalent-expressions" class="internal">Equivalent Algebraic Expressions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-equations.html" data-scroll="algebraic-equations" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Equations</span></a><ul>
+<li><a href="Sec3_1_equations-and-solutions.html" data-scroll="Sec3_1_equations-and-solutions" class="internal">Equations and their Solutions</a></li>
+<li><a href="Sec3_2_systems-of-equations.html" data-scroll="Sec3_2_systems-of-equations" class="internal">Solving Systems of Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="introduction-to-functions.html" data-scroll="introduction-to-functions" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Functions</span></a><ul>
+<li><a href="inputs-and-outputs.html" data-scroll="inputs-and-outputs" class="internal">Inputs and Outputs</a></li>
+<li><a href="graphs-of-functions.html" data-scroll="graphs-of-functions" class="internal">Graphs of Functions</a></li>
+<li><a href="composite-and-inverse-functions.html" data-scroll="composite-and-inverse-functions" class="active">Composite and Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="composite-and-inverse-functions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Composite and Inverse Functions</span>
+</h2>
+<p id="p-571">On many occasions we have broken down algebraic expressions as a sequence of steps, often determined by order of operations. Now that we have the concept of a function, we may view this breaking down in terms of <em class="emphasis">function composition or decomposition. Simply put, we may view each step in a sequence of operation defining a function as its own function. For instance, consider the function <span class="process-math">\(h\)</span> defined by the algebraic expression in the first example of Chapter 2. This function is<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y =  h(x) = (3x+1)^2-2.
+\end{equation*}
+</div>When we broke down that expression, we noted that it takes <span class="process-math">\(x\)</span> and does the following:</em></p>
+<ol id="p-572" class="decimal">
+<li id="li-250"><p id="p-573">multiplies <span class="process-math">\(x\)</span> by <span class="process-math">\(3\text{,}\)</span></p></li>
+<li id="li-251"><p id="p-574">adds one to <dfn class="terminology">S1</dfn></p></li>
+<li id="li-252"><p id="p-575">squares <dfn class="terminology">S3</dfn>, and finally</p></li>
+<li id="li-253"><p id="p-576">subtracts two from <dfn class="terminology">S4</dfn>,</p></li>
+</ol>
+<p id="p-577">to give us an output <span class="process-math">\(y\text{.}\)</span> Now, we can think about this as two processes, one that does the first two steps <dfn class="terminology">S1</dfn> and <dfn class="terminology">S2</dfn>, and one that does the last two steps <dfn class="terminology">S3</dfn> and <dfn class="terminology">S4</dfn>. For the first two steps, we can use the function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+u = g(x) = 3x+1.
+\end{equation*}
+</div>
+<p class="continuation">The last two steps then are performed on the output of <span class="process-math">\(g\)</span> by another function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = f(u) = u^2-2.
+\end{equation*}
+</div>
+<p class="continuation">Symbolically, we substitute the expression for <span class="process-math">\(g(x)\)</span> into <span class="process-math">\(f(u)\)</span> for <span class="process-math">\(u\)</span> to get our expression for <span class="process-math">\(h(x)\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = h(x) = f(g(x)).
+\end{equation*}
+</div>
+<p class="continuation">In general, a new function <span class="process-math">\(h\)</span> constructed out of a pair of functions <span class="process-math">\(g\)</span> and <span class="process-math">\(f\)</span> is called the <em class="emphasis">composition of <span class="process-math">\(f\)</span> with <span class="process-math">\(g\text{.}\)</span> The function <span class="process-math">\(g\)</span> is referred to as the</em>inside function and <span class="process-math">\(f\)</span> is referred to as the <em class="emphasis">outside function. The inputs of the composition are the inputs of the inside function and the outputs are the outputs of the outside function.</em>**</p>
+<p id="p-578"><dfn class="terminology">Question 4.16</dfn>. <em class="emphasis">If <span class="process-math">\(u = f(x) = 2+3x\)</span> and <span class="process-math">\(x=g(u) = 5u+1\text{,}\)</span> then both <span class="process-math">\(f(g(u))\)</span> and <span class="process-math">\(g(f(x))\)</span> make sense. Find them. Are they the same?</em></p>
+<p id="p-579"><dfn class="terminology">Example 4.17</dfn>. Often we decompose functions by finding inside and outside functions that are easier to work with than the composite. One task that we do this for is finding domains and ranges of composites. For instance, consider the function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = \sqrt{x^2-1}.
+\end{equation*}
+</div>
+<p class="continuation">This may be decomposed as <span class="process-math">\(f(g(x))\)</span> where <span class="process-math">\(u = g(x) = x^2-1\)</span> and <span class="process-math">\(y=f(u) = \sqrt{u}\text{.}\)</span> The domain of the composite is those inputs of the inside function that, when the inside function is applied, result in legal inputs of the outside function. The domain of the outside function is <span class="process-math">\(u\geq 0\text{,}\)</span> hence we must find <span class="process-math">\(x\)</span>’s such that the output of <span class="process-math">\(x^2-1\)</span> is non-negative. This occurs only if <span class="process-math">\(x\geq 1\)</span> or <span class="process-math">\(x\leq -1\)</span> as numbers between <span class="process-math">\(-1\)</span> and <span class="process-math">\(1\)</span> will square to something less than one. Thus the domain is <span class="process-math">\(x\leq -1\)</span> or <span class="process-math">\(x\geq 1\text{.}\)</span> The outputs of <span class="process-math">\(u = x^2-1\)</span> over this domain are all <span class="process-math">\(u\geq 0\text{,}\)</span> thus the entire range of <span class="process-math">\(\sqrt{u}\)</span> will be covered. Thus the range of <span class="process-math">\(y = \sqrt{x^2-1}\)</span> is all <span class="process-math">\(y\geq 0\text{.}\)</span></p>
+<p id="p-580"><dfn class="terminology">Question 4.18</dfn>. <em class="emphasis">Decompose <span class="process-math">\(y = h(x) = \dfrac{2}{x^2-9}\)</span> as an inside function and outside function and use that decomposition to find the domain of <span class="process-math">\(h\)</span> as in the previous example.</em></p>
+<p id="p-581">One important application of the idea of function composition is that of <em class="emphasis">inverse functions. In short, the inverse of a given function undoes the action of that function. This leads us to the following formal definition:</em></p>
+<p id="p-582"><dfn class="terminology">Definition of the Inverse Function</dfn> Given a function <span class="process-math">\(y = f(x)\text{,}\)</span> the <em class="emphasis">inverse function to <span class="process-math">\(f\)</span> is the function <span class="process-math">\(x = f^{-1}(y)\)</span> such that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f^{-1}(f(x)) = x\ \mbox{and}\ f(f^{-1}(y)) = y.
+\end{equation*}
+</div>The inputs of the inverse function are the outputs of <span class="process-math">\(f\text{,}\)</span> the outputs of the inverse function are the inputs of <span class="process-math">\(f\text{,}\)</span> and the two functions undo one another.</em></p>
+<p id="p-583"><dfn class="terminology">Example 4.19</dfn>.</p>
+<ol id="p-584" class="decimal">
+<li id="li-254">
+<p id="p-585">Consider the function defined by the expression</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = f(x) = (x-4)^3 + 3.
+\end{equation*}
+</div>
+<p class="continuation">By breaking this down into steps (decomposing the function), we are able to sequentially build the inverse function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x = f^{-1}(y) = \sqrt[3]{y-3} + 4.
+\end{equation*}
+</div>
+</li>
+<li id="li-255">
+<p id="p-586">In the Equation Practice worksheet, problem 3, we found the inverse of the function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y =g(x) = \sqrt[3]{4x-7}
+\end{equation*}
+</div>
+<p class="continuation">to be</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x = g^{-1}(y) = \frac{y^3+7}{4}.
+\end{equation*}
+</div>
+<p class="continuation">We then used the inverse function to solve for <span class="process-math">\(x\)</span> given several outputs. In this way, we may think of the inverse of a function as the general equation solving function, provided it’s just a number on the opposite side of the equation from the function.</p>
+</li>
+</ol>
+<p id="p-587"></p>
+<p id="p-588">The characterization of an inverse function as an equation solving function allows us to give an algebraic procedure for finding expressions of inverse functions even when we may not see how to reverse the process of the given function; simply write down the equation defining the function <span class="process-math">\(y=f(x)\text{,}\)</span> and solve for <span class="process-math">\(x\)</span> in terms of <span class="process-math">\(y\text{.}\)</span></p>
+<p id="p-589"><dfn class="terminology">Question 4.20</dfn>. <em class="emphasis">Find the inverse <span class="process-math">\(f^{-1}(y)\)</span> for the function<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = f(x) = \frac{4-3x}{7-9x}.
+\end{equation*}
+</div></em></p>
+<p id="p-590">The graph of the inverse to a given function has a particularly nice relationship to the graph of its parent function. To graph the inverse to a function <span class="process-math">\(y=f(x)\text{,}\)</span> simply take the entire picture of the graph of <span class="process-math">\(f\text{,}\)</span> including axis labels, and reflect it across the line through the origin making a 45 degree angle with the positive <span class="process-math">\(x\)</span> axis.</p>
+<p id="p-591"><dfn class="terminology">Question 4.21</dfn>. <em class="emphasis">Why does it not make sense to graph <span class="process-math">\(f\)</span> and <span class="process-math">\(f^{-1}\)</span> on the same set of axes?</em></p></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Composite and Inverse Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="Sec4_2_graphs-of-functions.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="introduction-to-functions.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="families-of-functions.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+  
+  
+  \newcommand{\cancelhighlight}[1]{\definecolor{sapphire}{RGB}{59,90,125}{\color{sapphire}{{\cancel{#1}}}}}
+ 
+  
+  
+  \newcommand{\secondcancelhighlight}[1]{\definecolor{emerald}{RGB}{20,97,75}{\color{emerald}{{\bcancel{#1}}}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li>
+<div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Contributors</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="preface-1.html#contributors-1" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="preface-our-goals.html" class="internal"><span class="title">Our Goals</span></a></div></li>
+<li><div class="toc-item"><a href="preface-3.html" class="internal"><span class="title">Features of the Text</span></a></div></li>
+<li><div class="toc-item"><a href="preface-for-students.html" class="internal"><span class="title">Students!  Read this!</span></a></div></li>
+<li><div class="toc-item"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructors!  Read this!</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="arithmetic-with-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec1_1_add_subt_mult.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Addition, Subtraction, and Multiplication</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec1_2_division_and_fractions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Division and Fractions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#division-and-multiplication" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Division and Multiplication</span></a></div></li>
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#apples-and-oranges-units-and-dimensional-analysis" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Apples and Oranges: Units and Dimensional Analysis</span></a></div></li>
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#adding-and-subtracting-fractions" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec1_3_exponents.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Exponents</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec1_4_order_of_operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Parentheses and Order of Operations</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="Sec1_4_order_of_operations.html#subsection-4" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Implied (``Invisible'') Parentheses</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="algebraic-expressions.html" class="internal"><span class="codenumber">2</span> <span class="title">Algebraic Expressions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec2_1_examples-of-alg-expressions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Examples of Algebraic Expressions</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec2_2_equivalent-expressions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Equivalent Algebraic Expressions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#inequivalent-expressions" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Inequivalent Expressions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#reordering-and-regrouping" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Reordering and Regrouping</span></a></div></li>
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#distributing-expanding-and-factoring" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Distributing, Expanding, and Factoring</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="algebraic-equations.html" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Equations</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec3_1_equations-and-solutions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Equations and their Solutions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#equations-as-questions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Algebraic Equations as Questions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#basic-solving" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Basic Solving</span></a></div></li>
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#solutions-from-factoring" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Solutions from Factoring</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec3_2_systems-of-equations.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Systems of Equations</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="introduction-to-functions.html" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Inputs and Outputs</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html#evaluating-functions-and-using-function-notation" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Evaluating Functions and Using Function Notation</span></a></div></li>
+<li><div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html#solving-equations-involving-functions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Solving Equations Involving Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec4_2_graphs-of-functions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Graphs of Functions</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="Sec4_3_composite-and-inverse.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Composite and Inverse Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="families-of-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Families of Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec5_1_linear-functions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#intro-to-linear-functions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Intro to Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#forms-of-linear-functions" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Forms of Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#applications-of-linear-functions" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Applications of Linear Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_2_quadratic-functions.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Quadratic Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#intro-to-quadratic-functions" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Intro to Quadratic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#forms-of-quadratic-functions" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Forms of Quadratic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#applications-of-quadratic-functions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Applications of Quadratic Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_3_exponential-functions.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#intro-to-exponential-functions" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Intro to Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#forms-of-exponential-functions" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Forms of Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#applications-of-exponential-functions" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Applications of Exponential Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_4_power-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Power Functions</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="Sec5_4_power-functions.html#intro-to-power-functions" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Intro to Power Functions</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_5_logarithms.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Logarithms</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_5_logarithms.html#logarithm-properties-and-solving-equations" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Logarithm Properties and Solving Equations</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_5_logarithms.html#applications-to-exponential-and-power-functions" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Applications to Exponential and Power Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_6_graphical-transformations.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Graphical Transformations and Function Families</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_6_graphical-transformations.html#basic-graphical-transformations" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Basic Graphical Transformations</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_6_graphical-transformations.html#function-families-and-graphical-transformations" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Function Families and Graphical Transformations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="Sec4_3_composite-and-inverse"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Composite and Inverse Functions</span>
+</h2>
+<article class="objectives goal-like" id="objectives-11"><h3 class="heading"><span class="type">Section Objectives</span></h3>
+<ul class="disc">
+<li id="li-309"><div class="para" id="p-536">Compose functions using function notation.</div></li>
+<li id="li-310"><div class="para" id="p-537">Decompose complicated functions as compositions of simpler functions by displaying the defining algebraic expression as a sequence of steps.</div></li>
+<li id="li-311"><div class="para" id="p-538">Find the inverse of a function using a sequence of inverse operations and by using algebra.</div></li>
+<li id="li-312"><div class="para" id="p-539">Graph an inverse function given the graph of a function.</div></li>
+</ul></article><div class="para logical" id="p-540">
+<div class="para">On many occasions we have broken down algebraic expressions as a sequence of steps, often determined by order of operations. Now that we have the concept of a function, we may view this breaking down in terms of function composition or decomposition. Simply put, we may view each step in a sequence of operations defining a function as a function in its own right. For instance, consider the function <span class="process-math">\(h\)</span> defined by the algebraic expression in <a href="" class="xref" data-knowl="./knowl/quad_breakdown.html" title="Example 2.1.1">2.1.1</a>. This function is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/quad_breakdown.html">
+\begin{equation*}
+y =  h(x) = (3x+1)^2-2.
+\end{equation*}
+</div>
+<div class="para">When we broke down that expression, we noted that it takes <span class="process-math">\(x\)</span> and does the following:</div>
+</div>
+<div class="para logical" id="p-541"><dl class="description-list">
+<dt id="li-313"><em class="emphasis">S1:</em></dt>
+<dd><div class="para" id="p-542">multiplies <span class="process-math">\(x\)</span> by <span class="process-math">\(3\text{,}\)</span>
+</div></dd>
+<dt id="li-314"><em class="emphasis">S2:</em></dt>
+<dd><div class="para" id="p-543">adds one to <em class="emphasis">S1</em>
+</div></dd>
+<dt id="li-315"><em class="emphasis">S3:</em></dt>
+<dd><div class="para" id="p-544">squares <em class="emphasis">S2</em>, and finally</div></dd>
+<dt id="li-316"><em class="emphasis">S4:</em></dt>
+<dd><div class="para" id="p-545">subtracts two from <em class="emphasis">S3</em>,</div></dd>
+</dl></div>
+<div class="para logical" id="p-546">
+<div class="para">For each <span class="process-math">\(x\text{,}\)</span> this process produces an output <span class="process-math">\(y\text{.}\)</span> Now, we can think about this as two processes, one that does the first two steps <dfn class="terminology">S1</dfn> and <dfn class="terminology">S2</dfn>, and one that does the last two steps <dfn class="terminology">S3</dfn> and <dfn class="terminology">S4</dfn>. For the first two steps, we can use the function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u = g(x) = 3x+1.
+\end{equation*}
+</div>
+<div class="para">The last two steps then are performed on the output of <span class="process-math">\(g\)</span> by another function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = f(u) = u^2-2.
+\end{equation*}
+</div>
+<div class="para">Symbolically, we substitute the expression for <span class="process-math">\(g(x)\)</span> into <span class="process-math">\(f(u)\)</span> for <span class="process-math">\(u\)</span> to get our expression for <span class="process-math">\(h(x)\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = h(x) = f(g(x)).
+\end{equation*}
+</div>
+<div class="para">In general, a new function <span class="process-math">\(h\)</span> constructed out of a pair of functions <span class="process-math">\(g\)</span> and <span class="process-math">\(f\)</span> is called the <em class="emphasis">composition of <span class="process-math">\(f\)</span> with <span class="process-math">\(g\text{.}\)</span> The function <span class="process-math">\(g\)</span> is referred to as the</em>inside function and <span class="process-math">\(f\)</span> is referred to as the <em class="emphasis">outside function. The inputs of the composition are the inputs of the inside function and the outputs are the outputs of the outside function.</em>
+</div>
+</div>
+<article class="question example-like" id="question-56"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-56"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-56"><article class="question example-like"><div class="para" id="p-547"><em class="emphasis">If <span class="process-math">\(u = f(x) = 2+3x\)</span> and <span class="process-math">\(x=g(u) = 5u+1\text{,}\)</span> then both <span class="process-math">\(f(g(u))\)</span> and <span class="process-math">\(g(f(x))\)</span> make sense. Find them. Are they the same?</em></div></article></div>
+<article class="example example-like" id="example-35"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-35"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-35"><article class="example example-like">Often we decompose functions by finding inside and outside functions that are easier to work with than the composite. One task that we do this for is finding domains and ranges of composites. For instance, consider the function<div class="displaymath process-math">
+\begin{equation*}
+y = \sqrt{x^2-1}.
+\end{equation*}
+</div>Decompose this function into a composition of simpler functions to find its domain and range.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-26" id="solution-26"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-26"><div class="solution solution-like">This may be decomposed as <span class="process-math">\(f(g(x))\)</span> where <span class="process-math">\(u = g(x) = x^2-1\)</span> and <span class="process-math">\(y=f(u) = \sqrt{u}\text{.}\)</span> The domain of the composite is those inputs of the inside function that, when the inside function is applied, result in legal inputs of the outside function. The domain of the outside function is <span class="process-math">\(u\geq 0\text{,}\)</span> hence we must find <span class="process-math">\(x\)</span>'s such that the output of <span class="process-math">\(x^2-1\)</span> is non-negative. This occurs only if <span class="process-math">\(x\geq 1\)</span> or <span class="process-math">\(x\leq -1\)</span> as numbers between <span class="process-math">\(-1\)</span> and <span class="process-math">\(1\)</span> will square to something less than one. Thus the domain is <span class="process-math">\(x\leq -1\)</span> or <span class="process-math">\(x\geq 1\text{.}\)</span> The outputs of <span class="process-math">\(u = x^2-1\)</span> over this domain are all <span class="process-math">\(u\geq 0\text{,}\)</span> thus the entire range of <span class="process-math">\(\sqrt{u}\)</span> will be covered. Thus the range of <span class="process-math">\(y = \sqrt{x^2-1}\)</span> is all <span class="process-math">\(y\geq 0\text{.}\)</span>
+</div></div>
+</div></article></div>
+<article class="question example-like" id="question-57"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-57"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-57"><article class="question example-like"><div class="para" id="p-548"><em class="emphasis">Decompose <span class="process-math">\(y = h(x) = \dfrac{2}{x^2-9}\)</span> as an inside function and outside function and use that decomposition to find the domain of <span class="process-math">\(h\)</span> as in the previous example.</em></div></article></div>
+<div class="para" id="p-549">One important application of the idea of function composition is that of <em class="emphasis">inverse functions</em>. In short, the inverse of a given function undoes the action of that function, so composition gets you back to where you started. This leads us to the following formal definition:</div>
+<article class="definition definition-like" id="inverse_fcn_def"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Inverse Function.</span>
+</h3> <div class="para logical" id="p-550">
+<div class="para">Given a function <span class="process-math">\(y = f(x)\text{,}\)</span> the <dfn class="terminology">inverse function to <span class="process-math">\(f\)</span></dfn> is the function <span class="process-math">\(x = f^{-1}(y)\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{-1}(f(x)) = x\ \text{and}\ f(f^{-1}(y)) = y.
+\end{equation*}
+</div>
+<div class="para">The inputs of the inverse function are the outputs of <span class="process-math">\(f\text{,}\)</span> the outputs of the inverse function are the inputs of <span class="process-math">\(f\text{,}\)</span> and the two functions undo one another.</div>
+</div></article><article class="remark remark-like" id="remark-6"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
+</h3>Note that the notation for an inverse function looks like an exponent of <span class="process-math">\(-1\text{.}\)</span> It is not an exponent! This is just notation for the undoing function. It is kind of confusing and not confusing at the same time. On the one hand, you have to know it's not an exponent. On the other, remember that multiplying by the reciprocal undoes multiplication. This is similar because <em class="emphasis">applying</em> the inverse function to an output of a function undoes the function.</article><article class="example example-like" id="shoes_socks_inverse"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-shoes_socks_inverse"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-shoes_socks_inverse"><article class="example example-like">Consider the function defined by the expression<div class="displaymath process-math">
+\begin{equation*}
+y = f(x) = (x-4)^3 + 3.
+\end{equation*}
+</div>By breaking this down into steps (decomposing the function), construct the inverse function by reversing the order and inverting each operation.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-27" id="solution-27"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-27"><div class="solution solution-like">The expression defining this function breaks down as follows: <dl class="description-list">
+<dt id="li-317"><em class="emphasis">S1:</em></dt>
+<dd> Subtract <span class="process-math">\(4\)</span> from <span class="process-math">\(x\text{.}\)</span>
+</dd>
+<dt id="li-318"><em class="emphasis">S2:</em></dt>
+<dd> Cube <em class="emphasis">S1</em>.</dd>
+<dt id="li-319"><em class="emphasis">S3:</em></dt>
+<dd> Add <span class="process-math">\(3\)</span> to <em class="emphasis">S2</em>.</dd>
+</dl> The result of this process <span class="process-math">\(y\text{.}\)</span> Now build the reverse-inverse process to get from <span class="process-math">\(y\)</span> back to <span class="process-math">\(x\text{:}\)</span> <dl class="description-list">
+<dt id="li-320"><em class="emphasis">S3<span class="process-math">\(^{-1}\text{:}\)</span></em></dt>
+<dd> Subtract <span class="process-math">\(3\)</span> from <span class="process-math">\(y\text{.}\)</span>
+</dd>
+<dt id="li-321"><em class="emphasis">S2<span class="process-math">\(^{-1}\text{:}\)</span></em></dt>
+<dd> Take the cube root of <em class="emphasis">S3<span class="process-math">\(^{-1}\)</span></em>.</dd>
+<dt id="li-322"><em class="emphasis">S1<span class="process-math">\(^{-1}\text{:}\)</span></em></dt>
+<dd> Add <span class="process-math">\(4\)</span> to <em class="emphasis">S2<span class="process-math">\(^{-1}\)</span></em>.</dd>
+</dl> That process takes us from <span class="process-math">\(y\)</span> back to <span class="process-math">\(x\text{,}\)</span> thus we are able to sequentially build the inverse function<div class="displaymath process-math">
+\begin{equation*}
+x = f^{-1}(y) = \sqrt[3]{y-3} + 4.
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<div class="para logical" id="p-551">
+<div class="para">In the definition of an inverse function (<a href="" class="xref" data-knowl="./knowl/inverse_fcn_def.html" title="Definition 4.3.4: Inverse Function">4.3.4</a>) we said that <span class="process-math">\(f^{-1}\)</span> is the function that “undoes” <span class="process-math">\(f\text{.}\)</span> Now let's think about how we can use that idea to solve equations. For instance, take the function</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/inverse_fcn_def.html ./knowl/shoes_socks_inverse.html">
+\begin{equation*}
+f(x) = (x-4)^3 + 3 
+\end{equation*}
+</div>
+<div class="para">from <a href="" class="xref" data-knowl="./knowl/shoes_socks_inverse.html" title="Example 4.3.6">4.3.6</a>. Suppose we wish to solve the equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/inverse_fcn_def.html ./knowl/shoes_socks_inverse.html">
+\begin{equation*}
+f(x) = 17. 
+\end{equation*}
+</div>
+<div class="para">We can read that as asking, “If <span class="process-math">\(y=17\text{,}\)</span> then what is the <span class="process-math">\(x\text{?}\)</span>” The answer is simple; <em class="emphasis">if we apply the function that undoes <span class="process-math">\(f\)</span> to <span class="process-math">\(17\text{,}\)</span> then we'll find the <span class="process-math">\(x\)</span></em>. Hence the solution is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/inverse_fcn_def.html ./knowl/shoes_socks_inverse.html">
+\begin{equation*}
+x=f^{-1}(17) = \sqrt[3]{17-3}+4 = \sqrt[3]{14} + 4 \approx 6.41.
+\end{equation*}
+</div>
+<div class="para">If we wanted to solve</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/inverse_fcn_def.html ./knowl/shoes_socks_inverse.html">
+\begin{equation*}
+f(x) = \text{any number},
+\end{equation*}
+</div>
+<div class="para">then we just plug that number into the inverse function. This idea generalizes to the following:</div>
+</div>
+<article class="fact theorem-like" id="fact-7"><h3 class="heading">
+<span class="type">Key Concept</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Inverse Function as Equation Solver.</span>
+</h3>
+<div class="para logical" id="p-552">
+<div class="para">If <span class="process-math">\(f\)</span> is an invertible function (see <a href="" class="xref" data-knowl="./knowl/one_to_one_invertible.html" title="Remark 4.3.12: Invertibility of a Function">4.3.12</a>), then the solution to the equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/one_to_one_invertible.html">
+\begin{equation*}
+f(x) = b
+\end{equation*}
+</div>
+<div class="para">is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/one_to_one_invertible.html">
+\begin{equation*}
+x = f^{-1}(b).
+\end{equation*}
+</div>
+</div></article><div class="para" id="p-553">The characterization of an inverse function as an equation solving function allows us to give an algebraic procedure for finding expressions of inverse functions even when we may not see how to reverse the process of the given function; simply write down the equation defining the function <span class="process-math">\(y=f(x)\text{,}\)</span> and solve for <span class="process-math">\(x\)</span> in terms of <span class="process-math">\(y\text{.}\)</span>
+</div>
+<article class="example example-like" id="example-37"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-37"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.8</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-37"><article class="example example-like">Find the inverse of the function<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{6x+1}{x-5}
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-28" id="solution-28"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-28"><div class="solution solution-like">(Solving for <span class="process-math">\(x\)</span> in terms of <span class="process-math">\(y\text{.}\)</span>) Note that this function is the left-hand side of the equation we solved in <a href="" class="xref" data-knowl="./knowl/not_shoes_socks_eq3.html" title="Example 3.1.6">3.1.6</a>. In that example the right-hand side was <span class="process-math">\(y=2\text{.}\)</span> Now we can just follow through the same solving procedure, except with a generic <span class="process-math">\(y\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/not_shoes_socks_eq3.html" id="md-32">
+\begin{align*}
+\frac{6x+1}{x-5} \amp = \amp y\\
+\amp \updownarrow \amp (\text{multiply both sides by } x-5)\\
+6x+1 \amp = \amp y(x-5)\\
+\amp \updownarrow \amp (\text{distribute})\\
+6x+1 \amp = \amp yx-5y \\
+\amp \updownarrow \amp (\text{move (subtract) the } yx \text{ and the }1)\\
+6x-yx \amp = \amp -5y-1.\\
+\amp \updownarrow \amp (\text{factor out } x \text{ on left})\\
+x(6-y) \amp =\amp -5y-1 \\
+\amp \updownarrow \amp (\text{divide to solve for } x)\\
+x\amp = \amp \frac{-5y-1}{6-y} 
+\end{align*}
+</div>Thus we have<div class="displaymath process-math" data-contains-math-knowls="./knowl/not_shoes_socks_eq3.html">
+\begin{equation*}
+f^{-1}(y) = \frac{-5y-1}{6-y}.
+\end{equation*}
+</div>
+</div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-29" id="solution-29"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-29"><div class="solution solution-like">(Undoing a process.) Another (not super obvious) way of expressing this function is<div class="displaymath process-math">
+\begin{equation*}
+y =  f(x) = 6+\frac{31}{x-5}.
+\end{equation*}
+</div>While this expression isn't a single fraction, it allows us to break <span class="process-math">\(f\)</span> down to the process <dl class="description-list">
+<dt id="li-323"><em class="emphasis">S1:</em></dt>
+<dd> Subtract <span class="process-math">\(5\)</span> from <span class="process-math">\(x\text{.}\)</span>
+</dd>
+<dt id="li-324"><em class="emphasis">S2:</em></dt>
+<dd> Take the reciprocal of <em class="emphasis">S1</em>.</dd>
+<dt id="li-325"><em class="emphasis">S3:</em></dt>
+<dd> Multiply <em class="emphasis">S2</em> by <span class="process-math">\(31\text{.}\)</span>
+</dd>
+<dt id="li-326"><em class="emphasis">S4:</em></dt>
+<dd> Add <em class="emphasis">S3</em> to <span class="process-math">\(6\text{.}\)</span>
+</dd>
+</dl> The result of this process is <span class="process-math">\(y\text{.}\)</span> Now we may undo each step starting with <span class="process-math">\(y\text{:}\)</span> <dl class="description-list">
+<dt id="li-327"><em class="emphasis">S4<span class="process-math">\(^{-1}\text{:}\)</span></em></dt>
+<dd> Subtract <span class="process-math">\(6\)</span> from <span class="process-math">\(y\text{.}\)</span>
+</dd>
+<dt id="li-328"><em class="emphasis">S3<span class="process-math">\(^{-1}\text{:}\)</span></em></dt>
+<dd> Divide <em class="emphasis">S4<span class="process-math">\(^{-1}\)</span></em> by <span class="process-math">\(31\text{.}\)</span>
+</dd>
+<dt id="li-329"><em class="emphasis">S2<span class="process-math">\(^{-1}\text{:}\)</span></em></dt>
+<dd> Take the reciprocal of <em class="emphasis">S3<span class="process-math">\(^{-1}\)</span></em>.</dd>
+<dt id="li-330"><em class="emphasis">S1<span class="process-math">\(^{-1}\text{:}\)</span></em></dt>
+<dd> Add <span class="process-math">\(5\)</span> to <em class="emphasis">S2<span class="process-math">\(^{-1}\)</span></em>.</dd>
+</dl> The end result is<div class="displaymath process-math">
+\begin{equation*}
+x = f^{-1}(y) = \frac{31}{y-6}+5,
+\end{equation*}
+</div>which you may check is equivalent to the inverse function found by solving.</div></div>
+</div></article></div>
+<article class="question example-like" id="question-58"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-58"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.3.9</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-58"><article class="question example-like"><div class="para logical" id="p-554">
+<div class="para">
+<em class="emphasis">Find the inverse <span class="process-math">\(f^{-1}(y)\)</span> for the function<div class="displaymath process-math">
+\begin{equation*}
+y = f(x) = \frac{4-9x}{7-9x}.
+\end{equation*}
+</div></em> You may do this by either method shown in the previous example by noting that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = f(x) = \frac{4-9x}{7-9x} = 1-\frac{3}{7-9x}.
+\end{equation*}
+</div>
+</div></article></div>
+<div class="para" id="p-555">The graph of the inverse to a given function has a particularly nice relationship to the graph of its parent function. To graph the inverse to a function <span class="process-math">\(y=f(x)\text{,}\)</span> simply take the entire picture of the graph of <span class="process-math">\(f\text{,}\)</span> <em class="emphasis">including axis labels</em>, and reflect it across the line through the origin making a 45 degree angle with the positive <span class="process-math">\(x\)</span> axis.</div>
+<figure class="figure figure-like" id="inverse_graph"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-19.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.10<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\(y=f(x)\)</span> and <span class="process-math">\(x = f^{-1}(y)\text{.}\)</span></figcaption></figure><article class="question example-like" id="question-59"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-59"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.3.11</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-59"><article class="question example-like"><div class="para" id="p-556"><em class="emphasis">Why does it not make sense to graph <span class="process-math">\(f\)</span> and <span class="process-math">\(f^{-1}\)</span> on the same set of axes?</em></div></article></div>
+<article class="remark remark-like" id="one_to_one_invertible"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Invertibility of a Function.</span>
+</h3> <div class="para logical" id="p-557">
+<div class="para">So far we have avoided too much discussion of the formal definition of a function given in <a href="" class="xref" data-knowl="./knowl/function_definition.html" title="Definition 4.1.1: Function">4.1.1</a>. The important detail is that a function may only have one input for each output. This makes a function <dfn class="terminology">well-defined</dfn> in the sense that if we put an input in we know what we get out without having to choose one of many possibilities. Because the normal operations of arithmetic are well-defined, whenever we define a function of the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/function_definition.html">
+\begin{equation*}
+y = \text{alegbraic expression with }x,
+\end{equation*}
+</div>
+<div class="para">we get a well-defined function.</div>
+</div> <div class="para logical" id="p-558">
+<div class="para">Now we need to refer to that definition more explicitly to say whether a function <em class="emphasis">has</em> an inverse <em class="emphasis">function.</em> To have an inverse function, a given function must have the property that for every output (<span class="process-math">\(y\)</span>-value) there is only one input (<span class="process-math">\(x\)</span>-value). Such functions are called <dfn class="terminology">one-to-one</dfn>. If a function is not one-to-one, then the inverse is not a well-defined function. For instance,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = f(x) = x^2
+\end{equation*}
+</div>
+<div class="para">is not invertible. For every output <span class="process-math">\(y\text{,}\)</span> there would be two possible inputs <span class="process-math">\(x=\sqrt{y}\)</span> and <span class="process-math">\(x=-\sqrt{y}\)</span> (this function is two-to-one).</div>
+</div></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="Sec4_2_graphs-of-functions.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="families-of-functions.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Division and Fractions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="Sec1_1_add_subt_mult.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="arithmetic-with-numbers.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="Sec1_3_exponents.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+  
+  
+  \newcommand{\cancelhighlight}[1]{\definecolor{sapphire}{RGB}{59,90,125}{\color{sapphire}{{\cancel{#1}}}}}
+ 
+  
+  
+  \newcommand{\secondcancelhighlight}[1]{\definecolor{emerald}{RGB}{20,97,75}{\color{emerald}{{\bcancel{#1}}}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li>
+<div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Contributors</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="preface-1.html#contributors-1" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="preface-our-goals.html" class="internal"><span class="title">Our Goals</span></a></div></li>
+<li><div class="toc-item"><a href="preface-3.html" class="internal"><span class="title">Features of the Text</span></a></div></li>
+<li><div class="toc-item"><a href="preface-for-students.html" class="internal"><span class="title">Students!  Read this!</span></a></div></li>
+<li><div class="toc-item"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructors!  Read this!</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="arithmetic-with-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec1_1_add_subt_mult.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Addition, Subtraction, and Multiplication</span></a></div></li>
+<li class="active">
+<div class="toc-item"><a href="Sec1_2_division_and_fractions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Division and Fractions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#division-and-multiplication" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Division and Multiplication</span></a></div></li>
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#apples-and-oranges-units-and-dimensional-analysis" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Apples and Oranges: Units and Dimensional Analysis</span></a></div></li>
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#adding-and-subtracting-fractions" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec1_3_exponents.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Exponents</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec1_4_order_of_operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Parentheses and Order of Operations</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="Sec1_4_order_of_operations.html#subsection-4" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Implied (``Invisible'') Parentheses</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="algebraic-expressions.html" class="internal"><span class="codenumber">2</span> <span class="title">Algebraic Expressions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec2_1_examples-of-alg-expressions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Examples of Algebraic Expressions</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec2_2_equivalent-expressions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Equivalent Algebraic Expressions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#inequivalent-expressions" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Inequivalent Expressions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#reordering-and-regrouping" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Reordering and Regrouping</span></a></div></li>
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#distributing-expanding-and-factoring" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Distributing, Expanding, and Factoring</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="algebraic-equations.html" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Equations</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec3_1_equations-and-solutions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Equations and their Solutions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#equations-as-questions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Algebraic Equations as Questions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#basic-solving" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Basic Solving</span></a></div></li>
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#solutions-from-factoring" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Solutions from Factoring</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec3_2_systems-of-equations.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Systems of Equations</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="introduction-to-functions.html" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Inputs and Outputs</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html#evaluating-functions-and-using-function-notation" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Evaluating Functions and Using Function Notation</span></a></div></li>
+<li><div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html#solving-equations-involving-functions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Solving Equations Involving Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec4_2_graphs-of-functions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Graphs of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec4_3_composite-and-inverse.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Composite and Inverse Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="families-of-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Families of Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec5_1_linear-functions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#intro-to-linear-functions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Intro to Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#forms-of-linear-functions" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Forms of Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#applications-of-linear-functions" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Applications of Linear Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_2_quadratic-functions.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Quadratic Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#intro-to-quadratic-functions" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Intro to Quadratic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#forms-of-quadratic-functions" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Forms of Quadratic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#applications-of-quadratic-functions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Applications of Quadratic Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_3_exponential-functions.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#intro-to-exponential-functions" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Intro to Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#forms-of-exponential-functions" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Forms of Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#applications-of-exponential-functions" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Applications of Exponential Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_4_power-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Power Functions</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="Sec5_4_power-functions.html#intro-to-power-functions" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Intro to Power Functions</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_5_logarithms.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Logarithms</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_5_logarithms.html#logarithm-properties-and-solving-equations" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Logarithm Properties and Solving Equations</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_5_logarithms.html#applications-to-exponential-and-power-functions" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Applications to Exponential and Power Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_6_graphical-transformations.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Graphical Transformations and Function Families</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_6_graphical-transformations.html#basic-graphical-transformations" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Basic Graphical Transformations</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_6_graphical-transformations.html#function-families-and-graphical-transformations" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Function Families and Graphical Transformations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="Sec1_2_division_and_fractions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Division and Fractions</span>
+</h2>
+<article class="objectives goal-like" id="objectives-2"><h3 class="heading"><span class="type">Section Objectives</span></h3>
+<ul class="disc">
+<li id="li-24"><div class="para" id="p-56">Develop the fundamental property of fractions by understanding them as pieces of a whole.</div></li>
+<li id="li-25"><div class="para" id="p-57">Develop a geometric meaning of <span class="process-math">\(\frac{a}{b}\)</span> when <span class="process-math">\(b\)</span> is not a whole number.</div></li>
+<li id="li-26"><div class="para" id="p-58">Work with units of measurement via multiplying and dividing fractions.</div></li>
+<li id="li-27"><div class="para" id="p-59">Understand addition of fractions from the viewpoint of units of measurement.</div></li>
+</ul></article><section class="subsection" id="division-and-multiplication"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.1</span> <span class="title">Division and Multiplication</span>
+</h3>
+<div class="para" id="p-60">We begin with the most basic way to conceptualize fractions using positions on the number line. To start,  we will think of all the numbers as whole numbers (positive integers).</div>
+<figure class="table table-like" id="fractions1_2_1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span>Fractions as Pieces of a Whole (step sizes)</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t2 lines"><em class="emphasis">Positions and Sizes</em></td>
+<td class="c m b2 r0 l0 t2 lines"></td>
+<td class="l m b2 r2 l0 t2 lines"><em class="emphasis">Numbers</em></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Starting at <span class="process-math">\(0\text{,}\)</span> the distance so that <span class="process-math">\(b\)</span> steps of that size will be <span class="process-math">\(1\text{.}\)</span>
+</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\frac{1}{b}\)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r0 l0 t0 lines">Starting at <span class="process-math">\(0\text{,}\)</span> the distance so that <span class="process-math">\(b\)</span> steps of that size will be <span class="process-math">\(a\text{.}\)</span>
+</td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\frac{a}{b}\)</span></td>
+</tr>
+</table></div></figure><div class="para" id="p-61">Since this table assumes <span class="process-math">\(b\)</span> is a positive integer so that we may use the idea of multiplication as repeated addition to reach a more formal understanding of division.</div>
+<article class="fact theorem-like" id="mult_inverse"><h4 class="heading">
+<span class="type">Key Concept</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Multiplication and Division as Inverse Operations of One Another.</span>
+</h4>
+<div class="para logical" id="p-62">
+<div class="para">Since taking <span class="process-math">\(b\)</span> steps of size <span class="process-math">\(\frac{a}{b}\)</span> reaches <span class="process-math">\(a\text{,}\)</span> we have the following identity:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b\cdot\frac{a}{b} = a.
+\end{equation*}
+</div>
+<div class="para">When <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are not integers, we use this identity to what <span class="process-math">\(\frac{a}{b}\)</span> is: <em class="emphasis">For any numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(\frac{a}{b}\)</span> is the unique number such that when it is multiplied by <span class="process-math">\(b\text{,}\)</span> the result is <span class="process-math">\(a\text{.}\)</span> In other words,</em>multiplication by <span class="process-math">\(b\)</span> is the inverse operation of dividing by <span class="process-math">\(b\text{.}\)</span> Likewise, division is the inverse operation of multiplication.</div>
+</div></article><article class="example example-like" id="example-1"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-1"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-1"><article class="example example-like">You may notice that <a href="" class="xref" data-knowl="./knowl/mult_inverse.html" title="Key Concept 1.2.2: Multiplication and Division as Inverse Operations of One Another">1.2.2</a> uses much more formal language than we have so far in this text. This is because the formal language is the only way to capture the range of all posibilities (non-integer numbers, negative numbers etc.); our intuitive ideas only work with positive integers. Moving from geometric or numerical intuition to more formal mathematics is often difficult and it is best to make sure we know when this is being done. To get a little practice with using the formal definition of a fraction, let's try to answer a seemingly simple question: Why is<div class="displaymath process-math" data-contains-math-knowls="./knowl/mult_inverse.html">
+\begin{equation*}
+a\cdot \frac{1}{b} = \frac{a}{b}?
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like">To answer this we will explain why the left-hand side of this equation has the property, given in <a href="" class="xref" data-knowl="./knowl/mult_inverse.html" title="Key Concept 1.2.2: Multiplication and Division as Inverse Operations of One Another">1.2.2</a>, that when it is multiplied by <span class="process-math">\(b\)</span> the result is <span class="process-math">\(a\text{.}\)</span> (Observe that we are using <a href="" class="xref" data-knowl="./knowl/commutative_associative.html" title="Fundamental Properties 2.2.10: Commutative and Associative Laws for Addition and Multiplication">2.2.10</a>, which we will justify inuitively in Chapter 2.) First, notice that<div class="displaymath process-math" data-contains-math-knowls="./knowl/mult_inverse.html ./knowl/commutative_associative.html">
+\begin{equation*}
+b\cdot\left( a\cdot \frac{1}{b}  \right) = a\cdot\left(b\cdot \frac{1}{b}\right).
+\end{equation*}
+</div>Since <span class="process-math">\(b\cdot\frac{1}{b} = 1\)</span> and <span class="process-math">\(a\cdot 1=a\text{,}\)</span> we have shown the left-hand side has the property we wanted it to have.</div></div>
+</div></article></div>
+<article class="question example-like" id="question-8"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-8"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-8"><article class="question example-like"><div class="para" id="p-63"><em class="emphasis">Explain why <span class="process-math">\(\dfrac{a}{a} = 1\text{.}\)</span> (This is why you can cancel common factors in numerators and denominators.)</em></div></article></div>
+<article class="identity theorem-like" id="identity-1"><h4 class="heading">
+<span class="type">Fundamental Properties</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-64"><dfn class="terminology">Fundamental Fraction Properties:</dfn></div>
+<div class="para" id="p-65">There are four fundamental properties that we must internalize about fraction in order to do arithmetic with them:</div>
+<div class="para logical" id="p-66"><ol class="decimal">
+<li id="li-28"><div class="para" id="p-67"><span class="process-math">\(\displaystyle \dfrac{a}{a} = 1\)</span></div></li>
+<li id="li-29"><div class="para" id="p-68"><span class="process-math">\(\displaystyle \dfrac{a}{1} = a\)</span></div></li>
+<li id="li-30"><div class="para" id="p-69"><span class="process-math">\(\displaystyle x\cdot\dfrac{a}{b} = \dfrac{xa}{b}\)</span></div></li>
+<li id="li-31"><div class="para" id="p-70"><span class="process-math">\(\displaystyle \dfrac{xa}{xb} = \dfrac{a}{b}\)</span></div></li>
+</ol></div></article><article class="question example-like" id="question-9"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-9"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-9"><article class="question example-like"><div class="para logical" id="p-71"><ol class="decimal">
+<li id="li-32"><div class="para" id="p-72"><em class="emphasis">What do you get when you multiply <span class="process-math">\(\dfrac{b}{a}\)</span> by <span class="process-math">\(\dfrac{a}{b}\text{?}\)</span></em></div></li>
+<li id="li-33"><div class="para" id="p-73"><em class="emphasis">What do you get when you multiply <span class="process-math">\(\dfrac{1}{\left(\frac ab \right)}\)</span> by <span class="process-math">\(\frac{a}{b}\text{?}\)</span></em></div></li>
+<li id="li-34"><div class="para" id="p-74"><em class="emphasis">Explain why <span class="process-math">\(\dfrac{1}{\left(\frac{a}{b}\right)} = \dfrac{b}{a}\text{.}\)</span></em></div></li>
+</ol></div></article></div>
+<article class="question example-like" id="question-10"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-10"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-10"><article class="question example-like"><div class="para" id="p-75"><em class="emphasis">(Multiplying Fractions) Explain why <span class="process-math">\(\dfrac{a}{b}\cdot\dfrac{c}{d} = \dfrac{ac}{bd}\)</span> using the fundamental fraction properties.</em></div></article></div>
+<div class="para logical" id="p-76">
+<div class="para">We can also use the stretch/squeeze metaphor of multiplication to give a geometric interpretation of <span class="process-math">\(\frac{a}{b}\)</span> when <span class="process-math">\(b\)</span> is not an integer. To do this, let's let <span class="process-math">\(r = \frac{a}{b}\text{,}\)</span> and assume <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are still positive (since negatives just reflect to the other side of zero). Our goal is to figure out where <span class="process-math">\(r\)</span> is on the number line. To do this, we first do a manipulation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{b} = r \Longleftrightarrow a = rb.
+\end{equation*}
+</div>
+<div class="para">This manipulation used the fact that multiplication by <span class="process-math">\(b\)</span> undoes division by <span class="process-math">\(b\text{.}\)</span> From this manipulated equation we see that <span class="process-math">\(r = \frac{a}{b}\)</span> is the number that when stretched (if <span class="process-math">\(b&gt;1\)</span>) or squeezed (if <span class="process-math">\(0&lt;b&lt;1\)</span>) by <span class="process-math">\(b\)</span> gives you <span class="process-math">\(a\text{.}\)</span>
+</div>
+</div>
+<article class="question example-like" id="big_small_reciprocals"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-big_small_reciprocals"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-big_small_reciprocals"><article class="question example-like"><div class="para" id="p-77"><em class="emphasis">Explain the following two statements. Hint: Use the fact that multiplying by <span class="process-math">\(\frac{1}{b}\)</span> must undo whatever action multiplying by <span class="process-math">\(b\)</span> does.</em></div> <div class="para logical" id="p-78"><ol class="decimal">
+<li id="li-35"><div class="para" id="p-79"><em class="emphasis">If <span class="process-math">\(b\)</span> is very large, then <span class="process-math">\(\frac{1}{b}\)</span> is very small.</em></div></li>
+<li id="li-36"><div class="para" id="p-80"><em class="emphasis">If <span class="process-math">\(b\)</span> is very close to zero, but still positive, then <span class="process-math">\(\frac{1}{b}\)</span> is very large.</em></div></li>
+</ol></div></article></div>
+<div class="para" id="p-81">Now let's consider why we must say <span class="process-math">\(\frac{a}{0}\)</span> is undefined no matter what <span class="process-math">\(a\)</span> is.</div>
+<div class="para logical" id="p-82"><ul class="disc">
+<li id="li-37"><div class="para" id="p-83">
+<dfn class="terminology">Reason 1:</dfn> Consider the fraction <span class="process-math">\(\frac{1}{b}\)</span> where <span class="process-math">\(b\)</span> is positive. We know that if <span class="process-math">\(b\)</span> is very close to zero, then <span class="process-math">\(\frac{1}{b}\)</span> will be very large. For example, <span class="process-math">\(\frac{1}{0.0001} = 10000\)</span> because if you squeeze <span class="process-math">\(10000\)</span> by a factor of <span class="process-math">\(0.0001\)</span> you get <span class="process-math">\(1\text{.}\)</span> However, you can always make the <span class="process-math">\(b\)</span> smaller and get a bigger number. This means that <span class="process-math">\(\frac{1}{0}\)</span> would need to be larger than every positive number. But no such number exists, so <span class="process-math">\(\frac{1}{0}\)</span> must be undefined.</div></li>
+<li id="li-38"><div class="para" id="p-84">
+<dfn class="terminology">Reason 2:</dfn> The expression <span class="process-math">\(\frac{a}{0}\)</span> should represent the number that when multiplied by <span class="process-math">\(0\)</span> results in <span class="process-math">\(a\text{.}\)</span> However, any number multiplied by zero must be zero. For this reason, if <span class="process-math">\(a\)</span> is not zero, then <span class="process-math">\(\frac{a}{0}\cdot 0\)</span> cannot equal <span class="process-math">\(a\text{.}\)</span> Thus we say that <span class="process-math">\(\frac{a}{0}\)</span> cannot represent a number if <span class="process-math">\(a\neq 0\text{.}\)</span>
+</div></li>
+</ul></div>
+<div class="para" id="p-85">To really see why the expression <span class="process-math">\(\frac{0}{0}\)</span> is undefined, you need an idea from Calculus, but you can get a feel for why it must be undefined in the next question.</div>
+<article class="question example-like" id="question-12"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-12"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-12"><article class="question example-like"><div class="para" id="p-86"><em class="emphasis">Give a short reason why the expression <span class="process-math">\(\frac{0}{0}\)</span> could represent either <span class="process-math">\(0\)</span> or <span class="process-math">\(1\text{.}\)</span></em></div></article></div></section><section class="subsection" id="apples-and-oranges-units-and-dimensional-analysis"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Apples and Oranges: Units and Dimensional Analysis</span>
+</h3>
+<div class="para" id="p-87">So far we have only talked about multiplying and dividing fractions. These operations with fractions are fundamentally easier then addition and subtraction. In order to build a useful metaphor of how to add and subtract fractions, it will be useful to talk about units of measurement. Not only will understanding units and unit conversion be useful for understanding fractions, but it is extremely useful in the sciences.</div>
+<section class="paragraphs" id="dimensional-analysis-and-the-factor-label-method-of-unit-conversion"><h4 class="heading"><span class="title">Dimensional Analysis and the Factor-Label Method of Unit Conversion.</span></h4> <div class="para logical" id="p-88">
+<div class="para">A very common task in physics or chemistry classes involves converting between units of measurement of quantities of the same dimension. The simplest way to do this is to treat the units of measurement as numbers multiplied by the numerical quantity in those units. So if we say a rod is two meters long, we would write the mathematical expression</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mbox{length} = 2 \mbox{m},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\mbox{m}\)</span> is the abbreviation for meters multiplied by the number <span class="process-math">\(2\text{.}\)</span> Since the unit name (the label) is multiplied by a number it is a factor in that expression. This is why we call this treatment of unit names as numbers the <em class="emphasis">factor-label method</em>. By treating the units as number, we can use our prior knowledge of arithmetic operations to make conversions.</div>
+</div> <article class="example example-like" id="example-2"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-2"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like">Convert <span class="process-math">\(12\)</span> ounces into milliliters.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">This is a legal conversion because both ounces and milliliters have the same dimension; both units describe volume. In order to make the conversion, we write down an equation with the number of one of the units in another:<div class="displaymath process-math">
+\begin{equation*}
+1 \mbox{oz} = 29.5735 \mbox{mL}.
+\end{equation*}
+</div>Form this equation, we can divide to obtain <span class="process-math">\(1\)</span> without units in two different ways:<div class="displaymath process-math">
+\begin{equation*}
+1=\frac{1 \mbox{oz}}{29.5735\mbox{mL}}\ \ \mbox{and} \ \ 1=\frac{29.5735 \mbox{mL}}{1 \mbox{oz}}.
+\end{equation*}
+</div>Multiplying the quantity <span class="process-math">\(12 \mbox{oz}\)</span> by either of these expressions for <span class="process-math">\(1\)</span> must leave it unchanged. In order to obtain final units of <span class="process-math">\(\mbox{mL}\text{,}\)</span> we will multiply by the second because <span class="process-math">\(\frac{\mbox{oz}}{\mbox{oz}} = 1\)</span> (we say the units of ounces cancel).<div class="displaymath process-math" id="md-1">
+\begin{align*}
+12\text{oz} \amp=\amp \frac{12\,\text{oz}}{1}\cdot\frac{29.5735\text{mL}}{1\,\text{oz}}\amp\amp \text{Units of oz may now cancel.}\\
+\amp = \amp 12\cdot 29.5735\, \text{mL}\\
+\amp = \amp 354.882\, \text{mL}.
+\end{align*}
+</div>
+</div></div>
+</div></article></div> <article class="example example-like" id="example-3"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-3"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like">A <span class="process-math">\(rope\)</span> is a unit of length equal to 20ft (it isn't used much anymore). Suppose an old city plan shows that the street is <span class="process-math">\(2\ \mbox{rope}\)</span> wide with a sidewalk that is <span class="process-math">\(2\)</span>yd on each side. What is the total width of the street plus both sidewalks? You may be able to see quickly that the answer is 52ft, but let's do all the conversions carefully.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">You may be able to see quickly that the answer is 52ft, but let's do all the conversions carefully. First, note that we will need to add the width of both sidewalks to the width of the street. It isn't convenient to convert ropes to yards or yards to ropes; it makes the most sense to convert everything to feet. Let's write all our conversion equations:<div class="displaymath process-math">
+\begin{equation*}
+1 \mbox{street} = 2 \mbox{rope}\ ,\ 1\mbox{rope} = 20\mbox{ft}\ ,\ 1\mbox{sidewalk} = 2\mbox{yd}\ ,\ 1\mbox{yd} = 3\mbox{ft}.
+\end{equation*}
+</div>So we get the following:<div class="displaymath process-math" id="md-2">
+\begin{align*}
+1\mbox{street} + 2\mbox{sidewalk} \amp = \amp 1\text{street}\cdot\frac{2\text{rope}}{\text{street}}\cdot\frac{20\text{ft}}{\text{rope}} + 2\text{sidewalk}\cdot\frac{2\text{yd}}{\text{sidewalk}}\cdot\frac{3\mbox{ft}}{\text{yd}}\amp\amp \text{cancel units}\\
+\amp = \amp 40\text{ft}+12\text{ft} \amp= \amp 52\text{ft}
+\end{align*}
+</div>
+</div></div>
+</div></article></div> <article class="question example-like" id="question-13"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-13"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-13"><article class="question example-like"><div class="para" id="p-89"><em class="emphasis">Suppose a person is on a train that is moving <span class="process-math">\(100\)</span> km/hr and they run from the rear of the train to the front at a rate of <span class="process-math">\(8\)</span> m/s. How fast is this person moving relative to the ground in m/s? Note that <span class="process-math">\(1\)</span> km = <span class="process-math">\(1000\)</span> m and <span class="process-math">\(1\)</span> hr = <span class="process-math">\(3600\)</span> s.</em></div></article></div> <article class="example example-like" id="example-4"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-4"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like">The factor-label method of dimensional analysis can also be used to change the way we look at a changing quantity through multiplication and division. For instance, suppose a tank contains a salt water solution with a concentration of <span class="process-math">\(2\)</span> grams of salt per liter. If the tank is drained at a rate of <span class="process-math">\(10\)</span> mL/s, at what rate is salt leaving the tank in g/s?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">To solve this problem, let’s first convert the draining rate into L/s:<div class="displaymath process-math">
+\begin{equation*}
+10 \frac{\mbox{mL}}{\mbox{s}} = 10 \frac{\mbox{mL}}{\mbox{s}}\cdot \frac{1}{1000}\frac{\mbox{L}}{\mbox{mL}} = \frac{1}{100} \frac{\mbox{L}}{\mbox{s}}.
+\end{equation*}
+</div>Now we just need to multiply quantities to arrive at the correct units for the rate of salt leaving the tank:<div class="displaymath process-math">
+\begin{equation*}
+2\frac{\mbox{g}}{\mbox{L}}\cdot\frac{1}{100}\frac{\mbox{L}}{\mbox{s}} = \frac{2}{100}\frac{\mbox{g}}{\mbox{s}} = 0.02\frac{\mbox{g}}{\mbox{s}}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div> <article class="question example-like" id="question-14"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-14"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-14"><article class="question example-like"><div class="para" id="p-90"><em class="emphasis">The cost of fuel for a riverboat is <span class="process-math">\(\$100\)</span> per hour when moving <span class="process-math">\(10\)</span> miles per hour. In addition to fuel costs, the operating cost (paying the crew etc.) is <span class="process-math">\(\$625\)</span> per hour. What is the total cost in <span class="process-math">\(\$\)</span>/mi when the boat is moving <span class="process-math">\(10\)</span> miles per hour?</em></div></article></div></section></section><section class="subsection" id="adding-and-subtracting-fractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Adding and Subtracting Fractions</span>
+</h3>
+<div class="para" id="p-91">Now that we have thought about real world units of measurement, and we can convert units that measure the same dimensional quantity, we can introduce a useful metaphor for adding, subtracting, and comparing fractions:</div>
+<div class="para" id="p-92">Fractions as Units</div>
+<figure class="table table-like" id="table-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.15<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t2 lines"><em class="emphasis">Units of Measurement</em></td>
+<td class="l m b2 r0 l0 t2 lines"></td>
+<td class="l m b2 r2 l0 t2 lines"><em class="emphasis">Numbers</em></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b2 r0 l0 t0 lines">Dimensional Unit of “<span class="process-math">\(b\)</span>-ths”</td>
+<td class="l m b2 r0 l0 t0 lines"><span class="process-math">\(\rightarrow\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\frac{1}{b}\)</span></td>
+</tr>
+</table></div></figure><div class="para" id="p-93">Often it will be best to think of fractions as units of length (like when we think of numbers as positions on a line), but they could be areas, volumes, etc. Here we will think of the number <span class="process-math">\(1\)</span> as the basic unit of measurement. Then a <span class="process-math">\(b\)</span>-th is the unit that goes into the basic unit <span class="process-math">\(b\)</span> times. For instance, if we are thinking of <span class="process-math">\(1\)</span> as <span class="process-math">\(1\)</span> foot, then <span class="process-math">\(\frac{1}{12}\)</span> is one inch because there are 12 inches in one foot.</div>
+<article class="question example-like" id="question-15"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-15"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.16</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-15"><article class="question example-like"><div class="para" id="p-94">
+<em class="emphasis">For each of the following basic units, what fraction does the given quantity represent? For instance, if the basic unit is one yard, then <span class="process-math">\(1\)</span> foot is <span class="process-math">\(\frac{1}{3}\)</span> because there are three feet in a yard.</em> If you need to look up some unit conversions, Google them.</div> <div class="para logical" id="p-95"><ol class="decimal">
+<li id="li-39"><div class="para" id="p-96"><em class="emphasis">Basic Unit: 1 kilometer. <span class="process-math">\(100\)</span> meters <span class="process-math">\(=\underline{\hspace{.5in}}\text{.}\)</span></em></div></li>
+<li id="li-40"><div class="para" id="p-97"><em class="emphasis">Basic Unit: 1 cup. <span class="process-math">\(1\)</span> ounce <span class="process-math">\(=\underline{\hspace{.5in}}\text{.}\)</span></em></div></li>
+<li id="li-41"><div class="para" id="p-98"><em class="emphasis">Basic Unit: 1 meter. <span class="process-math">\(10\)</span> centimeters <span class="process-math">\(=\underline{\hspace{.5in}}\text{.}\)</span></em></div></li>
+<li id="li-42"><div class="para" id="p-99"><em class="emphasis">Basic Unit: 1 gallon. <span class="process-math">\(3\)</span> quarts <span class="process-math">\(=\underline{\hspace{.5in}}\text{.}\)</span></em></div></li>
+<li id="li-43"><div class="para" id="p-100"><em class="emphasis">Basic Unit: 1 football field. <span class="process-math">\(40\)</span> yards <span class="process-math">\(=\underline{\hspace{.5in}}\text{.}\)</span></em></div></li>
+<li id="li-44"><div class="para" id="p-101"><em class="emphasis">Basic Unit: 1 tablespoon. <span class="process-math">\(8\)</span> teaspoons <span class="process-math">\(=\underline{\hspace{.5in}}\text{.}\)</span></em></div></li>
+</ol></div></article></div>
+<div class="para" id="p-102">Now let’s revisit the example of ropes and yards from the last section. In order to add two ropes to four yards, it was necessary to convert both ropes and yards into a smaller unit that went into both ropes and yards evenly. Specifically, both were converted to feet to get a total of 52 feet. When we are just working with numbers we do something very similar; we find a common denominator.</div>
+<article class="example example-like" id="example-5"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.17</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-5"><article class="example example-like">Add <span class="process-math">\(\frac{3}{5}\)</span> to <span class="process-math">\(\frac{1}{2}\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">To get started we can look at it pictorially with <span class="process-math">\(\frac{3}{5}\)</span> and <span class="process-math">\(\frac{1}{2}\)</span> on number lines: <figure class="figure figure-like" id="addfracs1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-8.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.18<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <div class="para" id="p-103">If we divide <span class="process-math">\(\frac{1}{5}\)</span> in half and <span class="process-math">\(\frac{1}{2}\)</span> into five pieces, we find that <span class="process-math">\(\frac{1}{10}\)</span> goes into both <span class="process-math">\(\frac{1}{5}\)</span> and <span class="process-math">\(\frac{1}{2}\)</span> evenly.</div> <figure class="figure figure-like" id="addfracs2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-9.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.19<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <div class="para logical" id="p-104">
+<div class="para">Now we see the addition:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{5} + \frac{1}{2} = \frac{6}{10}+\frac{5}{10} = \frac{11}{10}.
+\end{equation*}
+</div>
+<div class="para">This is the geometric way of visualizing the process known as known as “cross multiplying”. That is when you multiply each part of a fraction with a fraction equal to one in order to have a common denominator:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{5}+\frac{1}{2} = \frac{2}{2}\cdot\frac{3}{5} + \frac{5}{5}\cdot\frac{1}{2} = \frac{11}{10}.
+\end{equation*}
+</div>
+</div>
+</div></div>
+</div></article></div>
+<div class="para logical" id="p-105">
+<div class="para">One thing we usually try to find is the least common denominator between two fractions. Thinking in terms of units, this is like finding the largest possible unit that goes into both quantities evenly. In the example given above we could have used <span class="process-math">\(\frac{1}{20}\)</span> to go into <span class="process-math">\(\frac{1}{2}\)</span> and <span class="process-math">\(\frac{3}{5}\)</span> evenly and obtained</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{5}+\frac{1}{2} = \frac{22}{20}.
+\end{equation*}
+</div>
+<div class="para">However, that makes the numbers we are dealing with larger for no reason. This would be like converting both ropes and yards into inches; it’s possible, but unnecessary.</div>
+</div>
+<article class="question example-like" id="question-16"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-16"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.20</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-16"><article class="question example-like"><div class="para" id="p-106"><em class="emphasis">Draw a picture to carefully perform the following:</em></div> <div class="para logical" id="p-107"><ol class="decimal">
+<li id="li-45"><div class="para" id="p-108"><em class="emphasis"><span class="process-math">\(\frac12 + \frac13\)</span></em></div></li>
+<li id="li-46"><div class="para" id="p-109"><em class="emphasis"><span class="process-math">\(\frac12+\frac14\)</span></em></div></li>
+<li id="li-47"><div class="para" id="p-110"><em class="emphasis"><span class="process-math">\(\frac13+\frac14\)</span></em></div></li>
+</ol></div></article></div>
+<article class="question example-like" id="question-17"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-17"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.21</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-17"><article class="question example-like"><div class="para" id="p-111"><em class="emphasis">Perform the indicated additions and subtractions:</em></div> <div class="para logical" id="p-112"><ol class="decimal">
+<li id="li-48"><div class="para" id="p-113"><em class="emphasis"><span class="process-math">\(\frac{3}{7}+\frac{9}{8}\)</span></em></div></li>
+<li id="li-49"><div class="para" id="p-114"><em class="emphasis"><span class="process-math">\(\frac{7}{3}+\frac{8}{9}\)</span></em></div></li>
+<li id="li-50"><div class="para" id="p-115"><em class="emphasis"><span class="process-math">\(\frac{1}{2} + \frac{1}{3} - \frac{1}{4}\)</span></em></div></li>
+<li id="li-51"><div class="para" id="p-116"><em class="emphasis"><span class="process-math">\(\frac{15}{3} + \frac{14}{7}\)</span></em></div></li>
+</ol></div></article></div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="Sec1_1_add_subt_mult.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="Sec1_3_exponents.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

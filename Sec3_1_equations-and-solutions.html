@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Equations and their Solutions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="algebraic-equations.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="algebraic-equations.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="Sec3_2_systems-of-equations.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+  
+  
+  \newcommand{\cancelhighlight}[1]{\definecolor{sapphire}{RGB}{59,90,125}{\color{sapphire}{{\cancel{#1}}}}}
+ 
+  
+  
+  \newcommand{\secondcancelhighlight}[1]{\definecolor{emerald}{RGB}{20,97,75}{\color{emerald}{{\bcancel{#1}}}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li>
+<div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Contributors</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="preface-1.html#contributors-1" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="preface-our-goals.html" class="internal"><span class="title">Our Goals</span></a></div></li>
+<li><div class="toc-item"><a href="preface-3.html" class="internal"><span class="title">Features of the Text</span></a></div></li>
+<li><div class="toc-item"><a href="preface-for-students.html" class="internal"><span class="title">Students!  Read this!</span></a></div></li>
+<li><div class="toc-item"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructors!  Read this!</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="arithmetic-with-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec1_1_add_subt_mult.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Addition, Subtraction, and Multiplication</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec1_2_division_and_fractions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Division and Fractions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#division-and-multiplication" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Division and Multiplication</span></a></div></li>
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#apples-and-oranges-units-and-dimensional-analysis" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Apples and Oranges: Units and Dimensional Analysis</span></a></div></li>
+<li><div class="toc-item"><a href="Sec1_2_division_and_fractions.html#adding-and-subtracting-fractions" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec1_3_exponents.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Exponents</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec1_4_order_of_operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Parentheses and Order of Operations</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="Sec1_4_order_of_operations.html#subsection-4" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Implied (``Invisible'') Parentheses</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="algebraic-expressions.html" class="internal"><span class="codenumber">2</span> <span class="title">Algebraic Expressions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec2_1_examples-of-alg-expressions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Examples of Algebraic Expressions</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Sec2_2_equivalent-expressions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Equivalent Algebraic Expressions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#inequivalent-expressions" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Inequivalent Expressions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#reordering-and-regrouping" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Reordering and Regrouping</span></a></div></li>
+<li><div class="toc-item"><a href="Sec2_2_equivalent-expressions.html#distributing-expanding-and-factoring" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Distributing, Expanding, and Factoring</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="algebraic-equations.html" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Equations</span></a></div>
+<ul class="structural">
+<li class="active">
+<div class="toc-item"><a href="Sec3_1_equations-and-solutions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Equations and their Solutions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#equations-as-questions" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Algebraic Equations as Questions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#basic-solving" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Basic Solving</span></a></div></li>
+<li><div class="toc-item"><a href="Sec3_1_equations-and-solutions.html#solutions-from-factoring" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Solutions from Factoring</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec3_2_systems-of-equations.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Systems of Equations</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="introduction-to-functions.html" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Inputs and Outputs</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html#evaluating-functions-and-using-function-notation" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Evaluating Functions and Using Function Notation</span></a></div></li>
+<li><div class="toc-item"><a href="Sec4_1_inputs-and-outputs.html#solving-equations-involving-functions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Solving Equations Involving Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="Sec4_2_graphs-of-functions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Graphs of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec4_3_composite-and-inverse.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Composite and Inverse Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="families-of-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Families of Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="Sec5_1_linear-functions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#intro-to-linear-functions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Intro to Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#forms-of-linear-functions" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Forms of Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_1_linear-functions.html#applications-of-linear-functions" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Applications of Linear Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_2_quadratic-functions.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Quadratic Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#intro-to-quadratic-functions" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Intro to Quadratic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#forms-of-quadratic-functions" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Forms of Quadratic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_2_quadratic-functions.html#applications-of-quadratic-functions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Applications of Quadratic Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_3_exponential-functions.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#intro-to-exponential-functions" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Intro to Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#forms-of-exponential-functions" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Forms of Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_3_exponential-functions.html#applications-of-exponential-functions" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Applications of Exponential Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_4_power-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Power Functions</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="Sec5_4_power-functions.html#intro-to-power-functions" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Intro to Power Functions</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_5_logarithms.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Logarithms</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_5_logarithms.html#logarithm-properties-and-solving-equations" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Logarithm Properties and Solving Equations</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_5_logarithms.html#applications-to-exponential-and-power-functions" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Applications to Exponential and Power Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sec5_6_graphical-transformations.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Graphical Transformations and Function Families</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Sec5_6_graphical-transformations.html#basic-graphical-transformations" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Basic Graphical Transformations</span></a></div></li>
+<li><div class="toc-item"><a href="Sec5_6_graphical-transformations.html#function-families-and-graphical-transformations" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Function Families and Graphical Transformations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="Sec3_1_equations-and-solutions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Equations and their Solutions</span>
+</h2>
+<section class="subsection" id="equations-as-questions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Algebraic Equations as Questions</span>
+</h3>
+<article class="objectives goal-like" id="objectives-7"><h4 class="heading"><span class="type">Section Objectives</span></h4>
+<ul class="disc">
+<li id="li-183"><div class="para" id="p-347">Introduce algebraic equations and the basic idea of solving them.</div></li>
+<li id="li-184"><div class="para" id="p-348">Solve equations through algebraic manipulations including factoring and clearing denominators.</div></li>
+</ul></article><div class="para" id="p-349">Recall that we may think of an algebraic expression as a symbolic representation of some sequence of operations performed on the variable(s). Thus, an algebraic equation indicates that two different processes carried out on the same variable(s) result in the same output. Clearly, different processes typically lead to different results, so <dfn class="terminology">solutions</dfn> (values of the variable for which both processes yield the same result) to equations are interesting. In our study of algebra, the most fruitful way of thinking of an equation is as a question.</div>
+<article class="fact theorem-like" id="fact-4"><h4 class="heading">
+<span class="type">Key Concept</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Algebraic Equation as a Question.</span>
+</h4>
+<div class="para" id="p-350"><em class="emphasis">An algebraic equation should be thought of as the following question: What values of the variable(s) give the same results when the processes on the right and left are performed?</em></div></article><article class="example example-like" id="example-23"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-23"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-23"><article class="example example-like">Consider the equation<div class="displaymath process-math">
+\begin{equation*}
+x^2 = x+x.
+\end{equation*}
+</div>Find as many solutions as you can, and at least one non-solution.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like">The left-hand side of the equation multiplies <span class="process-math">\(x\)</span> by itself. The right-hand side adds <span class="process-math">\(x\)</span> to itself. The equation is asking what values of <span class="process-math">\(x\)</span> give same result if you apply these two processes. Upon a little reflection we see that <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=0\)</span> will work. We may check by substituting these values into the equation and seeing if the resulting numerical equation is true. For <span class="process-math">\(x=2\)</span> we have<div class="displaymath process-math">
+\begin{equation*}
+2^2 = 2+2,
+\end{equation*}
+</div>which simplifies to <span class="process-math">\(4=4\)</span> (that's true). If we substitute <span class="process-math">\(x=0\)</span> we have<div class="displaymath process-math">
+\begin{equation*}
+0^2 = 0+0,
+\end{equation*}
+</div>which is also true. On the other hand, if we substitute <span class="process-math">\(x=3\)</span> the resulting numerical equation is<div class="displaymath process-math">
+\begin{equation*}
+3^2 = 3+3.
+\end{equation*}
+</div>Since <span class="process-math">\(9\neq 6\text{,}\)</span> <span class="process-math">\(x=3\)</span> is not a solution to this equation.</div></div>
+</div></article></div>
+<div class="para" id="p-351">Since there are infinitely many numbers to check, and equations may be complicated, it would be impossible to proceed by just guessing and checking to find solutions. Thus we want a (sort of) systematic approach to solving equations. We also see from the example above that equations may have multiple solutions, so we also want to know if we have found all of the solutions. Usually this gets answered on a case by case basis. We will look at some important examples in this chapter.</div>
+<article class="question example-like" id="question-37"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-37"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-37"><article class="question example-like"><div class="para logical" id="p-352"><ol class="decimal">
+<li id="li-185"><div class="para" id="p-353"><em class="emphasis">Find an equation with <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=-1\)</span> as its only solutions. Hint: What is a procedure you can do to <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=-1\)</span> and get the same result?</em></div></li>
+<li id="li-186"><div class="para" id="p-354"><em class="emphasis">For any number <span class="process-math">\(a\text{,}\)</span> can you find an equation with <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=-a\)</span> as its only solutions?</em></div></li>
+</ol></div></article></div></section><section class="subsection" id="basic-solving"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Basic Solving</span>
+</h3>
+<div class="para logical" id="p-355">
+<div class="para">For now, we will consider equations that only involve one variable. Our goal is to find all values of the variable that make the equation true. We ultimately want to get a statement that looks like</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x=\text{some number}.
+\end{equation*}
+</div>
+<div class="para">Let's consider a relatively easy example.</div>
+</div>
+<article class="example example-like" id="shoes_socks_eq1"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-shoes_socks_eq1"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-shoes_socks_eq1"><article class="example example-like">Solve the equation<div class="displaymath process-math">
+\begin{equation*}
+\sqrt{2x+9} = 5.
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">We don't need to do any steps to get all the <span class="process-math">\(x\)</span>'s on one side, since they are already there; all we need to do is undo the operations on the left. The expression <span class="process-math">\(\sqrt{2x+9}\)</span> means to do the following: <div class="para logical" id="p-356"><dl class="description-list">
+<dt id="li-187"><em class="emphasis">S1:</em></dt>
+<dd> Multiply <span class="process-math">\(x\)</span> by <span class="process-math">\(2\text{.}\)</span>
+</dd>
+<dt id="li-188"><em class="emphasis">S2:</em></dt>
+<dd> add <span class="process-math">\(9\)</span> to <em class="emphasis">S1</em>.</dd>
+<dt id="li-189"><em class="emphasis">S3:</em></dt>
+<dd> take the square root of <em class="emphasis">S2</em>.</dd>
+</dl></div> <div class="para logical" id="p-357">
+<div class="para">We can solve the equation by systematically undoing each of these steps, starting with <em class="emphasis">S3</em>. So we do the following:</div>
+<dl class="description-list">
+<dt id="li-190"><em class="emphasis">Undo S3:</em></dt>
+<dd> square both sides to get<div class="displaymath process-math">
+\begin{equation*}
+2x+9 = 25.
+\end{equation*}
+</div>
+</dd>
+<dt id="li-191"><em class="emphasis">Undo S2:</em></dt>
+<dd> subtract <span class="process-math">\(9\)</span> to get<div class="displaymath process-math">
+\begin{equation*}
+2x = 16.
+\end{equation*}
+</div>
+</dd>
+<dt id="li-192"><em class="emphasis">Undo S1:</em></dt>
+<dd> divide by <span class="process-math">\(2\)</span> to get<div class="displaymath process-math">
+\begin{equation*}
+x=8.
+\end{equation*}
+</div>
+</dd>
+</dl>
+</div> <div class="para" id="p-358">(Now you should substitute <span class="process-math">\(x=8\)</span> into the original equation to check that it is a solution.)</div>
+</div></div>
+</div></article></div>
+<div class="para" id="p-359">Notice that after each step in solving an equation you are left with another equation. We hope that the new equation will be easier to solve after each step. The critical thing is that each new equation must be <em class="emphasis">equivalent to the previous one in the sense that it has the same solutions. The manipulations that one can do to equations that result in equivalent equations are as follows:</em>
+</div>
+<div class="para logical" id="p-360"><ul class="disc">
+<li id="li-193"><div class="para" id="p-361">Replace an algebraic expression with an equivalent algebraic expression. This usually takes the form of simplifying the expression one side of the equation in order to make solving easier.</div></li>
+<li id="li-194">
+<div class="para" id="p-362">Apply an operation to both sides of the equation. This is what you do when you</div>
+<div class="para logical" id="p-363"><ul class="circle">
+<li id="li-195"><div class="para" id="p-364">apply the same operation to both sides of an equation, and</div></li>
+<li id="li-196"><div class="para" id="p-365">undo operations in order to solve for the variable.</div></li>
+</ul></div>
+</li>
+</ul></div>
+<div class="para" id="p-366">Often, when we apply the same operation to both sides of an equation, this takes the form of “moving from one side to the other”. What is really happening is undoing an operation on one side and applying the same inverse operation on the other.</div>
+<div class="para" id="p-367">To eliminate confusion, each time we write down an equivalent equation from a given equation, we will use the symbol <span class="process-math">\(\longleftrightarrow\)</span> or <span class="process-math">\(\updownarrow\)</span> to separate them. Interpret this symbol as meaning “this equation is true exactly when that equation is true”.</div>
+<article class="question example-like" id="shoes_socks_eq2"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-shoes_socks_eq2"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-shoes_socks_eq2"><article class="question example-like"><div class="para" id="p-368"><em class="emphasis">Write down in words exactly was done at each step in the following process to solve <span class="process-math">\(\frac{10}{x+5} = 5.\)</span><div class="displaymath process-math" id="md-12">
+\begin{align*}
+\frac{10}{x+5} \amp = \amp 5 \\
+\amp \updownarrow \amp \\
+\frac{1}{x+5} \amp =  \amp \frac{1}{2} \\
+\amp \updownarrow \amp \\
+x+5 \amp = \amp 2 \\
+\amp \updownarrow \amp \\
+x \amp = \amp -3.
+\end{align*}
+</div></em></div></article></div>
+<article class="example example-like" id="not_shoes_socks_eq3"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-not_shoes_socks_eq3"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-not_shoes_socks_eq3"><article class="example example-like">We wish to solve the equation<div class="displaymath process-math">
+\begin{equation*}
+\frac{6x+1}{x-5} = 2.
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like">In this equation the expression on the left-hand side doesn't represent a process that seems to be easily undone. Our first step is to “clear the denominator” from the left-hand side. While this seems to initially take us backwards, the resulting equation is more easily solved.<div class="displaymath process-math" id="md-13">
+\begin{align*}
+\frac{6x+1}{x-5} \amp = \amp 2\\
+\amp \updownarrow \amp (\text{multiply both sides by } x-5)\\
+6x+1 \amp = \amp 2(x-5)\\
+\amp \updownarrow \amp (\text{distribute})\\
+6x+1 \amp = \amp 2x-10 \\
+\amp \updownarrow \amp (\text{move (subtract) the } 2x)\\
+4x+1 \amp = \amp -10.
+\end{align*}
+</div>Now we will pause for a moment. Looking at the left-hand side of this equation now, we can read it as the following sequence of steps spplied to the variable: <dl class="description-list">
+<dt id="li-197">S1:</dt>
+<dd> Multiply <span class="process-math">\(x\)</span> by <span class="process-math">\(4.\)</span>
+</dd>
+<dt id="li-198">S2:</dt>
+<dd> Add <span class="process-math">\(1\)</span> to <em class="emphasis">S1</em>.</dd>
+</dl> The right-hand side of the equation says that the result of this process is <span class="process-math">\(-10\text{.}\)</span> Thus we can finish solving the equation as follows:<div class="displaymath process-math" id="md-14">
+\begin{align*}
+4x+1 \amp = \amp -10\\
+\amp \updownarrow \amp (\text{undo S2 by subtracting } 1)\\
+4x \amp = \amp -11\\
+\amp \updownarrow \amp (\text{undo S1 by dividing by } 4)\\
+x \amp = \amp \frac{-11}{4}
+\end{align*}
+</div>Just to check, we can substitute into the original equation and see that<div class="displaymath process-math" id="md-15">
+\begin{align*}
+\frac{6\cdot\frac{-11}{4}+1}{\frac{-11}{4}-5}\amp = \amp \frac{\frac{-33}{2}+1}{\frac{-31}{4}}\\
+\amp = \amp \frac{\frac{-31}{2}}{\frac{-31}{4}} \\
+\amp = \amp \frac{-31}{2}\cdot\frac{4}{-31} \\
+\amp = \amp 2\ \checkmark\text{.}
+\end{align*}
+</div>Hence <span class="process-math">\(x = \frac{-11}{4} \)</span> <em class="emphasis">is</em> a solution to the original equation.</div></div>
+</div></article></div>
+<div class="para" id="p-369">Clearly, solving equations can be rather complicated. However, a good basic approach to solving equations is the following: <article class="algorithm theorem-like" id="algorithm-2"><h4 class="heading">
+<span class="type">Basic Solving Procedure</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Solving Algebraic Equations with One Variable.</span>
+</h4>
+<dl class="description-list">
+<dt id="li-199">Manipulate:</dt>
+<dd> Arrange the equation to the form<div class="displaymath process-math">
+\begin{equation*}
+\text{Expression} = \text{number} 
+\end{equation*}
+</div>where the expression is can be broken down into steps that can be undone to get down to <span class="process-math">\(x\text{.}\)</span>
+</dd>
+<dt id="li-200">Undo:</dt>
+<dd> Undo the steps (invert the operations) in the expression you got above in the reverse order the expression does them.</dd>
+</dl></article> A good exercise right now is to look back at <a href="" class="xref" data-knowl="./knowl/shoes_socks_eq1.html" title="Example 3.1.4">3.1.4</a>, <a href="" class="xref" data-knowl="./knowl/shoes_socks_eq2.html" title="Question 3.1.5">3.1.5</a>, and <a href="" class="xref" data-knowl="./knowl/not_shoes_socks_eq3.html" title="Example 3.1.6">3.1.6</a> to see how this process was carried out in each case.</div>
+<div class="para" id="p-370">It would be impossible to write down an example of every solution method for every equation. In fact, there are many equations cannot be solved by any algebraic methods. However, if you just apply the manipulations given above to get equivalent equations, you can solve many of the equations you might encounter. Becoming proficient will require plenty of thoughtful practice.</div>
+<article class="question example-like" id="question-39"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-39"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-39"><article class="question example-like"><div class="para" id="p-371"><em class="emphasis">Solve the following equations for the indicated variable.</em></div> <div class="para logical" id="p-372"><ol class="decimal">
+<li id="li-201"><div class="para" id="p-373"><em class="emphasis"><span class="process-math">\((3x-7)^3 = 8\text{.}\)</span> Solve for <span class="process-math">\(x\text{.}\)</span></em></div></li>
+<li id="li-202"><div class="para" id="p-374"><em class="emphasis"><span class="process-math">\(7+2x = 2+3(x+1)\text{.}\)</span> Solve for <span class="process-math">\(x\text{.}\)</span></em></div></li>
+<li id="li-203"><div class="para" id="p-375"><em class="emphasis"><span class="process-math">\(1-(x-7) = 2x+4\text{.}\)</span> Solve for <span class="process-math">\(x\text{.}\)</span></em></div></li>
+<li id="li-204"><div class="para" id="p-376"><em class="emphasis"><span class="process-math">\(4(t-1)^2 = 16\text{.}\)</span> Solve for <span class="process-math">\(t\text{.}\)</span></em></div></li>
+<li id="li-205"><div class="para" id="p-377"><em class="emphasis"><span class="process-math">\(\frac{2p-1}{3-4p} = 8\text{.}\)</span> Solve for <span class="process-math">\(p\text{.}\)</span></em></div></li>
+<li id="li-206"><div class="para" id="p-378"><em class="emphasis"><span class="process-math">\(\frac{1}{x} + \frac{2}{x+1} = 0\text{.}\)</span> Solve for <span class="process-math">\(x\text{.}\)</span></em></div></li>
+<li id="li-207"><div class="para" id="p-379"><em class="emphasis"><span class="process-math">\(\frac{1}{2x+7} = \frac{3}{x-1}\text{.}\)</span> Solve for <span class="process-math">\(x\text{.}\)</span></em></div></li>
+<li id="li-208"><div class="para" id="p-380"><em class="emphasis"><span class="process-math">\(|2x-1| = 5\text{.}\)</span> Solve for <span class="process-math">\(x\text{.}\)</span></em></div></li>
+</ol></div></article></div></section><section class="subsection" id="solutions-from-factoring"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">Solutions from Factoring</span>
+</h3>
+<div class="para" id="p-381">In Chapter 1 we observed that <span class="process-math">\(0a=0\)</span> for any real number <span class="process-math">\(a\text{.}\)</span> In this section (and frequently from now on) we will use the following important fact:</div>
+<article class="identity theorem-like" id="identity-7"><h4 class="heading">
+<span class="type">Fundamental Properties</span><span class="space"> </span><span class="codenumber">3.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Zero Factors Theorem.</span>
+</h4>
+<div class="para" id="p-382">If <span class="process-math">\(ab=0,\ \)</span> then either <span class="process-math">\(a=0\)</span> or <span class="process-math">\(b=0\text{.}\)</span>
+</div></article><div class="para" id="p-383">This is a very powerful fact for solving equations. Using this, if we can break a complicated expression into a product of simpler expressions, then the complicated expression is zero only if one of the simpler expressions is zero. This is the main reason we factor algebraic expressions.</div>
+<article class="example example-like" id="example-26"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-26"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-26"><article class="example example-like"><div class="para logical" id="p-384">
+<div class="para">Earlier we solved the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 = 2x
+\end{equation*}
+</div>
+<div class="para">by inspection. Now we can solve it by factoring. Our first step is to put this equation in the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{some algebraic expression that can be factored}=0
+\end{equation*}
+</div>
+<div class="para">so that we may apply the Zero Factors Theorem after factoring the expression on the left-hand side. We do this by subtracting the <span class="process-math">\(2x\)</span> over to the left-hand side, then proceeding as follows:</div>
+<div class="displaymath process-math" id="md-16">
+\begin{align*}
+x^2 \amp = \amp 2x \\
+\amp \updownarrow \amp (\text{subtract})\\
+x^2-2x \amp = \amp 0 \\
+\amp \updownarrow \amp (\mbox{factor}) \\
+x(x-2) \amp = \amp 0.
+\end{align*}
+</div>
+<div class="para">Now we use the Zero Factors Theorem; either <span class="process-math">\(x=0\)</span> or <span class="process-math">\(x-2 = 0\text{.}\)</span> Hence our solutions are <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=2\text{.}\)</span>
+</div>
+</div></article></div>
+<article class="remark remark-like" id="remark-3"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.1.11</span><span class="period">.</span>
+</h4>(Important!) Note that the Zero Factors Theorem only works if the product is equal to zero.</article><article class="question example-like" id="question-40"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-40"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.12</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-40"><article class="question example-like"><div class="para" id="p-385"><em class="emphasis">Solve each of the following equations by factoring:</em></div> <div class="para logical" id="p-386"><ol class="decimal">
+<li id="li-209"><div class="para" id="p-387"><em class="emphasis"><span class="process-math">\(2x^2+5x = 0\)</span></em></div></li>
+<li id="li-210"><div class="para" id="p-388"><em class="emphasis"><span class="process-math">\(x^2+5x = 6\)</span></em></div></li>
+<li id="li-211"><div class="para" id="p-389"><em class="emphasis"><span class="process-math">\(x^2-4x+3 = 8\)</span></em></div></li>
+<li id="li-212"><div class="para" id="p-390"><em class="emphasis"><span class="process-math">\(6x^2-x-1 = 0\)</span></em></div></li>
+<li id="li-213"><div class="para" id="p-391"><em class="emphasis"><span class="process-math">\(4x^2+7x+1 = 3\)</span></em></div></li>
+</ol></div></article></div>
+<div class="para" id="p-392">Sometimes it is not obvious that factoring will be helpful to solve an equation. However, after a little manipulation we see that many equations can be solved using factoring as the critical step.</div>
+<article class="example example-like" id="example-27"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-27"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.13</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-27"><article class="example example-like">Solve<div class="displaymath process-math">
+\begin{equation*}
+\frac{2}{x} - \frac{2}{x-3} = 3.
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like">It is not obvious that this would lend itself to factoring. All we can do is proceed with manipulations we know are allowed, and hopefully we reach a point where we can solve.<div class="displaymath process-math" id="md-17">
+\begin{align*}
+\frac{2}{x} - \frac{2}{x-3} \amp = \amp 3\\
+\amp \updownarrow \amp (\text{combine fractions on left})\\
+\frac{2(x-3)-2x}{x(x-3)} \amp = \amp 3 \\
+\amp \updownarrow \amp (\text{simplify numerator on left})\\
+\frac{-6}{x(x-3)} \amp = \amp 3 \\
+\amp \updownarrow \amp (\text{clear the denominator}) \\
+-6 \amp = \amp 3x(x-3) \\
+\amp \updownarrow \amp (\text{distribute and rearrange the equation}\\
+3x^2-9x + 6 \amp = \amp 0 \\
+\amp \updownarrow \amp (\text{factor})\\
+3(x-1)(x-2) \amp = \amp 0. 
+\end{align*}
+</div>Now, by the Zero Factors Theorem, we have the solution <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=2\text{.}\)</span>
+</div></div>
+</div></article></div>
+<article class="question example-like" id="question-41"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-41"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.14</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-41"><article class="question example-like"><div class="para" id="p-393"><em class="emphasis">solve the following equations:</em></div> <div class="para logical" id="p-394"><ol class="decimal">
+<li id="li-214"><div class="para" id="p-395"><em class="emphasis"><span class="process-math">\(x+\frac{1}{x} = 2\)</span></em></div></li>
+<li id="li-215"><div class="para" id="p-396"><em class="emphasis"><span class="process-math">\(x^2-x^3+2x = 0\)</span></em></div></li>
+<li id="li-216"><div class="para" id="p-397"><em class="emphasis"><span class="process-math">\(\frac{3}{z-2} - \frac{12}{z^2-4} = 1\)</span></em></div></li>
+</ol></div></article></div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="algebraic-equations.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="Sec3_2_systems-of-equations.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

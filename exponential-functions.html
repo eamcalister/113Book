@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-11T18:15:21-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exponential Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="quadratic-functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="families-of-functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="power-functions.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="quadratic-functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="families-of-functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="power-functions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Contributors</a></li>
+<li><a href="preface-our-goals.html" data-scroll="preface-our-goals" class="internal">Our Goals</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3" class="internal">Features of the Text</a></li>
+<li><a href="preface-for-students.html" data-scroll="preface-for-students" class="internal">Students!  Read this!</a></li>
+<li><a href="preface-for-instructors.html" data-scroll="preface-for-instructors" class="internal">Instructors!  Read this!</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="arithmetic-with-numbers.html" data-scroll="arithmetic-with-numbers" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a><ul>
+<li><a href="Sec1_1_add_subt_mult.html" data-scroll="Sec1_1_add_subt_mult" class="internal">Addition, Subtraction, and Multiplication</a></li>
+<li><a href="Sec1_2_division_and_fractions.html" data-scroll="Sec1_2_division_and_fractions" class="internal">Division and Fractions</a></li>
+<li><a href="Sec1_3_exponents.html" data-scroll="Sec1_3_exponents" class="internal">Exponents</a></li>
+<li><a href="Sec1_4_order_of_operations.html" data-scroll="Sec1_4_order_of_operations" class="internal">Parentheses and Order of Operations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-expressions.html" data-scroll="algebraic-expressions" class="internal"><span class="codenumber">2</span> <span class="title">Algebraic Expressions</span></a><ul>
+<li><a href="Sec2_1_examples-of-alg-expressions.html" data-scroll="Sec2_1_examples-of-alg-expressions" class="internal">Examples of Algebraic Expressions</a></li>
+<li><a href="Sec2_2_equivalent-expressions.html" data-scroll="Sec2_2_equivalent-expressions" class="internal">Equivalent Algebraic Expressions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-equations.html" data-scroll="algebraic-equations" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Equations</span></a><ul>
+<li><a href="Sec3_1_equations-and-solutions.html" data-scroll="Sec3_1_equations-and-solutions" class="internal">Equations and their Solutions</a></li>
+<li><a href="Sec3_2_systems-of-equations.html" data-scroll="Sec3_2_systems-of-equations" class="internal">Solving Systems of Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="introduction-to-functions.html" data-scroll="introduction-to-functions" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Functions</span></a><ul>
+<li><a href="Sec4_1_inputs-and-outputs.html" data-scroll="Sec4_1_inputs-and-outputs" class="internal">Inputs and Outputs</a></li>
+<li><a href="Sec4_2_graphs-of-functions.html" data-scroll="Sec4_2_graphs-of-functions" class="internal">Graphs of Functions</a></li>
+<li><a href="Sec4_3_composite-and-inverse.html" data-scroll="Sec4_3_composite-and-inverse" class="internal">Composite and Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="families-of-functions.html" data-scroll="families-of-functions" class="internal"><span class="codenumber">5</span> <span class="title">Families of Functions</span></a><ul>
+<li><a href="linear-functions.html" data-scroll="linear-functions" class="internal">Linear Functions</a></li>
+<li><a href="quadratic-functions.html" data-scroll="quadratic-functions" class="internal">Quadratic Functions</a></li>
+<li><a href="exponential-functions.html" data-scroll="exponential-functions" class="active">Exponential Functions</a></li>
+<li><a href="power-functions.html" data-scroll="power-functions" class="internal">Power Functions</a></li>
+<li><a href="logarithms.html" data-scroll="logarithms" class="internal">Logarithms</a></li>
+<li><a href="graphical-transformations-and-function-families.html" data-scroll="graphical-transformations-and-function-families" class="internal">Graphical Transformations and Function Families</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="exponential-functions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Exponential Functions</span>
+</h2>
+<p id="p-759">Exponential functions are common in applications where the rate of change is not described in absolute terms, but in relative terms as a percent rate of change. For instance, suppose we say a population, <span class="process-math">\(P\text{,}\)</span> is growing at a rate of <span class="process-math">\(50\%\)</span> per year with an initial value of <span class="process-math">\(1000\text{.}\)</span> This means that to find the population next year, we find the population of the current year, multiply it by <span class="process-math">\(0.5\text{,}\)</span> and add it to the current population. Then we can construct a table of values, with the input <span class="process-math">\(t\)</span> being measured in years:</p>
+<figure class="table table-like" id="table-13"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></th>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(P\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(1000\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(1500\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(2250\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(3375\)</span></td>
+</tr>
+</table></div></figure><p id="p-760">We can notice that the slope, which is the absolute rate of change, is not constant. Between the points <span class="process-math">\((0,1000)\)</span> and <span class="process-math">\((1,1500)\text{,}\)</span> the slope is <span class="process-math">\(500\text{.}\)</span> The slope between the points <span class="process-math">\((1,1500)\)</span> and <span class="process-math">\((2,2250)\)</span> is <span class="process-math">\(750\text{.}\)</span> However, if we take the ratio of consecutive outputs, we get a constant:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1500}{1000} = \frac{2250}{1500} = \frac{3375}{2250}  = 1.5.
+\end{equation*}
+</div>
+<p class="continuation">What this shows is that each time the input increases by <span class="process-math">\(1\text{,}\)</span> the output gets multiplied by <span class="process-math">\(1.5\)</span> one more time. Since repeated multiplication is denoted by an exponent, we see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P = 1000(1.5)^t.
+\end{equation*}
+</div>
+<p class="continuation">Functions with this basic form are known as exponential functions.</p>
+<section class="subsection" id="intro-to-exponential-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Intro to Exponential Functions</span>
+</h3>
+<p id="p-761">An <em class="emphasis">exponential function is a function of the form <span class="process-math">\(f(x) = ab^x\text{,}\)</span> where <span class="process-math">\(a\neq 0\)</span> and <span class="process-math">\(b&gt;0\text{.}\)</span></em></p>
+<p id="p-762"><dfn class="terminology">Example 5.26</dfn>. Consider <span class="process-math">\(f(x) = 2(1.5)^x\text{.}\)</span> We can plot some points to construct a graph of this function.</p>
+<p id="p-763">We can make several observations about this graph and connect them to the algebraic form of this function.</p>
+<ul id="p-764" class="disc">
+<li id="li-325"><p id="p-765">First, notice that the <span class="process-math">\(y\)</span>-intercept is at <span class="process-math">\((0,2)\text{.}\)</span> This is due to the fact that <span class="process-math">\(f(0) = 2(1.5)^0\text{.}\)</span> Since any nonzero number raised to the zero power is <span class="process-math">\(1\text{,}\)</span> we are just multiplying <span class="process-math">\(2\)</span> by <span class="process-math">\(1\text{.}\)</span></p></li>
+<li id="li-326"><p id="p-766">We also can notice this function is increasing as you move from left to right. In fact, you can see that each point we plotted is exactly one and a half times higher above the <span class="process-math">\(x\)</span>-axis than the point that was plotted one unit to its left. This is because the height is multiplied by <span class="process-math">\(1.5\)</span> each time the input increases by one unit.</p></li>
+<li id="li-327"><p id="p-767">If we move from right to left through negative values of <span class="process-math">\(t\text{,}\)</span> all the outputs are less than <span class="process-math">\(2\)</span> and getting smaller. This isn’t a truly different observation than the last one, but it’s a different perspective. This comes from the fact that when <span class="process-math">\(t\)</span> is negative, we’re really dividing by positive powers of <span class="process-math">\(1.5\text{.}\)</span> (Review you exponent rules now if you need to.)</p></li>
+<li id="li-328"><p id="p-768">Finally, we notice that the outputs stay above the <span class="process-math">\(x\)</span>-axis. This is because <span class="process-math">\((1.5)^t\)</span> is always positive, as it represents repeated multiplication of a positive number. If the <span class="process-math">\(2\)</span> in front were replaced by a negative number, then the output would never be positive. Exponential functions never change signs.</p></li>
+</ul>
+<p id="p-769"></p>
+<p id="p-770"><dfn class="terminology">Question 5.27</dfn>. <em class="emphasis">In the definition of an exponential function, we said that <span class="process-math">\(a\)</span> cannot be zero and <span class="process-math">\(b\)</span> had to be positive. Let’s think about why we would make such restrictions.</em></p>
+<ol id="p-771" class="decimal">
+<li id="li-329"><p id="p-772"><em class="emphasis">If <span class="process-math">\(a=0\text{,}\)</span> what simpler family of functions does <span class="process-math">\(f(x) = ab^x\)</span> belong to?</em></p></li>
+<li id="li-330"><p id="p-773"><em class="emphasis">If <span class="process-math">\(b\)</span> is negative, what is a value of <span class="process-math">\(x\)</span> that would make <span class="process-math">\(b^{x}\)</span> undefined? (The answer is not zero.)</em></p></li>
+</ol>
+<p id="p-774"><dfn class="terminology">The Meaning of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> in Exponential Functions</dfn></p>
+<ul id="p-775" class="disc">
+<li id="li-331">
+<p id="p-776"><span class="process-math">\(b\)</span> is the growth factor. Each time the input increases by one unit, the output is multiplied by another factor of <span class="process-math">\(b\text{.}\)</span></p>
+<ul id="p-777" class="circle">
+<li id="li-332"><p id="p-778">If <span class="process-math">\(b&gt;1\text{,}\)</span> then the graph diverges away from the <span class="process-math">\(x\)</span>-axis from left to right and gets arbitrarily close to the <span class="process-math">\(x\)</span>-axis as <span class="process-math">\(x\to-\infty\text{.}\)</span></p></li>
+<li id="li-333"><p id="p-779">If <span class="process-math">\(b&lt;1\text{,}\)</span> then the graph gets arbitrarily close to the <span class="process-math">\(x\)</span>-axis as <span class="process-math">\(x\to\infty\text{,}\)</span> and diverges away from the <span class="process-math">\(x\)</span>-axis moving right to left.</p></li>
+</ul>
+</li>
+<li id="li-334"><p id="p-780"><span class="process-math">\(a\)</span> is the output of <span class="process-math">\(f\)</span> when <span class="process-math">\(x=0\text{.}\)</span> In other words, it is the <span class="process-math">\(y\)</span>-intercept of the graph of <span class="process-math">\(f\text{.}\)</span></p></li>
+</ul>
+<p id="p-781"><dfn class="terminology">Question 5.28</dfn>. <em class="emphasis">The domain of an exponential function is the set of all real numbers. What is the range? Your answer will depend of the value of <span class="process-math">\(a\text{.}\)</span></em></p>
+<p id="p-782">As with all function families, when we say that a function has a specific form, we really mean that its defining formula is equivalent to that form. Often it is the case that a function is not presented in a specific form, but algebraic manipulation shows it to be in the specified family.</p>
+<p id="p-783"><dfn class="terminology">Example 5.29</dfn>. Let <span class="process-math">\(f(x) = \dfrac{3(2)^{x+3}}{5^{x-1}}\text{.}\)</span> This function is not in the form <span class="process-math">\(f(x) = ab^x\text{,}\)</span> but we may use some exponent rules to put it in that form:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = \frac{3(2)^{x+3}}{5^{x-1}} = \frac{3\cdot 2^3\cdot 2^{x}}{5^{-1}\cdot 5^{x}} = 120\left(\frac{2}{5}\right)^{x}.
+\end{equation*}
+</div>
+<p class="continuation">Hence we see <span class="process-math">\(a = 120\)</span> and <span class="process-math">\(b=\frac{2}{5}\text{.}\)</span> Alternatively, we could use a table of outputs to decide this function is exponential and find its parameters:</p>
+<figure class="table table-like" id="table-14"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></th>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(120\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(48\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(19.2\)</span></td>
+</tr>
+</table></div></figure><p id="p-784">The ratios of consecutive values are equal to <span class="process-math">\(b\text{:}\)</span> <span class="process-math">\(\frac{48}{120} = \frac{19.2}{48} =\frac{2}{5}\text{.}\)</span> The value at <span class="process-math">\(t=0\)</span> is <span class="process-math">\(a\text{.}\)</span></p>
+<p id="p-785">Generally, if you know one of the parameters of an exponential function and a point on its graph, you can solve for the other parameter. In the next section we will go into detail of how to find formulas for exponential functions from two points on the graph, similar to how we did it for linear functions. We will also see possible reasons for alternatives to the standard <span class="process-math">\(ab^x\)</span> form.</p></section><section class="subsection" id="forms-of-exponential-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">Forms of Exponential Functions</span>
+</h3>
+<p id="p-786">Often we would like to find a formula for an exponential function when the initial condition and growth rate are not known. However, we often do know some information that is somehow equivalent to two points on the graph. To understand some of the useful forms of exponential functions, let’s first figure out how to find a formula given two points on the graph.</p>
+<p id="p-787"><dfn class="terminology">Example 5.30</dfn>. Suppose the points <span class="process-math">\((2,1)\)</span> and <span class="process-math">\((9,4)\)</span> are on the graph of <span class="process-math">\(y=f(x) = ab^{x}\text{.}\)</span> We would like to determine <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> To do this, we merely need to set up a system of equations and solve it. Using the input-output pairs, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+1 &amp; = &amp; ab^{2}\\
+4 &amp; = &amp; ab^{9}.\end{aligned}
+\end{equation*}
+</div>
+<p class="continuation">Using the first equation, we find <span class="process-math">\(a = \frac{1}{b^2}\text{,}\)</span> which we can substitute into the second to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+4 &amp; = &amp; \frac{1}{b^2}\cdot b^{9}\\
+&amp; \updownarrow &amp; \\
+b^{7} &amp; = &amp; 4 \\
+&amp; \updownarrow &amp; \\
+b &amp; = &amp; \sqrt[7]{4}.\end{aligned}
+\end{equation*}
+</div>
+<p class="continuation">Then we find <span class="process-math">\(a = \frac{1}{(\sqrt[7]{4})^{2}}\text{.}\)</span> Thus we have <span class="process-math">\(f(x) = \frac{1}{(\sqrt[7]{4})^{2}} (\sqrt[7]{4})^x\text{.}\)</span></p>
+<p id="p-788">This process for finding the equation of an exponential function is straightforward, but the final answer does not show the points the graph passes through in a transparent way. Instead, we may write it in the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x)  = \frac{1}{(\sqrt[7]{4})^{2}} (\sqrt[7]{4})^x = 1\cdot 4^{\frac{x-2}{7}}.
+\end{equation*}
+</div>
+<p class="continuation">In this form we can see that <span class="process-math">\(f(2) = 1\)</span> and <span class="process-math">\(f(9) = 4\)</span> quite easily.</p>
+<p id="p-789"><dfn class="terminology">Question 5.31</dfn>. <em class="emphasis">Show the manipulations, using exponent rules, that one must use to put the function from the example into the form shown above.</em></p>
+<p id="p-790"><dfn class="terminology">Question 5.32</dfn>. <em class="emphasis">Let <span class="process-math">\(f(x) = 3\left(\frac{14}{3}\right)^{\frac{x-12}{5}}\text{.}\)</span> Find two points with integer coordinates that are obviously on the graph of <span class="process-math">\(f\text{.}\)</span> Explain why they are obvious.</em></p>
+<p id="p-791">Using the last two questions as motivation, we can introduce the following form of an exponential function:</p>
+<p id="p-792"><dfn class="terminology">Point-Factor-(Time Interval) Form for an Exponential Function</dfn>An exponential function <span class="process-math">\(f\)</span> that has the property that <span class="process-math">\(f(x_0) = S\)</span> and grows by a factor of <span class="process-math">\(M\)</span> over each time interval <span class="process-math">\(T\)</span> has the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = S(M)^{\frac{x-x_0}{T}}.
+\end{equation*}
+</div>
+<p class="continuation">The initial value of this function is <span class="process-math">\(\left(S(M)^{-\frac{x_0}{T}}\right)\)</span> and its growth factor per unit increase in input is <span class="process-math">\(M^{\frac{1}{T}}\text{.}\)</span></p>
+<p id="p-793">This particular form of an exponential function may be thought of as analogous to the point-slope form of a linear function. However, because the formula is a bit more complicated, it may be more useful to use it only implicitly, and think about why your answer is right.</p>
+<p id="p-794"><dfn class="terminology">Example 5.33</dfn>. Suppose a quantity <span class="process-math">\(Q= f(t)\)</span> grows exponentially as a function of <span class="process-math">\(t\text{,}\)</span> where <span class="process-math">\(Q = 3\)</span> when <span class="process-math">\(t=2\text{,}\)</span> and <span class="process-math">\(Q\)</span> increases by <span class="process-math">\(25\%\)</span> every time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{.}\)</span> Find a formula for <span class="process-math">\(Q\)</span> in terms of <span class="process-math">\(t\text{.}\)</span></p>
+<p id="p-795">Since <span class="process-math">\(Q\)</span> grows by <span class="process-math">\(25\%\)</span> each time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{,}\)</span> each time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{,}\)</span> the initial quantity will be multiplied by <span class="process-math">\(1.25\text{.}\)</span> This means the exponent of <span class="process-math">\(1.25\)</span> should be divided by <span class="process-math">\(20\text{.}\)</span> Since the output is <span class="process-math">\(3\)</span> when <span class="process-math">\(t=2\text{,}\)</span> we can put <span class="process-math">\(t-2\)</span> as the numerator in the exponent. Thus we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+Q = f(t) = 3(1.25)^{\frac{t-2}{20}}.
+\end{equation*}
+</div>
+<p class="continuation">Now we may ask ourselves whether this behaves in the specified way:</p>
+<ul id="p-796" class="disc">
+<li id="li-335"><p id="p-797">Is <span class="process-math">\(f(2) = 3\text{?}\)</span> Yes, <span class="process-math">\(f(2) = 3(1.25)^{\frac{2-2}{20}} = 3\text{.}\)</span></p></li>
+<li id="li-336">
+<p id="p-798">Is <span class="process-math">\(Q\)</span> multiplied by an additional factor of <span class="process-math">\(1.25\)</span> each time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{.}\)</span> Yes, observe</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+f(2) &amp; = &amp; 3\\
+f(22) &amp; = &amp; 3(1.25)^{\frac{20}{20}} = 3(1.25)\\
+f(42) &amp; = &amp; 3(1.25)^{\frac{40}{20}} = 3(1.25)^2\\
+\ &amp; \vdots &amp; \\\end{aligned}
+\end{equation*}
+</div>
+</li>
+</ul>
+<p id="p-799">Thus we can see that this function behaves in the specified way.</p>
+<p id="p-800">Another form of an exponential function is indicated by the preceding example. Often, in real world applications, exponential functions are described by a constant percent growth rate.</p>
+<p id="p-801"><dfn class="terminology">Percent Growth Rate Form of an Exponential Function</dfn>Every exponential function <span class="process-math">\(f(x) = ab^{x}\)</span> may be written in the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = a(1+r)^{x}.
+\end{equation*}
+</div>
+<p class="continuation">In this form <span class="process-math">\(r = b-1\)</span> is the percent growth (when multiplied by <span class="process-math">\(100\%\)</span>) for each unit increase in <span class="process-math">\(x\text{.}\)</span> Note:</p>
+<ul id="p-802" class="disc">
+<li id="li-337"><p id="p-803">If <span class="process-math">\(b&gt;1\text{,}\)</span> then <span class="process-math">\(r&gt;0\text{.}\)</span> In this case <span class="process-math">\(r\)</span> is just called the growth rate.</p></li>
+<li id="li-338"><p id="p-804">If <span class="process-math">\(0&lt;b&lt;1\text{,}\)</span> then <span class="process-math">\(r&lt;0\text{.}\)</span> In this case <span class="process-math">\(|r|\)</span> is the decay rate.</p></li>
+</ul>
+<p id="p-805"><dfn class="terminology">Question 5.34</dfn>. <em class="emphasis">In the function <span class="process-math">\(Q=f(t) = 3(1.25)^{\frac{t-2}{20}}\text{,}\)</span> by what percent does <span class="process-math">\(Q\)</span> grow per unit increase in <span class="process-math">\(t\text{?}\)</span></em></p></section><section class="subsection" id="applications-of-exponential-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.3</span> <span class="title">Applications of Exponential Functions</span>
+</h3>
+<p id="p-806">Standard applications of exponential functions are those related to growth and decay. We will introduce these applications now, but investigate them further when we are equipped with logarithms. Logarithms will allow us to solve equations involving exponential functions.</p>
+<p id="p-807"><dfn class="terminology">Example 5.35</dfn>. Suppose a population of bacteria, <span class="process-math">\(P\text{,}\)</span> in millions starts at <span class="process-math">\(P = 4\)</span> and triples every six hours. Find a formula for <span class="process-math">\(P\)</span> as a function of time <span class="process-math">\(t\text{,}\)</span> in hours. By what percent does <span class="process-math">\(P\)</span> change each hour? Using the point-factor-time interval idea, we find</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P = 4(3)^{\frac{t}{6}}.
+\end{equation*}
+</div>
+<p class="continuation">In order to find the growth rate, we must first find the growth factor <span class="process-math">\(b\text{.}\)</span> This is done by applying exponent rules:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P = 4(\sqrt[6]{3})^{t}.
+\end{equation*}
+</div>
+<p class="continuation">Hence the growth factor is <span class="process-math">\(b = \sqrt[6]{3}\approx 1.201\text{.}\)</span> Hence the percent growth rate is about <span class="process-math">\(20.1\%\)</span> per hour.</p>
+<p id="p-808"><dfn class="terminology">Question 5.36</dfn>. <em class="emphasis">Cesium-137 is a radioactive isotope formed in nuclear fission. Given that it decays at a rate of <span class="process-math">\(2.27\%\)</span> per year, what equation would you need to solve in order to find its half-life (the time it takes for half of an initial quantity to remain)?</em></p></section></section></div></main>
+</div>
+</body>
+</html>

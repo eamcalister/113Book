@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-11T18:15:20-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linear Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="families-of-functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="families-of-functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="quadratic-functions.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="families-of-functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="families-of-functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="quadratic-functions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Contributors</a></li>
+<li><a href="preface-our-goals.html" data-scroll="preface-our-goals" class="internal">Our Goals</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3" class="internal">Features of the Text</a></li>
+<li><a href="preface-for-students.html" data-scroll="preface-for-students" class="internal">Students!  Read this!</a></li>
+<li><a href="preface-for-instructors.html" data-scroll="preface-for-instructors" class="internal">Instructors!  Read this!</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="arithmetic-with-numbers.html" data-scroll="arithmetic-with-numbers" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a><ul>
+<li><a href="Sec1_1_add_subt_mult.html" data-scroll="Sec1_1_add_subt_mult" class="internal">Addition, Subtraction, and Multiplication</a></li>
+<li><a href="Sec1_2_division_and_fractions.html" data-scroll="Sec1_2_division_and_fractions" class="internal">Division and Fractions</a></li>
+<li><a href="Sec1_3_exponents.html" data-scroll="Sec1_3_exponents" class="internal">Exponents</a></li>
+<li><a href="Sec1_4_order_of_operations.html" data-scroll="Sec1_4_order_of_operations" class="internal">Parentheses and Order of Operations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-expressions.html" data-scroll="algebraic-expressions" class="internal"><span class="codenumber">2</span> <span class="title">Algebraic Expressions</span></a><ul>
+<li><a href="Sec2_1_examples-of-alg-expressions.html" data-scroll="Sec2_1_examples-of-alg-expressions" class="internal">Examples of Algebraic Expressions</a></li>
+<li><a href="Sec2_2_equivalent-expressions.html" data-scroll="Sec2_2_equivalent-expressions" class="internal">Equivalent Algebraic Expressions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-equations.html" data-scroll="algebraic-equations" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Equations</span></a><ul>
+<li><a href="Sec3_1_equations-and-solutions.html" data-scroll="Sec3_1_equations-and-solutions" class="internal">Equations and their Solutions</a></li>
+<li><a href="Sec3_2_systems-of-equations.html" data-scroll="Sec3_2_systems-of-equations" class="internal">Solving Systems of Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="introduction-to-functions.html" data-scroll="introduction-to-functions" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Functions</span></a><ul>
+<li><a href="Sec4_1_inputs-and-outputs.html" data-scroll="Sec4_1_inputs-and-outputs" class="internal">Inputs and Outputs</a></li>
+<li><a href="Sec4_2_graphs-of-functions.html" data-scroll="Sec4_2_graphs-of-functions" class="internal">Graphs of Functions</a></li>
+<li><a href="Sec4_3_composite-and-inverse.html" data-scroll="Sec4_3_composite-and-inverse" class="internal">Composite and Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="families-of-functions.html" data-scroll="families-of-functions" class="internal"><span class="codenumber">5</span> <span class="title">Families of Functions</span></a><ul>
+<li><a href="linear-functions.html" data-scroll="linear-functions" class="active">Linear Functions</a></li>
+<li><a href="quadratic-functions.html" data-scroll="quadratic-functions" class="internal">Quadratic Functions</a></li>
+<li><a href="exponential-functions.html" data-scroll="exponential-functions" class="internal">Exponential Functions</a></li>
+<li><a href="power-functions.html" data-scroll="power-functions" class="internal">Power Functions</a></li>
+<li><a href="logarithms.html" data-scroll="logarithms" class="internal">Logarithms</a></li>
+<li><a href="graphical-transformations-and-function-families.html" data-scroll="graphical-transformations-and-function-families" class="internal">Graphical Transformations and Function Families</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="linear-functions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">Linear Functions</span>
+</h2>
+<p id="p-613">Linear function make up perhaps the most important class of functions in mathematics. Indeed, the basic premise of Calculus is to approximate more complicated functions with linear ones. However, despite their importance to higher mathematics, they come up in rather simple real world settings.</p>
+<p id="p-614"><dfn class="terminology">Example 5.1</dfn>. Fired Up Pizzeria charges <span class="process-math">\(\$ 9.50\)</span> for a 12 inch pizza with no toppings, then an additional <span class="process-math">\(\$ 1.50\)</span> per topping. Let’s consider the function <span class="process-math">\(C\)</span> that takes as an input the number of toppings, <span class="process-math">\(n\text{,}\)</span> and gives the cost of a pizza, <span class="process-math">\(C(n)\text{,}\)</span> in dollars. To construct a formula for this function, we first give a table of values for its outputs for several inputs:</p>
+<figure class="table table-like" id="table-8"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.1.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b0 r0 l0 t0 lines">
+<span class="process-math">\(n\)</span> toppings</th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></th>
+<th scope="col" class="r m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">
+<span class="process-math">\(C(n)\)</span> dollars</td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(9.50\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(11.00\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(12.50\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(14.00\)</span></td>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(15.50\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><p id="p-615">The critical thing we notice in this table is that each time the input increases by one unit, an additional <span class="process-math">\(\$ 1.50\)</span> is added to the cost. Hence, the number of times we add <span class="process-math">\(1.50\)</span> to the initial (<span class="process-math">\(n=0\)</span>) cost of <span class="process-math">\(\$ 9.50\)</span> is equal to the input <span class="process-math">\(n\text{.}\)</span> This process of repeated addition is precisely the definition of adding <span class="process-math">\(1.5 n\)</span> to <span class="process-math">\(9.5\text{,}\)</span> hence we have the formula</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+C(n) = 9.5 + 1.5 n.
+\end{equation*}
+</div>
+<p class="continuation">Using the table and/or the formula, we may then graph <span class="process-math">\(C\)</span> (fig. 5.1).</p>
+<p id="p-616">In this picture we have plotted the graph between integer values of <span class="process-math">\(n\text{,}\)</span> even though that may not make sense for this function, so that we can see the defining feature of the graph; it is a straight line. Due to the geometric properties of triangles, we see that the ratio of the change in the output divided by the change input is always equal to <span class="process-math">\(1.5\text{.}\)</span> This value is called the <em class="emphasis">slope of this line.</em></p>
+<section class="subsection" id="intro-to-linear-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.1.1</span> <span class="title">Intro to Linear Functions</span>
+</h3>
+<p id="p-617">Using the introductory example given above, we may characterize linear functions as in the following table:</p>
+<p id="p-618">A <dfn class="terminology">Linear Function is <span class="process-math">\(\ldots\)</span></dfn></p>
+<figure class="table table-like" id="table-9"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Linear Function</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">A process applied to the input that adds a fixed amount <span class="process-math">\(m\)</span> to the output for each additional unit of input.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"> </td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">A function of the form <span class="process-math">\(y = f(x) = mx+b\text{,}\)</span> where <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span> are constants.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"> </td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">A function whose graph is a non-vertical line.</td>
+</tr>
+</table></div></figure><p id="p-619">Note that when we say that a function is of the form <span class="process-math">\(f(x) = mx+b\text{,}\)</span> what we really mean is that it can be put into that form throught some algebraic manipulation. The graphical meaning of the parameters <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span> are as follows:</p>
+<p id="p-620"><dfn class="terminology">Graphical Meaning of <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span></dfn></p>
+<ul id="p-621" class="disc">
+<li id="li-270">
+<p id="p-622"><span class="process-math">\(m\)</span> is the slope of the line. That is, given  two points <span class="process-math">\((x_1,y_1)\)</span> and <span class="process-math">\((x_2,y_2)\text{,}\)</span> that lie on the graph of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(m\)</span> is the ratio</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+m = \frac{y_1-y_2}{x_1-x_2}.
+\end{equation*}
+</div>
+<ul id="p-623" class="circle">
+<li id="li-271"><p id="p-624">If <span class="process-math">\(m&gt;0\text{,}\)</span> then the graph increases from left to right.</p></li>
+<li id="li-272"><p id="p-625">If <span class="process-math">\(m&lt;0\text{,}\)</span> then the graph decreases from left to right.</p></li>
+<li id="li-273"><p id="p-626">If <span class="process-math">\(m=0\text{,}\)</span> then the graph is a horizontal line at height <span class="process-math">\(b\text{.}\)</span></p></li>
+<li id="li-274"><p id="p-627">If <span class="process-math">\(|m|\)</span> is larger, the the line is steeper.</p></li>
+</ul>
+</li>
+<li id="li-275"><p id="p-628"><span class="process-math">\(b\)</span> is the output of <span class="process-math">\(f\)</span> when <span class="process-math">\(x=0\text{.}\)</span> In other words, it is the <span class="process-math">\(y\)</span>-intercept of the graph of <span class="process-math">\(f\text{.}\)</span></p></li>
+</ul>
+<p id="p-629"><dfn class="terminology">Example 5.2</dfn>. Because a line is uniquely determined by two points, it is possible to find the formula for a linear function whose graph contains a given pair of points (provided the two points do not lie on a vertical line). For instance, suppose we are given that <span class="process-math">\((1,3)\)</span> and <span class="process-math">\((3,4)\)</span> are on the graph of <span class="process-math">\(f(x) = mx +b\text{,}\)</span> and we want to find <span class="process-math">\(m\)</span> and <span class="process-math">\(b\text{.}\)</span> First we compute the slope:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+m = \frac{4-3}{3-1} = \frac{1}{2}.
+\end{equation*}
+</div>
+<p class="continuation">Then we use the facts that <span class="process-math">\(f\)</span> is of the form <span class="process-math">\(f(x) = \frac{1}{2}x+b\)</span> and one of the two points is on the graph by substituting and solving for <span class="process-math">\(b\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+3 &amp; = &amp; \frac{1}{2}\cdot 1 + b\\
+&amp; \updownarrow &amp; \\
+b &amp; = &amp; \frac{5}{2}.\end{aligned}
+\end{equation*}
+</div>
+<p class="continuation">Thus <span class="process-math">\(f(x) = \frac{1}{2}x + \frac{5}{2}\text{.}\)</span> Another way to see how this process works is by noting that <span class="process-math">\(\frac{1}{2}\)</span> is added to the output for every extra unit of input. By starting at <span class="process-math">\((1,3)\)</span> and subtracting <span class="process-math">\(\frac{1}{2}\)</span> once to get back to when <span class="process-math">\(x=0\text{,}\)</span> we also get <span class="process-math">\(b=f(0)=\frac{5}{2}\text{.}\)</span></p>
+<p id="p-630"><dfn class="terminology">Question 5.3</dfn>. <em class="emphasis">In the last example, we noted that finding the formula for a linear function would not work if the line was vertical. Explain the following:</em></p>
+<ol id="p-631" class="decimal">
+<li id="li-276"><p id="p-632"><em class="emphasis">You cannot determine the slope of a vertical line from two points on that line.</em></p></li>
+<li id="li-277"><p id="p-633"><em class="emphasis">The equation of a vertical line has the form <span class="process-math">\(x=a\text{,}\)</span> where <span class="process-math">\(a\)</span> is a number.</em></p></li>
+</ol>
+<p id="p-634">In practical applications, one can often recognize linear functions by noting a rate of change parameter.</p>
+<p id="p-635"><dfn class="terminology">Example 5.4</dfn>. Suppose we wish to find the profit <span class="process-math">\(P\)</span> of selling <span class="process-math">\(q\)</span> widgets. This is the revenue we get from selling the widgets minus the cost of producing them. We sell the widgets for <span class="process-math">\(\$ 35\)</span> a piece, and it costs <span class="process-math">\(\$ 1000\)</span> to set up production, plus <span class="process-math">\(\$ 15\)</span> to make each widget. The units of <span class="process-math">\(\$ /\mbox{widget}\)</span> on the selling price and production cost are both rates of change of the form <span class="process-math">\((\mbox{function output})/(\mbox{function input})\text{.}\)</span> This indicates the function is likely a linear function. Going to the formula we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P = (\mbox{revenue}) - (\mbox{cost}) = 35q - (1000 + 15q).
+\end{equation*}
+</div>
+<p class="continuation">This simplifies to the linear function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P = 20q - 1000.
+\end{equation*}
+</div>
+<p class="continuation">Here we see that <span class="process-math">\(\$ 1000\)</span> will be spent no matter how many widgets are sold, and we get a net profit of <span class="process-math">\(\$ 20\)</span> for each widget sold.</p>
+<p id="p-636"><dfn class="terminology">Question 5.5</dfn>. <em class="emphasis">A ski shop rents skis for a fixed initial payment of <span class="process-math">\(A\)</span> dollars and a charge of <span class="process-math">\(r\)</span> dollars per day they are used. If a skier pays a total of <span class="process-math">\(A + 6r\)</span> dollars, what is the meaning of the number <span class="process-math">\(6\text{?}\)</span> Explain your answer as completely as possible.</em></p></section><section class="subsection" id="forms-of-linear-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.1.2</span> <span class="title">Forms of Linear Functions</span>
+</h3>
+<p id="p-637">The form <span class="process-math">\(y = f(x) = mx + b\)</span> of a linear function is known as <em class="emphasis">slope-intercept form. It is a very useful form. A more general (but non-unique) form is known as</em>point-slope form.**</p>
+<p id="p-638"><dfn class="terminology">Point-Slope Form of a Linear Function</dfn>The linear function of slope <span class="process-math">\(m\)</span> passing through the point <span class="process-math">\((x_0,y_0)\)</span> has the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = f(x) = y_0 + m(x-x_0).
+\end{equation*}
+</div>
+<p id="p-639">In order to understand point-slope form, all you need to do is ask (and answer) the following two questions:</p>
+<ul id="p-640" class="disc">
+<li id="li-278"><p id="p-641">Is <span class="process-math">\(f(x) = y_0 + m(x-x_0)\)</span> the formula for a linear function with slope <span class="process-math">\(m\text{?}\)</span> The answer is yes. All one needs to do is simplify and collect like terms to see that <span class="process-math">\(f(x) = mx + (y_0 - mx_0)\text{.}\)</span> Thus we can say <span class="process-math">\(b = y_0 - mx_0\text{.}\)</span></p></li>
+<li id="li-279"><p id="p-642">Does the graph of <span class="process-math">\(f(x) = y_0 + m(x-x_0)\)</span> pass through the point <span class="process-math">\((x_0,y_0)\text{?}\)</span> Again the answer is yes because <span class="process-math">\(f(x_0) = y_0 + m(x_0-x_0) = y_0\text{.}\)</span></p></li>
+</ul>
+<p id="p-643">The graphical difference between point-slope form and slope-intercept form is that slope-intercept form puts on display the <span class="process-math">\(y\)</span>-intercept, whereas slope-intercept form displays another point on the graph. Equipped with point-slope form, it is somewhat easier to find a formula for a linear function given two points; all you need to do is compute the slope.</p>
+<p id="p-644"><dfn class="terminology">Question 5.6</dfn>. <em class="emphasis">Use point-slope form to find a formula for the linear function whose graph passes through <span class="process-math">\((12,7)\)</span> and <span class="process-math">\((15,89)\text{.}\)</span> Once you have the formula in point slope form, find the <span class="process-math">\(y\)</span>-intercept and write it in slope-intercept form.</em></p>
+<p id="p-645"><dfn class="terminology">Question 5.7</dfn>. <em class="emphasis">The slope-intercept form of the formula for a linear function is actually equal to the point-slope form for a specific point on the graph. What point is that?</em></p>
+<p id="p-646">Since the graphs of linear functions are lines, it makes sense to ask whether the two lines are parallel or perpendicular. To see whether two lines are parallel, they simply must have the same slope. So see whether two lines are perpendicular, consider the following figure:</p>
+<p id="p-647">From this (with triangles added to illustrate slope), we see that the magnitude of the change in <span class="process-math">\(y\)</span> for an associated change in <span class="process-math">\(x\)</span> on one graph is the same as the magnitude of the change in <span class="process-math">\(x\)</span> for an associated change in <span class="process-math">\(y\)</span> on the perpendicular graph. Also, the sign of the slope is opposite. Hence the slope of a line perpendicular to a line of slope <span class="process-math">\(m\)</span> is <span class="process-math">\(-\dfrac{1}{m}\text{.}\)</span></p>
+<p id="p-648"><dfn class="terminology">Question 5.8</dfn>. <em class="emphasis">How can you tell the lines <span class="process-math">\(y = 3x+1\)</span> and <span class="process-math">\(y=3x+17\)</span> never intersect, without doing any algebra?</em></p>
+<p id="p-649"><dfn class="terminology">Question 5.9</dfn>. <em class="emphasis">Do the graphs of <span class="process-math">\(f(x) = 3x+1\)</span> and <span class="process-math">\(g(x) = 25 + 3(x-8)\)</span> intersect? Why or why not?</em></p></section><section class="subsection" id="applications-of-linear-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.1.3</span> <span class="title">Applications of Linear Functions</span>
+</h3>
+<p id="p-650">Linear functions arise in real-world applications involving one variable that changes at a constant rate relative to another. Once the linear function is found, the problems usually boil down to</p>
+<ul id="p-651" class="disc">
+<li id="li-280"><p id="p-652">finding an output for a given input (evaluating),</p></li>
+<li id="li-281"><p id="p-653">finding the input for a given output (solving a simple equations), or</p></li>
+<li id="li-282"><p id="p-654">finding when two linear functions are equal (find when graphs intersect).</p></li>
+</ul>
+<p id="p-655">Each of these problems is actually relatively straightforward from an algebraic point of view, given that you have formulas for your functions. The main difficulty is turning the words of the real world into mathematics.</p>
+<p id="p-656"><dfn class="terminology">Example 5.10</dfn>. As one climbs a mountain, the air temperature decreases by about <span class="process-math">\(3^{\circ}\)</span>F for every <span class="process-math">\(1000\)</span> foot increase in elevation. Suppose the temperature is <span class="process-math">\(60^{\circ}\)</span>F when at an elevation of <span class="process-math">\(2000\)</span> feet above sea level. Suppose we want the answer to the following questions:</p>
+<ol id="p-657" class="decimal">
+<li id="li-283"><p id="p-658">What will the temperature be at an elevation of <span class="process-math">\(14,439\)</span> feet?</p></li>
+<li id="li-284"><p id="p-659">What should the elevation be to be a “crisp” room temperature of <span class="process-math">\(65^{\circ}\)</span>F?</p></li>
+</ol>
+<p id="p-660">: Our first task must be to find a formula for temperature as a function of elevation. To achieve this, we first have to name variables (this can be hard at first). Let <span class="process-math">\(T\)</span> be the temperature, in <span class="process-math">\(^{\circ}\)</span>F, at an elevation <span class="process-math">\(h\)</span> feet above sea level. The problem describes a rate of change of <span class="process-math">\(-3/1000\)</span> in <span class="process-math">\(^{\circ}\)</span>F/ft; this will be the slope of our linear function. This slope can often be seen using the units as the units of slope must be output units divided by input units. The sign is negative because the temperature decreases at this rate as <span class="process-math">\(h\)</span> increases. The problem then describes a point on the graph of this function, <span class="process-math">\((2000,60)\text{.}\)</span> Using point-slope form, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+T = -\frac{3}{1000}(h-2000) + 60.
+\end{equation*}
+</div>
+<p class="continuation">The answer to part (a) is then obtained by substituting <span class="process-math">\(14,493\)</span> for <span class="process-math">\(h\)</span> to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+T = -\frac{3}{1000}(14493-2000) + 60\approx 22.521^{\circ}\mbox{F}.
+\end{equation*}
+</div>
+<p class="continuation">To answer part (b), we need to substitute <span class="process-math">\(65\)</span> for <span class="process-math">\(T\text{,}\)</span> and solve for <span class="process-math">\(h\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+65 &amp; = &amp; -\frac{3}{1000}(h-2000) + 60\\
+&amp; \updownarrow &amp; \\
+h &amp; = &amp; \frac{1000}{3}\approx 333.33\ \mbox{ft}.\end{aligned}
+\end{equation*}
+</div>
+<p id="p-661"><dfn class="terminology">Question 5.11</dfn>. <em class="emphasis">Why is the formula for <span class="process-math">\(T\)</span> as a function of <span class="process-math">\(h\)</span> given in the last example more useful to a climber whose elevation is near 2000 feet than to one near sea level? What equivalent formula would be more useful to someone near sea level? Explain.</em></p>
+<p id="p-662"><dfn class="terminology">Question 5.12</dfn>. <em class="emphasis">The ideal gas law says that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+PV = nR(T-z),
+\end{equation*}
+</div>where <span class="process-math">\(P\)</span> is the pressure of a gas, <span class="process-math">\(V\)</span> is its volume, <span class="process-math">\(T\)</span> is its temperature in <span class="process-math">\(^{\circ}\)</span>C, <span class="process-math">\(n\)</span> is the number of moles of gas, <span class="process-math">\(R\)</span> is a constant, and <span class="process-math">\(z\)</span> is the value of absolute zero in <span class="process-math">\(^{\circ}\)</span>C. If <span class="process-math">\(n\)</span> and <span class="process-math">\(V\)</span> are constant, like when the gas is in a sealed container, we have a linear function for <span class="process-math">\(P\)</span> as a function of <span class="process-math">\(T\text{:}\)</span><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P = \frac{nR}{V} (T-z).
+\end{equation*}
+</div></em></p>
+<ol id="p-663" class="decimal">
+<li id="li-285"><p id="p-664"><em class="emphasis">What is the slope of the graph of <span class="process-math">\(P\)</span> (just in symbols, not the number)?</em></p></li>
+<li id="li-286"><p id="p-665"><em class="emphasis">Suppose we measure <span class="process-math">\(P\)</span> to be <span class="process-math">\(3.5\)</span> when <span class="process-math">\(T = 70\text{,}\)</span> and <span class="process-math">\(3.602\)</span> when <span class="process-math">\(T = 80\text{.}\)</span> Find the slope of the graph of <span class="process-math">\(P\)</span> from this data.</em></p></li>
+<li id="li-287"><p id="p-666"><em class="emphasis">Use the data and the value of the slope from part (b) to give an approximate value of <span class="process-math">\(z\text{.}\)</span> Is this close to the value you may have learned in a science class (or can look up)?</em></p></li>
+</ol></section></section></div></main>
+</div>
+</body>
+</html>

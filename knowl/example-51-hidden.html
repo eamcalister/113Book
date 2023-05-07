@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="example example-like"><div class="para">Suppose a quantity <span class="process-math">\(Q= f(t)\)</span> grows exponentially as a function of <span class="process-math">\(t\text{,}\)</span> where <span class="process-math">\(Q = 3\)</span> when <span class="process-math">\(t=2\text{,}\)</span> and <span class="process-math">\(Q\)</span> increases by <span class="process-math">\(25\%\)</span> every time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{.}\)</span> Find a formula for <span class="process-math">\(Q\)</span> in terms of <span class="process-math">\(t\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Since <span class="process-math">\(Q\)</span> grows by <span class="process-math">\(25\%\)</span> each time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{,}\)</span> each time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{,}\)</span> the initial quantity will be multiplied by <span class="process-math">\(1.25\text{.}\)</span> This means the exponent of <span class="process-math">\(1.25\)</span> should be divided by <span class="process-math">\(20\text{.}\)</span> Since the output is <span class="process-math">\(3\)</span> when <span class="process-math">\(t=2\text{,}\)</span> we can put <span class="process-math">\(t-2\)</span> as the numerator in the exponent. Thus we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q = f(t) = 3(1.25)^{\frac{t-2}{20}}.
+\end{equation*}
+</div>
+<div class="para">Now we may ask ourselves whether this behaves in the specified way:</div>
+</div> <div class="para logical"><ul class="disc">
+<li><div class="para">Is <span class="process-math">\(f(2) = 3\text{?}\)</span> Yes, <span class="process-math">\(f(2) = 3(1.25)^{\frac{2-2}{20}} = 3\text{.}\)</span>
+</div></li>
+<li><div class="para logical">
+<div class="para">Is <span class="process-math">\(Q\)</span> multiplied by an additional factor of <span class="process-math">\(1.25\)</span> each time <span class="process-math">\(t\)</span> increases by <span class="process-math">\(20\text{.}\)</span> Yes, observe</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+f(2) &amp; = &amp; 3\\
+f(22) &amp; = &amp; 3(1.25)^{\frac{20}{20}} = 3(1.25)\\
+f(42) &amp; = &amp; 3(1.25)^{\frac{40}{20}} = 3(1.25)^2\\
+\ &amp; \vdots &amp; \\\end{aligned}
+\end{equation*}
+</div>
+</div></li>
+</ul></div> <div class="para">Thus we can see that this function behaves in the specified way.</div></article></body>
+</html>

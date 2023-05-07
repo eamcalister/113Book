@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-08T16:49:58-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Addition, Subtraction, and Multiplication</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="arithmetic-with-numbers.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="arithmetic-with-numbers.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="division-and-fractions.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="arithmetic-with-numbers.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="arithmetic-with-numbers.html" title="Up">Up</a><a class="next-button button toolbar-item" href="division-and-fractions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Contributors</a></li>
+<li><a href="preface-our-goals.html" data-scroll="preface-our-goals" class="internal">Our Goals</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3" class="internal">Features of the Text</a></li>
+<li><a href="preface-for-students.html" data-scroll="preface-for-students" class="internal">Students!  Read this!</a></li>
+<li><a href="preface-for-instructors.html" data-scroll="preface-for-instructors" class="internal">Instructors!  Read this!</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="arithmetic-with-numbers.html" data-scroll="arithmetic-with-numbers" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a><ul>
+<li><a href="addition-subtraction-and-multiplication.html" data-scroll="addition-subtraction-and-multiplication" class="active">Addition, Subtraction, and Multiplication</a></li>
+<li><a href="division-and-fractions.html" data-scroll="division-and-fractions" class="internal">Division and Fractions</a></li>
+<li><a href="exponents.html" data-scroll="exponents" class="internal">Exponents</a></li>
+<li><a href="parentheses-and-order-of-operations.html" data-scroll="parentheses-and-order-of-operations" class="internal">Parentheses and Order of Operations</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="addition-subtraction-and-multiplication"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Addition, Subtraction, and Multiplication</span>
+</h2>
+<article class="objectives goal-like" id="objectives-1"><h3 class="heading"><span class="type">Section Objectives</span></h3>
+<ul class="disc">
+<li id="li-18"><p id="p-41">Visualize real numbers as positions on the line with zero and one as basic objects.</p></li>
+<li id="li-19"><p id="p-42">Understand and visualize addition, subtraction, and multiplication as geometric actions.</p></li>
+<li id="li-20"><p id="p-43">Introduce the notion of an inverse operation as the undoing of a given operation.</p></li>
+</ul></article><p id="p-44">Algebra is ultimately about applying some procedure, or sequence of procedures, to numbers, and asking which numbers yield some desired result. To this end, we need to conceptualize numbers more dynamically than just as a way of counting objects. In the following table we present a way to conceptualize numbers as positions on a line, and the basic operations as movements.</p>
+<figure class="table table-like" id="table1_1_1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span>Addition, Subtraction, and Multiplication as Motions on the Line</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t2 lines">Positions and Sizes</td>
+<td class="c m b2 r0 l0 t2 lines"></td>
+<td class="l m b2 r2 l0 t2 lines">Numbers</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Location on a Line</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines">Number</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Center of the Line</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Basic Unit to the Right of Center</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Position to the Right of Center</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines">Positive Number</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Position to the Left of Center</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines">Negative Number</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Given a position <span class="process-math">\(a\text{,}\)</span> the position that is the same distance from the center<br>but on the opposite side of the center</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(-a\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Starting from   <span class="process-math">\(a\text{,}\)</span> and moving  the same distance and direction<br>that <span class="process-math">\(b\)</span> is from the center</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(a+b\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Starting from <span class="process-math">\(a\text{,}\)</span> and moving the same distance but opposite direction<br>that <span class="process-math">\(b\)</span> is from the center</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(a-b\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">When <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are positive, the number whose size relative to <span class="process-math">\(b\)</span> is the<br>same as the size of <span class="process-math">\(a\)</span> relative to <span class="process-math">\(1\)</span>
+</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(ab\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(a\)</span> is to the right of <span class="process-math">\(b\)</span>
+</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(b\lt a\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(a\)</span> is to the left of <span class="process-math">\(b\)</span>
+</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longrightarrow\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(a\lt b\)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r2 l0 t0 lines"></td>
+</tr>
+</table></div></figure><p id="p-45">In order to understand what’s going on here, it will be useful to draw pictures. This is a picture of the real number line that you’ve probably seen before:</p>
+<figure class="figure figure-like" id="fig1_1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.2<span class="period">.</span></span><span class="space"> </span>The basic number line.</figcaption></figure><p id="p-46">This picture does not show us much, so let’s show one with some generic numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> where both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are positive with <span class="process-math">\(b&gt;a\text{.}\)</span></p>
+<figure class="figure figure-like" id="fig1_2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-3.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.3<span class="period">.</span></span><span class="space"> </span>A number line with two  positive numbers labeled.</figcaption></figure><p id="p-47">To represent <span class="process-math">\(a+b\)</span> and <span class="process-math">\(a-b\)</span> geometrically, we first measure out the distance <span class="process-math">\(b\)</span> is to the right of zero, then move that far to the right of <span class="process-math">\(a\)</span> for <span class="process-math">\(a+b\)</span> and move that distance to the left of <span class="process-math">\(a\)</span> for <span class="process-math">\(a-b\text{.}\)</span></p>
+<figure class="figure figure-like" id="fig_addsubt1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-4.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.4<span class="period">.</span></span><span class="space"> </span>Addition and subtraction of positive numbers.</figcaption></figure><p id="p-48">In Figure <a href="" class="xref" data-knowl="./knowl/fig_addsubt1.html" title="Figure 1.1.4">1.1.4</a>, since <span class="process-math">\(b&gt;a\)</span> we end up to the left of zero when we subtract <span class="process-math">\(b\)</span> from <span class="process-math">\(a\text{.}\)</span> This should make sense; if you take away more than you started out with, you end up with a deficit.</p>
+<article class="question example-like" id="question-1"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-1"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-1"><article class="question example-like"><ol id="p-49" class="decimal">
+<li id="li-21"><p id="p-50"><em class="emphasis">With <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> in the same positions as in Figure <a href="" class="xref" data-knowl="./knowl/fig_addsubt1.html" title="Figure 1.1.4">1.1.4</a>, draw <span class="process-math">\(b+a\text{.}\)</span> What do you notice about <span class="process-math">\(a+b\)</span> in relation to <span class="process-math">\(b+a\text{?}\)</span></em></p></li>
+<li id="li-22"><p id="p-51"><em class="emphasis">Now draw <span class="process-math">\(b-a\text{.}\)</span> Is the same relationship true for <span class="process-math">\(a-b\)</span> and <span class="process-math">\(b-a\text{?}\)</span></em></p></li>
+</ol></article></div>
+<article class="question example-like" id="question-2"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-2"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-2"><article class="question example-like"><p id="p-52"><em class="emphasis">Draw a number line with numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> on it, but this time make <span class="process-math">\(a\)</span> positive and <span class="process-math">\(b\)</span> negative. Is <span class="process-math">\(a+b\)</span> to the right or left of <span class="process-math">\(a\text{?}\)</span> Explain.</em></p></article></div>
+<article class="question example-like" id="question-3"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-3"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-3"><article class="question example-like"><p id="p-53"><em class="emphasis">Explain why <span class="process-math">\(0+a = a\)</span> for any number <span class="process-math">\(a\text{.}\)</span></em></p></article></div>
+<p id="p-54">One of the important ideas in algebra is that of <dfn class="terminology">inverse operations</dfn>. We can see this idea by looking at subtraction. Observe that if <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are numbers, then <span class="process-math">\(a+b-b = a\text{.}\)</span> This may seem obvious, especially if you draw it on the number line. However, the concept is very important; <em class="emphasis">the inverse of adding <span class="process-math">\(b\)</span> to <span class="process-math">\(a\)</span> is subtracting <span class="process-math">\(b\text{.}\)</span> We may say that subtracting “undoes” addition or that when you add and subtract the same quantity they “cancel each other”.</em></p>
+<p id="p-55">Multiplication of real numbers is more difficult to visualize geometrically than addition or subtraction. The fundamental idea is that of stretching, with <span class="process-math">\(1\)</span> being a basic unit of measurement. Let’s start with <span class="process-math">\(b\)</span> being any positive number and <span class="process-math">\(a=1.5\text{.}\)</span> We see that <span class="process-math">\(1\)</span> fits into <span class="process-math">\(a\)</span> exactly <span class="process-math">\(1.5\)</span> times. Since <span class="process-math">\(ab\)</span> must have the same size relative to <span class="process-math">\(b\)</span> as <span class="process-math">\(a\)</span> does to <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(b\)</span> must fit into <span class="process-math">\(ab\)</span> exactly <span class="process-math">\(1.5\)</span> times. Think of this as stretching <span class="process-math">\(b\)</span> by a factor of <span class="process-math">\(a\)</span> when <span class="process-math">\(a&gt;1\text{.}\)</span></p>
+<figure class="figure figure-like" id="fig_mult1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-5.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.8<span class="period">.</span></span><span class="space"> </span>The same number of copies of <span class="process-math">\(b\)</span> are in <span class="process-math">\(ab\)</span> as copies of <span class="process-math">\(1\)</span> are in <span class="process-math">\(a\text{.}\)</span></figcaption></figure><p id="p-56">If <span class="process-math">\(a\)</span> is smaller than <span class="process-math">\(1\text{,}\)</span> for example <span class="process-math">\(a = 0.75\text{,}\)</span> then you don’t get a whole copy of <span class="process-math">\(1\)</span> in <span class="process-math">\(a\text{,}\)</span> you only have <span class="process-math">\(75\%\)</span> of one. This means you will only get <span class="process-math">\(75\%\)</span> of a copy of <span class="process-math">\(b\)</span> in <span class="process-math">\(ab\text{.}\)</span> In the case when <span class="process-math">\(a&lt;1\text{,}\)</span> we think of <span class="process-math">\(ab\)</span> as a squeeze of <span class="process-math">\(b\)</span> by a factor of <span class="process-math">\(a\text{.}\)</span></p>
+<p id="p-57">An important case happens when one of the two numbers is a whole number (an integer). If <span class="process-math">\(n\)</span> is a positive integer, then <span class="process-math">\(1\)</span> fits into <span class="process-math">\(n\)</span> exactly <span class="process-math">\(n\)</span> times. Hence, if <span class="process-math">\(b\)</span> is positive, <span class="process-math">\(b\)</span> will fit into <span class="process-math">\(nb\)</span> exactly <span class="process-math">\(n\)</span> times. Let’s view this on the number line with <span class="process-math">\(n=5\text{:}\)</span></p>
+<p id="p-58">The key observation here is that when you add <span class="process-math">\(b\)</span> to itself <span class="process-math">\(n\)</span> times you get the same result as when you multiply <span class="process-math">\(b\)</span> by <span class="process-math">\(n\text{.}\)</span> In other words, <em class="emphasis">multiplication by a positive integer represents repeated addition. This is where the terminology “<span class="process-math">\(n\)</span> times <span class="process-math">\(b\)</span>” comes from; we’re taking <span class="process-math">\(b\)</span> and adding it to itself <span class="process-math">\(n\)</span> times.</em></p>
+<p id="p-59">Note that this gives us two <em class="emphasis">different</em> ways of thinking of multiplication; it represents repeated addition when the multiplier is positive and whole, but represents stretching or compression in other cases. We use the mental representation that makes the most sense for a given problem. This may seem confusing at first, but being aware of having several representations of mathematical objects, and knowing when you use them, is a key skill in truly understanding mathematics.</p>
+<article class="question example-like" id="question-4"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-4"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-4"><article class="question example-like"><p id="p-60"><em class="emphasis">Explain why <span class="process-math">\(0a = 0\)</span> and <span class="process-math">\(1a=a\)</span> for any number <span class="process-math">\(a\text{.}\)</span></em></p></article></div>
+<article class="question example-like" id="question-5"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-5"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-5"><article class="question example-like"><p id="p-61"><em class="emphasis">If <span class="process-math">\(a\)</span> is a number between <span class="process-math">\(3\)</span> and <span class="process-math">\(4\text{,}\)</span> what is the possible range of values for</em></p>
+<ol id="p-62" class="decimal">
+<li id="li-23"><p id="p-63"><em class="emphasis"><span class="process-math">\(a+12\text{?}\)</span></em></p></li>
+<li id="li-24"><p id="p-64"><em class="emphasis"><span class="process-math">\(12a\text{?}\)</span></em></p></li>
+<li id="li-25"><p id="p-65"><em class="emphasis"><span class="process-math">\(12a+4\ \text{?}\)</span> Note: Only <span class="process-math">\(a\)</span> is multiplied by <span class="process-math">\(12\text{,}\)</span> the <span class="process-math">\(4\)</span> is not multiplied by <span class="process-math">\(12\text{.}\)</span></em></p></li>
+</ol></article></div>
+<article class="question example-like" id="question-6"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-6"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-6"><article class="question example-like"><p id="p-66"><em class="emphasis">Explain why <span class="process-math">\(ab\)</span> is equal to <span class="process-math">\(ba\)</span> when <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are both positive integers.</em></p></article></div>
+<p id="p-67">Lastly, let’s think about multiplying with negative numbers. Recall from Table <a href="" class="xref" data-knowl="./knowl/table1_1_1.html" title="Table 1.1.1: Addition, Subtraction, and Multiplication as Motions on the Line">1.1.1</a> that if <span class="process-math">\(a\)</span> is a number, then <span class="process-math">\(-a\)</span> is the same distance from <span class="process-math">\(0\text{,}\)</span> but on the other side of <span class="process-math">\(0\)</span> from <span class="process-math">\(a\text{.}\)</span> Multiplying negative numbers extends this idea. When <span class="process-math">\(b\)</span> is any number and <span class="process-math">\(a\)</span> is a negative number, then <span class="process-math">\(ab\)</span> is the number with the same squeeze or stretch factor applied to <span class="process-math">\(b\)</span> as if <span class="process-math">\(a\)</span> were positive, but flipped to the other side of zero. For instance if <span class="process-math">\(b\)</span> is positive, then <span class="process-math">\(-0.75b\)</span> is the number <span class="process-math">\(75\%\)</span> as far from <span class="process-math">\(0\)</span> as <span class="process-math">\(b\text{,}\)</span> flipped to the other side of <span class="process-math">\(0\)</span> from <span class="process-math">\(b\text{.}\)</span></p>
+<article class="question example-like" id="question-7"><a href="" data-knowl="" class="id-ref question-knowl original" data-refid="hk-question-7"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-question-7"><article class="question example-like"><p id="p-68"><em class="emphasis">Explain why the following statements are true using pictures and words to represent the numbers involved:</em></p>
+<ol id="p-69" class="decimal">
+<li id="li-26"><p id="p-70"><em class="emphasis">A positive number times a positive number is positive.</em></p></li>
+<li id="li-27"><p id="p-71"><em class="emphasis">A positive number times a negative number is negative.</em></p></li>
+<li id="li-28"><p id="p-72"><em class="emphasis">A negative number times a negative number is positive.</em></p></li>
+<li id="li-29"><p id="p-73"><em class="emphasis">If <span class="process-math">\(a\)</span> is any number, multiplying <span class="process-math">\(a\)</span> by <span class="process-math">\(-1\)</span> is the same as <span class="process-math">\(-a\text{.}\)</span></em></p></li>
+</ol></article></div></section></div></main>
+</div>
+</body>
+</html>

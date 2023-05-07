@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-11T17:45:40-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Inputs and Outputs</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Understanding Algebra for Calculus">
+<meta property="book:author" content="Erich McAlister">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Understanding Algebra for Calculus</span></a></h1>
+<p class="byline">Erich McAlister</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="introduction-to-functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="introduction-to-functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="graphs-of-functions.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="introduction-to-functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="introduction-to-functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="graphs-of-functions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Contributors</a></li>
+<li><a href="preface-our-goals.html" data-scroll="preface-our-goals" class="internal">Our Goals</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3" class="internal">Features of the Text</a></li>
+<li><a href="preface-for-students.html" data-scroll="preface-for-students" class="internal">Students!  Read this!</a></li>
+<li><a href="preface-for-instructors.html" data-scroll="preface-for-instructors" class="internal">Instructors!  Read this!</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="arithmetic-with-numbers.html" data-scroll="arithmetic-with-numbers" class="internal"><span class="codenumber">1</span> <span class="title">Arithmetic with Numbers</span></a><ul>
+<li><a href="Sec1_1_add_subt_mult.html" data-scroll="Sec1_1_add_subt_mult" class="internal">Addition, Subtraction, and Multiplication</a></li>
+<li><a href="Sec1_2_division_and_fractions.html" data-scroll="Sec1_2_division_and_fractions" class="internal">Division and Fractions</a></li>
+<li><a href="Sec1_3_exponents.html" data-scroll="Sec1_3_exponents" class="internal">Exponents</a></li>
+<li><a href="Sec1_4_order_of_operations.html" data-scroll="Sec1_4_order_of_operations" class="internal">Parentheses and Order of Operations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-expressions.html" data-scroll="algebraic-expressions" class="internal"><span class="codenumber">2</span> <span class="title">Algebraic Expressions</span></a><ul>
+<li><a href="Sec2_1_examples-of-alg-expressions.html" data-scroll="Sec2_1_examples-of-alg-expressions" class="internal">Examples of Algebraic Expressions</a></li>
+<li><a href="Sec2_2_equivalent-expressions.html" data-scroll="Sec2_2_equivalent-expressions" class="internal">Equivalent Algebraic Expressions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="algebraic-equations.html" data-scroll="algebraic-equations" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Equations</span></a><ul>
+<li><a href="Sec3_1_equations-and-solutions.html" data-scroll="Sec3_1_equations-and-solutions" class="internal">Equations and their Solutions</a></li>
+<li><a href="Sec3_2_systems-of-equations.html" data-scroll="Sec3_2_systems-of-equations" class="internal">Solving Systems of Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="introduction-to-functions.html" data-scroll="introduction-to-functions" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Functions</span></a><ul>
+<li><a href="inputs-and-outputs.html" data-scroll="inputs-and-outputs" class="active">Inputs and Outputs</a></li>
+<li><a href="graphs-of-functions.html" data-scroll="graphs-of-functions" class="internal">Graphs of Functions</a></li>
+<li><a href="composite-and-inverse-functions.html" data-scroll="composite-and-inverse-functions" class="internal">Composite and Inverse Functions</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="inputs-and-outputs"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Inputs and Outputs</span>
+</h2>
+<p id="p-456">A <em class="emphasis">function is a relation between two variables <span class="process-math">\(x\)</span> (the input) and <span class="process-math">\(y\)</span> (the output) where each input is related to only one output (the variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are generic, different letters may be used). Because this is an algebra course, most such relations will be defined with an algebraic equation with <span class="process-math">\(y\)</span> alone on one side and some algebraic expression involving <span class="process-math">\(x\)</span> on the other. We use letters to name functions; often <span class="process-math">\(f\)</span> is used if we are giving a name to a function when <span class="process-math">\(f\)</span> isn’t already in use elsewhere in the problem. If <span class="process-math">\(y\)</span> is related to <span class="process-math">\(x\)</span> by the function <span class="process-math">\(f\)</span> we write<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = f(x).
+\end{equation*}
+</div>We read this as “<span class="process-math">\(y\)</span> equals <span class="process-math">\(f\)</span> of <span class="process-math">\(x\)</span>”.</em></p>
+<section class="subsection" id="evaluating-functions-and-using-function-notation"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.1</span> <span class="title">Evaluating Functions and Using Function Notation</span>
+</h3>
+<p id="p-457">For most people, more needs to be said about how to think about functions and use function notation than was given above. Suppose we are given the definition of a function as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = f(x) = \mbox{some expression involving } x.
+\end{equation*}
+</div>
+<p class="continuation">From a symbolic point of view we may think of <span class="process-math">\(f\)</span> as a certain type of shorthand.</p>
+<p id="p-458">Function Notation as Shorthand</p>
+<p id="p-459"><em class="emphasis">Function: <span class="process-math">\(y = f(x)\)</span></em> <span class="process-math">\(\longrightarrow\)</span> <em class="emphasis"><span class="process-math">\(f(x)\)</span> is a compact way of writing what may be a complicated algebraic expression.</em></p>
+<p id="p-460"><dfn class="terminology">Remark:</dfn> Not all functions are defined using algebraic expressions. For instance trigonometric functions can only be defined using geometry and/or concepts from calculus. However, for our purposes right now, this is an effective way to think about functions.</p>
+<p id="p-461">Because we can think of algebraic expressions as processes carried out on variables, we may also think of a function as a process performed on <span class="process-math">\(x\text{,}\)</span> resulting in <span class="process-math">\(y\text{.}\)</span> Equipped with the idea of equivalence of algebraic expressions, we may think of a function <span class="process-math">\(f\)</span> in a more conceptual way. We can think of <span class="process-math">\(f\)</span> as a factory that takes <span class="process-math">\(x\)</span>’s as raw ingredients and makes specific <span class="process-math">\(y\)</span>’s. Equivalence of the defining expressions for <span class="process-math">\(f\)</span> can be thought of as rearranging the factory, but ultimately leaving the product being produced unchanged.</p>
+<p id="p-462">Function as “<span class="process-math">\(y\)</span> factory”</p>
+<p id="p-463"><em class="emphasis">Function: <span class="process-math">\(y = f(x)\)</span></em> <span class="process-math">\(\longrightarrow\)</span> <em class="emphasis"><span class="process-math">\(f\)</span> is the set of all processes that result in the same outputs (<span class="process-math">\(y\)</span>’s) as the expression <span class="process-math">\(f(x)\text{.}\)</span> In other words, any expression that is equivalent to <span class="process-math">\(f(x)\)</span> defines the same function, so we say it is also <span class="process-math">\(f(x)\text{.}\)</span></em></p>
+<p id="p-464">In applications, we usually think of the input as a variable we control and the output as one that results from a process. For this reason we call the input the <em class="emphasis">independent variable and the output the</em>dependent variable.**</p>
+<p id="p-465">Given a function, you evaluate by plugging in the input for <span class="process-math">\(x\text{.}\)</span> The result is the value of <span class="process-math">\(y\)</span> corresponding to that <span class="process-math">\(x\)</span>-value.</p>
+<p id="p-466"><dfn class="terminology">Example 4.1</dfn>. Define the function <span class="process-math">\(f\)</span> by <span class="process-math">\(y = f(x) = 3x^2-1\text{.}\)</span> Evaluate the following:</p>
+<ol id="p-467" class="decimal">
+<li id="li-197"><p id="p-468"><span class="process-math">\(\displaystyle f(2)\)</span></p></li>
+<li id="li-198"><p id="p-469"><span class="process-math">\(\displaystyle f(x+1)\)</span></p></li>
+<li id="li-199"><p id="p-470"><span class="process-math">\(\displaystyle 2f(x) -1\)</span></p></li>
+</ol>
+<p id="p-471"></p>
+<ol id="p-472" class="decimal">
+<li id="li-200"><p id="p-473">The function <span class="process-math">\(f(x)\)</span> tells us to take any input <span class="process-math">\(x\)</span> and do the following: square the input <span class="process-math">\(x\text{;}\)</span> then multiply by <span class="process-math">\(3\text{;}\)</span> then subtract <span class="process-math">\(1\text{.}\)</span> If <span class="process-math">\(x=2\text{,}\)</span> we will get: <span class="process-math">\(2^2 = 4\text{;}\)</span> then multiply by <span class="process-math">\(3\)</span> to get <span class="process-math">\(12\text{;}\)</span> then subtract <span class="process-math">\(1\)</span> to get <span class="process-math">\(11\text{.}\)</span> So <span class="process-math">\(f(2) = 3\cdot 2^2 -1 = 11\text{.}\)</span> The output of <span class="process-math">\(f\)</span> when <span class="process-math">\(x=2\)</span> is <span class="process-math">\(y = 11\text{.}\)</span></p></li>
+<li id="li-201">
+<p id="p-474">This time, we think of <span class="process-math">\(x+1\)</span> as our input, a quantity that must be evaluated before <span class="process-math">\(f\)</span> is applied, so we enclose it in parentheses in the evaluation. Then we apply the steps and simplify by expanding and collecting like terms.</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+f(x+1) &amp; = &amp; 3(x+1)^2 - 1\\
+&amp; = &amp; 3(x^2+2x+1) - 1   \phantom{ww} \textup{ square } (x+1) \\
+&amp; = &amp; 3x^2+6x +3 - 1   \phantom{www} \textup{ multiply by  } 3 \\
+&amp; = &amp; 3x^2+6x + 2.   \phantom{wwwww} \textup{ subtract } 1 \\\end{aligned}
+\end{equation*}
+</div>
+<p class="continuation">Note that <span class="process-math">\(f(x+1)\)</span> is not the same function as <span class="process-math">\(f(x)\text{;}\)</span> for any <span class="process-math">\(x\)</span>-value, <span class="process-math">\(f(x+1)\)</span> says that we add <span class="process-math">\(1\)</span> to <span class="process-math">\(x\)</span> and then apply all the steps of <span class="process-math">\(f\text{.}\)</span> This can be used to define another function, say <span class="process-math">\(y = g(x) = f(x+1)\text{.}\)</span></p>
+</li>
+<li id="li-202">
+<p id="p-475">In this part we first apply <span class="process-math">\(f\)</span> to <span class="process-math">\(x\text{,}\)</span> and then do two additional steps: multiply by <span class="process-math">\(2\)</span> and then subtract <span class="process-math">\(1\text{.}\)</span> Here we think of <span class="process-math">\(f(x)\)</span> as being enclosed in parentheses:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+2f(x) - 1 &amp; = &amp; 2(3x^2-1) -1   \phantom{ww} \textup{ apply  } f \textup{ to } x \\
+&amp; = &amp; 6x^2-2-1   \phantom{wwww} \textup{ multiply by  } 2 \\ 
+&amp; = &amp; 6x^2-3.   \phantom{wwwwww} \textup{ subtract   } 1\\\end{aligned}
+\end{equation*}
+</div>
+</li>
+</ol>
+<p id="p-476"><dfn class="terminology">Question 4.2</dfn>. <em class="emphasis">Let <span class="process-math">\(f(x) = \frac12 x^2\text{.}\)</span> Find simplified expressions for each of the following, and describe the steps they represent.</em></p>
+<ol id="p-477" class="decimal">
+<li id="li-203"><p id="p-478"><em class="emphasis"><span class="process-math">\(f(3x+2)\)</span></em></p></li>
+<li id="li-204"><p id="p-479"><em class="emphasis"><span class="process-math">\(3f(x) + 2\)</span></em></p></li>
+</ol>
+<p id="p-480"><dfn class="terminology">Question 4.3</dfn>. <em class="emphasis">Let <span class="process-math">\(f(x) = x^2-4x+5\)</span> and <span class="process-math">\(g(x) = x^2+1\text{.}\)</span> Define another function <span class="process-math">\(h(x)\)</span> by saying <span class="process-math">\(h(x) = g(x-2)\text{.}\)</span> Use algebra to show that <span class="process-math">\(h(x)\)</span> is actually the same function as <span class="process-math">\(f(x)\text{.}\)</span></em></p>
+<p id="p-481"><dfn class="terminology">Domain</dfn> One important question about any given function is, "What are its allowable inputs?" Using the factory analogy, what raw ingredients can that factory work with? This set of numbers is called the <em class="emphasis">domain of the function. One of the primary goals of Calculus is to investigate how functions behave at inputs “at the boundary” of the domain. In order to determine the domain of a function, it is good to read through it as a sequence of procedures, then decide if anything is not allowed at any point in that process. Those values of <span class="process-math">\(x\)</span> that force us into an operation that is not allowed with normal arithmetic are the values of <span class="process-math">\(x\)</span> that are  in the domain. For functions defined algebraically, the main things that are not allowed are:</em></p>
+<ul id="p-482" class="disc">
+<li id="li-205"><p id="p-483">division by zero, and</p></li>
+<li id="li-206"><p id="p-484">even roots of negative numbers.</p></li>
+</ul>
+<p id="p-485"><dfn class="terminology">Example 4.4</dfn>. Suppose we have the function <span class="process-math">\(f(x) = \sqrt{x-2}\text{.}\)</span> We want to find the domain. We see that there is a square root, and so we cannot put a negative value under the square root sign; thus <span class="process-math">\(x-2\)</span> must be nonnegative. Set <span class="process-math">\(x-2 \geq 0\text{,}\)</span> we can solve this to find <span class="process-math">\(x \geq 2\text{.}\)</span> Thus the domain is <span class="process-math">\([2, \infty)\text{.}\)</span></p>
+<p id="p-486"><dfn class="terminology">Example 4.5</dfn>. Suppose we wish to find the domain of</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = \frac{\sqrt{x^2-1}}{2x+3}.
+\end{equation*}
+</div>
+<p class="continuation">This function has two main parts:</p>
+<ol id="p-487" class="decimal">
+<li id="li-207"><p id="p-488">Takes the square root of <span class="process-math">\(x^2-1\text{,}\)</span> then</p></li>
+<li id="li-208"><p id="p-489">Divide <dfn class="terminology">Part 1</dfn> by <span class="process-math">\(2x+3\text{.}\)</span></p></li>
+</ol>
+<p id="p-490">We can look at each part separately to determine the domain. For <dfn class="terminology">Part 1</dfn>, we can certainly square any <span class="process-math">\(x\text{,}\)</span> and subtract <span class="process-math">\(1\text{.}\)</span> It is the square root that will be a problem. We need to have <span class="process-math">\(x^2-1 \geq 0\text{.}\)</span> If <span class="process-math">\(x\)</span> is between <span class="process-math">\(-1\)</span> and <span class="process-math">\(1\text{,}\)</span> then <span class="process-math">\(x^2\)</span> is less than <span class="process-math">\(1\text{,}\)</span> so <span class="process-math">\(x^2-1\)</span> is negative. So <span class="process-math">\(-1&lt;x&lt;1\)</span> must be excluded from the domain since these values would force us to take the square root of a negative number. For <dfn class="terminology">Part 2</dfn>, we are not allowed to divide by zero. We will find where <span class="process-math">\(2x+3\)</span> is zero and exclude it: <span class="process-math">\(x=-\frac{3}{2}\text{.}\)</span> Thus the domain is all <span class="process-math">\(x\)</span> with <span class="process-math">\(x\leq -1\)</span> or <span class="process-math">\(x\geq 1\text{,}\)</span> except for <span class="process-math">\(x=-\frac{3}{2}\text{.}\)</span> In interval notation, this would be written as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\left(-\infty,-\frac{3}{2}\right)\bigcup \left(-\frac{3}{2},-1\right] \bigcup \left[1,\infty\right).
+\end{equation*}
+</div>
+<p id="p-491"><dfn class="terminology">Question 4.6</dfn>. <em class="emphasis">Find the domain of each of the following functions. <dfn class="terminology">Carefully explain how you found it, as illustrated in the previous example.</dfn> Express your answer using inequalities and words, as well as using interval notation (see refresher after the question if you don’t remember interval notation).</em></p>
+<ol id="p-492" class="decimal">
+<li id="li-209"><p id="p-493"><em class="emphasis"><span class="process-math">\(f(x) = \sqrt{3x + 1-x}\)</span></em></p></li>
+<li id="li-210"><p id="p-494"><em class="emphasis"><span class="process-math">\(g(x) = \dfrac{1}{x^2-x-6}\)</span></em></p></li>
+<li id="li-211"><p id="p-495"><em class="emphasis"><span class="process-math">\(h(x) = \dfrac{1}{\sqrt{x^2-x-6}}\)</span></em></p></li>
+<li id="li-212"><p id="p-496"><em class="emphasis"><span class="process-math">\(k(x) = f(x+1)\text{,}\)</span> where <span class="process-math">\(f\)</span> is the function defined in part (a)</em></p></li>
+</ol>
+<p id="p-497"><dfn class="terminology">Interval Notation</dfn></p>
+<figure class="table table-like" id="table-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">Verbal Description</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Inequalities Describing <span class="process-math">\(x\)</span>
+</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Interval(s) Containing <span class="process-math">\(x\)</span>
+</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span> is greater than <span class="process-math">\(a\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x&gt;a\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((a,\infty)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span> is greater than or equal to <span class="process-math">\(a\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x\geq a\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([a,\infty)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span> is less than <span class="process-math">\(a\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x&lt;a\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((-\infty,a)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span> is less than or equal to <span class="process-math">\(a\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x\leq a\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((-\infty,a]\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span> is greater than (or equal to) <span class="process-math">\(a\)</span> and less than (or equal to) <span class="process-math">\(b\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a&lt;(\leq) x &lt;(\leq) b\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\((a,b),(a,b],[a,b)\text{,}\)</span> or <span class="process-math">\([a,b]\text{,}\)</span> depending on strictness</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span> is greater than (or equal to) <span class="process-math">\(b\)</span> or less than (or equal to) <span class="process-math">\(a\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x&gt;(\geq) b\)</span> or <span class="process-math">\(x&lt;(\leq) a\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\((-\infty,a)\bigcup(b,\infty)\text{,}\)</span> with <span class="process-math">\((,),[,\)</span> or <span class="process-math">\(]\)</span> used at <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> depending on strictness.</td>
+</tr>
+</table></div></figure><p id="p-498"><dfn class="terminology">Question 4.7</dfn>. <em class="emphasis">Sometimes the context of a problem restricts the domain of a function when the algebra may not. For instance, suppose a farmer wants to fence off a rectangular area with three sides of a rectangle, using a river as the fourth side. He has 100 yards of fence to use. Let <span class="process-math">\(x\)</span> denote the length of the side of the rectangle parallel to the river. Find a formula for the function <span class="process-math">\(A(x)\)</span> that gives the area as a function of <span class="process-math">\(x\text{.}\)</span> What is the domain of this function based on the formula and what is it based on the context of the problem?</em></p></section><section class="subsection" id="solving-equations-involving-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.2</span> <span class="title">Solving Equations Involving Functions</span>
+</h3>
+<p id="p-499">In solving algebraic equations, perhaps the most straightforward ones to solve are of the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+(\mbox{algebraic expression}) = \mbox{a number},
+\end{equation*}
+</div>
+<p class="continuation">where the algebraic expression on the left represents a process applied to a variable that we reverse to solve. Equipped with the idea of functions, we now can simply think of these in the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = \mbox{a number}.
+\end{equation*}
+</div>
+<p class="continuation">More complicated equations typically have the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = g(x),
+\end{equation*}
+</div>
+<p class="continuation">where <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are different functions. When we think of function notation as shorthand for specified algebraic expressions, solving equations involving functions is not different than solving equations as we have before now.</p>
+<p id="p-500"><dfn class="terminology">Example 4.8</dfn>. Let <span class="process-math">\(f(x) = x^2-3x\)</span> and <span class="process-math">\(g(x) = 2x-4\text{.}\)</span> Let’s solve the following equations;</p>
+<ol id="p-501" class="decimal">
+<li id="li-213"><p id="p-502"><span class="process-math">\(\displaystyle g(x) = 8\)</span></p></li>
+<li id="li-214"><p id="p-503"><span class="process-math">\(\displaystyle f(x) = g(x)\)</span></p></li>
+<li id="li-215"><p id="p-504"><span class="process-math">\(\displaystyle f(x+1) = g(x)\)</span></p></li>
+</ol>
+<p id="p-505"></p>
+<ol id="p-506" class="decimal">
+<li id="li-216">
+<p id="p-507">. For (a) we use the fact that <span class="process-math">\(g(x) = 2x-4\text{,}\)</span> so we get the following:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+2x-4 &amp; = &amp; 8\\
+&amp; \updownarrow &amp;\\
+2x&amp; = &amp; 12\\ 
+&amp; \updownarrow &amp;\\
+x&amp; =&amp; 6.\end{aligned}
+\end{equation*}
+</div>
+</li>
+<li id="li-217">
+<p id="p-508">For (b), we use <span class="process-math">\(f(x) = x^2-3x\)</span> and <span class="process-math">\(g(x) = 2x+4\text{.}\)</span> Then we factor to solve:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+x^2 - 3x  &amp; = &amp; 2x-4\\
+&amp; \updownarrow &amp; \\
+x^2-5x+4 &amp; = &amp; 0\\
+&amp; \updownarrow &amp; \\
+(x-4)(x-1) &amp; = &amp; 0\\
+&amp; \updownarrow &amp; \\
+x=4 &amp; \mbox{or} &amp; x=1.\end{aligned}
+\end{equation*}
+</div>
+</li>
+<li id="li-218">
+<p id="p-509">For (c), we need to figure out what <span class="process-math">\(f(x+1)\)</span> means. Now <span class="process-math">\(f\)</span> is the function that takes any input, squares it, then multiplies a new copy of it by three, then finds the difference. In this case, our input is the quantity <span class="process-math">\((x+1)\text{.}\)</span> So we to is substitute <span class="process-math">\((x+1)\)</span> each time we see and <span class="process-math">\(x\)</span> in the expression for <span class="process-math">\(f(x)\)</span> and set it equal to <span class="process-math">\(g(x)\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}
+(x+1)^2 - 3(x+1) &amp; = &amp; 2x-4\\ 
+&amp; \updownarrow &amp; \mbox{expand, group like terms on one side}\\
+x^2-3x+2 &amp; = &amp; 0\\
+&amp; \updownarrow &amp; \\
+(x-1)(x-2) &amp; = &amp; 0\\
+&amp; \updownarrow &amp; \\
+x=1 &amp; \mbox{or} &amp; x=2.\end{aligned}
+\end{equation*}
+</div>
+</li>
+</ol>
+<p id="p-510"></p>
+<p id="p-511"><dfn class="terminology">Question 4.9</dfn>. <em class="emphasis">Let <span class="process-math">\(f(x) = x-1\text{,}\)</span> and <span class="process-math">\(g(x) = (x-3)^2\text{.}\)</span> Solve each of the following equations:</em></p>
+<ol id="p-512" class="decimal">
+<li id="li-219"><p id="p-513"><em class="emphasis"><span class="process-math">\(f(x) = 2\)</span></em></p></li>
+<li id="li-220"><p id="p-514"><em class="emphasis"><span class="process-math">\(f(x) = 2x-6\)</span></em></p></li>
+<li id="li-221"><p id="p-515"><em class="emphasis"><span class="process-math">\(f(x) = g(x)\)</span></em></p></li>
+</ol>
+<p id="p-516"><dfn class="terminology">Question 4.10</dfn>. <em class="emphasis">Let <span class="process-math">\(f(x) = \dfrac{x}{3x+7}\text{.}\)</span> Solve the following equations, if possible. If it is impossible to solve, explain why.</em></p>
+<ol id="p-517" class="decimal">
+<li id="li-222"><p id="p-518"><em class="emphasis"><span class="process-math">\(f(x) = 1\)</span></em></p></li>
+<li id="li-223"><p id="p-519"><em class="emphasis"><span class="process-math">\(f(x) = x\)</span></em></p></li>
+<li id="li-224"><p id="p-520"><em class="emphasis"><span class="process-math">\(f(x) = \frac{1}{3}\)</span></em></p></li>
+</ol>
+<p id="p-521">As seen in part (c) of the last question, some numbers may not appear as outputs of a given function. The set of numbers that <em class="emphasis">do appear as outputs of a given function is called the</em>range of the function. Another way to say what the range of <span class="process-math">\(f\)</span> is, is that it is the set of <span class="process-math">\(y\)</span> such that there is a solution to the equation <span class="process-math">\(y=f(x)\text{.}\)</span> Finding the range of a function is generally a more difficult task than finding its domain; being able to find the maximum and/or minimum possible outputs of a given function is one of the main achievements of Calculus. However, in many cases we can determine the range of an algebraically defined function by some combination of the following:**</p>
+<ul id="p-522" class="disc">
+<li id="li-225"><p id="p-523">Determine what arithmetic operations the function applies to its input, and think about what the possible results could be.</p></li>
+<li id="li-226"><p id="p-524">Solve the general equation <span class="process-math">\(y=f(x)\)</span> for <span class="process-math">\(x\text{,}\)</span> if possible. The result will be an expression involving <span class="process-math">\(y\text{;}\)</span> the range of <span class="process-math">\(f\)</span> will be the <span class="process-math">\(y\)</span>-values that can be substituted into this expression.</p></li>
+</ul>
+<p id="p-525"><dfn class="terminology">Example 4.11</dfn>. Find the range of the following functions:</p>
+<ol id="p-526" class="decimal">
+<li id="li-227"><p id="p-527"><span class="process-math">\(\displaystyle f(x) = \dfrac{x}{3x+7}\)</span></p></li>
+<li id="li-228"><p id="p-528"><span class="process-math">\(\displaystyle g(x) = -(x-3)^2 + 4\)</span></p></li>
+<li id="li-229"><p id="p-529"><span class="process-math">\(\displaystyle h(x) = 2x+1\)</span></p></li>
+<li id="li-230"><p id="p-530"><span class="process-math">\(\displaystyle k(x) = 2x+1 + \sqrt{x-1}\)</span></p></li>
+</ol>
+<p id="p-531"></p>
+<ol id="p-532" class="decimal">
+<li id="li-231">
+<p id="p-533">This is the function from Question 4.10. If we solve the equation</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = \frac{x}{3x+7}
+\end{equation*}
+</div>
+<p class="continuation">for <span class="process-math">\(x\text{,}\)</span> we have the general solution</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x = \frac{7y}{1-3y}.
+\end{equation*}
+</div>
+<p class="continuation">The only <span class="process-math">\(y\)</span>-value that cannot be substituted into this is <span class="process-math">\(y=\frac{1}{3}\text{.}\)</span> Thus, the range of <span class="process-math">\(f\)</span> is all real numbers except <span class="process-math">\(\frac{1}{3}\text{.}\)</span> Using inequalities, we would write <span class="process-math">\(y&lt;\frac{1}{3}\)</span> or <span class="process-math">\(y&gt;\frac{1}{3}\text{.}\)</span> In interval notation, it would be written as <span class="process-math">\(\left(-\infty,\frac{1}{3}\right)\bigcup\left(\frac{1}{3},\infty\right)\text{.}\)</span></p>
+<p id="p-534"><dfn class="terminology">Remark:</dfn> For problems involving domain and range, using inequalities to describe the domain and range may be preferable to interval notation. This is because inequalities make explicit which variables are elements of the domain (the input variable) and the range (the output variable).</p>
+</li>
+<li id="li-232"><p id="p-535">For this problem, we can use our understanding of the defining expression to find the range. The function <span class="process-math">\(g\)</span> takes <span class="process-math">\(x\)</span> and subtracts three from it, squares the result, multiplies that by <span class="process-math">\(-1\text{,}\)</span> and finally adds four. Noting that squares are never negative, <span class="process-math">\(-(x-3)^2\)</span> will never be positive. This means no positive number is ever added to four. A little thought shows that any number less than or equal to four is an output of this function. So the range is <span class="process-math">\(y\leq 4\text{.}\)</span></p></li>
+<li id="li-233"><p id="p-536">Algebraically solving <span class="process-math">\(y=h(x)\)</span> for <span class="process-math">\(x\)</span> yields <span class="process-math">\(x = \frac{y-1}{2}\text{.}\)</span> No values of <span class="process-math">\(y\)</span> make the right-hand side of this equation undefined, so the range is <span class="process-math">\(-\infty &lt; y &lt; \infty\text{.}\)</span></p></li>
+<li id="li-234"><p id="p-537">For this problem, we must note the domain of the function before determining the range. Because of the inclusion of the <span class="process-math">\(\sqrt{x-1}\)</span> term, the domain of <span class="process-math">\(k\)</span> is <span class="process-math">\(x\geq 1\text{.}\)</span> Possible outputs of <span class="process-math">\(2x+1\)</span> over this domain are all numbers greater than or equal to three. Putting this together with the possible outputs of the expression <span class="process-math">\(\sqrt{x-1}\text{,}\)</span> we see the range of <span class="process-math">\(k\)</span> is <span class="process-math">\(y\geq 3\text{.}\)</span></p></li>
+</ol>
+<p id="p-538"></p>
+<p id="p-539"><dfn class="terminology">Question 4.12</dfn>. <em class="emphasis">Determine the domain and range of the following functions. Explain your answers carefully as in the last example.</em></p>
+<ol id="p-540" class="decimal">
+<li id="li-235"><p id="p-541"><em class="emphasis"><span class="process-math">\(f(x) = -2(x-4)^2+3\)</span></em></p></li>
+<li id="li-236"><p id="p-542"><em class="emphasis"><span class="process-math">\(g(x) = \dfrac{1}{\sqrt{x-4}}\)</span></em></p></li>
+</ol></section></section></div></main>
+</div>
+</body>
+</html>
