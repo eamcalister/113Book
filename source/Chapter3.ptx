@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="algebraic-equations">
+
+<!-- Change title when you have one: -->
+  <title>Algebraic Equations</title>
+  <!-- If the chapter has sections, there may be an introduction -->
+  <!-- before those sections. Note the <p> tags around content.  -->
+
+<introduction>
+		<p>
+			An <em>algebraic equation is a pair of algebraic expressions connected by an equals sign. An equation may or may not be true for specific values of the variables. Variable values that make the equation true are known as </em>solutions to the equation. One of the basic tasks in the study of algebra is to find solutions to algebraic equations. In this chapter we will give an overview of some basic techniques of solving equations. We will give more geometric meaning to these solutions when we introduce the concept of the graph of a function in Chapter 4.**
+		</p>
+
+	<p>Our goals in this chapter are to gain literacy in reading algebraic expressions and understand their manipulation. Specifically, we will</p>
+	<ul>
+	  		<li>
+	  			<p>
+	  			One
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Two
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Three
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Four 
+	  			</p>
+	  		</li>
+			<li>
+				<p>
+				Five
+				</p>
+			</li>
+	  	</ul>
+
+</introduction>
+
+<xi:include  href="./Sec3_1_equations-and-solutions.ptx" />
+<xi:include  href="./Sec3_2_systems-of-equations.ptx" />
+
+</chapter>

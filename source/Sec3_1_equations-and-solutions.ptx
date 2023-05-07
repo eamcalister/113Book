@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec3_1_equations-and-solutions">
+	<title>Equations and their Solutions</title>
+
+	<subsection xml:id="equations-as-questions">
+		<title>Algebraic Equations as Questions</title>
+
+	<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Introduce algebraic equations and the basic idea of solving them.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Solve equations through algebraic manipulations including factoring and clearing denominators.
+	  			</p>
+	  		</li>
+		</ul>
+	</objectives>
+
+		<p>
+			Recall that we may think of an algebraic expression as a symbolic representation of some sequence of operations performed on the variable(s). Thus, an algebraic equation indicates that two different processes carried out on the same variable(s) result in the same output. Clearly, different processes typically lead to different results, so <term>solutions</term> (values of the variable for which both processes yield the same result) to equations are interesting. In our study of algebra, the most fruitful way of thinking of an equation is as a question.
+		</p>
+
+<fact>
+		<title>
+			Algebraic Equation as a Question
+		</title>
+
+		<p>
+			<em>An algebraic equation should be thought of as the following question: What values of the variable(s) give the same results when the processes on the right and left are performed?</em>
+		</p>
+</fact>
+
+<example>
+		<statement>
+			Consider the equation <me>x^2 = x+x.</me> Find as many solutions as you can, and at least one non-solution. 
+		</statement>	
+		<solution>	
+			The left-hand side of the equation multiplies <m>x</m> by itself. The right-hand side adds <m>x</m> to itself. The equation is asking what values of <m>x</m> give same result if you apply these two processes. Upon a little reflection we see that <m>x=2</m> and <m>x=0</m> will work. We may check by substituting these values into the equation and seeing if the resulting numerical equation is true. For <m>x=2</m> we have <me>2^2 = 2+2,</me> which simplifies to <m>4=4</m> (that's true). If we substitute <m>x=0</m> we have <me>0^2 = 0+0,</me> which is also true. On the other hand, if we substitute <m>x=3</m> the resulting numerical equation is <me>3^2 = 3+3.</me> Since <m>9\neq 6</m>, <m>x=3</m> is not a solution to this equation.
+		</solution>
+</example>
+
+		<p>
+			Since there are infinitely many numbers to check, and equations may be complicated, it would be impossible to proceed by just guessing and checking to find solutions. Thus we want a (sort of) systematic approach to solving equations. We also see from the example above that equations may have multiple solutions, so we also want to know if we have found all of the solutions. Usually this gets answered on a case by case basis. We will look at some important examples in this chapter.
+		</p>
+
+<question>
+		<p><ol>
+			<li>
+					<p>
+			<em>Find an equation with <m>x=1</m> and <m>x=-1</m> as its only solutions. Hint: What is a procedure you can do to <m>x=1</m> and <m>x=-1</m> and get the same result?</em>
+		</p>
+			</li>
+
+			<li>
+					<p>
+			<em>For any number <m>a</m>, can you find an equation with <m>x=a</m> and <m>x=-a</m> as its only solutions?</em>
+		</p>
+			</li>
+
+		</ol>
+		</p>
+</question>
+
+	</subsection>
+
+
+
+
+			<subsection xml:id="basic-solving">
+				<title>Basic Solving</title>
+
+				<p>
+					For now, we will consider equations that only involve one variable. Our goal is to find all values of the variable that make the equation true. We ultimately want to get a statement that looks like <me>x=\text{some number}.</me>  Let's consider a relatively easy example.
+				</p>
+
+<example xml:id="shoes_socks_eq1">
+				<statement>
+					Solve the equation <me>\sqrt{2x+9} = 5.</me>
+				</statement>
+
+				<solution>	
+					We don't need to do any steps to get all the <m>x</m>'s on one side, since they are already there; all we need to do is undo the operations on the left. The expression <m>\sqrt{2x+9}</m> means to do the following:
+				
+				<p>
+				<dl>
+				<li><title><em>S1:</em></title>		
+					Multiply <m>x</m> by <m>2</m>.
+				</li>
+
+				<li><title><em>S2:</em></title>	
+					add <m>9</m> to <em>S1</em>.
+				</li>
+
+				<li><title><em>S3:</em></title>	
+					take the square root of <em>S2</em>.
+				</li>
+
+				</dl>
+				</p>
+
+				<p>
+					We can solve the equation by systematically undoing each of these steps, starting with <em>S3</em>. So we do the following:
+				
+
+				<dl>
+					<li><title><em>Undo S3:</em></title>					
+					square both sides to get <me>2x+9 = 25.</me>
+					</li>
+
+					<li><title><em>Undo S2:</em></title>
+					subtract <m>9</m> to get <me>2x = 16.</me>
+					</li>
+
+					<li><title><em>Undo S1:</em></title>
+					divide by <m>2</m> to get <me>x=8.</me>
+					</li>
+
+				</dl>
+				</p>
+
+				<p>
+					(Now you should substitute <m>x=8</m> into the original equation to check that it is a solution.) 
+				</p>
+				</solution>
+</example>
+
+				<p>
+					Notice that after each step in solving an equation you are left with another equation. We hope that the new equation will be easier to solve after each step. The critical thing is that each new equation must be <em>equivalent to the previous one in the sense that it has the same solutions. The manipulations that one can do to equations that result in equivalent equations are as follows:</em>
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					Replace an algebraic expression with an equivalent algebraic expression. This usually takes the form of simplifying the expression one side of the equation in order to make solving easier.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Apply an operation to both sides of the equation. This is what you do when you
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					apply the same operation to both sides of an equation, and
+				</p>
+					</li>
+
+					<li>
+									<p>
+					undo operations in order to solve for the variable.
+				</p>
+					</li>
+
+				</ul></p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					Often, when we apply the same operation to both sides of an equation, this takes the form of <q>moving from one side to the other</q>. What is really happening is undoing an operation on one side and applying the same inverse operation on the other.
+				</p>
+
+				<p>
+					To eliminate confusion, each time we write down an equivalent equation from a given equation, we will use the symbol <m>\longleftrightarrow</m> or <m>\updownarrow</m> to separate them. Interpret this symbol as meaning <q>this equation is true exactly when that equation is true</q>.
+				</p>
+
+<question xml:id="shoes_socks_eq2">
+				<p>
+					 <em>Write down in words exactly was done at each step in the following process to solve <m>\frac{10}{x+5} = 5.</m> 
+
+<md>
+<mrow> \frac{10}{x+5} \amp = \amp 5 </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> \frac{1}{x+5} \amp =  \amp \frac{1}{2} </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> x+5 \amp = \amp 2 </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> x \amp = \amp -3.</mrow>
+</md>
+
+
+</em>
+				</p>
+</question>
+
+<example xml:id="not_shoes_socks_eq3">
+				<statement>
+					We wish to solve the equation <me>\frac{6x+1}{x-5} = 2.</me> 
+				</statement>
+
+<solution>
+In this equation the expression on the left-hand side doesn't represent a process that seems to be easily undone. Our first step is to <q>clear the denominator</q> from the left-hand side. While this seems to initially take us backwards, the resulting equation is more easily solved. 
+					
+<md>
+<mrow> \frac{6x+1}{x-5} \amp = \amp 2</mrow>
+<mrow> \amp \updownarrow \amp (\text{multiply both sides by } x-5)</mrow>
+<mrow> 6x+1 \amp = \amp 2(x-5)</mrow>
+<mrow> \amp \updownarrow \amp (\text{distribute})</mrow>
+<mrow> 6x+1 \amp = \amp 2x-10 </mrow>
+<mrow> \amp \updownarrow \amp (\text{move (subtract) the } 2x)</mrow>
+<mrow> 4x+1 \amp = \amp -10.</mrow>
+</md> 
+
+Now we will pause for a moment. Looking at the left-hand side of this equation now, we can read it as the following sequence of steps spplied to the variable:
+
+<dl>
+<li><title>S1:</title>
+Multiply <m>x</m> by <m>4.</m>
+</li>
+<li><title>S2:</title>
+Add <m>1</m> to <em>S1</em>.
+</li>
+</dl>
+
+The right-hand side of the equation says that the result of this process is <m>-10</m>. Thus we can finish solving the equation as follows:
+<md>
+<mrow> 4x+1 \amp = \amp -10</mrow>
+<mrow> \amp \updownarrow \amp (\text{undo S2 by subtracting } 1)</mrow>
+<mrow> 4x \amp = \amp -11</mrow>
+<mrow> \amp \updownarrow \amp (\text{undo S1 by dividing by } 4)</mrow>
+<mrow> x \amp = \amp \frac{-11}{4}</mrow>
+</md> 
+
+Just to check, we can substitute into the original equation and see that 
+
+<md>
+<mrow> \frac{6\cdot\frac{-11}{4}+1}{\frac{-11}{4}-5}\amp = \amp \frac{\frac{-33}{2}+1}{\frac{-31}{4}}</mrow>
+<mrow> \amp = \amp \frac{\frac{-31}{2}}{\frac{-31}{4}} </mrow>
+<mrow> \amp = \amp \frac{-31}{2}\cdot\frac{4}{-31} </mrow>
+<mrow> \amp = \amp 2\ \checkmark</mrow>
+</md>. 
+Hence <m> x = \frac{-11}{4} </m> <em> is </em> a solution to the original equation.
+</solution>
+				
+</example>
+
+				<p>
+					Clearly, solving equations can be rather complicated. However, a good basic approach to solving equations is the following:
+
+
+<algorithm><title> Solving Algebraic Equations with One Variable</title> 
+<dl>
+<li> <title>Manipulate:</title> Arrange the equation to the form 
+<me> \text{Expression} = \text{number} </me> 
+where the expression is can be broken down into steps that can be undone to get down to <m>x</m>.
+</li>
+
+<li> <title>Undo:</title> Undo the steps (invert the operations) in the expression you got above in the reverse order the expression does them.
+</li>
+</dl>
+</algorithm>
+
+A good exercise right now is to look back at <xref ref="shoes_socks_eq1"/>, <xref ref="shoes_socks_eq2"/>, and <xref ref="not_shoes_socks_eq3"/> to see how this process was carried out in each case. 
+
+</p>					
+				<p>					
+					It would be impossible to write down an example of every solution method for every equation. In fact, there are many equations cannot be solved by any algebraic methods. However, if you just apply the manipulations given above to get equivalent equations, you can solve many of the equations you might encounter. Becoming proficient will require plenty of thoughtful practice.
+				</p>
+
+<question>
+				<p>
+					<em>Solve the following equations for the indicated variable.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>(3x-7)^3 = 8</m>. Solve for <m>x</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>7+2x = 2+3(x+1)</m>. Solve for <m>x</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>1-(x-7) = 2x+4</m>. Solve for <m>x</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>4(t-1)^2 = 16</m>. Solve for <m>t</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac{2p-1}{3-4p} = 8</m>. Solve for <m>p</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac{1}{x} + \frac{2}{x+1} = 0</m>. Solve for <m>x</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac{1}{2x+7} = \frac{3}{x-1}</m>. Solve for <m>x</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>|2x-1| = 5</m>. Solve for <m>x</m>.</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+			</subsection>
+
+			<subsection xml:id="solutions-from-factoring">
+				<title>Solutions from Factoring</title>
+
+				<p>
+					In Chapter 1 we observed that <m>0a=0</m> for any real number <m>a</m>. In this section (and frequently from now on) we will use the following important fact:
+				</p>
+
+<identity>
+				
+					<title>Zero Factors Theorem</title> 
+					<p>
+					If <m>ab=0,\ </m> then either <m>a=0</m> or <m>b=0</m>.
+					</p>
+</identity>
+
+				<p>
+					This is a very powerful fact for solving equations. Using this, if we can break a complicated expression into a product of simpler expressions, then the complicated expression is zero only if one of the simpler expressions is zero. This is the main reason we factor algebraic expressions.
+				</p>
+
+<example>
+				<p>
+					Earlier we solved the equation <me>x^2 = 2x</me> by inspection. Now we can solve it by factoring. Our first step is to put this equation in the form <me>\text{some algebraic expression that can be factored}=0</me> so that we may apply the Zero Factors Theorem after factoring the expression on the left-hand side. We do this by subtracting the <m>2x</m> over to the left-hand side, then proceeding as follows: 
+
+<md>
+<mrow> x^2 \amp = \amp 2x </mrow>
+<mrow> \amp \updownarrow \amp (\text{subtract})</mrow>
+<mrow> x^2-2x \amp = \amp 0 </mrow>
+<mrow> \amp \updownarrow \amp (\mbox{factor}) </mrow>
+<mrow> x(x-2) \amp = \amp 0.</mrow>
+</md> 
+
+Now we use the Zero Factors Theorem; either <m>x=0</m> or <m>x-2 = 0</m>. Hence our solutions are <m>x=0</m> and <m>x=2</m>.
+				</p>
+</example>
+
+				<remark>
+					(Important!) Note that the Zero Factors Theorem only works if the product is equal to zero.
+				</remark>
+
+<question>
+				<p>
+					<em>Solve each of the following equations by factoring:</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>2x^2+5x = 0</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>x^2+5x = 6</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>x^2-4x+3 = 8</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>6x^2-x-1 = 0</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>4x^2+7x+1 = 3</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+				<p>
+					Sometimes it is not obvious that factoring will be helpful to solve an equation. However, after a little manipulation we see that many equations can be solved using factoring as the critical step.
+				</p>
+
+<example>
+				<statement>
+					Solve <me>\frac{2}{x} - \frac{2}{x-3} = 3.</me> 
+				</statement>	
+					
+<solution>					
+It is not obvious that this would lend itself to factoring. All we can do is proceed with manipulations we know are allowed, and hopefully we reach a point where we can solve. 
+
+<md>
+<mrow> \frac{2}{x} - \frac{2}{x-3} \amp = \amp 3</mrow>
+<mrow> \amp \updownarrow \amp (\text{combine fractions on left})</mrow>
+<mrow> \frac{2(x-3)-2x}{x(x-3)} \amp = \amp 3 </mrow>
+<mrow> \amp \updownarrow \amp (\text{simplify numerator on left})</mrow>
+<mrow> \frac{-6}{x(x-3)} \amp = \amp 3 </mrow>
+<mrow> \amp \updownarrow \amp (\text{clear the denominator}) </mrow>
+<mrow> -6 \amp = \amp 3x(x-3) </mrow>
+<mrow> \amp \updownarrow \amp (\text{distribute and rearrange the equation}</mrow>
+<mrow> 3x^2-9x + 6 \amp = \amp 0 </mrow>
+<mrow> \amp \updownarrow \amp (\text{factor})</mrow>
+<mrow> 3(x-1)(x-2) \amp = \amp 0. </mrow>
+</md>
+
+ Now, by the Zero Factors Theorem, we have the solution <m>x=1</m> and <m>x=2</m>. 
+				
+</solution>
+</example>
+
+<question>
+				<p>
+				<em>solve the following equations:</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>x+\frac{1}{x} = 2</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>x^2-x^3+2x = 0</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac{3}{z-2} - \frac{12}{z^2-4} = 1</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+			</subsection>
+	</section>

@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec5_2_quadratic-functions">
+	<title>Quadratic Functions</title>
+
+			<objectives>
+			<ul>
+			<li>
+	  			<p>
+				Introduce quadratic functions in algebraic, graphical, and verbal (applied) form.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+				Know the different algebraic forms of quadratic functions and the meanings of their associated parameters.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Find formulas for quadratic functions from data (both purely numerical and in context) to solve problems.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Solve equations involving quadratic functions in abstract and applied settings.
+				</p>
+	  		</li>
+			</ul>
+			</objectives>
+
+
+			<p>
+				Quadratic functions are probably the simplest non-linear functions to study. The adjective <em>quadratic</em> comes from the Latin word for square, <em>quadratus</em>. This is because the addition of a term involving <m>x^2</m> comes from measuring areas. Thinking of quadratic functions as ones that measure rectangular areas is what allows us to see that quadratic functions can be used to model positions of objects whose acceleration is constant.
+			</p>
+
+
+		<subsection xml:id="intro-to-quadratic-functions">
+				<title>Intro to Quadratic Functions</title>
+			<definition xml:id="quadratic_definition"><idx>quadratic function</idx>
+				<p>
+					A <em>quadratic function is one of the form <m>y = f(x) = ax^2+bx+c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are constants with <m>a\neq 0</m>.</em>
+				</p>
+			</definition>
+
+<example>
+				<statement>
+					Let us consider the simplest possible quadratic function <m>f(x) = x^2</m>. Graph this function and describe its features.
+				</statement>
+
+				<solution>
+				By plotting points, we may construct its graph:
+<figure xml:id="parent_quadratic_graph">
+    <caption>The graph of <m>y=f(x) = x^2</m>.</caption>
+	<image width="75%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=.7,yscale=.5]
+	\draw[thick] [{Latex}-{Latex}] (-4,0) -- (4,0);
+	\draw[thick] [-{Latex}] (0,-4) -- (0,6);
+	\draw [help lines] (-4,-4) grid (4,6);
+	\node[align=center,below] at (4,0){$x$};
+	\node[align=center,left] at (0,6){$y$};
+	\draw [fill] (-2,4) circle [radius=0.1];
+	\draw [fill] (-1,1) circle [radius=0.1];
+	\draw [fill] (0,0) circle [radius=0.1];
+	\draw [fill] (2,4) circle [radius=0.1];
+	\draw [fill] (1,1) circle [radius=0.1];
+	\draw [domain=-2.5:2.5] plot (\x, {\x*\x});
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+
+
+
+				<p>
+					There are several observations we can make about the graph, along with connections to the algebraic expression defining this function.
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					Our first observation is that the outputs of <m>f(x) = x^2</m> are never negative. This is simply due to the fact that the square of any real number is either zero (only when <m>x=0</m>) or positive. Not all quadratic functions have non-negative graphs, but the fact that <m>x^2</m> is never negative will be very useful in analyzing other quadratic functions.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Another observation is that the graph is symmetric about the <m>y</m>-axis. This is because for any real number <m>a</m>, <m>(-a)^2 = a^2</m>. Thus the output is the same at <m>x=a</m> as it is for <m>x=-a</m>. We will see that the graph of every quadratic function has some vertical axis of symmetry.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					We see that the graph is <term>concave-up</term><idx>concave-up</idx>. That is, as you move from left to right, the slope between points on the graph is increasing. More precisely, using the input-output table
+				</p>
+				
+
+
+
+				<table>
+					<caption></caption>
+					<tabular>
+					<row header="yes">
+						<cell halign="center"><m>x</m></cell>
+						<cell halign="right"><m>-3</m></cell>
+						<cell halign="right"><m>-2</m></cell>
+						<cell halign="right"><m>-1</m></cell>
+						<cell halign="right"><m>0</m></cell>
+						<cell halign="right"><m>1</m></cell>
+						<cell halign="right"><m>2</m></cell>
+						<cell halign="right"><m>3</m></cell>
+					</row>
+					<row class="odd">
+						<cell halign="center"><m>f(x)</m></cell>
+						<cell halign="right"><m>9</m></cell>
+						<cell halign="right"><m>4</m></cell>
+						<cell halign="right"><m>1</m></cell>
+						<cell halign="right"><m>0</m></cell>
+						<cell halign="right"><m>1</m></cell>
+						<cell halign="right"><m>4</m></cell>
+						<cell halign="right"><m>9</m></cell>
+					</row>
+					</tabular>
+				</table>
+
+				<p>
+					we may construct an table of slopes:
+				</p>
+
+				<table>
+					<caption></caption>
+					<tabular>
+					<row header="yes">
+						<cell halign="left">Points on the Graph</cell>
+						<cell halign="left"><m>(-3,9)</m> and <m>(-2,4)</m></cell>
+						<cell halign="left"><m>(-2,4)</m> and <m>(-1,1)</m></cell>
+						<cell halign="left"><m>(-1,1)</m> and <m>(0,0)</m></cell>
+						<cell halign="left"><m>(0,0)</m> and <m>(1,1)</m></cell>
+						<cell halign="left"><m>(1,1)</m> and <m>(2,4)</m></cell>
+						<cell halign="left"><m>(2,4)</m> and <m>(3,9)</m></cell>
+					</row>
+					<row class="odd">
+						<cell halign="left">Slope of Connecting Line</cell>
+						<cell halign="left"><m>-5</m></cell>
+						<cell halign="left"><m>-3</m></cell>
+						<cell halign="left"><m>-1</m></cell>
+						<cell halign="left"><m>1</m></cell>
+						<cell halign="left"><m>3</m></cell>
+						<cell halign="left"><m>5</m></cell>
+					</row>
+					</tabular>
+				</table>
+
+				<p>
+					We see that the slope is increasing. Observing that the slope actually increases by a constant amount for constant steps from left to right is the key to applications of quadratic functions. If the slope were decreasing as we moved from left to right, we would say the graph is <term>concave down.</term>
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					These are the observations we made about <m>f(x) = x^2</m>, which has parameters <m>a=1</m>, <m>b=0</m>, and <m>c=0</m>. Throughout this section we will see how the parameters <m>a</m>, <m>b</m>, and <m>c</m> affect the placement of the maximum or minimum output, the axis of symmetry, and the concavity of the graph of a quadratic function, as well as their practical implications.
+				</p>
+				</solution>
+</example>
+
+<question>
+				<p>
+					<em>In the definition of a quadratic function (<xref ref="quadratic_definition"/>), it was noted that the parameter <m>a</m> could not be zero. Why would we insist that <m>a</m> be nonzero to define a quadratic function? What do we call a function of the form <m>f(x) = ax^2+bx+c</m> when <m>a=0</m>?</em>
+				</p>
+</question>
+
+				<p>
+					Just as the parameters <m>m</m> and <m>b</m> have graphical interpretations for the family of linear functions, the parameters <m>a</m>, <m>b</m>, and <m>c</m> have graphical interpretations for quadratic functions. However, because the family of quadratic functions involves three parameters instead of two, they are more complicated. Before reading the next paragraph, use the interactive graph below to experiment by changing the parameters <m>a</m>, <m>b</m>, and <m>c</m> to see how they change the graph and describe the changes in your own words. Then click to expose the next paragraph, which describes them in the words of a math book.
+				</p>
+				
+				<interactive desmos="wchicf1qqn" width="60%" aspect="2:3" />
+				
+
+
+				<p>
+				<answer><title>Meanings of <m>a</m>, <m>b</m>, and <m>c</m> in Quadratic Functions</title>
+					First let's deal with the parameter <m>c</m>. This one is simple; it's just the output of <m>f(x) = ax^2+bx+c</m> when <m>x=0</m>. Thus the <m>y</m>-intercept of <m>f(x) = ax^2+bx+c</m> is at <m>(0,c)</m>. The second easiest parameter to understand is <m>a</m>. The sign of <m>a</m> tells use whether the parabola (the graph of a quadratic function is called a <term>parabola</term><idx>parabola</idx>) is concave up or concave down. To see this, notice that if <m>a</m> is positive, then for very large values of <m>x</m>, <m>ax^2</m> is positive and larger in absolute value than both <m>bx</m> and <m>c</m>. This means that the parabola must be opening up. Likewise, if <m>a</m> is negative, then the parabola is concave down. The parameter <m>b</m> is more complicated, and we will leave its exact meaning when we discuss the vertex of a parabola.
+				</answer>
+				</p>
+
+				<p>
+					One of the primary skills associated to any family of functions is solving equations of the form <me>f(x) = \text{a number}.</me> When <m>f</m> is a quadratic function, we have already discussed one of the most important solution methods: factoring. To solve an equation of the form <me>ax^2+bx+c = d,</me> one must just subtract <m>d</m> from both sides, factor, and use the zero factors principle to solve. The <m>x</m>-intercepts, or zeros, of a quadratic function can be seen when we write it in <em>factored form: <me>f(x) = ax^2 + bx+c = a(x-r)(x-s).</me> In this form <m>a</m> is the same as it is in the expanded form, while <m>r</m> and <m>s</m> are the zeros. Notice that not all quadratic functions can be put into factored form as they may not have any real zeros.</em>
+				</p>
+
+<question>
+				<p>
+					<em>When <m>f(x) = ax^2 + bx + c = a(x-r)(x-s)</m>, we can use the factors <m>(x-r)</m> and <m>(x-s)</m> to really see what the graph of <m>f</m> looks like, and how <m>a</m> influences it. In what follows, suppose <m>r</m> and <m>s</m> are generic real numbers with <m>r&lt;s</m>.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em>On a single set of axes graph the lines <m>y = x-r</m> and <m>y = x-s</m>. Use this graph to find the values of <m>x</m> where <m>x-r</m> and <m>x-s</m> have the same sign and where they have different signs. Use this do decide when <m>y=(x-r)(x-s)</m> is positive and when it is negative.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Use your answers from part (a) to sketch a graph of <m>y = (x-r)(x-s)</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Using your graph from part (b) and reasoning from part (a), explain why the sign of the parameter <m>a</m> tells you whether the graph of <m>f(x) = a(x-r)(x-s)</m> opens up or down.</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+		</subsection>
+
+		<subsection xml:id="forms-of-quadratic-functions">
+				<title>Forms of Quadratic Functions</title>
+
+				<p>
+					There are three very useful forms of a quadratic function <m>f(x) = ax^2+bx+c</m>. The first two are familiar at this point:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					Standard Form: <m>f(x) = ax^2+bx+c</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Factored Form: <m>f(x) = a(x-r)(x-s)</m>.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					The third form is new, and is the quadratic analogue of the point-slope form of a linear function.
+				</p>
+
+<definition><title>Vertex Form of a Quadratic Function</title>
+				<p>
+					Every quadratic function may be put in the form <me>y = f(x) = a(x-h)^2+k.</me> The axis of symmetry of the graph is <m>x=h</m>, and the maximum (if <m>a&lt;0</m>) or minimum (if <m>a&gt;0</m>) output of <m>f</m> is <m>f(h) = k</m>.
+				</p>
+</definition>
+
+				<p>
+					The usefulness of vertex form is well illustrated in the following example:
+				</p>
+
+<example>
+<statement>
+				<p>
+					Let <m>f(x) = -2(x-3)^2 + 5</m>. We wish to
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					Find the zeros of <m>f</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Find the maximum or minimum possible output of <m>f</m>. This will tell you the range of <m>f</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Sketch the graph of <m>f</m>.
+				</p>
+					</li>
+
+				</ol></p>
+</statement>
+<solution>
+
+				<p><ol>
+					<li>
+									<p>
+					Based on prior experience, one may be tempted to expand to standard form and factor. Doing this we obtain the equation <me>-2x^2+12x-13 = 0.</me> However, when we try to factor, we see there aren’t any ways to do it using only integers. On further reflection, we can see that the vertex form makes it easier to solve, because it breaks a quadratic function into a straightforward process applied to the variable <m>x</m>. From the vertex form we can say this function does the following:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					subtract <m>3</m> from <m>x</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					square <term>S1</term>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					multiply <term>S2</term> by <m>-2</m>, and finally
+				</p>
+					</li>
+
+					<li>
+									<p>
+					adds <m>5</m> to <term>S3</term>.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					The reverse process applied to any output of <m>f</m> will be
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					subtract <m>5</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					and divide by <m>-2</m>, then
+				</p>
+					</li>
+
+					<li>
+									<p>
+					take the positive or negative square root, and finally
+				</p>
+					</li>
+
+					<li>
+									<p>
+					add <m>3</m>.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					Applying this to zero, we get the zeros <me>x = 3\pm \sqrt{\frac{5}{2}}.</me> We can apply this to any proposed output, as long as the thing we need to take the square root of is not negative. <term>Note:</term> This reverse process does not actually describe an inverse function; the step where the reverse process allows for multiple possibilities prevents this process from defining a function, which must only yield one input for each output.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					A slight rearrangement of the vertex form to look like <m>f(x) = 5-2(x-3)^2</m> makes it clear that the range is all <m>y\leq 5</m>. Because <m>(x-3)^2</m> is never negative, some quantity is always being subtracted from <m>5</m>. The maximum possible output is also clearly <m>5</m>, and it occurs when <m>x=3</m>. We can also see this from an algebraic expression for the reverse process applied to <m>y</m>: <me>x = 3\pm\sqrt{\frac{y-5}{-2}}.</me> The possible values of <m>y</m> in this expression are those that make <m>\frac{y-5}{-2}</m> non-negative. Thus we must have <m>y\leq 5</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Plotting the vertex, the <m>y</m>-intercept, and a few points to the left and right of the vertex gives us a good graph:
+				</p>
+<figure xml:id="vertex_ex_graph">
+    <caption>The graph of <m>y=f(x) = -2(x-3)^2 + 5</m>.</caption>
+	<image width="75%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=.7,yscale=.7]
+	\draw[thick] [{Latex}-{Latex}] (-1,0) -- (7,0);
+	\draw[thick] [-{Latex}] (0,-4) -- (0,6);
+	\foreach \x in {0,1,2,3,4,5,6}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\foreach \y in {-3,-2,-1,1,2,3,4,5}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw [help lines] (-1,-4) grid (7,6);
+	\node[align=center,below] at (7,0){$x$};
+	\node[align=center,left] at (0,6){$y$};
+	\draw [fill] (3,5) circle [radius=0.1];
+	\draw [fill] (1,-3) circle [radius=0.1];
+	\draw [fill] (5,-3) circle [radius=0.1];
+	\draw [fill] (2,3) circle [radius=0.1];
+	\draw [fill] (4,3) circle [radius=0.1];
+	\draw [{Latex}-{Latex}] [domain=.9:5.1] plot (\x, {-2*\x*\x+12*\x-13});
+	\end{tikzpicture}  
+	</latex-image>
+	</image>
+</figure>
+
+					</li>
+
+
+				</ol></p>
+
+				<p>
+					
+				</p>
+</solution>
+</example>
+
+<question>
+				<p>
+					<em>In the last example, we found the zeros of <m>f(x) = -2(x-3)^2+5</m> to be <m>x=3\pm \sqrt{\frac{5}{2}}</m>. The zeros are also supposed to appear in the factored form as <m>r</m> and <m>s</m>. Expand the right-hand side of the equation and collect like terms to verify that <me>-2x^2+12x-13 = -2\left(x-\left(3-\sqrt{\frac{5}{2}}\right)\right)\left(x-\left(3+\sqrt{\frac{5}{2}}\right)\right).</me></em>
+				</p>
+</question>
+
+				<p>
+					One must now ask how we find the vertex form of a given quadratic function, also sometimes called <em>completing the square</em>.There are a number of ways to do this. The way we present is very flexible, and may be modified to find useful formulas for many other types of functions. To find the vertex form, simply write down the proposed form with <m>h</m> and <m>k</m>, then expand and collect like terms to get a system of equations that you may solve for <m>h</m> and <m>k</m>. The following example illustrates this procedure nicely.
+				</p>
+
+<computation>
+To find the vertex form, proceed as follows:
+<ol>
+<li> Write down standard form equal to the proposed form with <m>h</m> and <m>k</m>. 
+<me> ax^2 + bx+c  = a(x-h)^2 + k </me>
+</li>
+<li> Expand and collect like terms on the right-hand side.
+<me> ax^2+ bx + c = ax^2 - 2ha x + ah^2 + k </me>
+</li>
+<li> Match coefficients of powers of <m>x</m> on the left- and right-hand sides to obtain a system of equations to solve for <m>h</m> and <m>k</m>. 
+<me> {\color{red}a} x^2+ {\color{blue}b}x + {\color{green}c} = {\color{red}a}x^2 {\color{blue}- 2ha }x + {\color{green}ah^2 + k} </me>
+</li> 
+The following example illustrates this procedure nicely.
+</ol>
+</computation>
+
+The following example illustrates this procedure nicely; once you have numbers in for \(a\), \(b\), and \(c\), it's easier than the above procedure may seem.
+
+<example>
+				<statement>
+					Find the vertex form of <m>f(x) = 5x^2-15x+11</m> and use it to find the zeros of <m>f</m>.
+				</statement>
+					
+					
+<solution>					
+					We see <m>a=5</m>, thus we must have 
+<md>
+<mrow> 5x^2-15x+11 \amp = \amp 5(x-h)^2+k</mrow>
+<mrow> \amp = \amp 5(x^2-2hx+h^2) + k</mrow>
+<mrow> \amp = \amp 5x^2 - 10hx + 5h^2 + k.</mrow>
+</md> 
+Now we match like terms on either side of the equation to obtain the system of equations 
+<md>
+<mrow>-10h \amp = \amp -15\ \text{(from the } x \text{ terms)}</mrow>
+<mrow>5h^2 + k\amp = \amp 11\ \text{(from the constant terms)}</mrow>
+</md> 
+
+Solving this system we have <m>h = \frac{3}{2}</m> and <m>k = -\frac{1}{4}</m>. As in the last example, we can solve <me>5\left(x-\frac{3}{2}\right)^2 - \frac{1}{4} = 0</me> in a straightforward way to get <m>x = \frac{3}{2}\pm\frac{1}{\sqrt{20}} = \frac{3}{2}\pm\frac{1}{2\sqrt{5}}</m>.
+</solution>
+</example>
+
+				<p>
+					One may find the vertex form of a quadratic in full generality in terms of the parameters <m>a</m>, <m>b</m>, and <m>c</m> (<em><em>Do not attempt to memorize this!</em></em>): <me>ax^2+bx+c = a\left(x-\left(\frac{-b}{2a}\right)\right)^2 + \frac{4ac-b^2}{4a^2}.</me> It is easier to just set up and solve the system of equations, which you'll get faster at with practice, than to commit this to memory. The only reason to write down the general formula for vertex form is to derive the <em>quadratic formula for the zeros of a quadratic (<em>You should probably memorize this.</em>): <me>x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}.</me> Observe that <m>-\frac{b}{2a}</m> is where the vertex is, which is halfway between the zeros. This may be seen as the graphical meaning of the parameter <m>b</m>.</em>
+				</p>
+
+<question>
+				<p>
+					<em>Use the quadratic formula to find the zeros of the function in the above example, <m>f(x) = 5x^2-15x+11</m>. Simplify your answer to show that it is equivalent to the answer given in the example.</em>
+				</p>
+</question>
+
+<question>
+				<p>
+					<em>Find the vertex form of the following quadratic functions. Use it to find the maximum or minimum output as well as the zeros of each function, if the zeros exist. Simplify your answers as much as possible, but do not use a calculator.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>f(x) = 2x^2-4x+1</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>g(x) = 2x^2-4x+5</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>h(x) = 13x^2 -8x + 1</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+				<p>
+					The following is a summary of the forms of a quadratic function and what their parameters mean.
+				</p>
+
+<principle>
+				
+					<title>Forms of a Quadratic Function, <m>f</m>, and What the Parameters Mean</title>
+				
+
+				<p><ul>
+					<li>
+									<p>
+					Standard form: <m>f(x) = ax^2+bx+c</m>
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					The <m>y</m>-intercept of the graph of <m>f</m> is at <m>(0,c)</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					If <m>a&gt;0</m>, the graph is an upward opening parabola.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					If <m>a&lt;0</m>, the graph is a downward opening parabola.
+				</p>
+					</li>
+
+				</ul></p>
+					</li>
+
+					<li>
+									<p>
+					Factored form: <m>f(x) = a(x-r)(x-s)</m>.
+				</p>
+
+				<p><ul>
+					<li>
+					The <m>x</m>-intercepts (if they exist) of the graph of <m>f</m> are at <m>(r,0)</m> and <m>(s,0)</m>.
+					</li>
+
+				</ul></p>
+					</li>
+
+					<li>
+									<p>
+					Vertex Form: <m>f(x) = a(x-h)^2 + k</m>
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					The vertex of the graph of <m>f</m> is at <m>(h,k)</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					This form is extremely useful for solving equations when factoring proves difficult.
+				</p>
+					</li>
+
+				</ul></p>
+					</li>
+
+				</ul></p>
+</principle>
+
+<example>
+<statement>
+				<p>
+					Find a formula for the quadratic function whose graph is shown below:
+				</p>
+
+<figure xml:id="vertex_find_formula_ex">
+	<image width="70%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=.7,yscale=.7]
+	\draw[thick] [{Latex}-{Latex}] (-1,0) -- (6,0);
+	\draw[thick] [-{Latex}] (0,-1) -- (0,6);
+	\foreach \x in {1,2,3,4,5,6}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\foreach \y in {1,2,3,4,5}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw [help lines] (-1,-1) grid (6,6);
+	\node[align=center,below] at (6,0){$x$};
+	\node[align=center,left] at (0,6){$y$};
+	\draw [{Latex}-{Latex}] [domain=0:6] plot (\x, {-0.5*(\x-3)^2+3});
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+</statement>
+<solution>
+				<p>
+					We see that the vertex is at <m>(3,3)</m>, hence the quadratic function may be written in the form <me>f(x) = a(x-3)^2 + 3.</me> Using the fact that <m>(1,1)</m> is also on the graph, we have the equation <me>a(1-3)^2 + 3 = 1.</me> Solving, we get <m>a= -\frac{1}{2}</m>, thus <m>f(x) = -\frac{1}{2}(x-3)^2 + 3</m>.
+				</p>
+</solution>
+</example>
+
+<question>
+				<p>
+					<em>Find a formula for a quadratic function whose graph has <m>x</m>-intercepts at <m>(1,0)</m> and <m>(5,0)</m>, and <m>y</m>-intercept at <m>(0,7)</m>.</em>
+				</p>
+</question>
+
+		</subsection>
+
+		<subsection xml:id="applications-of-quadratic-functions">
+				<title>Applications of Quadratic Functions</title>
+
+				<p>
+					The first application we can see for quadratic functions comes from their original purpose, finding areas. Now that we know how to find the vertex form of a quadratic function, we can find the maximum or minimum possible values of functions that describe area.
+				</p>
+
+<example xml:id="fence_problem">
+				<statement>
+					Suppose a farmer wants to fence off a rectangular area with three sides of a rectangle, using a river as the fourth side. She has 100 yards of fence to use and wishes to enclose as large an area as possible. Let <m>x</m> denote the length of the side of the rectangle parallel to the river and <m>w</m> be the length of the side perpendicular to the rive, both measured in yards. 
+				</statement>	
+					
+				<solution>The first thing we should do is draw a well labeled picture of the situation.
+
+<figure xml:id="fence_diagram">
+	<image width="70%">
+	<latex-image>
+	\begin{tikzpicture}
+	\draw[thick] [{Latex}-{Latex}] (-3,0) -- (3,0);
+	\draw[thick] [-] (-1.5,-2) -- (1.5,-2);
+	\draw[thick] [-] (-1.5,-2) -- (-1.5,0);
+	\draw[thick] [-] (1.5,-2) -- (1.5,0);
+	\draw [fill=gray] (-1.5,-2) rectangle (1.5,0);
+	\node[align=center,above] at (0,0){river};
+	\node[align=center,left] at (-1.5,-1){$w$};
+	\node[align=center,right] at (1.5,-1){$w$};
+	\node[align=center,below] at (0,-2){$x$};
+	\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+
+
+
+					Since she has <m>100</m> yards of fence to use, we have the relation <me>x+2w = 100.</me> The area is given by <m>A = xw</m>. To obtain the area as a function of <m>x</m>, we substitute <m>w=\frac{100-x}{2}</m> (from the constraint) for <m>w</m> to get <me>A(x) = x\left(\frac{100-x}{2}\right) = -\frac{x^2}{2}+50x.</me> When we find the vertex form of this function we find <m>h=50</m> and <m>-\frac{h^2}{2} + k = 0</m>, hence <m>k = 1250</m>. Thus <me>A(x) = -\frac{1}{2}(x-50)^2 + 1250.</me> This means the maximum area is <m>1,250</m> yd<m>{^2}</m>, which occurs when <m>x=50</m> and <m>w = 25</m>. 
+				</solution>
+</example>
+
+<question>
+				<p>
+					<em>How much fence would the farmer in the last problem need if she wanted the maximum possible enclosed area to be <m>2000</m> yd<m>^2</m>?</em>
+				</p>
+	<hint>
+	Let <m>L</m> be the total amount of fencing used, in yards, and use the vertex form. Notice that if the amount enclosed is to be <m>2000</m> yd<m>^2</m>, then we must have <m>k = 2000</m>. A careful read of the solution in the example tells us that <m>h = \frac{L}{2}</m>. This and knowing <m>k</m> will allow you to solve for <m>L</m>.
+	</hint>
+</question>
+
+				<p>
+					One of the most important applications of quadratic functions comes as a prelude to really doing differential Calculus. The application is modeling the motion of objects with constant acceleration. It was Galileo Galilei who reasoned that all massive objects objects accelerate at the same constant rate when dropped, no matter what the mass is (neglecting air resistance). What we would like to do is construct a function that gives the height of a dropped object <m>t</m> seconds after it was dropped. What type of function should we use? We know that linear functions have a constant rate of change, thus if a linear function is used to describe the position of a moving object, that object's velocity must be constant. This would mean its acceleration must be zero. To model an object whose acceleration is a nonzero constant, we must construct a function whose <em>rate of change</em> changes at a constant rate.
+				</p>
+
+				<p>
+					Let's consider a candidate quadratic function <m>f(t) = at^2+bt+c</m>. In order to find the rate of change of the rate of change (let's call this quantity acceleration), we must first find its rate of change for a small change, <m>\Delta t</m>, in <m>t</m>. To figure this out, let's think flexibly about the terms of <m>f(t)</m> as areas being summed up. The constant term, <m>c</m>, can represent a <m>1\times c</m> rectangle, which does not change at all for a <m>\Delta t</m> change in <m>t</m>. The term <m>bt</m> can represent a <m>b\times t</m> rectangle. If the side of length <m>t</m> increases by <m>\Delta t</m>, the area increases by <m>b\Delta t</m> as in the following figure:
+				</p>
+			
+<figure xml:id="quad_deriv_pic1">
+	<image width="50%">
+	<latex-image>
+	\begin{tikzpicture}
+	\draw[thick] [-] (0,0) -- (2,0);
+	\draw[thick] [-] (2,0) -- (2.3,0);
+	\draw[thick] [-] (0,0) -- (0,1);
+	\draw[thick] [-] (0,1) -- (2,1);
+	\draw[thick] [-] (2,1) -- (2.3,1);
+	\draw[thick] [-] (2,0) -- (2,1);
+	\draw[thick] [-] (2.3,0) -- (2.3,1);
+	\draw [fill=gray] (2,0) rectangle (2.3,1);
+	\node[align=center] at (-.2,.5){$b$};
+	\node[align=center,below] at (1,0){$t$};
+	\node[align=center,below] at (2.15,0){$\Delta t$};
+	\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+
+				<p>
+					The shaded area is the total change in <m>bt</m>. Dividing this by <m>\Delta t</m> to make it a rate of change, we find that the rate of change in <m>bt</m> is <m>b</m> (this should not be surprising, <m>bt</m> is linear with slope <m>b</m>). Now we will consider the term <m>at^2</m> as the area of a <m>at\times t</m> rectangle. If <m>t</m> changes by <m>\Delta t</m>, the total change in <m>at^2</m> is represented by the shaded area in the following figure:
+				</p>
+
+<figure xml:id="quad_deriv_pic2">
+	<image width="50%">
+	<latex-image>
+	\begin{tikzpicture}
+	\draw[thick] [-] (0,0) -- (2,0);
+	\draw[thick] [-] (2,0) -- (2.3,0);
+	\draw[thick] [-] (0,0) -- (0,1);
+	\draw[thick] [-] (0,1) -- (2,1);
+	\draw[thick] [-] (2,1) -- (2.3,1);
+	\draw[thick] [-] (2,0) -- (2,1);
+	\draw[thick] [-] (2.3,0) -- (2.3,1);
+	\draw[thick] [-] (0,1) -- (0,1.15);
+	\draw[thick] [-] (0,1.15) -- (2,1.15);
+	\draw[thick] [-] (2,1) -- (2,1.15);
+	\draw[thick] [-] (2,1.15) -- (2.3,1.15);
+	\draw[thick] [-] (2.3,1) -- (2.3,1.15);
+	\draw [fill=gray] (2,0) rectangle (2.3,1);
+	\draw [fill=gray] (0,1) rectangle (2,1.15);
+	\draw [fill=gray] (2,1) rectangle (2.3,1.15);
+	\node[align=center] at (-.3,.5){$at$};
+	\node[align=center,below] at (1,0){$t$};
+	\node[align=center,below] at (2.15,0){$\Delta t$};
+	\node[align=center] at (-.5,1.07){$a\Delta t$};
+	\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+
+
+				<p>
+					Thus the total change in <m>at^2</m> for a change in <m>t</m> of <m>\Delta t</m> is given by <m>2at\Delta t + a(\Delta t)^2</m>. Dividing by <m>\Delta t</m> to obtain a rate of change, we get <m>2at + a\Delta t</m>. Hence the total rate of change in <m>f(t) = at^2+bt + c</m>, at a given <m>t</m> value changing by <m>\Delta t</m>, is <me>\mbox{total rate of change} = 2at + a\Delta t + b.</me> Considering <m>\Delta t</m> to be <q>infinitesimally small</q>, we find the instantaneous rate of change (velocity) is <m>2at + b</m>. This is a linear function with slope <m>2a</m>! That means that its (velocitiy's) rate of change (acceleration) is constant and equal to <m>2b</m>. This means we have a new characterization of quadratic functions to go along with their algebraic form:
+				</p>
+
+<principle>
+				<p>
+					A <term>Quadratic Function is <m>\ldots</m></term>
+				</p>
+
+				<table>
+					<caption></caption>
+					<tabular>
+					<row class="odd">
+						<cell halign="left">Linear Function</cell>
+						<cell halign="center"><m>\longrightarrow</m></cell>
+						<cell halign="left">A function of the form <m>y = f(x) = ax^2+bx+c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are constants.</cell>
+					</row>
+					<row class="even">
+						<cell halign="left"></cell>
+						<cell halign="center"><m>\longrightarrow</m></cell>
+						<cell halign="left">A function whose graph is a parabola.</cell>
+					</row>
+					<row class="odd">
+						<cell halign="left"></cell>
+						<cell halign="center"><m>\longrightarrow</m></cell>
+						<cell halign="left">A function whose second rate of change (acceleration) is constant.</cell>
+					</row>
+					</tabular>
+				</table>
+</principle>
+
+				<p>
+					<term>Remark:</term> The idea of computing instantaneous rates of change is central to Calculus. Re-read this section carefully now, then do it again when you learn about derivatives when you take Calculus.
+				</p>
+
+<example>
+				<p>
+					Now back to Galileo's problem. He measured the acceleration of an object to be downward at <m>9.8</m> m/s<m>^2</m>. Thus, to model the height of a projectile, we should use a quadratic function with leading term <m>-4.9t^2</m>. The initial velocity, <m>v_0</m>, should be the constant term of the velocity function (<m>2at+b</m> above), so the linear term should be <m>v_0 t</m>. The initial height is just the vertical intercept. Hence we have the formula for the height of a object, in meters after <m>t</m> seconds, with initial height <m>h_0</m> and initial velocity <m>v_0</m>: <me>h(t) = -4.9t^2 + v_0t + h_0.</me>
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					To find when it hits the ground, find the larger of its zeros.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					To find the maximal height, find the vertex.
+				</p>
+					</li>
+
+				</ul></p>
+</example>
+
+<question>
+				<p>
+					<em>What is the instantaneous rate of change in <m>f(t) = t^3</m>? Explain why your answer is correct using the volume of a cube as in <xref ref="cube_of_sum"/></em>
+				</p>
+</question>
+
+		</subsection>
+	</section>

@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec3_2_systems-of-equations">
+			<title>Solving Systems of Equations</title>
+
+
+	<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Introduce systems of algebraic equations and their solutions as multi-variable pairs (or more variables if there are more equations).
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Solve systems of equations via substitution.
+	  			</p>
+	  		</li>
+		</ul>
+	</objectives>
+
+			<p>
+				What if we need to solve an equation with more than one variable? For instance, consider the equation <me>x+3y  = 0.</me> For such an equation, a solution is a <em>pair</em> of numbers, an <m>x</m>-value and a <m>y</m>-value, that make the equation true when they are both plugged in at the same time. We see that if <m>y=1</m>, then <m>x=-3</m> makes the equation true. If <m>y=2</m>, then the correct value for <m>x</m> is <m>-6</m>. Clearly we could go on like this, obtaining a different value of <m>x</m> for any given value of <m>y</m>. There is no way for us to say that this equation has a single solution; it has infinitely many. Often in problems the number of solutions is narrowed down by having more equations, which we call a <em>system of equations</em>. For instance, we may consider the system 
+				<me>
+				\begin{aligned}
+				x+3y \amp = \amp 0\\
+				2x-y \amp = \amp 1.
+				\end{aligned}
+				</me> 
+				A solution to this system of two equations is again a pair of numbers, one for each variable, that make all the equations true at the same time. For instance <m>x=-3</m> and <m>y=1</m> is not a solution to this system; this pair makes the first equation true, but not the second. The pair <m>x=1</m> and <m>y=1</m> makes the second equation true, but not the first, so this is also not a solution to the system.**
+			</p>
+
+			<p>
+				So how do we find solutions to systems? The most flexible way of solving systems of equations is known as the method of substitution.
+			</p>
+
+<algorithm>
+		
+				<title>Substitution to Solve Systems of Equations</title>
+			<p>	
+			To solve a system of equations
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				Pick an equation and solve it for one of the variables in terms of the others.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Substitute the expression from the step above into the remaining equations.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Now the remaining equations form a system with one fewer variables and one fewer equations.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Repeat until you just have one equation and one variable that you can solve for.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Finally, back substitute the value you found to know the other variables.
+			</p>
+				</li>
+
+			</ul></p>
+</algorithm>
+
+			<p>
+				Let's see this at work with the system given above. Using the first equation, we can solve for <m>x</m> in terms of <m>y</m> as follows: 
+				
+<md>
+<mrow> x+3y \amp = \amp 0</mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> x \amp = \amp -3y.</mrow>
+</md> 
+
+
+Now we substitute <m>-3y</m> every time we see an <m>x</m> in the second equation and solve for <m>y</m>: 
+
+<md>
+<mrow>2(-3y) - y \amp = \amp 1</mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> -7y \amp = \amp 1 </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> y \amp = \amp -\frac{1}{7}. </mrow>
+</md> 
+
+Now we have <m>y=-\frac{1}{7}</m>, hence <m>x = -3y = \frac{3}{7}</m>. We can now check to make sure we obtained a correct solution by plugging these values into the original system: 
+
+<md>
+<mrow> \frac{3}{7} +3\left(\frac{-1}{7}\right) \amp = \amp \frac{3}{7}-\frac{3}{7} = 0 \checkmark </mrow>
+<mrow> 2\left(\frac{3}{7}\right) - \frac{-1}{7} \amp = \amp \frac{6}{7}+\frac{1}{7} = 1 \checkmark </mrow>
+</md>
+			</p>
+
+<question>
+			<p>
+			 <em>Solve the following systems of equations:</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em>
+<md>
+<mrow> x^2y \amp = \amp 1 </mrow>
+<mrow> 32xy^2 \amp = \amp x^2 </mrow>
+</md>
+</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>
+<md>
+<mrow>x^2+y^2 \amp = \amp 25</mrow>
+<mrow> 3x-4y \amp = \amp 0 </mrow>
+</md>
+</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>
+<md>
+<mrow>ab^3 \amp = \amp 2</mrow>
+<mrow>ab^{-1} \amp = \amp 8</mrow>
+</md>
+</em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+<question>
+			<p>
+				<em>An exam has thirty questions. The professor subtracts eight points for each incorrect answer and adds seven points for each correct answer. If a student ends up receiving zero points, how many questions were answered correctly? <term>Hint:</term> Let <m>C</m> denote the number of correct answers and <m>I</m> denote the number of incorrect answers and set up a system of equations.</em>
+			</p>
+</question>
+
+<question>
+			<p>
+				<em>Typically you need as many equations as variables in order to not have infinitely many solutions. Use substitution to solve the following system of three equations and three unknowns: 
+<md>
+<mrow>2x+3y +z \amp = \amp 1</mrow>
+<mrow> x \amp = \amp 3y </mrow>
+<mrow> x+y \amp = z.</mrow>
+</md>
+</em>
+			</p>
+</question>
+
+<example>
+			<statement>
+				Sometimes we need to solve a system of equations in order to manipulate an expression into another form. For instance, an important type of manipulation in Calculus and Differential Equations is known as the <term>Partial Fraction Decomposition</term>. In this manipulation, we take a single fraction and split it as a sum of pieces with simpler, but different, denominators. For instance, let's write <me>\frac{4}{(x-1)(x+2)}</me> in the form <me>\frac{A}{x-1} + \frac{B}{x+2}</me> for some numbers <m>A</m> and <m>B</m>. 
+			</statement>
+<solution>				
+These two expressions are to be equivalent for all values of <m>x</m>, we need to solve for <m>A</m> and <m>B</m>. To do this, set the expressions equal to one another and do some manipulations. 
+<md>
+<mrow>\frac{A}{x-1} + \frac{B}{x+2} \amp = \amp \frac{4}{(x-1)(x+2)}</mrow>
+<mrow> \amp \updownarrow \amp (\text{combine fractions on left})</mrow>
+<mrow>\frac{A(x+2) + B(x-1)}{(x-1)(x+2)} \amp = \amp \frac{4}{(x-1)(x+2)}</mrow>
+<mrow> \amp \updownarrow \amp (\text{simplify the expression on the left})</mrow>
+<mrow>\frac{(A+B)x + 2A -B}{(x-1)(x+2)} \amp = \amp \frac{4}{(x-1)(x+2)}.</mrow>
+</md> 
+
+Now we set the numerators equal: 
+<me>
+(A+B)x + 2A-B = 4.
+</me> 
+Note that like terms are grouped on both sides. Since there are zero <m>x</m>'s on the right, we must have <m>A+B = 0</m>. Since <m>A</m> and <m>B</m> are numbers, we must have <m>2A-B = 4</m>. Thus we have a system of equations 
+<md>
+<mrow>A+B \amp = \amp 0</mrow>
+<mrow>2A-B \amp = \amp 4.</mrow>
+</md> 
+
+Using the first equation we have <m>B = -A</m>. Substituting into the second equation we see <m>3A = 4</m>. Hence, <m>A = \frac{4}{3}</m> and <m>B=-\frac{4}{3}</m>.
+</solution>
+
+		
+</example>
+
+<question>
+			<p>
+				<em>Check that <me>\frac{4}{3(x-1)} - \frac{4}{3(x+2)} = \frac{4}{(x-1)(x+2)}</me>
+				by finding a common denominator and simplifying into a single fraction.</em>
+			</p>
+</question>
+
+<question>
+			<p>
+				<em>Solve for <m>h</m> and <m>k</m> to put the expression <me>x^2+2x+5</me> in the form <me>(x-h)^2+k</me> as follows:
+				<ol>
+				<li> Expand out <m> (x-h)^2 + k</m> (with <m>h</m> and <m>k</m> unknown) and group like terms.</li>
+				<li> Match like terms with <m>x^2+2x+5</m> to set up a system of equations for <m>h</m> and <m>k</m>, then solve that system of equations.</li>
+
+				</ol>
+				
+				</em>
+			</p>
+</question>
+
+	</section>

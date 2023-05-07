@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec4_1_inputs-and-outputs">
+
+			<title>Inputs and Outputs</title>
+
+			<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Introduce functions and function notation.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Find the domain of a function by breaking down its defining algebraic expression into a sequence of steps.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Solve simple equations involving functions.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Find the range of a function by solving general equations for the input.
+	  			</p>
+	  		</li>
+		</ul>
+			</objectives>
+
+			<definition xml:id="function_definition"><title>Function</title>
+			<p>
+				A <term>function</term> is a relation between two variables <m>x</m> (the input) and <m>y</m> (the output) where each input is related to only one output (the variables <m>x</m> and <m>y</m> are generic, different letters may be used). 
+			</p>
+			</definition>	
+			<p>
+				Because this is an algebra course, most such relations will be defined by an algebraic equation with <m>y</m> alone on one side and some algebraic expression involving <m>x</m> on the other. We use letters to name functions; often <m>f</m> is used if we are giving a name to a function when <m>f</m> isn't already in use elsewhere in the problem. If <m>y</m> is related to <m>x</m> by the function <m>f</m> we write <me>y = f(x).</me> We read this as <q><m>y</m> equals <m>f</m> of <m>x</m></q>.
+			</p>
+
+
+		<subsection xml:id="evaluating-functions-and-using-function-notation">
+			<title>Evaluating Functions and Using Function Notation</title>
+
+				<p>
+					For most people, more needs to be said about how to think about functions and how to use function notation than was given above. Suppose we are given the definition of a function as <me>y = f(x) = \text{some expression involving } x.</me> From a symbolic point of view we may think of <m>f</m> as a certain type of shorthand.
+				</p>
+
+<fact>
+				<title>
+					Function Notation as Shorthand
+				</title>
+
+				<p>
+					<em>Suppose a function defined by the equation <m>y = f(x).\ </m> Then we may think of <m>f(x)</m> as a compact way of writing what may be a complicated algebraic expression involving <m>x.</m></em>
+				</p>
+</fact>
+
+				<remark>
+					Not all functions are defined using algebraic expressions. For instance trigonometric functions can only be defined using geometry and/or concepts from calculus. However, for our purposes right now, this is an effective way to think about functions.
+				</remark>
+
+				<p>
+					Because we can think of algebraic expressions as processes carried out on variables, we may also think of a function as a process performed on <m>x</m>, resulting in <m>y</m>. Equipped with the idea of equivalence of algebraic expressions, we may think of a function <m>f</m> in a more conceptual way. We can think of <m>f</m> as a factory that takes <m>x</m>'s as raw ingredients and makes specific <m>y</m>'s. Equivalence of the defining expressions for <m>f</m> can be thought of as rearranging the factory, but ultimately leaving the product being produced unchanged.
+				</p>
+
+<fact>
+				<p>
+					<em>Function as <q><m>y</m> factory</q></em>
+				</p>
+
+				<p>
+					<em>Suppose a function defined by the equation <m>y = f(x).\ </m> Then we may think of <m>f</m> is the set of all processes that result in the same outputs (<m>y</m>'s) as the expression <m>f(x)</m>. In other words, any expression that is equivalent to <m>f(x)</m> defines the same function, so we say it is also <m>f</m>. </em> 
+				</p>
+</fact>
+
+				<p>
+					In applications, we usually think of the input as a variable we control and the output as one that results from a process. For this reason we call the input the <term>independent variable</term> and the output the <term>dependent variable</term>.
+				</p>
+
+				<p>
+					Given a function, you evaluate by plugging in the input for <m>x</m>. The result is the value of <m>y</m> corresponding to that <m>x</m>-value.
+				</p>
+
+<example>
+				<statement>
+					Define the function <m>f</m> by <m>y = f(x) = 3x^2-1</m>. Evaluate the following:
+				
+
+				<p><ol>
+					<li>
+									<p>
+					<m>f(2)</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>f(x+1)</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>2f(x) -1</m>
+				</p>
+					</li>
+
+				</ol></p>
+				</statement>
+
+			
+				<solution>
+				<p><ol>
+					<li>
+									<p>
+					The function <m>f</m> tells us to take any input <m>x</m> and do the following: 
+				<dl>	
+				<li>
+				<title><em>S1:</em></title>
+				square the input <m>x</m>
+				</li>
+
+				<li>
+				<title><em>S2:</em></title>
+				multiply <em>S1</em> by <m>3</m>
+				</li>
+
+				<li>
+				<title><em>S3:</em></title>
+				subtract <m>1</m> from <em>S2</em>.
+				</li>
+				</dl>
+					If <m>x=2</m>, we will get: <m>2^2 = 4</m>; then multiply by <m>3</m> to get <m>12</m>; then subtract <m>1</m> to get <m>11</m>. So <m>f(2) = 3\cdot 2^2 -1 = 11</m>. The output of <m>f</m> when <m>x=2</m> is <m>y = 11</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					This time, we think of <m>x+1</m> as our input, a quantity that must be evaluated before <m>f</m> is applied, so we enclose it in parentheses in the evaluation. Then we apply the steps and simplify by expanding and collecting like terms. 
+					
+		<md>
+		<mrow> f(x+1) \amp = \amp 3(x+1)^2 - 1</mrow>
+		<mrow> \amp = \amp 3(x^2+2x+1) - 1 \amp \text{ square } (x+1) </mrow>
+		<mrow> \amp = \amp 3x^2+6x +3 - 1   \amp \text{ multiply by  } 3 </mrow>
+		<mrow> \amp = \amp 3x^2+6x + 2. \amp \text{ subtract } 1 </mrow>
+		 </md> 
+		 Note that <m>y=f(x+1)</m> does not define the same function as <m>y=f(x)</m>; for any <m>x</m>-value, <m>y=f(x+1)</m> says that we add <m>1</m> to <m>x</m> and then apply all the steps of <m>f</m>. This can be used to define another function, say <m>y = g(x) = f(x+1)</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					In this part we first apply <m>f</m> to <m>x</m>, and then do two additional steps: multiply by <m>2</m> and then subtract <m>1</m>. 
+		<dl>	
+				<li>
+				<title><em>S4:</em></title>
+				multiply <m>f(x)</m> by <m>2.</m>
+				</li>
+
+				<li>
+				<title><em>S5:</em></title>
+				subtract <m>1</m> from <em>S4</em>.
+				</li>
+		</dl>
+					
+					Here we think of <m>f(x)</m> as being enclosed in parentheses and simplify: 
+					
+					<md>
+					<mrow>2f(x) - 1 \amp = \amp 2(3x^2-1) -1 </mrow>
+ 					<mrow>\amp = \amp 6x^2-2-1  </mrow> 
+  					<mrow>\amp = \amp 6x^2-3. </mrow>
+					</md>
+				</p>
+					</li>
+
+				</ol></p>
+				</solution>
+				
+</example>
+
+<question>
+				<p>
+					<em>Let <m>f(x) = \frac{1}{2} x^2</m>. Find simplified expressions for each of the following, and describe the steps they represent.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>f(3x+2)</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>3f(x) + 2</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+<question>
+				<p>
+					<em>Let <m>f(x) = x^2-4x+5</m> and <m>g(x) = x^2+1</m>. Define another function <m>h(x)</m> by saying <m>h(x) = g(x-2)</m>. Use algebra to show that <m>h(x)</m> is actually the same function as <m>f(x)</m>.</em>
+				</p>
+</question>
+
+<p>
+One important question about any given function is, "What are its allowable inputs?" Using the factory analogy, what raw ingredients can that factory work with? This collection of inputs has a name, the <term>domain</term>.
+</p>
+				<definition><title><em>The Domain of a Function</em></title><idx>domain of a function</idx>
+				The <term>domain</term> of a function <m>f</m> is the set of all possible inputs for which a defined output is produced.
+				</definition>	
+					
+				<p>	
+				One of the primary goals of Calculus is to investigate how functions behave at inputs <q>at the boundary</q> of the domain, hence we must be able to determine the domain. In order to determine the domain of a function, it is good to read it as a sequence of procedures, then decide if anything is not allowed at any point in that process. Those values of <m>x</m> that force us into an operation that is not allowed with normal arithmetic are the values of <m>x</m> that are not in the domain. For functions defined algebraically, the main things that are not allowed are:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					division by zero, and
+				</p>
+					</li>
+
+					<li>
+									<p>
+					even roots of negative numbers.
+				</p>
+					</li>
+
+				</ul></p>
+
+
+<example>
+				<statement>
+					Find the domain of the function defined by <m>y= f(x) = \sqrt{x-2}</m>. 
+				</statement>	
+				<solution>	
+				We break the function down into a sequence of steps and analyze whether any inputs must be excluded based on each step.
+				<dl>
+				<li><title><em>S1:</em></title> First we subtract <m>2</m> from <m>x</m>. There is no value of <m>x</m> that cannot have <m>2</m> subtracted from it, so we have no restictions yet.
+				</li>
+				<li><title><em>S2:</em></title> Now take the square root of of the result of <em>S1</em>. We cannot put a negative value under the square root sign; thus <m>x-2</m> (the result of <em>S1</em> must be nonnegative. Set <m>x-2 \geq 0</m>, we can solve this to find <m>x \geq 2</m>. Thus the domain is <m>[2, \infty)</m>. 
+				</li>
+				</dl>
+				Thus the domain is <m>[2, \infty)</m>. (See <xref ref="Intervals_inequalities"/> to review interval notation.)
+				</solution>
+</example>
+
+<example>
+				<statement>
+					Find the domain of the function defined by <me>y=f(x) = \frac{\sqrt{x^2-1}}{2x+3}.</me> 
+				</statement>	
+				
+				<solution>
+				This function has two main parts, the numerator and denominator. Breaking down to steps for each, we have the following:
+				<p>
+				<dl>
+				<li><title>Numerator</title>
+				<dl>
+				<li><title><em>S1:</em></title> Square <m>x</m>. </li>
+				<li><title><em>S2:</em></title> Subtract <m>1</m> from <em>S1.</em> </li>
+				<li><title><em>S3:</em></title> Take the square root of <em>S2.</em> </li>
+				</dl>
+				</li>
+				<li><title>Denominator</title>
+				<dl>
+				<li><title><em>S4:</em></title> Multiply <m>x</m> by 2. </li>
+				<li><title><em>S5:</em></title> Add <m>3</m> to <em>S4</em>. </li>
+				</dl>
+				</li>
+				<li><title>Divide <em>Numerator</em> by <em>Denominator</em></title></li>
+				</dl>
+				</p>
+
+				<p>
+					We can look at each part separately to determine the domain. For <em>Numerator</em>, we can certainly square any <m>x</m>, and subtract <m>1</m>. It is the square root that will be a problem. We need to have <m>x^2-1 \geq 0</m>. If <m>x</m> is between <m>-1</m> and <m>1</m>, then <m>x^2</m> is less than <m>1</m>, so <m>x^2-1</m> is negative. So <m>-1&lt;x&lt;1</m> must be excluded from the domain since these values would force us to take the square root of a negative number. For <em>Denominator</em>, we are not allowed to divide by zero. We will find where <m>2x+3</m> is zero and exclude it: <m>x=-\frac{3}{2}</m>. Thus the domain is all <m>x</m> with <m>x\leq -1</m> or <m>x\geq 1</m>, except for <m>x=-\frac{3}{2}</m>. In interval notation, this would be written as <me>\left(-\infty,-\frac{3}{2}\right)\bigcup \left(-\frac{3}{2},-1\right] \bigcup \left[1,\infty\right).</me> 
+				</p>
+				</solution>
+</example>
+
+<question>
+				<p>
+					<em>Find the domain of each of the following functions. Carefully explain how you found it, as illustrated in the previous example. Express your answer using inequalities and words, as well as using interval notation.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>f(x) = \sqrt{3x + 1-x}</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>g(x) = \dfrac{1}{x^2-x-6}</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>h(x) = \dfrac{1}{\sqrt{x^2-x-6}}</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>k(x) = f(x+1)</m>, where <m>f</m> is the function defined in part (1) of this problem.</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+
+
+				<table xml:id="Intervals_inequalities">
+					<title><em>Interval Notation and Inequalities</em></title><idx>interval notaion</idx>
+					<tabular>
+					<row bottom="medium">
+						<cell halign="left">Verbal Description</cell>
+						<cell halign="left">Inequalities Describing <m>x</m></cell>
+						<cell halign="left">Interval(s) Containing <m>x</m></cell>
+					</row>
+					<row>
+						<cell halign="left"><m>x</m> is greater than <m>a</m></cell>
+						<cell halign="left"><m>x&gt;a</m></cell>
+						<cell halign="left"><m>(a,\infty)</m></cell>
+					</row>
+					<row>
+						<cell halign="left"><m>x</m> is greater than or equal to <m>a</m></cell>
+						<cell halign="left"><m>x\geq a</m></cell>
+						<cell halign="left"><m>[a,\infty)</m></cell>
+					</row>
+					<row>
+						<cell halign="left"><m>x</m> is less than <m>a</m></cell>
+						<cell halign="left"><m>x&lt;a</m></cell>
+						<cell halign="left"><m>(-\infty,a)</m></cell>
+					</row>
+					<row>
+						<cell halign="left"><m>x</m> is less than or equal to <m>a</m></cell>
+						<cell halign="left"><m>x\leq a</m></cell>
+						<cell halign="left"><m>(-\infty,a]</m></cell>
+					</row>
+					<row>
+						<cell halign="left"><line><m>x</m> is greater than (or equal to) <m>a</m> and </line><line> less than (or equal to) <m>b</m></line></cell>
+						<cell halign="left"><m>a&lt;(\leq) x &lt;(\leq) b</m></cell>
+						<cell halign="left"><m>(a,b),(a,b],[a,b)</m>, or <m>[a,b]</m>, depending on strictness</cell>
+					</row>
+					<row>
+						<cell halign="left"><line><m>x</m> is greater than (or equal to) <m>b</m> or less</line><line> than (or equal to) <m>a</m></line></cell>
+						<cell halign="left"><m>x&gt;(\geq) b</m> or <m>x&lt;(\leq) a</m></cell>
+						<cell halign="left"><line><m>(-\infty,a)\bigcup(b,\infty)</m>,</line><line> with <m>(,),[,</m> or <m>]</m> used at <m>a</m> and <m>b</m>, depending on strictness.</line></cell>
+					</row>
+					</tabular>
+				</table>
+
+<question>
+				<p>
+					<em>Sometimes the context of a problem restricts the domain of a function when the algebra may not. For instance, suppose a farmer wants to fence off a rectangular area with three sides of a rectangle, using a river as the fourth side. He has 100 yards of fence to use. Let <m>x</m> denote the length of the side of the rectangle parallel to the river. Find a formula for the function <m>A(x)</m> that gives the area as a function of <m>x</m>. What is the domain of this function based on the formula and what is it based on the context of the problem?</em>
+				</p>
+</question>
+
+		</subsection>
+
+		<subsection xml:id="solving-equations-involving-functions">
+				<title>Solving Equations Involving Functions</title>
+
+				<p>
+					In solving algebraic equations, perhaps the most straightforward ones to solve are of the form <me>(\text{algebraic expression}) = \text{a number},</me> where the algebraic expression on the left represents a process applied to a variable that we may reverse to solve for <m>x</m>. Equipped with the idea of functions, we now can simply think of these in the form <me>f(x) = \mbox{a number}.</me> More complicated equations typically have the form <me>f(x) = g(x),</me> where <m>f</m> and <m>g</m> are different functions. When we think of function notation as shorthand for specified algebraic expressions, solving equations involving functions is not different than solving equations as we have before now.
+				</p>
+
+<example>
+<statement>
+				<p>
+					Let <m>f(x) = x^2-3x</m> and <m>g(x) = 2x-4</m>. Solve the following equations.
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<m>g(x) = 8</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>f(x) = g(x)</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>f(x+1) = g(x)</m>
+				</p>
+					</li>
+
+				</ol></p>
+</statement>
+<solution>
+				<p><ol>
+					<li>
+									<p>
+					For (a) we use the fact that <m>g(x) = 2x-4</m>, so we get the following: 
+<md>
+<mrow>2x-4 \amp = \amp 8</mrow>
+<mrow>\amp \updownarrow \amp</mrow>
+<mrow>2x\amp = \amp 12</mrow> 
+<mrow>\amp \updownarrow \amp</mrow>
+<mrow>x\amp =\amp 6.</mrow>
+</md>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					For (b), we use <m>f(x) = x^2-3x</m> and <m>g(x) = 2x+4</m>. Then we factor to solve: 
+<md>
+<mrow>x^2 - 3x  \amp = \amp 2x-4</mrow>
+<mrow>\amp \updownarrow \amp </mrow>
+<mrow>x^2-5x+4 \amp = \amp 0</mrow>
+<mrow>\amp \updownarrow \amp </mrow>
+<mrow>(x-4)(x-1) \amp = \amp 0</mrow>
+<mrow>\amp \updownarrow \amp </mrow>
+<mrow>x=4 \amp \mbox{or} \amp x=1.</mrow>
+</md>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					For (c), we need to figure out what <m>f(x+1)</m> means. Now <m>f</m> is the function that takes any input, squares it, then multiplies a new copy of it by three, then finds the difference. In this case, our input is the quantity <m>(x+1)</m>. So we to is substitute <m>(x+1)</m> each time we see and <m>x</m> in the expression for <m>f(x)</m> and set it equal to <m>g(x)</m>: 
+
+<md>
+<mrow>(x+1)^2 - 3(x+1) \amp = \amp 2x-4</mrow>
+<mrow>\amp \updownarrow \amp \mbox{expand, group like terms on one side}</mrow>
+<mrow>x^2-3x+2 \amp = \amp 0</mrow>
+<mrow>\amp \updownarrow \amp </mrow>
+<mrow>(x-1)(x-2) \amp = \amp 0</mrow>
+<mrow>\amp \updownarrow \amp </mrow>
+<mrow>x=1 \amp \mbox{or} \amp x=2.</mrow>
+</md>
+				</p>
+					</li>
+
+				</ol></p>
+
+</solution>
+</example>
+
+<question>
+				<p>
+					<em>Let <m>f(x) = x-1</m>, and <m>g(x) = (x-3)^2</m>. Solve each of the following equations:</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>f(x) = 2</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>f(x) = 2x-6</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>f(x) = g(x)</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+<question>
+				<p>
+					<em>Let <m>f(x) = \dfrac{x}{3x+7}</m>. Solve the following equations, if possible. If it is impossible to solve, explain why.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>f(x) = 1</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>f(x) = x</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>f(x) = \frac{1}{3}</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+				<p>
+					As seen in part (c) of the last question, some numbers may not appear as outputs of a given function. The set of numbers that <em>do </em> appear as outputs of a given function is called the <term>range</term><idx>range of a function</idx> of the function. Another way to say what the range of <m>f</m> is, is that it is the set of <m>y</m> such that there is a solution to the equation <m>y=f(x)</m>. Finding the range of a function is generally a more difficult task than finding its domain; being able to find the maximum and/or minimum possible outputs of a given function is one of the main achievements of Calculus. However, in many cases we can determine the range of an algebraically defined function by some combination of the following:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					Determine what arithmetic operations the function applies to its input, and think about what the possible results could be.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Solve the general equation <m>y=f(x)</m> for <m>x</m>, if possible. The result will be an expression involving <m>y</m>; the range of <m>f</m> will be the <m>y</m>-values that can be substituted into this expression.
+				</p>
+					</li>
+
+				</ul></p>
+
+<example>
+				<p>
+					Find the range of the following functions:
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<m>f(x) = \dfrac{x}{3x+7}</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>g(x) = -(x-3)^2 + 4</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>h(x) = 2x+1</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>k(x) = 2x+1 + \sqrt{x-1}</m>
+				</p>
+					</li>
+
+				</ol></p>
+
+				<p>
+					
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					This is the function from Question 4.10. If we solve the equation <me>y = \frac{x}{3x+7}</me> for <m>x</m>, we have the general solution <me>x = \frac{7y}{1-3y}.</me> The only <m>y</m>-value that cannot be substituted into this is <m>y=\frac{1}{3}</m>. Thus, the range of <m>f</m> is all real numbers except <m>\frac{1}{3}</m>. Using inequalities, we would write <m>y&lt;\frac{1}{3}</m> or <m>y&gt;\frac{1}{3}</m>. In interval notation, it would be written as <m>\left(-\infty,\frac{1}{3}\right)\bigcup\left(\frac{1}{3},\infty\right)</m>.
+				</p>
+
+				<p>
+					<term>Remark:</term> For problems involving domain and range, using inequalities to describe the domain and range may be preferable to interval notation. This is because inequalities make explicit which variables are elements of the domain (the input variable) and the range (the output variable).
+				</p>
+					</li>
+
+					<li>
+									<p>
+					For this problem, we can use our understanding of the defining expression to find the range. The function <m>g</m> takes <m>x</m> and subtracts three from it, squares the result, multiplies that by <m>-1</m>, and finally adds four. Noting that squares are never negative, <m>-(x-3)^2</m> will never be positive. This means no positive number is ever added to four. A little thought shows that any number less than or equal to four is an output of this function. So the range is <m>y\leq 4</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Algebraically solving <m>y=h(x)</m> for <m>x</m> yields <m>x = \frac{y-1}{2}</m>. No values of <m>y</m> make the right-hand side of this equation undefined, so the range is <m>-\infty &lt; y &lt; \infty</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					For this problem, we must note the domain of the function before determining the range. Because of the inclusion of the <m>\sqrt{x-1}</m> term, the domain of <m>k</m> is <m>x\geq 1</m>. Possible outputs of <m>2x+1</m> over this domain are all numbers greater than or equal to three. Putting this together with the possible outputs of the expression <m>\sqrt{x-1}</m>, we see the range of <m>k</m> is <m>y\geq 3</m>.
+				</p>
+					</li>
+
+				</ol></p>
+
+				<p>
+					
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Determine the domain and range of the following functions. Explain your answers carefully as in the last example.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>f(x) = -2(x-4)^2+3</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>g(x) = \dfrac{1}{\sqrt{x-4}}</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+		</subsection>
+	</section>

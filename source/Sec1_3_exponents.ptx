@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec1_3_exponents">
+
+	<title>Exponents</title>
+	  	<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Understand exponents as a way of writing repeated multiplication in the same way multiplication represents repeated addition.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Develop fundamental properties of exponents through examples.
+	  			</p>
+	  		</li>
+			<li>
+				<p>
+				Develop the definition of zero, negative, and fractional exponents formally as consequences of fundamental exponent properties.
+				</p>
+			</li>
+	  	</ul>
+		</objectives>
+
+			<p>
+				Most fundamentally, exponents represent repeated multiplication in the way that multiplication represents repeated addition.
+			</p>
+
+
+			<p>
+				Multiplication is to Addition as Exponents are to Multiplication
+			</p>
+
+			<table>
+				<caption></caption>
+				<tabular top="medium" bottom="medium">
+				<row header="yes">
+					<cell halign="center"><em>Multiplication as Repeated Addition</em></cell>
+					<cell halign="center"></cell>
+					<cell halign="center" right="medium"><em>Exponents as Repeated Multiplication</em></cell>
+				</row>
+				<row class="odd">
+					<cell halign="center"><m>na = \underbrace{a+ a +\cdots + a}_\text{$n$ times}</m></cell>
+					<cell halign="center"><m>\longrightarrow</m></cell>
+					<cell halign="center" right="medium"><m>a^n = \underbrace{a\cdot a \cdot\cdots \cdot a}_\text{$n$ times}</m></cell>
+				</row>
+				</tabular>
+			</table>
+
+			<p>
+				Based on this idea, we can see the following properties of exponents:
+			</p>
+
+<identity xml:id="exponent_properties1">
+			<title>
+				<term>Properties of Exponents:</term>
+			</title>
+
+			<p><ol>
+				<li>
+							<p>
+				<m>a^na^m = a^{n+m}</m>. <em> For example:</em> <m>2^{3}\cdot 2^4 = 2\cdot 2\cdot 2\cdot 2\cdot 2\cdot 2\cdot 2 = 2^7 = 128</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				If <m>a\neq 0</m>, <m>\frac{a^n}{a^m} = a^{n-m}</m>. <em> For example:</em> <m>\frac{3^{5}}{3^2} = \frac{3\cdot 3\cdot 3\cdot 3\cdot 3}{3\cdot 3} = 3^3 = 27</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<m>(a^n)^m = a^{nm}</m>. <em> For example:</em> <m>(2^{3})^2 = (2\cdot 2\cdot 2)\cdot(2\cdot 2\cdot 2) = 2^6 = 64</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<m>(ab)^n = a^nb^n</m>. <em> For example:</em>  <m>(2\cdot 3)^2 = (2\cdot 3)\cdot (2\cdot 3) = 2\cdot 2\cdot 3\cdot 3</m> <m>= 2^2\cdot3^2 = 36</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<m>\left(\frac{a}{b}\right)^{n} = \frac{a^n}{b^n}</m>. <em> For example:</em> <m>\left(\frac{2}{3}\right)^2 = \frac{2}{3}\cdot\frac{2}{3} = \frac{4}{9}</m>.
+			</p>
+				</li>
+
+			</ol></p>
+</identity>
+
+			<p>
+				More subtlety arises when making sense out of zero, negative, and fractional exponents. The problem is that we don't know what it means to multiply a number by itself zero times, a negative number of times, or a fractional number of times. Because of this, we use the properties listed above to define zero, negative, and fractional exponents.
+			</p>
+
+			<p>
+				First, let's consider what <m>a^0</m> should equal, where <m>a</m> is a nonzero number. We know that if <m>n</m> is any number that <m>0 = n-n</m>. Using the second exponent property given above, we have <me>a^0 = a^{n-n} = \frac{a^n}{a^n}.</me> Since <m>\frac{a^n}{a^n} = 1</m>, we define <m>a^0 = 1</m> whenever <m>a</m> is not zero (<m>0^0</m> is undefined).
+			</p>
+
+			<p>
+				Now consider a negative exponent, <m>a^{-n}</m>. Here we use the first two exponent properties to arrive at what <m>a^{-n}</m> must be. We have <me>a^{n}a^{-n} = a^{n+(-n)} = a^{n-n} = a^{0} = 1.</me> Shortening this string of equalities, we have <m>a^{n}a^{-n} = 1</m>. Now we divide both sides by <m>a^{n}</m> to get <m>a^{-n} = \frac{1}{a^{n}}</m>. In words, a negative exponent indicates division by the same number with a positive exponent.
+			</p>
+
+			<p>
+				Finally, let's consider what <m>a^{\frac{1}{n}}</m> should be. This time we'll use the third exponent property that a power raised to a power reults in the exponents being multiplied. Thus we have, <me>(a^{\frac{1}{n}})^n  = a^{\frac{n}{n}} = a^{1} = a.</me> So <m>a^{\frac{1}{n}}</m> is the number that when raised to the <m>n</m>-th power results in <m>a</m>. This is exactly a description of the <m>n</m>-th root, <m>\sqrt[n]{a}</m>. Going slightly further with the third exponent property, we have <m>a^\frac{m}{n} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m</m>.
+			</p>
+
+<question>
+			<p>
+				<em>Justify the last sentence of the last paragraph. <em>Hint:</em> First note that <m>\frac{m}{n}</m> can be written as <m>m\cdot\frac{1}{n}</m>, then apply property number three from <xref ref="exponent_properties1"/> </em>
+			</p>
+</question>
+
+			<p>
+				So in summary we have the following:
+			</p>
+
+<identity xml:id="exponent_properties2"> 
+			<title>
+				<term>Zero, Negative, and Fractional Exponents</term>
+			</title>
+
+			<p><ol>
+				<li>
+							<p>
+				<m>a^0 = 1</m> when <m>a\neq 0</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<m>a^{-n} = \frac{1}{a^n}</m>: negative exponents denote division.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<m>a^{\frac{m}{n}} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m</m>: denominators in fractional exponents denote roots.
+			</p>
+				</li>
+
+			</ol></p>
+</identity>
+
+<question>
+			<p>
+				<em>Evaluate the following without a calculator. Make sure you do it as efficiently as possible using properties of exponents.</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>4^{\frac{3}{2}}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>9^{-\frac{1}{2}}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>(\frac{1}{27})^{-\frac{2}{3}}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\frac{1}{7^{-2}}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\frac{10^9}{10^7}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>16^{\frac{5}{4}}</m></em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+<question>
+			<p>
+				<em>Use properties of exponents to write the following in a simpler way using only positive exponents.</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>-4^0</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>z^{-3} \cdot z^3</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>w^{-4} \cdot(4x)^0 \cdot x^6</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\dfrac{5t^3}{t^{-6}}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\left(\dfrac{a^2}{b^3} \right)^{-1}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\left(\dfrac{x}{3} \right)^{-2}</m></em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+</section>

@@ -1,0 +1,376 @@
+An \it{algebraic equation}\normalfont\ is a pair of algebraic expressions connected by an equals sign. An equation may or may not be true for specific values of the variables. Variable values that make the equation true are known as \it{solutions}\ \normalfont to the equation. One of the basic tasks in the study of algebra is to find solutions to algebraic equations. In this chapter we will give an overview of some basic techniques of solving equations. We will give more geometric meaning to these solutions when we introduce the concept of the graph of a function in Chapter 4.
+\par
+Recall that we may think of an algebraic expression as a symbolic representation of some sequence of operations performed on the variable(s). Thus, and algebraic equation indicates that two different processes carried out on the same variable(s) result in the same output. Clearly, different processes typically lead to different results, so solutions to equations are interesting. In our study of algebra, the most fruitful way of thinking of an equation is as a question.
+
+\begin{center}
+Algebraic Equation as a Question 
+\begin{tabular}{|p{1.5in} c p{3in} |}
+\hline\hline \it{Algebraic Equation} & $\longrightarrow$ & \it{Question: What values of the variable(s) give the same results when the processes on the right and left are performed?}\normalfont\\
+\hline
+\end{tabular}
+\end{center} 
+
+\par
+
+\begin{eg} Consider the equation
+\[
+x^2 = x+x.
+\]
+The left-hand side of the equation multiplies $x$ by itself. The right-hand side adds $x$ to itself. The equation is asking what values of $x$ give same result if you apply these two processes. Upon a little reflection we see that $x=2$ and $x=0$ will work. We may check by substituting these values into the equation and seeing if the resulting numerical equation is true. For $x=2$ we have
+\[
+2^2 = 2+2,
+\]
+which simplifies to $4=4$ (that's true). If we substitute $x=0$ we have
+\[
+0^2 = 0+0,
+\]
+which is also true. On the other hand, if we substitute $x=3$ the resulting numerical equation is
+\[
+3^2 = 3+3.
+\]
+Since $9\neq 6$, $x=3$ is not a solution to this equation.\qed \end{eg}
+
+Since there are infinitely many numbers to check, and equations may be complicated, it would be impossible to proceed by just guessing and checking to find solutions. So for any equation we have the following question:
+\\
+\begin{center}
+\it{How do we find a solution?}\ \normalfont 
+\end{center}
+We also see from the example above that equations may have multiple solutions, so we also want to  know if we have found all of the solutions. Usually this gets answered on a case by case basis.   We will look at some important examples in this chapter.
+   
+
+\par
+
+\begin{question}\begin{enumerate}
+    \item[(a)] 
+ Find an equation with $x=1$ and $x=-1$ as its only solutions.
+
+\item[(b)] For any number $a$, can you find an equation with $x=a$ and $x=-a$ as its only solutions?\end{enumerate}
+\end{question}
+   
+
+\section{Finding Solutions}
+\subsection{Basic Solving}
+For  now, we will consider equations that only involve one variable. Our goal is to find all values of the variable that make the equation true.  We ultimately want to get a statement that looks like
+\[
+x=\mbox{some number},
+\]
+so it is often a good first step is to perform operations that will result in all the variables on one side of the equation. Once we have an algebraic expression only on one side of the equation, we hope that we can undo the process represented by that expression to solve for $x$. Let's consider a relatively easy example.
+
+\par
+
+\begin{eg} We wish to solve the equation
+\[
+\sqrt{2x+9} = 5.
+\]
+We don't need to do any steps to get all the $x$'s on one side, since they are already there; all we need to do is undo the operations on the left.
+
+Now the expression $\sqrt{2x+9}$ means to do the following:
+
+\begin{itemize}
+    \item[\bf S1:] Multiply $x$ by $2$.
+    \item[\bf S2:] add $9$ to {\bf S1}.
+    \item[\bf S3:]  take the square root of {\bf S2}. 
+\end{itemize}
+
+We can solve the equation by systematically undoing each of these steps, starting with {\bf S3}.  So we do the following:
+\begin{itemize}
+    \item[\bf Undo S3:]  square both sides to get 
+\[
+2x+9 = 25.
+\]
+\item[\bf Undo S2:] subtract $9$ to get \[
+2x = 16.
+\]
+\item[\bf Undo S1:]  divide by $2$ to get
+\[
+x=8.\]
+\end{itemize}
+
+
+You should substitute $x=8$ into the original equation to check that it is a solution.
+\qed
+\end{eg}
+\par
+
+Notice that after each step in solving an equation you are left with another equation. We hope that the new equation will be easier to solve after each step. The critical thing is that each new equation must be \it{equivalent}\ \normalfont the previous one in the sense that it has the same solutions. The manipulations that one can do to equations that result in equivalent equations are as follows:
+\begin{itemize}
+\item Replace an algebraic expression with an equivalent algebraic expression. This usually takes the form of simplifying the expression one side of the equation in order to make solving easier.
+\item Apply an operation to both sides of the equation. This is what you do when you
+\begin{itemize}
+\item apply the same operation to both sides of an equation, and
+\item undo operations in order to solve for the variable.
+\end{itemize}
+\end{itemize}
+Often, when we apply the same operation to both sides of an equation, this takes the form of ``moving from one side to the other''. What is really happening is undoing an operation on one side and applying the same inverse operation on the other.
+
+\par
+
+To eliminate confusion, each time we write down an equivalent equation from a given equation, we will use the symbol $\longleftrightarrow$ or $\updownarrow$ to separate them. Interpret this symbol as meaning ``this equation is true exactly when that equation is true''.
+
+\par
+
+\begin{question} Write down exactly was done at each step in the following process to solve
+\[
+\frac{10}{x+5} = 5.
+\]
+\begin{eqnarray*}
+\frac{10}{x+5} & = & 5\\
+\ & \updownarrow & \\
+\frac{1}{x+5} & =  & \frac{1}{2}\\
+\ & \updownarrow & \\
+x+5 & = & 2\\
+\ & \updownarrow & \\
+x & = & -3.
+\end{eqnarray*}
+
+\end{question}
+
+\par
+\begin{eg} We wish to solve the equation
+\[
+\frac{3x}{x-5} = 2.
+\]
+This equation already has all of the $x$'s on one side of the equation, but the expression on the left-hand side doesn't represent a process that seems to be easily undone. Our first step is to ``clear the denominator'' from the left-hand side. While this seems to initially take us backwards, the resulting equation is more easily solved.
+\begin{eqnarray*}
+\frac{3x}{x-5} & = & 2\\
+\ & \updownarrow & (\mbox{multiply both sides by\ } x-5)\\
+3x & = & 2(x-5)\\
+\ & \updownarrow & (\mbox{distribute})\\
+3x & = & 2x-10\\
+\ & \updownarrow & (\mbox{move the\ } 2x)\\
+x & = & -10.
+\end{eqnarray*}
+Just to check, we can substitute into the original equation and see that $\frac{3(-10)}{-10-5} = 2$. \qed \end{eg}
+
+Clearly, solving equations can be rather complicated. It would be impossible to write down an example of every solution method. In fact, there are many equations for which not algebraic methods are effective for solving. However, if you just apply the manipulations given above to get equivalent equations, you can solve many of the equations you might encounter. Becoming proficient will require plenty of thoughtful practice.
+
+\par
+
+\begin{question} Solve the following equations for the indicated variable.
+\begin{enumerate}
+\item[a.] $7+2x = 2+3(x+1)$. Solve for $x$.
+\item[b.] $1-(x-7) = 2x+4$. Solve for $x$.
+\item[c.] $4(t-1)^2 = 16$. Solve for $t$.
+\item[d.] $\frac{2p-1}{3-4p} = 8$. Solve for $p$.
+\item[e.] $\frac{1}{x} + \frac{2}{x+1} = 0$. Solve for $x$.
+\item[f.] $\frac{1}{2x+7} = \frac{3}{x-1}$. Solve for $x$.
+\item[g.] $|2x-1| = 5$. Solve for $x$. 
+\end{enumerate}
+\end{question}
+
+\subsection{Solutions from Factoring}
+
+In Chapter 1 we observed that $0a=0$ for any real number $a$. In this section (and frequently from now on) we will use the following important fact:
+
+\par
+
+\begin{tcolorbox}
+{\bf Zero Factors Theorem}\\
+If $ab=0$, then either $a=0$ or $b=0$.
+\end{tcolorbox} 
+
+This is a very powerful fact for solving equations. Using this, if we can break a complicated expression into a product of simpler expressions, then the complicated expression is zero only if one of the simpler expressions is zero. This is the main reason we factor algebraic expressions.
+
+\par
+
+\begin{eg} Earlier we solved the equation 
+\[
+x^2 = 2x
+\]
+by inspection. Now we can solve it by factoring. Our first step is to put this equation in the form
+\[
+\mbox{some algebraic expression}=0
+\]
+so that we may apply the Zero Factors Theorem after factoring the expression on the left-hand side. We do this by subtracting the $2x$ over to the left-hand side, then proceeding as follows:
+\begin{eqnarray*}
+x^2 & = & 2x\\
+& \updownarrow & (\mbox{subtract})\\
+x^2-2x & = & 0\\
+& \updownarrow & (\mbox{factor}) \\
+x(x-2) & = & 0.
+\end{eqnarray*}
+Now we use the Zero Factors Theorem; either $x=0$ or $x-2 = 0$. Hence our solutions are $x=0$ and $x=2$.\qed \end{eg}
+
+\par
+
+Note that the Zero Factors Theorem only works if the product is equal to zero.
+
+\begin{question} Solve each of the following equations by factoring:
+\begin{enumerate}
+\item[a.] $2x^2+5x = 0$
+\item[b.] $x^2+5x = 6$
+\item[c.] $x^2-4x+3 = 8$
+\item[d.] $6x^2-x-1 = 0$
+\item[e.] $4x^2+7x+1 = 3$
+\end{enumerate}
+\end{question}
+
+\par
+
+Sometimes it is not obvious that factoring will be helpful to solve an equation. However, after a little manipulation we see that many equations can be solved using factoring as the critical step. 
+
+\begin{eg} We wish to solve
+\[
+\frac{2}{x} - \frac{2}{x-3} = 3.
+\]
+It is not obvious that this would lend itself to factoring. All we can do is proceed with manipulations we know are allowed, and hopefully we reach a point where we can solve.
+\begin{eqnarray*}
+\frac{2}{x} - \frac{2}{x-3} & = & 3\\
+& \updownarrow & (\mbox{combine fractions on left})\\
+\frac{2(x-3)-2x}{x(x-3)} & = & 3\\
+& \updownarrow & (\mbox{simplify numerator on left})\\
+\frac{-6}{x(x-3)} & = & 3\\
+& \updownarrow & (\mbox{clear the denominator})\\
+-6 & = & 3x(x-3)\\
+& \updownarrow & (\mbox{distribute and rearrange the equation}\\
+3x^2-9x + 6 & = & 0\\
+& \updownarrow & (\mbox{factor})\\
+3(x-1)(x-2) & = & 0.
+\end{eqnarray*}
+Now, by the zero Factors Theorem, we have the solution $x=1$ and $x=2$. \qed \end{eg}
+
+
+
+\begin{question} solve the following equations:
+\begin{enumerate}
+\item[a.] $x+\frac{1}{x} = 2$ 
+\item[b.] $x^2-x^3+2x = 0$
+\item[c.] $\frac{3}{z-2} - \frac{12}{z^2-4} = 1$
+\end{enumerate}
+\end{question}
+
+\section{Solving Systems of Equations}
+What if we need to solve an equation with more than one variable? For instance, consider the equation
+\[
+x+3y  = 0.
+\]
+For such an equation, a solution is a \it{pair}\ \normalfont of numbers, an $x$-value and a $y$-value, that make the equation true when they are simultaneously plugged in. We see that if $y=1$, then $x=-3$ makes the equation true. If $y=2$, then the correct value for $x$ is $-6$. Clearly we could go on like this, obtaining a different value of $x$ for any given value of $y$. There is no way for us to say that this equation has a single solution; it has infinitely many. Often in problems the number of solutions is narrowed down by having more equations, which we call a \it{system of equations}\normalfont. For instance, we may consider the system
+\begin{eqnarray*}
+x+3y & = & 0\\
+2x-y & = & 1.
+\end{eqnarray*}
+A solution to this system of two equations is again a pair of numbers, one for each variable, that make all the equations true at the same time. For instance $x=-3$ and $y=1$ is \underline{not}\ \normalfont a solution to this system; this pair makes the first equation true, but not the second. The pair $x=1$ and $y=1$ makes the second equation true, but not the first, so this is also not a solution to the system.
+
+\par 
+
+So how do we find solutions to systems? The most flexible way of solving systems of equations is known as the method of substitution. 
+
+\begin{tcolorbox}
+{\bf Substitution to Solve Systems of Equations}\\
+To solve a system of equations
+\begin{itemize}
+\item Pick an equation and solve it for one of the variables in terms of the others. 
+\item Substitute the expression from the step above into the remaining equations.
+\item Now the remaining equations form a system with one fewer variables and one fewer equations. 
+\item Repeat until you just have one equation and one variable that you can solve for.
+\item Finally, back substitute the value you found to know the other variables.
+\end{itemize}
+\end{tcolorbox}
+
+Let's see this at work with the system given above. Using the first equation, we can solve for $x$ in terms of $y$ as follows:
+\begin{eqnarray*}
+x+3y & = & 0\\
+\ & \updownarrow & \\
+x & = & -3y.
+\end{eqnarray*}
+Now we substitute $-3y$ every time we see an $x$ in the second equation and solve for $y$:
+\begin{eqnarray*}
+2(-3y) - y & = & 1\\
+\ & \updownarrow & \\
+-7y & = & 1\\
+\ & \updownarrow & \\
+y & = & -\frac{1}{7}.
+\end{eqnarray*}
+Now we have $y=-\frac{1}{7}$, hence $x = -3y = \frac{3}{7}$. We can now check to make sure we obtained a correct solution by plugging these values into the original system:
+\begin{eqnarray*}
+\frac{3}{7} +3\left(\frac{-1}{7}\right) & = & \frac{3}{7}-\frac{3}{7} = 0 \phantom{s} \checkmark\\
+2\left(\frac{3}{7}\right) - \frac{-1}{7} & = & \frac{6}{7}+\frac{1}{7} = 1
+\phantom{s} \checkmark.
+\end{eqnarray*} 
+
+\par
+ 
+\begin{question} Solve the following systems of equations:
+\begin{enumerate}
+\item[a.]
+\begin{eqnarray*}
+x^2y & = & 1\\
+32xy^2 & = & x^2
+\end{eqnarray*}
+
+ 
+\item[b.]
+\begin{eqnarray*}
+x^2+y^2 & = & 25\\
+3x-4y & = & 0
+\end{eqnarray*}
+
+\item[c.] 
+\begin{eqnarray*}
+ab^3 & = & 2\\
+ab^{-1} & = & 8
+\end{eqnarray*}
+\end{enumerate}
+\par
+\end{question}
+ 
+\begin{question} An exam has thirty questions. The professor subtracts eight points for each incorrect answer and adds seven points for each correct answer. If a student ends up receiving zero points, how many questions were answered correctly? {\bf Hint:} Let $C$ denote the number of correct answers and $I$ denote the number of incorrect answers and set up a system of equations. 
+\end{question} 
+ 
+\begin{question} Typically you need as many equations as variables in order to not have infinitely many solutions. Use substitution to solve the following system of three equations and three unknowns:
+\begin{eqnarray*}
+2x+3y +z & = & 1\\
+x & = & 3y\\
+x+y & = z.
+\end{eqnarray*} 
+\end{question}
+
+\par 
+
+\begin{eg} Sometimes we need to solve a system of equations in order to manipulate an expression into another form. For instance, an important type of manipulation in Calculus and Differential Equations is known as the {\it Partial Fraction Decomposition}. In this manipulation, we take a single fraction and split it as a sum of pieces with simpler, but different, denominators. For instance, let's write 
+\[
+\frac{4}{(x-1)(x+2)}
+\]
+in the form 
+\[
+\frac{A}{x-1} + \frac{B}{x+2}
+\]
+for some numbers $A$ and $B$. These two expressions are to be equivalent for all values of $x$, we need to solve for $A$ and $B$. To do this, set the expressions equal to one another and do some manipulations.
+\begin{eqnarray*}
+\frac{A}{x-1} + \frac{B}{x+2} & = & \frac{4}{(x-1)(x+2)}\\
+\ & \updownarrow & (\mbox{combine fractions on left})\\
+\frac{A(x+2) + B(x-1)}{(x-1)(x+2)} & = & \frac{4}{(x-1)(x+2)}\\
+\ & \updownarrow & (\mbox{simplify the expression on the left})\\
+\frac{(A+B)x + 2A -B}{(x-1)(x+2)} & = & \frac{4}{(x-1)(x+2)}.
+\end{eqnarray*}
+Now we set the numerators equal:
+\[
+(A+B)x + 2A-B = 4.
+\]
+Note that like terms are grouped on both sides. Since there are zero $x$'s on the right, we must have $A+B = 0$. Since $A$ and $B$ are numbers, we must have $2A-B = 4$. Thus we have a system of equations
+\begin{eqnarray*}
+A+B & = & 0\\
+2A-B & = & 4.
+\end{eqnarray*}
+Using the first equation we have $B = -A$. Substituting into the second equation we see $3A = 4$. Hence, $A = \frac{4}{3}$ and $B=-\frac{4}{3}$.\qed \end{eg}
+
+\par 
+
+\begin{question} Check that
+\[
+\frac{4}{3(x-1)} - \frac{4}{3(x+2)} = \frac{4}{(x-1)(x+2)}.
+\]
+\end{question}
+
+\par 
+
+\begin{question} Solve for $h$ and $k$ to put the expression
+\[
+x^2+2x+5
+\]
+in the form
+\[
+(x-h)^2+k.
+\]
+\end{question}
+

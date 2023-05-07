@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="families-of-functions">
+
+<!-- Change title when you have one: -->
+  <title>Families of Functions</title>
+  <!-- If the chapter has sections, there may be an introduction -->
+  <!-- before those sections. Note the <p> tags around content.  -->
+
+<introduction>
+		<p>
+			In this chapter we will cover the most important families of functions of applied algebra. Because of their importance of these families in applications, each section will begin with a motivating real world example and end with a discussion of other applications. Throughout this chapter we will apply all the skills and concepts that appeared previously in this book.
+		</p>
+
+		<p>
+			Before we begin, let’s clarify what we mean by a <em>family of functions. In the symbolic sense, a family of functions is a collection of functions that is defined by a specific algebraic form, often with some set of numbers that appear as parameters in the definition of the family. The function families we will study, and their associated algebraic forms, are the following:</em>
+		</p>
+
+		<p><ol>
+			<li>
+					<p>
+			<term>Linear Functions</term> - These are functions of the form <m>y = f(x) = mx + b</m>, where <m>m</m> and <m>b</m> are constants (numbers).
+		</p>
+			</li>
+
+			<li>
+					<p>
+			<term>Quadratic Functions</term> - These are functions of the form <m>y = q(x) = ax^2+bx+c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are constants.
+		</p>
+			</li>
+
+			<li>
+					<p>
+			<term>Exponential Functions</term> - These are functions of the form <m>y = p(x) = ab^{x}</m>, where <m>a</m> and <m>b</m> are constants.
+		</p>
+			</li>
+
+			<li>
+					<p>
+			<term>Power Functions</term> - These are functions of the form <m>y = q(x) = ax^{p}</m>, where <m>a</m> and <m>p</m> are constants.
+		</p>
+			</li>
+
+		</ol></p>
+
+		<p>
+			For each family we will
+		</p>
+
+		<p><ol>
+			<li>
+					<p>
+			discuss standard applications, thus leading to an embodied sense of how these functions behave,
+		</p>
+			</li>
+
+			<li>
+					<p>
+			find formulas for these functions from a set of data,
+		</p>
+			</li>
+
+			<li>
+					<p>
+			discuss various alternate algebraic forms they may take, with specific reasons to use different algebraic forms,
+		</p>
+			</li>
+
+			<li>
+					<p>
+			discuss geometric properties of their graphs, and
+		</p>
+			</li>
+
+			<li>
+					<p>
+			solve algebraic equations involving these functions.
+		</p>
+			</li>
+
+		</ol></p>
+
+		<p>
+			One key thing to keep in mind is that all of the above tasks, and everything we have previously done in this course, are interconnected. Seeing the connections will help you think flexibly about these function families so that you can apply your knowledge assertively in subsequent math and science courses.
+		</p>
+
+	<p>Our goals in this chapter are to gain literacy in reading algebraic expressions and understand their manipulation. Specifically, we will</p>
+	<ul>
+	  		<li>
+	  			<p>
+	  			One
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Two
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Three
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Four 
+	  			</p>
+	  		</li>
+			<li>
+				<p>
+				Five
+				</p>
+			</li>
+	  	</ul>
+
+</introduction>
+
+<xi:include  href="./Sec5_1_linear-functions.ptx" />
+<xi:include  href="./Sec5_2_quadratic-functions.ptx" />
+<xi:include  href="./Sec5_3_exponential-functions.ptx" />
+<xi:include  href="./Sec5_4_power-functions.ptx" />
+<xi:include  href="./Sec5_5_logarithms.ptx" />
+<xi:include  href="./Sec5_6_graphical-transformations.ptx" />
+
+</chapter>

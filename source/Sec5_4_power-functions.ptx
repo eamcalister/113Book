@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec5_4_power-functions">
+	<title>Power Functions</title>
+
+			<objectives>
+			<ul>
+			<li>
+	  			<p>
+				Introduce power functions in algebraic form.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+				Recognize and predict the shapes of graphs of power functions depending on the coefficient and exponent.
+	  			</p>
+	  		</li>
+			</ul>
+			</objectives>
+
+
+
+			<p>
+				The last basic family of functions we study, power functions, will also be a two-parameter family.
+			</p>
+
+<definition><title>Power Function</title>
+<p>
+A <term>power function</term><idx>power function</idx> is one of the form <me>f(x) = kx^{p}.</me> We call <m>k</m> the <term>coefficient</term><idx>coefficitent of a power function</idx> of the power function and <m>p</m> the <term>exponent</term><idx>exponent of a power function</idx>. There are no restrictions placed on <m>k</m> and <m>p</m>; they can be any constant.
+</p>
+</definition>
+
+<p><idx>proportional to</idx>
+Power functions often occur in the context of <term>proportionality</term>. We say one quantity is <term>proportional to</term> another if the first is a constant multiple of the second. Hence, if we say <m>y</m> is proportional to <m>x^p</m>, then there is some constant <m>k</m> such that 
+<me>
+y=kx^p.
+</me>
+Thus, <m>y</m> is related to <m>x</m> via a power function. The number <m>k</m> is called the <term>constant of proportianality</term><idx>constant of proportionality</idx>. We say <m>y</m> is <term>inversely proportional</term><idx>proportional to, inversely</idx> to <m>x^p</m> if
+<me>
+y=\frac{k}{x^p}. 
+</me>
+
+</p>
+
+<question>
+			<p>
+				<em>What conditions on <m>k</m> and <m>p</m> would place a power function into one of the other families of functions we have studied (list all possibilities)? Explain.</em>
+			</p>
+</question>
+
+<question>
+			<p>
+				<em>Are there any values of <m>k</m> and <m>p</m> such that a power function could be called an exponential function? Explain.</em>
+			</p>
+</question>
+
+			<p>
+				While the class of power functions still only has two parameters, we will see they are somewhat more complicated than the families of linear and exponential functions. Power functions can have a much wider array of graphs and may exhibit more complicated domains and ranges than linear or exponential functions. However, much of the complication can be worked out by remembering our rules of arithmetic.
+			</p>
+
+
+		<subsection xml:id="intro-to-power-functions">
+				<title>Intro to Power Functions</title>
+
+				<p>
+					Consider the following three power functions:
+				</p>
+
+				<p>
+					<me>f(x) = x^{4},\ \ g(x) = \frac{1}{x^4},\ \ \text{and}\ \ h(x) = x^{\frac{1}{4}}.</me> Their coefficients are all equal to one. Their exponents are <m>4</m>, <m>-4</m>, and <m>\frac{1}{4}</m>, respectively. The simplest of these to graph is <m>f</m>:
+				</p>
+
+<figure xml:id="first_power_graph">
+    <caption>The graph of <m>y=f(x) = x^4</m>.</caption>
+	<image width="75%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=1,yscale=1]
+	\draw[thick] [{Latex}-{Latex}] (-3,0) -- (3,0);
+	\draw[thick] [-{Latex}] (0,-1) -- (0,9);
+	\draw [help lines] (-3,-1) grid (3,9);
+	\node[align=center,below] at (3,0){$x$};
+	\node[align=center,right] at (0,9){$y$};
+	\foreach \x in {-3,-2,-1,1,2,3}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\foreach \y in {1,2,3,4,5,6,7,8,9}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw [domain=-1.75:1.75] [{Latex}-{Latex}] plot (\x, {(\x)^4});
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+
+				<p>
+					We see from the graph that <m>f(x) = x^4</m> is similar in shape to <m>y = x^2</m>. The outputs are never negative because the exponent is even, and the minimum output is zero. We see that the outputs grow more rapidly than those of <m>y = x^2</m> when <m>|x|&gt;1</m> and decay to zero more rapidly when <m>|x|&lt;1</m>. This is simply a result of repeating the multiplication of <m>x</m> by itself four times instead of two. As the exponent grows, this effect is exaggerated.
+				</p>
+
+				<p>
+					A slightly more complicated graph is that of <m>g(x)</m>:
+				</p>
+
+<figure xml:id="second_power_graph">
+    <caption>The graph of <m>y=g(x) = \frac{1}{x^4}</m>.</caption>
+	<image width="75%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=1,yscale=1]
+	\draw[thick] [{Latex}-{Latex}] (-3,0) -- (3,0);
+	\draw[thick] [-{Latex}] (0,-1) -- (0,9);
+	\draw [help lines] (-3,-1) grid (3,9);
+	\node[align=center,below] at (3,0){$x$};
+	\node[align=center,right] at (0,9){$y$};
+	\foreach \x in {-3,-2,-1,1,2,3}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\foreach \y in {1,2,3,4,5,6,7,8,9}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw [domain=-3:-.57] [{Latex}-{Latex}] plot (\x, {(\x)^(-4)});
+	\draw [domain=.57:3] [{Latex}-{Latex}] plot (\x, {(\x)^(-4)});
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+
+
+				<p>
+					In this graph, we never see negative outputs because the exponent is even. However, we also never see zero as an output because a fraction is only zero when its numerator is zero at the same time its denominator is not zero. The most conspicuous behavior of this function is that as <m>|x|</m> gets large, <m>g(x)\to 0</m> and as <m>|x|</m> gets close to zero, <m>g(x)\to \infty</m>. This is a simple consequence of arithmetic; if you divide by a large number, the result is small and if you divide by a positive number very close to zero, the result is very large.
+				</p>
+
+				<p>
+					Finally, we can graph <m>h(x) = x^{\frac{1}{4}}</m>:
+				</p>
+
+<figure xml:id="third_power_graph">
+    <caption>The graph of <m>y=g(x) = x^{\frac{1}{4}}</m>.</caption>
+	<image width="75%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=.7,yscale=1]
+	\draw[thick] [{Latex}-{Latex}] (-1,0) -- (5,0);
+	\draw[thick] [-{Latex}] (0,-1) -- (0,5);
+	\draw [help lines] (-1,-1) grid (5,5);
+	\node[align=center,below] at (5,0){$x$};
+	\node[align=center,right] at (0,5){$y$};
+	\foreach \x in {-1,1,2,3,4}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\foreach \y in {1,2,3,4}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw [domain=.01:5,samples=50] [-{Latex}] plot (\x, {(\x)^(.25)});
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+
+				<p>
+					In this graph we notice that the domain is only non-negative <m>x</m>-values. This is because even roots of negative numbers are not defined. Also, even roots of numbers are defined to be positive, so the range is all <m>y \geq 0</m>. The shape of the graph can be seen by noting that if <m>y=x^{\frac{1}{4}}</m>, then <m>x=y^4</m>. This means that the graph of <m>y=x^{\frac{1}{4}}</m> is that of the positive half of <m>y=x^{4}</m>, but reflected across the line <m>y=x</m>.
+				</p>
+
+<question>
+				<p>
+					<em>Sketch and/or use <url href="http://www.desmos.com/calculator">Desmos</url> to generate graphs of <m>f(x) = x^{3}</m>, <m>g(x) = x^{-3}</m>, and <m>h(x) = x^{\frac{1}{3}}</m>. What is the main difference between these graphs and the graphs given above, and how can you explain the difference in terms of basic arithmetic?</em>
+				</p>
+</question>
+
+<question>
+				<p>
+					<em>For each of the following conditions on <m>k</m> and <m>p</m>, sketch a rough graph of <m>f(x) = kx^{p}</m>. Explain why your graph looks the way it does with one or two sentences, and also give the domain and range of the function.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>k&gt;0</m>, <m>p</m> is a positive odd integer.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>k&lt;0</m>, <m>p</m> is a negative odd integer.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>k&gt;0</m>, <m>p</m> is <m>\frac{1}{n}</m> for an odd integer <m>n</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>k&lt;0</m>, <m>p</m> is a negative even integer.</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+		</subsection>
+	</section>

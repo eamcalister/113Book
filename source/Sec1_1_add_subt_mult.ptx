@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec1_1_add_subt_mult">
+	<title>Addition, Subtraction, and Multiplication</title>
+
+  <objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Visualize real numbers as positions on the line with zero and one as basic objects.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Understand and visualize addition, subtraction, and multiplication as geometric actions. 
+	  			</p>
+	  		</li>
+			<li>
+				<p>
+				Introduce the notion of an inverse operation as the undoing of a given operation.
+				</p>
+			</li>
+	  	</ul>
+  </objectives>
+
+			<p>
+				Algebra is ultimately about applying some procedure, or sequence of procedures, to numbers, and asking which numbers yield some desired result. To this end, we need to conceptualize numbers more dynamically than just as a way of counting objects. In the following table we present a way to conceptualize numbers as positions on a line, and the basic operations as movements.
+			</p>
+
+
+
+<table xml:id="table1_1_1">
+<title>Addition, Subtraction, and Multiplication as Motions on the Line</title>
+  <tabular top="medium">
+    <row bottom="medium">
+      <cell left="medium">
+         Positions and Sizes
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+        Numbers
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+         Location on a Line
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        Number
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        Center of the Line
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        <m>0</m>
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        Basic Unit to the Right of Center
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        1
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+
+
+
+    <row>
+      <cell left="medium">
+        Position to the Right of Center
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        Positive Number
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        Position to the Left of Center
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        Negative Number
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        <line>Given a position <m>a</m>, the position that is the same distance from the center </line> <line> but on the opposite side of the center </line>
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        <m>-a</m>
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        <line> Starting from   <m>a</m>, and moving  the same distance and direction </line> <line> that <m>b</m> is from the center</line>
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        <m>a+b</m>
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        <line> Starting from <m>a</m>, and moving the same distance but opposite direction</line><line> that <m>b</m> is from the center</line>
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        <m>a-b</m>
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        <line>When <m>a</m> and <m>b</m> are positive, the number whose size relative to <m>b</m> is the</line><line> same as the size of <m>a</m> relative to <m>1</m></line>
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        <m>ab</m>
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        <m>a</m> is to the right of <m>b</m>
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        <m>b\lt a</m>
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row>
+      <cell left="medium">
+        <m>a</m> is to the left of <m>b</m>
+      </cell>
+      <cell halign="center">
+        <m>\longrightarrow</m>
+      </cell>
+      <cell right="medium">
+        <m>a\lt b</m>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell left="medium">
+      </cell>
+      <cell halign="center">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+  </tabular>
+</table>
+
+
+
+
+			<p>
+				In order to understand what's going on here, it will be useful to draw pictures. This is a picture of the real number line that you've probably seen before:
+			</p>
+			
+<figure xml:id="fig1_1">
+    <caption>The basic number line.</caption>
+	<image>
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [-{Latex}] (0,0) -- (7,0);
+		\draw[thick] [{Latex}-] (-7,0) -- (0,0);
+		\draw (0,-.1) -- (0,.1);
+		\node[align=center,below] at (0,0){0};
+		\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+
+
+			<p>
+				This picture does not show us much, so let’s show one with some generic numbers <m>a</m> and <m>b</m>, where both <m>a</m> and <m>b</m> are positive with <m>b&gt;a</m>.
+			</p>
+
+<figure xml:id="fig1_2">
+    <caption>A number line with two  positive numbers labeled.</caption>
+	<image>
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [-{Latex}] (0,0) -- (7,0);
+		\draw[thick] [{Latex}-] (-7,0) -- (0,0);
+		\draw (0,-.1) -- (0,.1);
+		\node[align=center,below] at (0,0){$0$};
+		\node[align=center,below] at (2,-.1){$a$};\draw[fill](2,0)circle[radius=.05];
+		\node[align=center,below] at (3,0){$b$};\draw[fill](3,0)circle[radius=.05];
+		\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>	
+
+			<p>
+				To represent <m>a+b</m> and <m>a-b</m> geometrically, we first measure out the distance <m>b</m> is to the right of zero, then move that far to the right of <m>a</m> for <m>a+b</m> and move that distance to the left of <m>a</m> for <m>a-b</m>.
+			</p>
+
+<figure xml:id="fig_addsubt1">
+    <caption>Addition and subtraction of positive numbers.</caption>
+<image>
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[ultra thick,blue][|-|] (0,2.5) -- (3,2.5);
+		\draw[ultra thick,red][|-|] (2,1.3) -- (5,1.3);
+		%\draw[ultra thick,red][|-|] (-1,-.7) -- (2,-.7);
+		\draw[thick] [-{Latex}] (0,2) -- (7,2);
+		\draw[thick] [{Latex}-] (-7,2) -- (0,2);
+		\draw (0,1.9) -- (0,2.1);
+		\node[align=center,below] at (0,2){$0$};
+		\node[align=center,below] at (2,2){$a$};\draw[fill](2,2)circle[radius=.05];
+		\node[align=center,below] at (3,2){$b$};\draw[fill](3,2)circle[radius=.05];
+		\node[align=center,below] at (5,2){$a+b$};\draw[fill](5,2)circle[radius=.05];
+		%\node[align=center,below] at (-1,0){$a-b$};\draw[fill](-1,0)circle[radius=.05];
+
+		\draw[ultra thick,blue][|-|] (0,.5) -- (3,.5);
+		%\draw[ultra thick,red][|-|] (2,-.7) -- (5,-.7);
+		\draw[ultra thick,red][|-|] (-1,-.7) -- (2,-.7);
+		\draw[thick] [-{Latex}] (0,0) -- (7,0);
+		\draw[thick] [{Latex}-] (-7,0) -- (0,0);
+		\draw (0,-.1) -- (0,.1);
+		\node[align=center,below] at (0,0){$0$};
+		\node[align=center,below] at (2,0){$a$};\draw[fill](2,0)circle[radius=.05];
+		\node[align=center,below] at (3,0){$b$};\draw[fill](3,0)circle[radius=.05];
+		%\node[align=center,below] at (5,0){$a+b$};\draw[fill](5,0)circle[radius=.05];
+		\node[align=center,below] at (-1,0){$a-b$};\draw[fill](-1,0)circle[radius=.05];
+		\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>	
+
+			<p>
+				In Figure <xref ref="fig_addsubt1" />, since <m>b&gt;a</m> we end up to the left of zero when we subtract <m>b</m> from <m>a</m>. This should make sense; if you take away more than you started out with, you end up with a shortage.
+			</p>
+
+<question xml:id="commutative_addition">
+
+			<p><ol>
+				<li>
+							<p>
+				<em>With <m>a</m> and <m>b</m> in the same positions as in Figure <xref ref="fig_addsubt1" />, draw <m>b+a</m>. What do you notice about <m>a+b</m> in relation to <m>b+a</m>?</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>Now draw <m>b-a</m>. Is the same relationship true for <m>a-b</m> and <m>b-a</m>?</em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+<question>
+			<p>
+				<em>Draw a number line with numbers <m>a</m> and <m>b</m> on it, but this time make <m>a</m> positive and <m>b</m> negative. Is <m>a+b</m> to the right or left of <m>a</m>? Explain.</em>
+			</p>
+
+</question>
+<question>
+			<p>
+				<em>Explain why <m>0+a = a</m> for any number <m>a</m>.</em>
+			</p>
+</question>
+
+			<p>
+				One of the important ideas in algebra is that of <term>inverse operations</term>. That is, two operations/actions that, when performed in succession on a number or variable, result in the original number or variable being unchanged. We can see this idea by looking at subtraction. Observe that if <m>a</m> and <m>b</m> are numbers, then <m>a+b-b = a</m>. This may seem obvious, especially if you draw it on the number line. However, the concept is very important; <em>the inverse of adding <m>b</m> to <m>a</m> is subtracting <m>b</m>. We may say that subtracting <q>undoes</q> addition or that when you add and subtract the same quantity they <q>cancel each other</q>.</em>
+			</p>
+
+			<p>
+				Multiplication of real numbers is more difficult to visualize geometrically than addition or subtraction. The fundamental idea is that of stretching, with <m>1</m> being a basic unit of measurement. Let's start with <m>b</m> being any positive number and <m>a=1.5</m>. We see that <m>1</m> fits into <m>a</m> exactly <m>1.5</m> times. Since <m>ab</m> must have the same size relative to <m>b</m> as <m>a</m> does to <m>1</m>, <m>b</m> must fit into <m>ab</m> exactly <m>1.5</m> times. Think of this as stretching <m>b</m> by a factor of <m>a</m> when <m>a&gt;1</m>.
+			</p>
+
+<figure xml:id="fig_mult1">
+    <caption>The same number of copies of <m>b</m> are in <m>ab</m> as copies of <m>1</m> are in <m>a</m>.</caption>
+    <image>
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[ultra thick,blue][|-|] (0,.5) -- (1,.5);
+		\draw[ultra thick,blue][|-|] (1,.5) -- (1.5,.5);
+		\draw[ultra thick,red][|-|] (0,-.7) -- (2.4,-.7);
+		\draw[ultra thick,red][|-|] (2.4,-.7) -- (3.6,-.7);
+		\draw[thick] [-{Latex}] (0,0) -- (7,0);
+		\draw[thick] [{Latex}-] (-7,0) -- (0,0);
+		\node[align=center,below] at (0,0){$0$};\draw (0,-.1) -- (0,.1);
+		\node[align=center,below] at (1,0){$1$};\draw (1,-.1) -- (1,.1);
+		\node[align=center,below] at (2.4,0){$b$};\draw[fill](2.4,0)circle[radius=.05];
+		\node[align=center,below] at (1.5,0){$a$};\draw[fill](1.5,0)circle[radius=.05];
+		\node[align=center,below] at (3.6,0){$ab$};\draw[fill](3.6,0)circle[radius=.05];
+		\end{tikzpicture}
+	</latex-image>
+	</image>	
+</figure>
+
+
+			<p>
+				If <m>a</m> is smaller than <m>1</m>, for example <m>a = 0.75</m>, then you don't get a whole copy of <m>1</m> in <m>a</m>, you only have <m>75\%</m> of one. This means you will only get <m>75\%</m> of a copy of <m>b</m> in <m>ab</m>. In the case when <m>a&lt;1</m>, we think of <m>ab</m> as a squeeze of <m>b</m> by a factor of <m>a</m>.
+			</p>
+
+			<p>
+				An important case happens when one of the two numbers is a whole number (an integer). If <m>n</m> is a positive integer, then <m>1</m> fits into <m>n</m> exactly <m>n</m> times. Hence, if <m>b</m> is positive, <m>b</m> will fit into <m>nb</m> exactly <m>n</m> times. Let's view this on the number line with <m>n=5</m>:
+<figure xml:id="fig_mult3">
+    <caption>Multiplication of <m>b</m> by <m>5</m>. Compare with adding <m>b</m> to itself <m>5</m> times.</caption>
+	<image>
+	<latex-image>
+  \begin{tikzpicture}
+  \draw[ultra thick,blue][|-] (-1,.5) -- (0,.5);
+  \draw[ultra thick,blue][|-] (0,.5) -- (1,.5);
+  \draw[ultra thick,blue][|-] (1,.5) -- (2,.5);
+  \draw[ultra thick,blue][|-] (2,.5) -- (3,.5);
+  \draw[ultra thick,blue][|-|] (3,.5) -- (4,.5);
+  \draw[ultra thick,red][|-] (-1,-.7) -- (.3,-.7);
+  \draw[ultra thick,red][|-] (.3,-.7) -- (1.6,-.7);
+  \draw[ultra thick,red][|-] (1.6,-.7) -- (2.9,-.7);
+  \draw[ultra thick,red][|-] (2.9,-.7) -- (4.2,-.7);
+  \draw[ultra thick,red][|-|] (4.2,-.7) -- (5.5,-.7);
+  \draw[thick] [-{Latex}] (0,0) -- (7,0);
+  \draw[thick] [{Latex}-] (-7,0) -- (0,0);
+  \node[align=center,below] at (-1,0){$0$};\draw (-1,-.1) -- (-1,.1);
+  \node[align=center,below] at (0,0){$1$};\draw (0,-.1) -- (0,.1);
+  \node[align=center,below] at (4,0){$5$};\draw[fill](4,0)circle[radius=.05];
+  \node[align=center,below] at (.3,0){$b$};\draw[fill](.3,0)circle[radius=.05];
+  \node[align=center,below] at (5.5,0){$5b$};\draw[fill](5.5,0)circle[radius=.05];
+  \end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+  
+			</p>
+
+			<p>
+				The key observation here is that when you add <m>b</m> to itself <m>n</m> times you get the same result as when you multiply <m>b</m> by <m>n</m>. In other words, <em>multiplication by a positive integer represents repeated addition. This is where the terminology <q><m>n</m> times <m>b</m></q> comes from; we’re taking <m>b</m> and adding it to itself <m>n</m> times.</em>
+			</p>
+
+			<p>
+			Note that this gives us two <em> different </em> ways of thinking of multiplication; it represents repeated addition when the multiplier is positive and whole, but represents stretching or compression in other cases. We use the mental representation that makes the most sense for a given problem. This may seem confusing at first, but being aware of having several representations of mathematical objects, and knowing when you use them, is a key skill in truly understanding mathematics.
+			</p>
+
+<question>
+			<p>
+				<em>Explain why <m>0\cdot a = 0</m> and <m>1a=a</m> for any number <m>a</m>.</em>
+			</p>
+</question>
+			
+<question>		
+			<p>
+			 <em>If <m>a</m> is a number between <m>3</m> and <m>4</m>, what is the possible range of values for</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>a+12</m>?</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>12a</m>?</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>12a+4\ </m>? Note: Only <m>a</m> is multiplied by <m>12</m>, the <m>4</m> is not multiplied by <m>12</m>.</em>
+			</p>
+				</li>
+
+			</ol></p>
+
+</question>
+
+<question>
+			<p>
+				<em>Explain why <m>ab</m> is equal to <m>ba</m> when <m>a</m> and <m>b</m> are both positive integers.</em>
+			</p>
+</question>
+			<p>
+				Lastly, let's think about multiplying with negative numbers. Recall from Table <xref ref="table1_1_1" /> that if <m>a</m> is a number, then <m>-a</m> is the same distance from <m>0</m>, but on the other side of <m>0</m> from <m>a</m>. Multiplying negative numbers extends this idea. When <m>b</m> is any number and <m>a</m> is a negative number, then <m>ab</m> is the number with the same squeeze or stretch factor applied to <m>b</m> as if <m>a</m> were positive, but flipped to the other side of zero. For instance if <m>b</m> is positive, then <m>-0.75b</m> is the number <m>75\%</m> as far from <m>0</m> as <m>b</m>, flipped to the other side of <m>0</m> from <m>b</m>.
+<figure xml:id="fig_mult4">
+    <caption>Multiplying by a negative is multiplying by a positive, then flipping across zero.</caption>
+	<image>
+	<latex-image>
+  \begin{tikzpicture}
+  \draw[ultra thick,blue][|-|] (-2,.5) -- (-.5,.5);
+  \draw[ultra thick,dotted,blue][|-|] (-.5,.5) -- (0,.5);
+  \draw[ultra thick,red][|-|] (-2,-.7) -- (1.6,-.7);
+  \draw[ultra thick,dotted,red][|-|] (1.6,-.7) -- (2.8,-.7);
+  \draw[thick] [-{Latex}] (0,0) -- (7,0);
+  \draw[thick] [{Latex}-] (-7,0) -- (0,0);
+  \node[align=center,below] at (-2,0){$0$};\draw (-2,-.1) -- (-2,.1);
+  \node[align=center,below] at (0,0){$1$};\draw (0,-.1) -- (0,.1);
+  \node[align=center,below] at (2.8,0){$b$};\draw[fill](2.8,0)circle[radius=.05];
+  \node[align=center,below] at (-.5,0){$0.75$};\draw[fill](-.5,0)circle[radius=.05];
+  \node[align=center,below] at (1.6,0){$0.75b$};\draw[fill](1.6,0)circle[radius=.05];
+  \node[align=center,below] at (-5.6,0){$-0.75b$};\draw[fill](-5.6,0)circle[radius=.05];
+  \draw[ultra thick,-{Latex},dashed,red] (1.6,0) to [out=135,in=45] (-5.6,0);
+  \end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+
+			</p>
+
+<question>
+			<p>
+				<em>Explain why the following statements are true using pictures and words to represent the numbers involved:</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em>A positive number times a positive number is positive.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>A positive number times a negative number is negative.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>A negative number times a negative number is positive.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>If <m>a</m> is any number, multiplying <m>a</m> by <m>-1</m> results in <m>-a</m>.</em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+</section>

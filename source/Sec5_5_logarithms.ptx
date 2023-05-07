@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec5_5_logarithms">
+	<title>Logarithms</title>
+
+			<objectives>
+<ul>
+			<li>
+	  			<p>
+				Introduce and understand logarithms as an inverse to basic exponential functions.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+				Become familiar with the basic logarithm properties.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Solve equations using logarithms in both pure and applied settings.
+	  			</p>
+	  		</li>
+			</ul>
+			</objectives>
+
+
+			<p>
+				When working with any family of functions, two common tasks are finding a formula for a member of some specified family satisfying some conditions (often points on the graph), and solving equations involving members of that family. A little reflection on the last two families we studied (exponential and power functions) reveals that we did not solve equations involving exponential functions nor did we find formulas for power functions. This is because we need a way of solving for a variable in an exponent, which is exactly what <em>logarithms are for.</em>
+			</p>
+
+			<p>
+				Before giving the definition of a logarithm, it may be helpful to think about the difference between a power function and an exponential function one more time. (<em><em>This is important, don't skip reading it!</em></em>) A power function is one of the form <me>f(x) = kx^p.</me> Thinking about such a function as a process applied to the input, <m>x</m>, we would say <m>f</m>
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				raises <m>x</m> to the <m>p</m>-th power, then
+			</p>
+				</li>
+
+				<li>
+							<p>
+				multiplies the result by <m>k</m>.
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				In order to describe what an exponential function, <me>g(x) = ab^x,</me> does to <m>x</m>, we need the following math verb: to <term>exponentiate</term><idx>exponentiate</idx> <m>x</m> (with a given base) <m>b</m> means to make <m>x</m> the exponent of <m>b</m>. The we can describe what <m>g</m> does as
+			
+
+			<ul>
+				<li>
+							<p>
+				exponentiates <m>x</m> given a base of <m>b</m>, then
+			</p>
+				</li>
+
+				<li>
+							<p>
+				multiplies the result by <m>a</m>.
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				This distinction of what is done to <m>x</m> by these families is deeper than just where <m>x</m> is as a symbol; it tells us which operation must be applied to undo each process. In the both cases, undoing the function first involves division (by <m>k</m> or <m>a</m>). Then, in the case of a power function, you undo raising <m>x</m> to the <m>p</m>-th power by taking the <m>p</m>-th root (equivalently, raising to the <m>\frac{1}{p}</m>-th power). In the case of the exponential function, we must undo exponentiation with a logarithm.
+			</p>
+
+<definition><title>The Base <m>b</m> Logarithm</title><idx>logarithm of base <m>b</m></idx>
+			<p>
+				The <term>logarithm, base <m>b</m>, of <m>y</m></term> is defined as follows:
+			</p>
+
+			<p>
+				<m>x = \log_b(y)</m> is the inverse function of <m>y = b^{x}</m>.
+			</p>
+
+			<p>
+				Other ways of conceptualizing <m>\log_{b}(y)</m> are as follows:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				<m>\log_{b}(b^x)=x</m> and <m>b^{\log_{b}(y)} = y</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				The base <m>b</m> logarithm undoes exponentiation with base <m>b</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				The equation <m>\log_b(y) = x</m> is equivalent to <m>b^{x} = y</m>.
+			</p>
+				</li>
+
+			</ul></p>
+</definition>
+
+<question xml:id="log_of_one">
+			<p>
+				<em>Find the following logarithms:</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>\log_{2}(32)</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\log_{3}\left(\frac{1}{9}\right)</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\log_{100}(10)</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\log_{b}(1)</m> (no matter what <m>b</m> is)</em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+<question>
+			<p>
+				<em>Suppose that <m>b&gt;1</m>. Explain why <m>\log_{b}(y)</m> is positive when <m>y&gt;1</m> and <m>\log_{b}(y)</m> is negative when <m>y&lt;1</m>.</em>
+			</p>
+</question>
+
+<question>
+			<p>
+				<em>Explain why <m>\log_b(0)</m> is undefined.</em>
+			</p>
+</question>
+
+			<p>
+				One of the major difficulties of logarithms is that they cannot easily be computed by hand unless the input is an obvious power of the base; a calculator is usually required. However, there are only two logarithms programmed into most calculators, the <em>common logarithm and the </em>natural logarithm. The common logarithm has a base of ten and the natural logarithm has a base of <m>e \approx 2.718</m>. We will focus our use on the common logarithm. We will see in the next section that you really only need one logarithm.**
+			</p>
+
+
+		<subsection xml:id="logarithm-properties-and-solving-equations">
+				<title>Logarithm Properties and Solving Equations</title>
+
+<definition><title>The Common Logarithm</title><idx>common logarithm</idx>
+					The <term>common logarithm</term> is the base-<m>10</m> logarithm. That is, <me>\log(y) = \log_{10}(y)</me>.
+</definition>
+
+From now on we will only use the common logarithm, as logarithm properties will allow us to calculate other logarithms using the common logarithm.
+
+<identity><title>Properties of <m>\log</m></title><idx>logarithm properties</idx>
+				<p>
+					The following properties of the common logarithm follow from familiar exponent rules:
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<m>\log(AB) = \log(A) + \log(B)</m> (from <m>a^{m}a^{n} = a^{m+n}</m>)
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>\log\left(\frac{A}{B}\right) = \log(A) - \log(B)</m> (from <m>\frac{a^{m}}{a^{n}} = a^{m-n}</m>)
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>\log(A^p) = p\log(A)</m> (from <m>(a^{n})^m = (a^{m})^n = a^{mn}</m>)
+				</p>
+					</li>
+
+				</ol></p>
+</identity>
+
+				<p>
+					<term>Justification:</term> We will justify the first property and leave the other two as an exercise. To justify the first property, observe that <m>\log(AB)</m> is the exponent of <m>10</m> that yields <m>AB</m>, i.e. <me>10^{\log(AB)} = AB.</me> If we can show that <m>\log(A)+\log(B)</m> has the same property, then property one will be proven. If we exponentiate <m>\log(A) + \log(B)</m>, then we have <me>10^{(\log(A)+\log(B))} = 10^{\log(A)}10^{\log(B)} = AB.</me> Since both <m>\log(AB)</m> and <m>\log(A)+\log(B)</m> yield <m>AB</m> when we exponentiate them with a base of <m>10</m>, we have <m>\log(A)+\log(B) = \log(AB)</m>. 
+				</p>
+
+<question>
+				<p>
+					<em>Justify properties two and three in the same manner as property one was justified.</em>
+				</p>
+</question>
+
+<question>
+				<p>
+					<em>Use the second logarithm property and the result of <xref ref="log_of_one"/>, part (d), to show that <me>\log\left(\frac{1}{A}\right) = -\log(A).</me></em>
+				</p>
+</question>
+
+<example>
+				<p>
+					In this example we see why the common logarithm is the only one we really need (although the natural logarithm is the most commonly used), as well as how we can use a logarithm to solve a simple equation. Suppose we wish to know the solution to <me>3^{x}  = 7.</me> The simple answer is <m>x = \log_{3}(7)</m>. However, we cannot get a decimal approximation of this from many calculators. We can take the common logarithm of both sides of the equation <me>\log(3^{x}) = \log(7).</me> Then by property three given above (you will use this property most often), we have <me>x\log(3) = \log(7).</me> Hence <m>x = \dfrac{\log(7)}{\log(3)}\approx 1.77</m>. In general, <me>\log_{b}(y) = \frac{\log(y)}{\log(b)}.</me>
+				</p>
+</example>
+
+				<p>
+					Now that we are equipped with logarithms, we can solve equations involving exponential expressions.
+				</p>
+
+<example>
+				<p>
+					Suppose we wish to solve the equation <me>3\cdot 4^{x} = 5^{3x}.</me> A good first step in the process is to simplify this into an equivalent equation of the form <me>b^{x} = \mbox{a number}.</me> Then we can use our new tool to undo the exponentiation. Simplifying we have 
+<md>
+<mrow> 3\cdot 4^{x} \amp = \amp 5^{3x}</mrow>
+<mrow> \amp \updownarrow \amp \amp\text{divide by}\ 3\  \text{and}\  5^{3x}= 125^x</mrow>
+<mrow> \left(\frac{4}{125}\right)^{x} \amp = \amp \frac{1}{3}.</mrow>
+</md> 
+
+Now we take the common logarithm of both sides of the equation and use the third logarithm property to get <me>x\log\left(\frac{4}{125}\right) = \log\left(\frac{1}{3}\right).</me> Then we simply divide to solve for <m>x</m>: <me>x = \frac{\log\left(\frac{1}{3}\right)}{\log\left(\frac{4}{125}\right)}.</me>  This expression for <m>x</m> simplifies to <me>x = -\frac{\log{3}}{\log{4}-\log{125}}\approx .319.</me>
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Say exactly which logarithm properties are used in simplifying <m>\frac{\log\left(\frac{1}{3}\right)}{\log\left(\frac{4}{125}\right)}</m> to <m>-\frac{\log{3}}{\log{4}-\log{125}}</m>.</em>
+				</p>
+</question>
+
+		</subsection>
+
+		<subsection xml:id="applications-to-exponential-and-power-functions">
+				<title>Applications to Exponential and Power Functions</title>
+
+				<p>
+					Now we are equipped to handle some problems involving exponential and power functions.
+				</p>
+
+<example>
+				<p>
+					Suppose the balance in a bank account begins at <m>\$13,000</m> and earns <m>2.2\%</m> interest per year. When will there be <m>\$20,000</m> in the account?
+				</p>
+
+				<p>
+					First, we need to find a formula for the amount <m>A</m> in the account, in dollars, as a function of the time <m>t</m>, in years. We can quickly determine this to be <me>A = 13000(1.022)^{t}.</me> Now we are faced with solving the equation <me>13000(1.022)^t = 20000.</me> Quick simplification and application of the technique from the previous section gives us 
+					
+<md>
+<mrow> (1.022)^t \amp =  \amp \frac{20}{13}</mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> \log((1.022)^t)) \amp = \amp \log\left(\frac{20}{13}\right)</mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> t\log(1.022) \amp = \amp  \log\left(\frac{20}{13}\right) </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> t \amp = \amp \frac{\log(20)-\log(13)}{\log(1.022)} \amp \approx \amp 19.8.</mrow>
+</md> 
+
+Hence there will be <m>\$20,000</m> in the account in about 19.8 years.
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Consider a bank account that initially begins with <m>\$20,000</m> and only earns a <m>1.5\%</m> annual interest rate. After how many years will the account from the previous example be worth more than this account? Give your answer in exact form (with logarithms) as well as a decimal approximation using a calculator.</em>
+				</p>
+</question>
+
+<example>
+				<p>
+					Suppose a population of bacteria begins at 1,000 and grows at a rate of <m>6\%</m> per hour. What is the doubling-time of this population?<!-- linebreak --> First we find a formula for the population, <m>P</m>, as a function of time, <m>t</m>, in hours: <me>P  = 1000(1.06)^t.</me> The doubling-time will then be the time it takes for the population to be <m>2,000</m>, so we solve: 
+<md>
+<mrow> 1000(1.06)^t \amp = \amp 2000</mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> (1.06)^t \amp = \amp 2 </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> t\log(1.06) \amp = \amp \log(2) </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> t \amp = \amp \frac{\log(2)}{\log(1.06)}\amp \approx\amp  11.9.</mrow>
+</md> 
+
+Thus the population will double in about 11.9 hours.
+				</p>
+</example>
+
+<question>
+				<p>
+					<em> Use some part of the solution in the previous example to explain why the doubling-time (or half-life) of an exponentially growing (or decaying) quantity is independent of its initial value. <em> Hint:</em> What will you always do with the initial value in the first step of solving and what new equation will you always be left with? </em>
+				</p>
+</question>
+
+<example>
+				<p>
+					Find a formula for a power function <m>f(x) = kx^{p}</m> such that <m>f(1) = 3</m> and <m>f(4) = 7</m>. First we note that <m>f(1) = k\cdot 1^{p} = k</m>. Thus, <m>k=3</m>. We can substitute the other point and use logarithms to solve for <m>p</m>: 
+<md>
+<mrow> 3\cdot 4^{p} \amp = \amp 7 </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> 4^{p} \amp = \amp \frac{7}{3} </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> p\log(4) \amp = \amp\amp \log(7)-\log(3) </mrow>
+<mrow> \amp \updownarrow \amp </mrow>
+<mrow> p \amp = \amp \frac{\log(7)-\log(3)}{\log(4)} \amp \approx \amp 0.611.</mrow>
+</md> 
+Thus the function of interest is approximately (due to approximating the logarithms) <m>f(x) = 3x^{0.611}</m>. <term>Note:</term> You should leave logarithmic expressions in exact form when possible; if you substitute decimal approximations at various steps of the problem, the error can propagate very quickly.
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Answer the following questions about the last example:</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em>What mistake in the last step of solving for <m>p</m> might lead you to conclude <m>p=1</m>?</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Once you know <m>k=3</m>, how can you tell that <m>p</m> must be less than one without actually solving for it?</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+		</subsection>
+	</section>

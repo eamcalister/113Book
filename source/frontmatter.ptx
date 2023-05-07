@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- **********************************************************************--> 
+<!-- **********************************************************************-->
+
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="./titlepage.xml" />
+    <xi:include href="./colophon.xml" />
+
+  <acknowledgement>
+    <p>
+      This book was created based on years of one-on-one interaction with students in FLC's Math Assistance Center. I am grateful to Fort Lewis College for its continued support of creative activities that are focused on student learning and success. 
+
+    </p>
+
+
+    <p>
+      I look forward to any and all suggestions for improvement.
+    </p>
+
+
+  </acknowledgement>
+
+<preface>
+    <title>Contributors</title>
+    <p>
+      Users of the text contribute important insight:  they find errors, suggest improvements, and offer feedback and impressions.  I'm grateful for all of it.  As you use the text, I hope you'll contact me to share anything you think could make the book better.
+    </p>
+
+    <p>
+      The following contributing editors have offered feedback that includes information about typographical errors or suggestions to improve the exposition.
+    </p>
+
+    <contributors>
+      <contributor>
+        <personname>Veronika Furst</personname>
+        <institution>Fort Lewis College</institution>
+      </contributor>
+
+      <contributor>
+        <personname>Laura Scull</personname>
+        <institution>Fort Lewis College</institution>
+      </contributor>
+
+      <contributor>
+        <personname>Autumn von Flotow</personname>
+        <institution>Fort Lewis College</institution>
+      </contributor>
+
+    </contributors>
+
+  </preface>
+
+  <preface xml:id="preface-our-goals">
+    <title>Our Goals</title>
+    <p>
+      Embodied, symbolic, and formal mathematics for early college students.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            <em>Multiple mental and written representations of mathematical objects and processes</em>.  
+          </p> 
+        </li>
+        <li>
+          <p>
+            <em>Symbolic literacy</em>.  
+          </p>
+        </li>  
+
+        <li>
+          <p>
+            <em>Families of functions</em>. 
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>Flexible thinking and a growth mindset</em>. 
+          </p>
+        </li>
+        
+
+      </ul>
+    </p>
+
+  </preface>
+
+  <preface>
+    <title>Features of the Text</title>
+    <p>
+      Instructors and students alike will find several consistent features in the presentation,
+      including:
+      <dl width="narrow">
+        <li>
+          <title>Section Objectives</title>
+          <p>
+            
+          </p>
+        </li>
+
+
+
+        <li>
+          <title>Exercises</title>
+          <p>
+            
+          </p>
+        </li>
+
+        <!--li>
+          <title>Graphics</title>
+          <p>
+            As much as possible,
+            we strive to demonstrate key fundamental ideas visually,
+            and to encourage students to do the same.
+            Throughout the text, we use full-color<fn>To keep cost low,
+            the graphics in the print-on-demand version are in black and white.
+            When the text itself refers to color in images,
+            one needs to view the .html or .pdf electronically.</fn> graphics to exemplify and magnify key ideas,
+            and to use this graphical perspective alongside both numerical and algebraic representations of calculus.
+          </p>
+        </li-->
+
+        <!--li>
+          <title>Interactive graphics</title>
+          <p>
+            Many of the ideas of how functions behave are best understood dynamically;
+            applets offer an often ideal format for investigations and demonstrations.
+            <em>Desmos</em> provides a free and easy-to-use online graphing utility that we occasionally link to and often direct students to use.  Thanks to David Austin, there are also select interactive javascript figures within the text itself.
+          </p>
+        </li-->
+
+        <!--li>
+          <title>Summary of Key Ideas</title>
+          <p>
+            Each section concludes with a summary of the key ideas encountered in the preceding section;
+            this summary normally reflects responses to the motivating questions that began the section.
+          </p>
+        </li-->
+      </dl>
+    </p>
+  </preface>
+
+
+  <preface xml:id="preface-for-students">
+    <title>Students!  Read this!</title>
+    <p>
+      This book (and class) is different from previous Algebra classes you may have encountered.  
+    </p>  
+
+
+   
+
+  </preface>
+
+
+  <preface xml:id="preface-for-instructors">
+    <title>Instructors!  Read this!</title>
+    <p>
+      This book is different.  Before you read further, first read <xref ref="preface-for-students" text="custom"><q>Students! Read this!</q></xref> as well as <xref ref="preface-our-goals" text="custom"><q>Our Goals</q></xref>.
+    </p>
+
+    
+
+<!--
+    <p>
+      In the <xref ref="backmatter" text="title">back matter of the text</xref>, you'll find answers to the Activities and to non-<webwork /> Exercises.  Instructors interested in solutions to these should contact the author directly.
+    </p>
+-->
+
+<!--
+    <p>
+      You and your students can find additional resources in the <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-">GVSU Math 201 YouTube Channel</url> and <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGtewW75Nw7PnGNSkfqwAm3v">GVSU Math 202 YouTube Channel</url> where there are short video tutorials for every section of the text.  Math 201 (GVSU's Calculus I) corresponds to Chapters 1-4 and Math 202 (GVSU's Calculus II) to Chapters 5-8.
+    </p>
+-->
+  </preface>
+  
+</frontmatter>
+

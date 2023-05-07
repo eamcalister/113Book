@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec4_2_graphs-of-functions">
+			<title>Graphs of Functions</title>
+
+
+			
+			<objectives>
+			<ul>
+			<li>
+	  			<p>
+				Introduce graphs of functions and produce simple graphs by plotting points and using number snese.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Evaluate functions and solve equations of the form <m>f(x) = C</m>, where <m>C</m> is constant, using the graph of a function.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Find the domain and range of a function from its graph.
+	  			</p>
+	  		</li>
+			</ul>
+			</objectives>
+
+			<p>
+				Until now, our development has regarded a function as only slightly different than an algebraic expression. Algebraic expressions represent processes applied to their variables (the inputs), just like functions. The function concept blends this idea with solving equations by considering the evaluation result (the output) as a key piece; the output is a number that the function can equal for some input, which may be solved for. The graph of a function takes us a step further, so that we may see the totality of all inputs and outputs of the function as a single object, the graph of the function.
+			</p>
+
+			<p>
+				The graph of a general function of the form <m>y = f(x)</m> is a set of points in the <m>xy</m>-plane (or whatever the input and output variables happen to be). To plot a single point <m>(a,b)</m> in the <m>xy</m>-plane, we move a distance of <m>a</m> along the <m>x</m>-axis (the horizontal axis), then a vertical distance <m>b</m> from there (the vertical axis is the <m>y</m>-axis as in the following figure:
+			</p>
+
+<figure xml:id="basic_cartesian_plane">
+    <caption>Plotting the point <m>(a,b)</m> in the plane.</caption>
+	<image width="50%">
+	<latex-image>
+	\begin{tikzpicture}[yscale=1]
+	\draw[thick] [{Latex}-{Latex}] (-1,0) -- (5,0);
+	\draw[thick] [{Latex}-{Latex}] (0,-1) -- (0,5);
+	\draw (2,-.1) -- (2,.1);
+	\draw (-.1,1) -- (.1,1);
+	\node[align=center,below] at (2,0){$a$};
+	\node[align=center,left] at (0,1){$b$};
+	\node[align=center,below] at (5,0){$x$};
+	\node[align=center,left] at (0,5){$y$};
+	\draw [fill] (2,1) circle [radius=0.05];
+	\node[align=center,right] at (2,1){$(a,b)$};
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+
+<remark> The <m>xy</m>-plane with coordinates like this is called the <term>Cartesian</term> plane after Rene Descartes. He supposedly thought of it while thinking about how to describe the position of a fly on his ceiling while lying in bed.</remark>
+
+
+
+
+<definition>
+			
+				<title>The Graph of a Function</title>
+				<p>
+				The <term> graph of <m>y = f(x)</m></term> is the set of all points in the <m>xy</m>-plane that satisfy the equation <m>y=f(x)</m>. Stated another way we have the following equivalence: <me>(a,b)\ \text{is on the graph of } y=f(x)\ \text{ if and only if }\ b = f(a).</me>
+				</p>
+</definition>
+
+			<p>
+				To sketch the graph of a function, one starts by finding a reasonable number of points on the graph, often putting them in an input-output table, then plotting them in the plane. When a general pattern is evident, we usually fill in between the plotted points with a smooth curve.
+			</p>
+
+<example>
+			<statement>
+				Sketch the graph of the function <m>y = f(x) = x^2-4</m>.
+			</statement>	
+			<solution>	
+				 First, we will find some pairs of points on the graph by evaluating the function for some <m>x</m>-values and recording the results in a table:
+			
+
+
+			<table>
+				<title>Input-output table for <m>y = f(x) = x^2-4</m>.</title>
+				<tabular>
+				<row bottom="medium">
+					<cell halign="center"><m>x</m></cell>
+					<cell halign="right"><m>-3</m></cell>
+					<cell halign="right"><m>-2</m></cell>
+					<cell halign="right"><m>-1</m></cell>
+					<cell halign="right"><m>0</m></cell>
+					<cell halign="right"><m>1</m></cell>
+					<cell halign="right"><m>2</m></cell>
+					<cell halign="right"><m>3</m></cell>
+				</row>
+				<row>
+					<cell halign="center"><m>y = f(x) = x^2-4</m></cell>
+					<cell halign="right"><m>5</m></cell>
+					<cell halign="right"><m>0</m></cell>
+					<cell halign="right"><m>-3</m></cell>
+					<cell halign="right"><m>-4</m></cell>
+					<cell halign="right"><m>-3</m></cell>
+					<cell halign="right"><m>0</m></cell>
+					<cell halign="right"><m>5</m></cell>
+				</row>
+				</tabular>
+			</table>
+
+			<p>
+				Then we plot the points according to the table and fill in a curve:
+
+<figure xml:id="first_function_graph">
+    <caption>The graph of <m>y=f(x)=x^2-4</m>.</caption>
+	<image width="50%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=.7,yscale=.5]
+	\draw[thick] [{Latex}-{Latex}] (-4,0) -- (4,0);
+	\draw[thick] [-{Latex}] (0,-4) -- (0,6);
+	\draw [help lines] (-4,-4) grid (4,6);
+	\node[align=center,below] at (4,0){$x$};
+	\node[align=center,left] at (0,6){$y$};
+	\draw [fill] (-3,5) circle [radius=0.1];
+	\draw [fill] (-2,0) circle [radius=0.1];
+	\draw [fill] (-1,-3) circle [radius=0.1];
+	\draw [fill] (0,-4) circle [radius=0.1];
+	\draw [fill] (3,5) circle [radius=0.1];
+	\draw [fill] (2,0) circle [radius=0.1];
+	\draw [fill] (1,-3) circle [radius=0.1];
+	\draw [domain=-3.2:3.2] plot (\x, {\x*\x-4});
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+			</p>
+</solution>			
+</example>
+
+<technology>Graphing by hand, without the aid of technology, is a good skill that helps solidify the concept of the graph of a function. However, you will also want to use technology to both check your work and discover new concepts. Two places you can graph using technology are as follows:
+<ol>
+<li> Use the <em>Calc</em> button in this e-book. The calculator the comes up is a graphing calculator powered by Geogebra ( <url href="http://geogebra.org"/>). Just type <m>y=x^2-4</m> (or whatever function you wish to graph) to graph.</li>
+<li> Desmos graphing calculator ( <url href="http://www.desmos.com/calculator"/>) is a favorite. Again, just type in the function you want to graph. We will use Desmos extensively when we study function families in the next chapter.</li>  
+</ol>
+
+ </technology>
+
+<question>
+			<p>
+				<em>On your own paper, carefully graph the following functions by plotting at least six points. (Check your work with the technology of your choice.)</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>f(x) = 3x-2</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>g(x) = \sqrt{x}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>h(x) = \dfrac{1}{x}</m> (Be sure to plot several points with <m>x</m> values between <m>-1</m> and <m>1</m>.)</em>
+			</p>
+				</li>
+
+			</ol></p>
+			
+</question>
+
+			<p>
+				Equipped with graphs of functions, we may now catalog graphical interpretations of many of the skills and concepts we have encountered so far.
+			</p>
+
+<principle>
+			
+				<title>Graphical Interpretations of Algebraic Skills with Functions</title>
+			
+
+			<p><ul>
+				<li>
+							<p>
+				To evaluate a function at some value <m>x=a</m>, move to the <m>a</m> position on the horizontal axis and then find the vertical coordinate on the graph above or below that point.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				To solve an equation of the form <m>f(x) = b</m>, find the <m>x</m>-coordinates of all points on the graph whose <m>y</m>-coordinate is <m>b</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				To solve an equation of the form <m>f(x) = g(x)</m>, we are asking for the input values such that <m>f</m> and <m>g</m> give the same output. Hence we must find the <m>x</m>-coordinates of all points of intersection between the graphs of <m>f</m> and <m>g</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				The domain of a function is the set of <m>x</m>-coordinates of all points on the graph. This may be visualized as the set of values on the horizontal axis that lie above or below the graph of the function.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				The range of a function is the set of <m>y</m>-coordinates of all points on the graph. This may be visualized as the set of values on the vertical axis that lie to the left or right of the graph of the function.
+			</p>
+				</li>
+
+			</ul></p>
+</principle>
+
+<question>
+			<p>
+				<em>Consider the graph of the function shown below (the graph is shown).</em>
+			</p>
+<figure xml:id="squiggle_function_graph">
+    <caption>The entire graph of <m>y=f(x)</m>.</caption>
+	<image width="75%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=.7,yscale=.5]
+	\foreach \x in {-2,-1,0,1,2,3,4,5}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\foreach \y in {-2,-1,0,1,2,3,4,5}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[thick] [{Latex}-{Latex}] (-2,0) -- (6,0);
+	\draw[thick] [-{Latex}] (0,-2) -- (0,5);
+	\draw [help lines] (-2,-2) grid (6,5);
+	\node[align=center,right] at (6,0){$x$};
+	\node[align=center,above] at (0,5){$y$};
+	\node[align=center,right] at (5,3){$y=f(x)$};
+	\draw [fill] (-1,0) circle [radius=0.1];
+	\draw [fill] (5,3) circle [radius=0.1];
+	\draw[thick] (-1,0) to [out=90,in=180] (1,2)
+	to [out=0,in=180] (3,-1) to [out=0,in=225] (5,3) ;
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+
+			<p>
+				<em>Find each of the following, approximate if necessary:</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em>The domain of <m>f</m>.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>The range of <m>f</m>.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>f(1)</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>All solutions to the equation <m>f(x) = 1</m>.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>All solutions to the equation <m>f(x) = x+1</m>.</em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+	</section>

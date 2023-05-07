@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- **********************************************************************-->
+<!-- Copyright 2022                                                        -->
+<!-- Erich McAlister                                                       -->
+<!--                                                                       -->
+<!-- This file is part of Understanding Algebra for Calculus.              -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-NC-SA license.  The work   -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<docinfo>
+  <!-- brandlogo url="" source="" -->
+
+<latex-image-preamble>
+  \usepackage{tikz, pgfplots}
+  \usetikzlibrary{positioning,matrix,arrows,arrows.meta}
+  \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+  \usetikzlibrary{decorations.markings}
+</latex-image-preamble>
+
+<latex-preamble>
+  \usepackage{cancel}
+</latex-preamble>
+
+
+
+  <macros>
+		\newcommand{\dollar}{\$}
+    %  cancelhighlight (draw attention to when a factor is canceled)
+    %  Usage: \frac{(x+1)\cancelhighlight{(x+2)}{\cancelhighlight{(x+2)}}}
+    \newcommand{\cancelhighlight}[1]{\definecolor{sapphire}{RGB}{59,90,125}{\color{sapphire}{{\cancel{#1}}}}}
+   
+    %  secondcancelhighlight (draw attention to when a factor is canceled with a second color)
+    %  Usage: \frac{(x+1)\secondcancelhighlight{(x+2)}{\secondcancelhighlight{(x+2)}}}
+    \newcommand{\secondcancelhighlight}[1]{\definecolor{emerald}{RGB}{20,97,75}{\color{emerald}{{\bcancel{#1}}}}}
+  </macros>
+
+<cross-references text="global" />
+<!--covers front="" /-->
+  <!--initialism></initialism-->
+<!--html-->
+    <!--favicon/-->
+    <!--baseurl href="url"/-->
+<!--/html-->
+<!--
+
+
+  <feedback>
+    <url>email author</url>
+  </feedback>
+
+-->
+
+  <rename element="objectives" xml:lang="en-US">Section Objectives</rename>
+  <rename element="fact" xml:lang="en-US">Key Concept</rename>
+  <rename element="principle" xml:lang="en-US">Key Concepts</rename>
+  <rename element="identity" xml:lang="en-US">Fundamental Properties</rename>
+  <rename element="algorithm" xml:lang="en-US">Basic Solving Procedure</rename>
+  <rename element="answer" xml:lang="en-US">Textbook Description</rename>
+  <rename element="computation" xml:lang="en-US">Function Building Procedure</rename>
+  </docinfo>
+

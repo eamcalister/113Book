@@ -1,0 +1,782 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec2_2_equivalent-expressions">
+
+		<title>Equivalent Algebraic Expressions</title>
+		<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Understand the definition of equivalence of algebraic expressions both in terms of numerical results and as different processes yielding the same results. 
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Prove that expressions are inequivalent through substitution.
+	  			</p>
+	  		</li>
+			<li>
+				<p>Introduce the commutative, associative, and distributive laws of addition and multiplication (along with their geometric interpretations) as a means of creating equivalent expressions by reordering, regrouping, and factoring.
+				</p> 
+			</li>
+		</ul>
+		</objectives>
+
+			<p>
+				Two algebraic expressions are <term> equivalent </term> if whenever particular values are substituted into both expressions, the end result is the same for both expressions. 
+			</p>
+
+<example>
+<statement>
+Consider the algebraic expressions
+<me> \frac{2x+5}{x+3}\ \mbox{and} \ 2-\frac{1}{x+3}.</me>
+</statement>
+Substitute several different values for <m>x</m> to decide if you think these two expressions are equivalent.
+<solution>
+<p>
+Let's try <m>x=-2</m> first. Substituting into the first expression we have
+<me> \frac{2\cdot(-2)+5}{-2+3} = \frac{1}{1} = 1. </me>
+In the second expression we get
+<me> 2-\frac{1}{-2+3} = 2-1 = 1. </me>
+Since we got the same result when <m>x=-2</m>, the expressions <em> might </em> be equivalent. 
+</p>
+<p>
+Now let's try <m>x=4</m>. Substituting into the first expression we have
+<me> \frac{2\cdot(4)+5}{4+3} = \frac{13}{7}. </me>
+In the second expression we get
+<me> 2-\frac{1}{4+3} = \frac{14}{7}-\frac{1}{7} = \frac{13}{7}. </me>
+Again, the same result is obtained. You should try some of your own values of <m>x</m> now; if you evaluate correctly, these two expressions should always give the same result.  
+</p>
+</solution>
+</example>
+
+<remark>
+Note that testing values isn't really enough to <em> prove </em> two expressions are equivalent. It just provides evidence. We'll prove these expressions are equivalent in <xref ref="equiv_by_manip_ex"/>.
+</remark>
+
+			<p>	
+				
+				Thinking of algebraic expressions procedurally, we have the following characterization of equivalent algebraic expressions:
+			</p>
+
+<fact>
+			<title>
+				<term> Equivalent Expressions as Different Processes with the Same Result </term>
+			</title>
+
+			<p>
+				Equivalent algebraic expressions are symbolic representations of different processes performed on the variables that always give the same end result. 
+			</p>
+</fact>
+
+			<p>
+				People who are good at algebra often speak of manipulating/simplifying algebraic expressions and putting expressions into different forms. What they are talking about is replacing an expression with an equivalent expression. The reason for manipulating expressions is that sometimes one version of an expression makes it easier to see a solution to a problem. For instance, the expression used to find the temperature in <m>^{\circ}</m>C given the temperature in <m>^{\circ}</m>F is <me>C = \frac{5}{9}F - \frac{160}{9},</me> where <m>F</m> is the temperature in <m>^{\circ}</m>F and <m>C</m> is the temperature in <m>^{\circ}</m>C. Suppose we want to know what temperature in <m>^{\circ}</m>F corresponds to <m>0^{\circ}</m>C. Even if you already know the answer is <m>32^{\circ}</m>F, the given expression does not make it obvious. However, the given expression is equivalent to the following: <me>C = \frac{5}{9}(F - 32).</me> Now the solution is more clear; if we substitute <m>F=32</m> into the expression for <m>C</m> in terms of <m>F</m>, we get <m>\frac{5}{9}(32-32) = 0</m>.
+			</p>
+
+			<p>
+				Notice that these two expressions represent different procedures if we write them down sequentially. The first version (<m> C = \frac{5}{9}F - \frac{160}{9}</m>) obtains <m>C</m> from <m>F</m> by the following steps:
+				<dl>
+				<li><title><em>S1:</em></title>
+				Multiply <m>F</m> by <m>\frac{5}{9}</m>.
+				</li>
+				<li><title><em>S2:</em></title> 
+				Subtract <m>\frac{160}{9}</m> from <em>S1</em>.
+				</li>
+				</dl>
+				The second version (<m> C = \frac{5}{9}(F - 32)</m>)  obtains <m>C</m> from <m>F</m> through a different sequence of steps:
+				<dl>
+				<li><title><em>S1<m>'</m>:</em></title> 
+				Subtract <m>32</m> from <m>F</m>.
+				</li>
+				<li><title><em>S2<m>'</m>:</em></title> 
+				Multiply <em>S1<m>'</m></em> by <m>\frac{5}{9}</m>.
+				</li>
+				</dl>
+				The procedures are different, so are these two expressions equivalent? The answer here comes from the arithmetic rule known as the distributive law (to be discussed more later <xref ref="distributive_law"/>). We can take the second expression and distribute the <m>\frac{5}{9}</m> as follows: <me>\frac{5}{9}(F-32)  = \frac{5}{9}F - \frac{5}{9}\cdot 32 = \frac{5}{9}F-\frac{160}{9}.</me>
+			</p>
+
+			<p>
+				Another example of equivalent expressions is give by Example <xref ref="reciprocal_description" />. In this case, we used the fact that the expression <m>\frac{2}{x+1}</m> is equivalent to <m>2 \cdot \frac{1}{x+1}</m>.
+			</p>
+
+
+
+			<p>
+				Fundamentally, since algebraic expressions are built using the operations of arithmetic, equivalence of algebraic expressions is determined by using rules of arithmetic. We will discuss the most commonly used ways of manipulating expressions into equivalent ones in the remainder of this section. However, we will first discuss how to tell if two expressions are inequivalent.
+			</p>
+
+
+			<subsection xml:id="inequivalent-expressions">
+				<title>Inequivalent Expressions</title>
+
+				<p>
+					Two expressions are not equivalent if there are some values of the variables in the expression that yield different numbers when you substitute. So, if you plug the same number into two expressions and get different results, then the two expressions are inequivalent (assuming you did the arithmetic correctly). With practice, you’ll get good at being able to detect inequivalent expressions without even needing to substitute anything. For now, we’ll look at some important examples that sometimes trip people up.
+				</p>
+
+<example xml:id="first_geometric_factoring">
+				<p>
+					The two expressions <m>(x+y)^2</m> and <m>x^2 + y^2</m> are not equivalent. One may detect this by noting the order in which operations are performed on <m>x</m> and <m>y</m>. In one expression you add the two variables, then square. In the other, you square each variable, then add. Based one our experience with order of operations (order matters), we think these may not be equivalent. It turns out that if you pick any two numbers for <m>x</m> and <m>y</m>, as long as neither is zero, these two expressions will evaluate to different numbers. For instance, if we substitute <m>x=1</m> and <m>y=2</m>, then the first expression gives <me>(1+2)^2 = 3^2 =9,</me> whereas the second expression gives <me>1^2+2^2 = 1+4 = 5.</me> 
+				</p>	
+				<p>	
+					It is also possible to see that these two expressions are inequivalent by giving the geometric representations. We begin by thinking of <m>x</m> and <m>y</m> as lengths. Then <m>(x+y)^2</m> is the area of a square whose side length is <m>x+y</m>, while <m>x^2+y^2</m> is the sum of areas of squares that fit inside the square of side length <m>x+y</m> as in the following diagram:
+				</p>
+<figure xml:id="sum_of_squares">
+    <image width="40%">
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [-] (0,0) -- (1,0);
+		\draw[thick] [-] (1,0) -- (3,0);
+		\draw[thick] [-] (0,0) -- (0,1);
+		\draw[thick] [-] (0,1) -- (0,3);
+		\draw[thick] [-] (1,0) -- (1,3);
+		\draw[thick] [-] (0,1) -- (3,1);
+		\draw[thick] [-] (0,3) -- (3,3);
+		\draw[thick] [-] (3,0) -- (3,3);
+		\draw [fill=gray] (0,0) rectangle (1,1);
+		\draw [fill=gray] (1,1) rectangle (3,3);
+		\node[align=center,below] at (.5,0){$x$};
+		\node[align=center,below] at (2,0){$y$};
+		\node[align=center] at (.5,.5){$x^2$};
+		\node[align=center] at (2,2){$y^2$};
+		\end{tikzpicture}
+	</latex-image>
+	</image>	
+</figure>
+
+
+				<p>
+					In this figure we see that the total shaded area is <m>x^2+y^2</m> while the area of the entire square is <m>(x+y)^2</m>. If you note that the unshaded portions of the square each have area <m>xy</m>, we can see that <m>(x+y)^2</m> is equivalent to <m>x^2+2xy+y^2</m> (That can be seen symbollically using the distributive law <xref ref="distributive_law"/>, which we will see soon.). 
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Explain why <m>\sqrt{x^2 + y^2}</m> is not equivalent to <m>x+y</m>. Do this both by plugging in numbers and by either referring to the last example, or using the Pythagorean Theorem to explain the inequivalence geometrically.</em>
+				</p>
+</question>
+
+<question xml:id="cube_of_sum">
+				<p>
+					<em>Use volumes to give a geometric explanation of why <m>(x+y)^3</m> is equivalent to <m>x^3+3x^2y+3xy^2+y^3</m>, but is not equivalent to <m>x^3+y^3</m>.</em> (This question may be a test of your artistic skills.)
+				</p>
+</question>
+
+<example>
+				<p>
+					<m>\frac{1}{x}+\frac{1}{3}</m> is not equivalent to <m>\frac{2}{x+3}</m>. A simple, but perhaps not helpful, reason is because that's not how you add fractions. Let's make sure we really see that this is not how you add fractions. First substitute <m>x=1</m>. Then the first expression evaluates to <me>\frac{1}{1} + \frac{1}{3}=1+\frac{1}{3},</me> while the second evaluates to <me>\frac{2}{4} = \frac{1}{2}.</me> Even if you forget how to add fractions you can tell these are not equal. The first one is larger than one and the second is smaller than one. 
+				</p>
+</example>
+
+				<remark>
+					Again, it is important to note that for two expressions to be equivalent, they must evaluate to the same number for <em> all </em> values of the variables, not just some. For instance, in the example with squares, if <m>x=0</m> the two expressions do evaluate to the same thing. However, this does not make the expressions equivalent.
+				</remark>
+
+			</subsection>
+
+			<subsection xml:id="reordering-and-regrouping">
+				<title>Reordering and Regrouping</title>
+
+				<p>
+					Sometimes the order in which operations are performed in an algebraic expression doesn't affect the result. Specifically, if the expression only involves addition, order of operations doesn't tell you which one to do first because it doesn't matter. Likewise for multiplication. Specifically, we have the following rules for addition and multiplication:
+				</p>
+
+<identity xml:id="commutative_associative">
+				<title>
+					Commutative and Associative Laws for Addition and Multiplication
+				</title>
+
+				<p>
+				For any numbers <m>a</m>, <m>b</m>, and <m>c</m>
+				<ul>
+					<li>
+									<p>
+					<m>a+b = b+a</m> (addition is commutative)
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>ab=ba</m> (multiplication is commutative)
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>a+(b+c) = (a+b)+c</m> (addition is associative)
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>a(bc)=(ab)c</m> (multiplication is associative)
+				</p>
+					</li>
+
+				</ul></p>
+</identity>
+
+To emphasize that these properties of arithmetic make sense, we can find geometric ways of understanding them, similar to what we did in Chapter 1.
+
+<example>
+<statement>
+In Chapter 1 you were asked to explain the commutativity of addition geometrically using lengths on the number line (<xref ref="commutative_addition"/>). Explain the commutativity of multiplication, by thinking of <m>a</m> and <m>b</m> as lengths of the sides of a rectangle similar to the way we thought of <m>x</m> and <m>y</m> in <xref ref="first_geometric_factoring"/>. 
+</statement>
+<solution>
+Using the fact that the area of a rectangle is given by <me>\mbox{Area} = \mbox{base}\times\mbox{height},</me> we can arrange our rectangle with <m>a</m> on the bottom and <m>b</m> on the side to get the area to be <m>ab</m>. If we simply rotate the rectangle <m>90</m> degrees, the are is then seen as <m>ba</m>. Since rotation doesn't change the area, we must have <m>ab = ba</m>.
+
+<figure xml:id="geometric_mult_commutativity">
+	<caption>These rectangles have the same area, so <m>ab=ba</m></caption>
+    <image width="50%">
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [-] (0,0) -- (1.5,0);
+		\draw[thick] [-] (0,0) -- (0,1);
+		\draw[thick] [-] (0,1) -- (1.5,1);
+		\draw[thick] [-] (1.5,1) -- (1.5,0);
+		\draw[thick] [-] (3,0) -- (4,0);
+		\draw[thick] [-] (3,0) -- (3,1.5);
+		\draw[thick] [-] (3,1.5) -- (4,1.5);
+		\draw[thick] [-] (4,1.5) -- (4,0);
+		\draw [fill=gray] (0,0) rectangle (1.5,1);
+		\draw [fill=gray] (3,0) rectangle (4,1.5);
+		\node[align=center,below] at (.75,0){$a$};
+		\node[align=center,left] at (0,.5){$b$};
+		\node[align=center,below] at (3.5,0){$b$};
+		\node[align=center,left] at (3,.75){$a$};
+		\end{tikzpicture}
+	</latex-image>
+	</image>	
+</figure>
+</solution>
+</example>
+
+<question>
+				<p>
+				 <em>Now we would like geometric explanations of the associative laws.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em>Explain the associative law for addition using lengths on the number line.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Explain the associative law for multiplication using the fact that the volume of a rectangular prism is the area of its base multiplied by its height (similar to our explanation of the commutative law for multiplication).</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+				<p>
+					These rules are most useful in simplifying complex expressions that involve many terms being added together or multiplied.
+				</p>
+
+<example xml:id="equiv_by_manip_ex">
+To prove that 
+<me> \frac{2x+5}{x+3}\ \mbox{and} \ 2-\frac{1}{x+3}</me>
+are equivalent, the easiest way is to begin <m> 2-\frac{1}{x+3} </m> and turn it into the other expression by first getting a common denominator and using the disributive law:
+<md> 
+<mrow> 2-\frac{1}{x+3} \amp = \amp \frac{2(x+3)}{x+3} - \frac{1}{x+3} </mrow>
+<mrow> \ \amp = \amp \frac{2x+6}{x+3} - \frac{1}{x+3}\ \amp \text{(using the distributive law)} </mrow>
+<mrow> \ \amp = \amp \frac{2x+5}{x+3}.</mrow>
+</md>
+</example>
+
+<example>
+	<statement>
+		Suppose you have two cans, both are <m>5</m> inches tall, but one has a diameter that is three times that of the other one. Let <m>d</m> denote the diameter of the smaller can, in inches. Find a simplified expression for the total volume of the two cans in terms of <m>d</m>. 
+	</statement>
+
+	<solution>
+		First we note the formula for the volume of a cylinder: <m>V=\pi r^2h</m>, where <m>r</m> is the radius and <m>h</m> is the height. Since both cans have a height of <m>5</m> inches, we substitute <m>h = 5</m>. Since <m>r= \frac{d}{2}</m>, the volume of the first can is then given by <m>\pi\cdot\left(\frac{d}{2}\right)^2\cdot 5</m>. Using associativity and commutativity, this simplifies to <me>\mbox{volume of smaller can} = \frac{5}{4}\pi d^2\ \mbox{in}^3.</me> Since the diameter of the larger can is three times that of the smaller can, its radius is <m>\frac{3d}{2}</m>, which makes its volume <me>\mbox{volume of larger can} = \pi\cdot\left(\frac{3d}{2}\right)^2\cdot 5 = \frac{45}{4} \pi d^2\ \mbox{in}^3.</me> Adding them together we have <me>\mbox{Total Volume} = \frac{5}{4}\pi d^2 + \frac{45}{4}\pi d^2 = \frac{25}{2}\pi d^2\ \mbox{in}^3.</me> 
+	</solution>
+</example>
+
+				<p>
+					In the last step of the previous example we performed an important type of regrouping known as <em>combining like terms</em>. This is when all the terms with the same algebraic type (same exponents on a variable for example) are combined into a single term by adding together the constants by which they are multiplied. It is important to note that terms can only be combined when the only difference between them is a constant multiplier. For instance, 
+					
+		<md>
+		<mrow>3x^2 + 4\sqrt{x} + 5x^2 - \sqrt{9x}\amp = \amp 8x^2+4\sqrt{x}-3\sqrt{x} \amp\amp (\text{combine } x^2 \text{ terms})</mrow>
+		<mrow> \amp			 = \amp 8x^2+\sqrt{x}.\amp\amp (\text{combine } \sqrt{x} \text{ terms})</mrow>
+		</md> 
+					
+					The remaining terms cannot be combined further because one has an exponent of <m>2</m> while the other has an exponent of <m>\frac{1}{2}</m>.
+				</p>
+
+<example>
+Let's see another reason unlike terms can't be combined. Consider the expression <m>4x^3+ 6x</m>. To make it more meaningful, we may think of <m>x</m> as a length with units of meters. Then <m>x^3</m> represents a volume in cubic meters. Because of dimensional considerations, <m>x</m> and <m>x^3</m> cannot be combined in a meaningful way. In order for this expression to make any practical sense when <m>x</m> is in meters, the <m>6</m> needs to be in square meters. However, then the <m>4</m> is dimensionless, while the <m>6</m> represents an area. We cannot add the <m>4</m> and the <m>6</m>, since they represent different units. So thinking of <m>4x^3 + 6x</m> as representing some geometric quantity shows that it cannot be simplified any further.
+</example>
+
+<question>
+				<p>
+					 <em>Give a collection of objects (geometric shapes, not necessarily real-world objects) that would have a volume represented by <m>4x^3 + 6x</m>?</em>
+				</p>
+</question>
+
+<question>
+				<p>
+					<em>Decide if the following attempts to combine like terms are correct. If a mistake was made, say what it was and correct it.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>4xy+7y^2x + 3x^2y +2yx = 6xy + 10x^3y^3</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>(2x^2+1) + (3x+7) + (x^2-8x) = 3x^2-5x+8</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+			</subsection>
+
+			<subsection xml:id="distributing-expanding-and-factoring">
+				<title>Distributing, Expanding, and Factoring</title>
+
+				<p>
+					One of the most important rules in constructing equivalent algebraic expressions is the Distributive Law.
+				</p>
+
+<identity xml:id="distributive_law">
+	<title>The Distributive Law</title> 
+	<p>For any numbers <m>a</m>, <m>b</m>, and <m>c</m> <me>a(b+c) = ab+ac.</me></p>
+</identity>
+
+				<p>
+					This fact asserts that you can
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					add two lengths, <m>b</m> and <m>c</m>, on the line together, then expand/compress by a factor of <m>a</m>, or
+				</p>
+					</li>
+
+					<li>
+									<p>
+					expand/contract each of <m>b</m> and <m>c</m> by a factor of <m>a</m>, then add the results together.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					The end result is the same in either case because the stretch/compression caused by multiplication by <m>a</m> is uniformly applied to all lengths. We can also see this in terms of areas like we did with other properties of the real numbers that involve multiplication (like  <xref ref="first_geometric_factoring"/> again). In the equation
+					<md>
+					a(b+c) = ab+ac	
+					</md>
+					We can think of <m>b</m> and <m>c</m> as horizontal lengths and <m>a</m> as a vertical length as in the diagram below:
+	
+<figure xml:id="geometric_distributive_rhs">
+	<caption>The right-hand side of the distributive law represents the sum of the areas of two separate recatngles, one is <m>b\times a</m> amd the other is <m>c\times a</m>.</caption>
+    <image width="50%">
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [-] (0,0) -- (1.5,0);
+		\draw[thick] [-] (0,0) -- (0,1);
+		\draw[thick] [-] (0,1) -- (1.5,1);
+		\draw[thick] [-] (1.5,1) -- (1.5,0);
+		\draw[thick] [-] (2,0) -- (2.75,0);
+		\draw[thick] [-] (2,0) -- (2,1);
+		\draw[thick] [-] (2,1) -- (2.75,1);
+		\draw[thick] [-] (2.75,0) -- (2.75,1);
+		\draw [fill=gray] (0,0) rectangle (1.5,1);
+		\draw [fill=gray] (2,0) rectangle (2.75,1);
+		\node[align=center,below] at (.75,0){$b$};
+		\node[align=center,left] at (0,.5){$a$};
+		\node[align=center,below] at (2.375,-.15){$c$};
+		\node[align=center,right] at (2.75,.5){$a$};
+		\end{tikzpicture}
+	</latex-image>
+	</image>	
+</figure>
+</p>
+
+<p>
+
+When we glue these two recangles together, we have one rectangle whose area is <m>a(b+c).</m> Since gluing didn't change the total area, we have <me> a(b+c) = ab+ac.</me>
+
+<figure xml:id="geometric_distributive_lhs">
+	<caption>The left-hand side of the distributive law represents the area of one <m>a\times(b+c)</m> rectangle obtained by gluing the previous two together.</caption>
+    <image width="50%">
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [-] (0,0) -- (1.5,0);
+		\draw[thick] [-] (0,0) -- (0,1);
+		\draw[thick] [-] (0,1) -- (1.5,1);
+		\draw[thick] [-] (1.5,1) -- (1.5,0);
+		\draw[thick] [-] (1.5,0) -- (2.25,0);
+		\draw[thick] [-] (1.5,0) -- (1.5,1);
+		\draw[thick] [-] (1.5,1) -- (2.25,1);
+		\draw[thick] [-] (2.25,0) -- (2.25,1);
+		\draw [fill=gray] (0,0) rectangle (1.5,1);
+		\draw [fill=gray] (1.5,0) rectangle (2.25,1);
+		\node[align=center,below] at (.75,0){$b$};
+		\node[align=center,left] at (0,.5){$a$};
+		\node[align=center,below] at (1.875,-.15){$c$};
+		\node[scale=.5,rotate=-90] at (1.5,.5) {glue};
+		\end{tikzpicture}
+	</latex-image>
+	</image>	
+</figure>
+
+</p>
+					
+				<p>	
+					Many seemingly complex algebraic manipulations boil down to using the distributive law several times and collecting like terms; it's just that <m>a</m>, <m>b</m>, and <m>c</m> may be some sort of algebraic expressions.
+				</p>
+
+<example>
+				<statement>
+					Find the expanded form of <m>(x+y)^2</m> using the distributive law. 
+				</statement>
+<solution>				
+<md>
+<mrow>(x+y)^2 \amp = \amp (x+y)(x+y)\ \amp \text{ First we use the distributive law with } a=(x+y),\ b=x\ \text{and}\ c=y.</mrow>
+<mrow> \amp = \amp (x+y)x + (x+y)y \ \amp\ \text{ Now apply the distributive law to each term.}</mrow>
+<mrow> \amp = \amp (x^2+xy) + (xy+y^2)\ \amp\ \text{Finally, combine like terms.}</mrow>
+<mrow> \amp = \amp x^2+2xy+y^2 </mrow>
+ </md>
+</solution>
+</example>
+
+<question>
+<p>
+	<em>Describe what each term in the second and third lines of the manipulation given above represents geometrically as areas, as in the example in the last section showing <m>(x+y)^2 = x^2+2xy+y^2</m>. <term>Hint:</term> Go back and look at <xref ref="first_geometric_factoring"/> again.</em>
+</p>
+</question>
+
+<example>
+<statement>
+Simplify the expression <me>3x^2 - (4x+2x^2)</me> by combining like terms.
+</statement>
+
+<solution>
+<p>
+Subtraction of quantities in parentheses is often simplified using the distributive law and remembering that subtraction is really just addition of <m>-1</m> times the given quantity. For instance, suppose we want to simplify the expression <me>3x^2 - (4x+2x^2)</me> First, re-write it with addition and <m>-1</m> multiplying the piece in parentheses, then apply the distributive law: 	
+<md>
+<mrow>3x^2 - (4x+2x^2) \amp = \amp 3x^2 + (-1)(4x+2x^2)</mrow>
+<mrow> \amp = \amp 3x^2+((-1)4x+(-1)2x^2)</mrow>
+<mrow> \amp = \amp 3x^2-4x-2x^2</mrow>
+<mrow> \amp = \amp x^2-4x. </mrow>
+</md>
+With practice, you probably won't need to write this many steps down. This process is often referred to as <q>distributing a minus sign</q>.
+</p>
+</solution>
+</example>
+
+<p>
+Now is probably a good time to just get a little practice expanding/distributing and collecting like terms. Just remember the distributive law and you'll see it's not that hard.
+</p>
+
+<question>
+	<p>
+	<em>Expand (write as an equivalent expression without parentheses) each of the following expressions and collect like terms:</em>
+	</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>3ab(2a-5b)</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>(2x+1)(3x-4)</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>3x^2(1-x)^3</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>2x-\frac{1}{3}x(5-3x-2x^2)</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+				<p>
+					Now we will go backward from expanding/distributing. This process is known as factoring. When we expand an expression, we write it as an equivalent expression that is a sum of simple terms that each only involve multiplication and/or division. To <term>factor</term> an expression means to write it as a product of simple terms. For example, earlier in this chapter we had two expressions for the temperature in <m>^{\circ}</m>C in terms of the temperature in <m>^{\circ}</m>F. The expression <m>C = \frac{5}{9}F - \frac{160}{9}</m> is in expanded form, while <m>C = \frac{5}{9}(F-32)</m> is in factored form. Factored forms of expressions are often useful for solving equations as we'll see in the next chapter. Factoring isn't something that can be done in all cases by a single procedure; the following are just a few examples of common factoring methods.
+				</p>
+
+<example>
+<p>
+	When each term of an expression is divisible by some common factor one can <q>un-distribute</q> that factor. For instance, if we are given the expression <me>12xy+6y^2+3y^3,</me> we can see that each term contains <m>y</m> and <m>3</m> as a factor. This means we can factor <m>3y</m> out of the expression to get the equivalent expression <me>3y(4x+2y+y^2).</me> Note that you can check your answer by applying the distributive law. An interpretation of pulling out a common factor like this is that each term is being stretched/compressed by the same amount, hence we can think of this as a single entity being stretched/compressed, which may be simpler.
+</p>
+</example>
+
+<example>
+				<statement>
+					Expressions of the form <m>ax^2+bx+c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are constants are known as <term>quadratic</term> expressions in the variable <m>x</m>. Factoring such expressions is a very common and useful algebraic task. It is possible to give a procedure for factoring quadratics, but right now it is best to proceed with examples and practice. For instance, consider the expression <me>12x^2+5x-2.</me> We wish to re-write this expression in the form <me>(rx+p)(sx+q)</me> for some numbers <m>r</m>, <m>s</m>, <m>p</m>, and <m>q</m>. (We present two solutions, which you may use based on your own preferences.)
+				</statement>
+
+
+				<solution> (Trial and Error Method)
+				First, let's expand <m>(rx+p)(sx+q)</m>:
+				<me>
+				(rx+p)(sx+q)  = {\color{blue} rs}x^2 + {\color{red}(rq + ps)}x + {\color{teal} pq}
+				</me>
+
+				We note that
+				<p><ul>
+					<li>
+									<p>
+					<m>{\color{blue}rs}</m> must equal <m>{\color{blue}12}</m>,
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>{\color{teal}pq}</m> must equal <m>{\color{teal}-2}</m>, and
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>{\color{red} rq + ps}</m> must equal <m>{\color{red} 5}</m>.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					Now you can do a little trial and error to find your solution (This is a very common thing to do in mathematics.) 
+				</p>
+
+			<dl>
+			<li><title>Attempt 1:</title> The term <m>{\color{blue}rs}</m> must equal <m>{\color{blue}12}</m>. So let's try <m>r=2</m> and <m>s=6</m>. From the fact that  <m>{\color{teal}pq}</m> must equal <m>{\color{teal}-2}</m> we can try <m>p=2</m> and <m>q=-1</m>. However, then we find
+			<md>
+			<mrow> rq+ps \amp = \amp 2\cdot (-1) + 2\cdot 6 </mrow>
+			<mrow> \ \amp \neq \amp {\color{red}5}.</mrow>
+			</md>
+			So that combination won't work. With that combination of <m>r</m> and <m>s</m> we will find that <m>p=\pm 2</m> and <m>q=\mp 1</m> will always fail (note how the <m>\pm</m> and <m>\mp</m> must line up because <m>p</m> and <m>q</m> have opposite signs). So we move on to another try.
+			</li>
+
+			<li><title>Attempt 2:</title> The term <m>{\color{blue}rs}</m> must equal <m>{\color{blue}12}</m>. So let's try <m>r=3</m> and <m>s=4</m>. Again, we know that <m>{\color{teal}pq}</m> must equal <m>{\color{teal}-2}</m> we can try <m>p=2</m> and <m>q=-1</m>. However, then we find
+			<md>
+			<mrow> rq+ps \amp = \amp 3\cdot (-1) + 2\cdot 4 </mrow>
+			<mrow></mrow>
+			<mrow> \ \amp = \amp {\color{red}5}.</mrow>
+			</md>
+			Notice that works out. Hence we can say
+			<me>
+			12x^2 + 5x+2 = (3x+2)(4x-1).
+			</me>
+			</li>
+
+			</dl>
+				
+			</solution>
+
+<solution>(The <m>ac</m> Method, with explanation)
+			We begin the same way, by expanding <m>(rx+p)(sx+q)</m>:
+				<me>
+				(rx+p)(sx+q)  = {\color{blue} rs}x^2 + {\color{red}(rq + ps)}x + {\color{teal} pq}
+				</me>
+			Now we make some clever observations:
+			<p><ul>
+			<li>The product of the two terms in <m>{\color{red}(rq + ps)}</m> is equal to the product of the first and last coefficients. that is,
+			<me>
+			 {\color{red}(rq \cdot ps)} = {\color{blue} rs}\cdot {\color{teal} pq}.
+			</me>
+			</li>
+			<li> Since <m>{\color{blue}rs}</m> must equal <m>{\color{blue}12}</m> and <m>{\color{teal}pq}</m> must equal <m>{\color{teal}-2}</m> we must be able to break <m>{\color{red} 5}</m> into a sum of two numbers that multiply to <m>-24</m>.
+			</li>
+			</ul>
+			</p>
+			<p>
+			Noting that <m>{\color{red} 5} = -3+8</m>, we have
+			<md>
+			<mrow> {\color{blue}12}x^2+{\color{red} 5}x -{\color{teal}2} \amp = \amp  {\color{blue}12}x^2+{\color{red}(-8+3)}x -{\color{teal}2}</mrow>
+			<mrow></mrow>
+			<mrow> \ \amp = \amp 12x^2 - 8x +3x-2 </mrow>
+			<mrow></mrow>
+			<mrow> \ \amp = \amp 4x(3x-2) + (3x-2) </mrow>
+			<mrow></mrow>
+			<mrow> \ \amp = \amp (4x+1)(3x-2) </mrow>
+			</md>
+			</p>
+			</solution>
+
+</example>
+
+<p>
+The second solution is the so-called <m>ac</m> method including the reasoning behind it. Applying it blindly isn't terribly insightful in terms of explaining what factoring really does, but it gets the answer. For this reason it is recorded below:
+</p>
+
+<algorithm xml:id="algorithm-the-ac-method">
+      <title>The <m>ac</m> Method</title>
+      <p>
+        To factor <m>ax^2+bx+c</m>:
+
+        <ol>
+          <li>
+            <p>
+              Multiply <m>a\cdot c</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Think of numbers that multiply to <m>ac</m>.
+              Look for a pair that adds to <m>b</m>.
+              If you cannot find one, this quadratic can't be factored with whole numbers.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If you get numbers that multiply to <m>a\cdot c</m> and add <m>b</m>, 
+              replace <m>b</m> with an explicit sum, and distribute <m>x</m>.
+              With the four terms you have at this point,
+              use factoring by un-distributing one thing at a time (this is called <term>factoring by grouping</term>).
+              You are guaranteed to find a factorization.
+            </p>
+          </li>
+        </ol>
+      </p>
+</algorithm>
+
+<example>
+				<p>
+					<term>Example 2.25</term>. Any expression of the form <m>a^2-b^2</m> may be factored as <m>(a+b)(a-b)</m> (<m>a</m> and <m>b</m> may represent more complicated expressions in this). One may check this using the distributive law. To see how this factorization works geometrically, consider the following figure with <m>b</m> being thought of as a number smaller than <m>a</m>.
+				</p>
+<figure xml:id="geom_diff_squares1">
+    <image width="50%">
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [|-|] (-1,0) -- (-1,2);
+		\draw[thick] [|-|] (-1,2) -- (-1,3);
+		\draw[thick] [|-|] (0,-1) -- (3,-1);
+		\draw[thick] [|-|] (0,-.3) -- (2,-.3);
+		\draw[thick] [|-|] (2,-.3) -- (3,-.3);
+		\draw (2,2) rectangle (3,3);
+		\draw [fill=gray] (0,2) rectangle (2,3);
+		\draw [fill=gray] (0,0) rectangle (2,2);
+		\draw [fill=gray] (2,0) rectangle (3,2);
+		\node[align=center,below] at (1.5,-1){$a$};
+		\node[align=center,below] at (1,-.3){$a-b$};
+		\node[align=center] at (-1.5,1){$a-b$};
+		\node[align=center] at (-1.2,2.5){$b$};
+		\node[align=center,below] at (2.5,-.3){$b$};
+		\node[align=center] at (2.5,2.5){$b^2$};
+		\end{tikzpicture}
+	</latex-image>
+	</image>	
+</figure>
+
+
+
+				<p>
+					In this figure the entire square has an area of <m>a^2</m> units and the gray shaded area has an area of <m>a^2-b^2</m> units. Each of the smaller shaded rectangles has area <m>b(a-b)</m> and the lower right shaded square has an area of <m>(a-b)(a-b)</m>. Hence the total shaded area is <me>a^2-b^2 = (a-b)(a-b) + 2b(a-b).</me> Now each term has a common factor of <m>(a-b)</m>, hence we may factor it off and simplify by collecting like terms: 
+<md>
+<mrow> a^2-b^2 \amp = \amp (a-b)(a-b) + 2b(a-b)</mrow>
+<mrow> \amp = \amp (a-b)(a-b+2b)</mrow>
+<mrow> \amp = \amp (a-b)(a+b).</mrow>
+</md>
+				</p>
+
+				<p>
+					One may also see this factorization geometrically by taking the shaded rectangle on top and moving it to the left hand side of the diagram.
+				</p>
+
+<figure xml:id="geom_diff_squares2">
+    <image width="50%">
+	<latex-image>
+		\begin{tikzpicture}
+		\draw[thick] [|-|] (-1,0) -- (-1,2);
+		\draw[thick] [|-|] (0,-1) -- (3,-1);
+		\draw[thick] [|-|] (0,-.3) -- (2,-.3);
+		\draw[thick] [|-|] (2,-.3) -- (3,-.3);
+		\draw[thick] [|-|] (0,-1.5) -- (4,-1.5);
+		\draw (2,2) rectangle (3,3);
+		\draw [fill=gray] (3,0) rectangle (4,2);
+		\draw [fill=gray] (0,0) rectangle (2,2);
+		\draw [fill=gray] (2,0) rectangle (3,2);
+		\node[align=center,below] at (1.5,-1){$a$};
+		\node[align=center,below] at (1,-.3){$a-b$};
+		\node[align=center] at (-1.5,1){$a-b$};
+		\node[align=center,below] at (2.5,-.3){$b$};
+		\node[align=center] at (2.5,2.5){$b^2$};
+		\node[align=center,below] at (2,-1.5){$a+b$};
+		\end{tikzpicture}
+	</latex-image>
+	</image>	
+</figure>				
+
+				<p>
+					Now we have a single shaded rectangle whose height is <m>a-b</m> and whose width is <m>a+b</m>, hence the total area is <m>(a-b)(a+b)</m>.
+				</p>
+</example>
+
+<question>
+				<p>
+				<em>Factor each of the following expressions as completely as possible.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>x^2+5x+6</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>x^4-25x^2y^2</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>4x^2+19x+12</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>y^2-y^4</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>2x^3-16x^2+32x</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>z^4+z^2-2</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+<question>
+				<p>
+					<em>Think of <m>x</m>, <m>y</m>, and <m>1</m> as positive lengths to use areas of rectangles to explain why <me>6xy + 2y+6x+2 = (3x+1)(2y+2).</me></em>
+				</p>
+</question>
+
+			</subsection>
+		</section>

@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec5_3_exponential-functions">
+	<title>Exponential Functions</title>
+
+			<objectives>
+			<ul>
+			<li>
+	  			<p>
+				Introduce exponential in algebraic, graphical, and verbal (applied) form.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+				Manipulate and use different algebraic forms of exponential functions and the meanings of their associated parameters.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Find formulas for exponential functions from data (both purely numerical and in context) to solve problems.
+	  			</p>
+	  		</li>
+			</ul>
+			</objectives>
+
+
+
+			<p>
+				Exponential functions are common in applications where the rate of change is not described in absolute terms, but in relative terms as a percent rate of change. For instance, suppose we say a population, <m>P</m>, is growing at a rate of <m>50\%</m> per year with an initial value of <m>1000</m>. This means that to find the population next year, we find the population of the current year, multiply it by <m>0.5</m>, and add it to the current population. Then we can construct a table of values, with the input <m>t</m> being measured in years:
+			</p>
+
+<!-- div attr= class="center"-->
+			<table>
+				<caption></caption>
+				<tabular>
+				<row header="yes">
+					<cell halign="right"><m>t</m></cell>
+					<cell halign="right"><m>0</m></cell>
+					<cell halign="right"><m>1</m></cell>
+					<cell halign="right"><m>2</m></cell>
+					<cell halign="right"><m>3</m></cell>
+				</row>
+				<row class="odd">
+					<cell halign="right"><m>P</m></cell>
+					<cell halign="right"><m>1000</m></cell>
+					<cell halign="right"><m>1500</m></cell>
+					<cell halign="right"><m>2250</m></cell>
+					<cell halign="right"><m>3375</m></cell>
+				</row>
+				</tabular>
+			</table><!--</div attr= class="center">-->
+
+			<p>
+				We can notice that the slope, which is the absolute rate of change, is not constant. Between the points <m>(0,1000)</m> and <m>(1,1500)</m>, the slope is <m>500</m>. The slope between the points <m>(1,1500)</m> and <m>(2,2250)</m> is <m>750</m>. However, if we take the ratio of consecutive outputs, we get a constant: <me>\frac{1500}{1000} = \frac{2250}{1500} = \frac{3375}{2250}  = 1.5.</me> What this shows is that each time the input increases by <m>1</m>, the output gets multiplied by <m>1.5</m> one more time. Since repeated multiplication is denoted by an exponent, we see that <me>P = 1000(1.5)^t.</me> Functions with this basic form are known as exponential functions.
+			</p>
+
+
+		<subsection xml:id="intro-to-exponential-functions">
+				<title>Intro to Exponential Functions</title>
+<definition><title>Explonential Function</title>
+				<p>
+					An <term>exponential function</term> is a function of the form <m>f(x) = ab^x</m>, where <m>a\neq 0</m> and <m>b&gt;0</m>.
+				</p>
+</definition>
+
+<example>
+				<p>
+					Consider <m>f(x) = 2(1.5)^x</m>. We can plot some points to construct a graph of this function.
+				</p>
+
+<figure xml:id="first_exp_graph">
+    <caption>The graph of <m>y=f(x) = 2(1.5)^x</m>.</caption>
+	<image width="75%">
+	<latex-image>
+	\begin{tikzpicture}[xscale=.7,yscale=.7]
+	\draw[thick] [{Latex}-{Latex}] (-4,0) -- (4,0);
+	\draw[thick] [-{Latex}] (0,-1) -- (0,6);
+	\draw [help lines] (-4,-1) grid (4,6);
+	\node[align=center,below] at (4,0){$x$};
+	\node[align=center,left] at (0,6){$y$};
+	\foreach \x in {-3,-2,-1,1,2,3,}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\foreach \y in {1,2,3,4,5}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw [fill] (-2,.89) circle [radius=0.1];
+	\draw [fill] (-3,.59) circle [radius=0.1];
+	\draw [fill] (-1,1.333) circle [radius=0.1];
+	\draw [fill] (0,2) circle [radius=0.1];
+	\draw [fill] (1,3) circle [radius=0.1];
+	\draw [fill] (2,4.5) circle [radius=0.1];
+	\draw [domain=-4:2.71] plot (\x, {2*1.5^(\x)});
+	\end{tikzpicture} 
+	</latex-image>
+	</image>
+</figure>
+
+				<p>
+					We can make several observations about this graph and connect them to the algebraic form of this function.
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					First, notice that the <m>y</m>-intercept is at <m>(0,2)</m>. This is due to the fact that <m>f(0) = 2(1.5)^0</m>. Since any nonzero number raised to the zero power is <m>1</m>, we are just multiplying <m>2</m> by <m>1</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					We also can notice this function is increasing as you move from left to right. In fact, you can see that each point we plotted is exactly one and a half times higher above the <m>x</m>-axis than the point that was plotted one unit to its left. This is because the height is multiplied by <m>1.5</m> each time the input increases by one unit.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					If we move from right to left through negative values of <m>t</m>, all the outputs are less than <m>2</m> and getting smaller. This isn't a truly different observation than the last one, but it's a different perspective. This comes from the fact that when <m>t</m> is negative, we're really dividing by positive powers of <m>1.5</m>. (Review you exponent rules now if you need to.)
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Finally, we notice that the outputs stay above the <m>x</m>-axis. This is because <m>(1.5)^t</m> is always positive, as it represents repeated multiplication of a positive number. If the <m>2</m> in front were replaced by a negative number, then the output would never be positive. Exponential functions never change signs.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>In the definition of an exponential function, we said that <m>a</m> cannot be zero and <m>b</m> had to be positive. Let's think about why we would make such restrictions.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em>If <m>a=0</m>, what simpler family of functions does <m>f(x) = ab^x</m> belong to?</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>If <m>b</m> is negative, what is a value of <m>x</m> that would make <m>b^{x}</m> undefined? (The answer is not zero.)</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+<p> Now is a good time to once again explore how the graph of <m>f(x) = ab^x</m> changes when <m>a</m> and <m>b</m> change. Use the interactive graph below to change <m>a</m> and <m>b</m> and describe the changes in your own words. Again, the <q>math book</q> description follows.
+
+
+<interactive desmos="puum1xzp7f" width="60%" aspect="2:3" />
+</p>
+
+<p>
+<answer><title>The Meaning of <m>a</m> and <m>b</m> in Exponential Functions</title>
+
+
+				<p><ul>
+					<li>
+									<p>
+					<m>b</m> is the growth factor. Each time the input increases by one unit, the output is multiplied by another factor of <m>b</m>.
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					If <m>b&gt;1</m>, then the graph diverges away from the <m>x</m>-axis from left to right and gets arbitrarily close to the <m>x</m>-axis as <m>x\to-\infty</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					If <m>b&lt;1</m>, then the graph gets arbitrarily close to the <m>x</m>-axis as <m>x\to\infty</m>, and diverges away from the <m>x</m>-axis moving right to left.
+				</p>
+					</li>
+
+				</ul></p>
+					</li>
+
+					<li>
+									<p>
+					<m>a</m> is the output of <m>f</m> when <m>x=0</m>. In other words, it is the <m>y</m>-intercept of the graph of <m>f</m>.
+				</p>
+					</li>
+
+				</ul></p>
+</answer>
+</p>
+
+<question>
+				<p>
+					<em>The domain of an exponential function is the set of all real numbers. What is the range? Your answer will depend of the value of <m>a</m>.</em>
+				</p>
+</question>
+
+				<p>
+					As with all function families, when we say that a function has a specific form, we really mean that its defining formula is equivalent to that form. Often it is the case that a function is not presented in a specific form, but algebraic manipulation shows it to be in the specified family.
+				</p>
+
+<example>
+				<p>
+					Let <m>f(x) = \dfrac{3(2)^{x+3}}{5^{x-1}}</m>. This function is not in the form <m>f(x) = ab^x</m>, but we may use some exponent rules to put it in that form: <me>f(x) = \frac{3(2)^{x+3}}{5^{x-1}} = \frac{3\cdot 2^3\cdot 2^{x}}{5^{-1}\cdot 5^{x}} = 120\left(\frac{2}{5}\right)^{x}.</me> Hence we see <m>a = 120</m> and <m>b=\frac{2}{5}</m>. Alternatively, we could use a table of outputs to decide this function is exponential and find its parameters:<!-- linebreak -->
+				</p>
+
+<!-- div attr= class="center"-->
+				<table>
+					<caption></caption>
+					<tabular>
+					<row header="yes">
+						<cell halign="right"><m>x</m></cell>
+						<cell halign="right"><m>0</m></cell>
+						<cell halign="right"><m>1</m></cell>
+						<cell halign="right"><m>2</m></cell>
+					</row>
+					<row class="odd">
+						<cell halign="right"><m>f(x)</m></cell>
+						<cell halign="right"><m>120</m></cell>
+						<cell halign="right"><m>48</m></cell>
+						<cell halign="right"><m>19.2</m></cell>
+					</row>
+					</tabular>
+				</table><!--</div attr= class="center">-->
+
+				<p>
+					The ratios of consecutive values are equal to <m>b</m>: <m>\frac{48}{120} = \frac{19.2}{48} =\frac{2}{5}</m>. The value at <m>t=0</m> is <m>a</m>. 
+				</p>
+</example>
+
+				<p>
+					Generally, if you know one of the parameters of an exponential function and a point on its graph, you can solve for the other parameter. In the next section we will go into detail of how to find formulas for exponential functions from two points on the graph, similar to how we did it for linear functions. We will also see possible reasons for alternatives to the standard <m>ab^x</m> form.
+				</p>
+
+		</subsection>
+
+		<subsection xml:id="forms-of-exponential-functions">
+				<title>Forms of Exponential Functions</title>
+
+				<p>
+					Often we would like to find a formula for an exponential function when the initial condition and growth rate are not known. However, we often do know some information that is somehow equivalent to two points on the graph. To understand some of the useful forms of exponential functions, let's first figure out how to find a formula given two points on the graph.
+				</p>
+
+<example>
+				<p>
+					Suppose the points <m>(2,1)</m> and <m>(9,4)</m> are on the graph of <m>y=f(x) = ab^{x}</m>. We would like to determine <m>a</m> and <m>b</m>. To do this, we merely need to set up a system of equations and solve it. Using the input-output pairs, we have <me>\begin{aligned}
+1 &amp; = &amp; ab^{2}\\
+4 &amp; = &amp; ab^{9}.\end{aligned}</me> Using the first equation, we find <m>a = \frac{1}{b^2}</m>, which we can substitute into the second to get <me>\begin{aligned}
+4 &amp; = &amp; \frac{1}{b^2}\cdot b^{9}\\
+ &amp; \updownarrow &amp; \\
+b^{7} &amp; = &amp; 4 \\
+&amp; \updownarrow &amp; \\
+b &amp; = &amp; \sqrt[7]{4}.\end{aligned}</me> Then we find <m>a = \frac{1}{(\sqrt[7]{4})^{2}}</m>. Thus we have <m>f(x) = \frac{1}{(\sqrt[7]{4})^{2}} (\sqrt[7]{4})^x</m>. 
+				</p>
+</example>
+
+				<p>
+					This process for finding the equation of an exponential function is straightforward, but the final answer does not show the points the graph passes through in a transparent way. Instead, we may write it in the form <me>f(x)  = \frac{1}{(\sqrt[7]{4})^{2}} (\sqrt[7]{4})^x = 1\cdot 4^{\frac{x-2}{7}}.</me> In this form we can see that <m>f(2) = 1</m> and <m>f(9) = 4</m> quite easily.
+				</p>
+
+<question>
+				<p>
+					<em>Show the manipulations, using exponent rules, that one must use to put the function from the example into the form shown above.</em>
+				</p>
+</question>
+
+<question>
+				<p>
+					<em>Let <m>f(x) = 3\left(\frac{14}{3}\right)^{\frac{x-12}{5}}</m>. Find two points with integer coordinates that are obviously on the graph of <m>f</m>. Explain why they are obvious.</em>
+				</p>
+</question>
+
+				<p>
+					Using the last two questions as motivation, we can introduce the following form of an exponential function:
+				</p>
+
+<definition><title>Point-Factor-(Time Interval) Form for an Exponential Function</title>
+				<p>
+					An exponential function <m>f</m> that has the property that <m>f(x_0) = S</m> and grows by a factor of <m>M</m> over each time interval <m>T</m> has the form <me>f(x) = S(M)^{\frac{x-x_0}{T}}.</me> The initial value of this function is <m>\left(S(M)^{-\frac{x_0}{T}}\right)</m> and its growth factor per unit increase in input is <m>M^{\frac{1}{T}}</m>.
+				</p>
+</definition>
+
+				<p>
+					This particular form of an exponential function may be thought of as analogous to the point-slope form of a linear function. However, because the formula is a bit more complicated, it may be more useful to use it only implicitly, and think about why your answer is right.
+				</p>
+
+<example>
+				<p>
+					Suppose a quantity <m>Q= f(t)</m> grows exponentially as a function of <m>t</m>, where <m>Q = 3</m> when <m>t=2</m>, and <m>Q</m> increases by <m>25\%</m> every time <m>t</m> increases by <m>20</m>. Find a formula for <m>Q</m> in terms of <m>t</m>.
+				</p>
+
+				<p>
+					Since <m>Q</m> grows by <m>25\%</m> each time <m>t</m> increases by <m>20</m>, each time <m>t</m> increases by <m>20</m>, the initial quantity will be multiplied by <m>1.25</m>. This means the exponent of <m>1.25</m> should be divided by <m>20</m>. Since the output is <m>3</m> when <m>t=2</m>, we can put <m>t-2</m> as the numerator in the exponent. Thus we have <me>Q = f(t) = 3(1.25)^{\frac{t-2}{20}}.</me> Now we may ask ourselves whether this behaves in the specified way:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					Is <m>f(2) = 3</m>? Yes, <m>f(2) = 3(1.25)^{\frac{2-2}{20}} = 3</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					Is <m>Q</m> multiplied by an additional factor of <m>1.25</m> each time <m>t</m> increases by <m>20</m>. Yes, observe <me>\begin{aligned}
+f(2) &amp; = &amp; 3\\
+f(22) &amp; = &amp; 3(1.25)^{\frac{20}{20}} = 3(1.25)\\
+f(42) &amp; = &amp; 3(1.25)^{\frac{40}{20}} = 3(1.25)^2\\
+\ &amp; \vdots &amp; \\\end{aligned}</me>
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					Thus we can see that this function behaves in the specified way. 
+				</p>
+</example>
+
+				<p>
+					Another form of an exponential function is indicated by the preceding example. Often, in real world applications, exponential functions are described by a constant percent growth rate.
+				</p>
+
+<definition><title>Percent Growth Rate Form of an Exponential Function</title>
+				<p>
+					Every exponential function <m>f(x) = ab^{x}</m> may be written in the form <me>f(x) = a(1+r)^{x}.</me> In this form <m>r = b-1</m> is the percent growth (when multiplied by <m>100\%</m>) for each unit increase in <m>x</m>. Note:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					If <m>b&gt;1</m>, then <m>r&gt;0</m>. In this case <m>r</m> is just called the growth rate.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					If <m>0&lt;b&lt;1</m>, then <m>r&lt;0</m>. In this case <m>|r|</m> is the decay rate.
+				</p>
+					</li>
+
+				</ul></p>
+</definition>
+
+<question>
+				<p>
+					<em>In the function <m>Q=f(t) = 3(1.25)^{\frac{t-2}{20}}</m>, by what percent does <m>Q</m> grow per unit increase in <m>t</m>?</em>
+				</p>
+</question>
+
+		</subsection>
+
+		<subsection xml:id="applications-of-exponential-functions">
+				<title>Applications of Exponential Functions</title>
+
+				<p>
+					Standard applications of exponential functions are those related to growth and decay. We will introduce these applications now, but investigate them further when we are equipped with logarithms. Logarithms will allow us to solve equations involving exponential functions.
+				</p>
+
+<example>
+				<p>
+					Suppose a population of bacteria, <m>P</m>, in millions starts at <m>P = 4</m> and triples every six hours. Find a formula for <m>P</m> as a function of time <m>t</m>, in hours. By what percent does <m>P</m> change each hour? Using the point-factor-time interval idea, we find <me>P = 4(3)^{\frac{t}{6}}.</me> In order to find the growth rate, we must first find the growth factor <m>b</m>. This is done by applying exponent rules: <me>P = 4(\sqrt[6]{3})^{t}.</me> Hence the growth factor is <m>b = \sqrt[6]{3}\approx 1.201</m>. Hence the percent growth rate is about <m>20.1\%</m> per hour.
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Cesium-137 is a radioactive isotope formed in nuclear fission. Given that it decays at a rate of <m>2.27\%</m> per year, what equation would you need to solve in order to find its half-life (the time it takes for half of an initial quantity to remain)?</em>
+				</p>
+</question>
+
+		</subsection>
+	</section>

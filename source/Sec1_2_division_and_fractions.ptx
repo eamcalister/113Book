@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec1_2_division_and_fractions">
+
+			<title>Division and Fractions</title>
+
+	  	<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Develop the fundamental property of fractions by understanding them as pieces of a whole.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Develop a geometric meaning of <m>\frac{a}{b}</m> when <m>b</m> is not a whole number.
+	  			</p>
+	  		</li>
+			<li>
+				<p>
+				Work with units of measurement via multiplying and dividing fractions.
+				</p>
+			</li>
+			<li>
+				<p>
+				Understand addition of fractions from the viewpoint of units of measurement.
+				</p>
+			</li>
+	  	</ul>
+		</objectives>
+
+
+			<subsection xml:id="division-and-multiplication">
+				<title>Division and Multiplication</title>
+
+				<p>
+					We begin with the most basic way to conceptualize fractions using positions on the number line. To start,  we will think of all the numbers as whole numbers (positive integers). 
+				</p>
+
+
+
+				<table xml:id="fractions1_2_1">
+					<title>Fractions as Pieces of a Whole (step sizes)</title>
+					<tabular top="medium">
+					<row bottom="medium">
+						<cell left="medium"><em>Positions and Sizes</em></cell>
+						<cell halign="center"></cell>
+						<cell right="medium"><em>Numbers</em></cell>
+					</row>
+					<row>
+						<cell halign="left">Starting at <m>0</m>, the distance so that <m>b</m> steps of that size will be <m>1</m>.</cell>
+						<cell halign="center"><m>\longrightarrow</m></cell>
+						<cell right="medium"><m>\frac{1}{b}</m></cell>
+					</row>
+						<row bottom="medium">
+						<cell halign="left">Starting at <m>0</m>, the distance so that <m>b</m> steps of that size will be <m>a</m>.</cell>
+						<cell halign="center"><m>\longrightarrow</m></cell>
+						<cell right="medium"><m>\frac{a}{b}</m></cell>
+					</row>
+					</tabular>
+				</table>
+
+
+				<p>
+					Since this table assumes <m>b</m> is a positive integer so that we may use the idea of multiplication as repeated addition to reach a more formal understanding of division.
+				</p>
+
+<fact xml:id="mult_inverse">
+				<title>
+				Multiplication and Division as Inverse Operations of One Another
+				</title>
+
+				<p>
+					Since taking <m>b</m> steps of size <m>\frac{a}{b}</m> reaches <m>a</m>, we have the following identity: <me>b\cdot\frac{a}{b} = a.</me> When <m>a</m> and <m>b</m> are not integers, we use this identity to what <m>\frac{a}{b}</m> is: <em>For any numbers <m>a</m> and <m>b</m>, <m>\frac{a}{b}</m> is the unique number such that when it is multiplied by <m>b</m>, the result is <m>a</m>. In other words, </em>multiplication by <m>b</m> is the inverse operation of dividing by <m>b</m>. Likewise, division is the inverse operation of multiplication.
+				</p>
+</fact>
+
+<example>
+<statement>You may notice that <xref ref="mult_inverse"/> uses much more formal language than we have so far in this text. This is because the formal language is the only way to capture the range of all posibilities (non-integer numbers, negative numbers etc.); our intuitive ideas only work with positive integers. Moving from geometric or numerical intuition to more formal mathematics is often difficult and it is best to make sure we know when this is being done. To get a little practice with using the formal definition of a fraction, let's try to answer a seemingly simple question: Why is
+<me> a\cdot \frac{1}{b} = \frac{a}{b}?</me> 
+</statement>
+<solution>
+To answer this we will explain why the left-hand side of this equation has the property, given in <xref ref="mult_inverse"/>, that when it is multiplied by <m>b</m> the result is <m>a</m>. (Observe that we are using <xref ref="commutative_associative"/>, which we will justify inuitively in Chapter 2.) First, notice that
+<me> 
+b\cdot\left( a\cdot \frac{1}{b}  \right) = a\cdot\left(b\cdot \frac{1}{b}\right).
+</me>
+Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left-hand side has the property we wanted it to have. 
+</solution>
+</example>
+
+<question>
+				<p>
+				<em> Explain why <m>\dfrac{a}{a} = 1</m>. (This is why you can cancel common factors in numerators and denominators.) </em>
+				</p>
+
+</question>
+
+
+<identity>
+				<p>
+					<term>Fundamental Fraction Properties:</term>
+				</p>
+
+				<p>
+					There are four fundamental properties that we must internalize about fraction in order to do arithmetic with them:
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<m>\dfrac{a}{a} = 1</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>\dfrac{a}{1} = a</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>x\cdot\dfrac{a}{b} = \dfrac{xa}{b}</m>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<m>\dfrac{xa}{xb} = \dfrac{a}{b}</m>
+				</p>
+					</li>
+
+				</ol></p>
+				
+</identity>
+
+<question>
+				<p><ol>
+					<li>
+									<p>
+					<em>What do you get when you multiply <m>\dfrac{b}{a}</m> by <m>\dfrac{a}{b}</m>?</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>What do you get when you multiply <m>\dfrac{1}{\left(\frac ab \right)}</m> by <m>\frac{a}{b}</m>?</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Explain why <m>\dfrac{1}{\left(\frac{a}{b}\right)} = \dfrac{b}{a}</m>.</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+<question>
+				<p>
+					<em>(Multiplying Fractions) Explain why <m>\dfrac{a}{b}\cdot\dfrac{c}{d} = \dfrac{ac}{bd}</m> using the fundamental fraction properties.</em>
+				</p>
+</question>
+
+				<p>
+					We can also use the stretch/squeeze metaphor of multiplication to give a geometric interpretation of <m>\frac{a}{b}</m> when <m>b</m> is not an integer. To do this, let's let <m>r = \frac{a}{b}</m>, and assume <m>a</m> and <m>b</m> are still positive (since negatives just reflect to the other side of zero). Our goal is to figure out where <m>r</m> is on the number line. To do this, we first do a manipulation: <me>\frac{a}{b} = r \Longleftrightarrow a = rb.</me> This manipulation used the fact that multiplication by <m>b</m> undoes division by <m>b</m>. From this manipulated equation we see that <m>r = \frac{a}{b}</m> is the number that when stretched (if <m>b&gt;1</m>) or squeezed (if <m>0&lt;b&lt;1</m>) by <m>b</m> gives you <m>a</m>.
+				</p>
+
+<question xml:id="big_small_reciprocals">
+				<p>
+				 <em>Explain the following two statements. <b>Hint:</b> Use the fact that multiplying by <m>\frac{1}{b}</m> must undo whatever action multiplying by <m>b</m> does.</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em>If <m>b</m> is very large, then <m>\frac{1}{b}</m> is very small.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>If <m>b</m> is very close to zero, but still positive, then <m>\frac{1}{b}</m> is very large.</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+				<p>
+					Now let's consider why we must say <m>\frac{a}{0}</m> is undefined no matter what <m>a</m> is.
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					<term>Reason 1:</term> Consider the fraction <m>\frac{1}{b}</m> where <m>b</m> is positive. We know that if <m>b</m> is very close to zero, then <m>\frac{1}{b}</m> will be very large. For example, <m>\frac{1}{0.0001} = 10000</m> because if you squeeze <m>10000</m> by a factor of <m>0.0001</m> you get <m>1</m>. However, you can always make the <m>b</m> smaller and get a bigger number. This means that <m>\frac{1}{0}</m> would need to be larger than every positive number. But no such number exists, so <m>\frac{1}{0}</m> must be undefined.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<term>Reason 2:</term> The expression <m>\frac{a}{0}</m> should represent the number that when multiplied by <m>0</m> results in <m>a</m>. However, any number multiplied by zero must be zero. For this reason, if <m>a</m> is not zero, then <m>\frac{a}{0}\cdot 0</m> cannot equal <m>a</m>. Thus we say that <m>\frac{a}{0}</m> cannot represent a number if <m>a\neq 0</m>.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					To really see why the expression <m>\frac{0}{0}</m> is undefined, you need an idea from Calculus, but you can get a feel for why it must be undefined in the next question.
+				</p>
+
+<question>
+				<p>
+				<em>Give a short reason why the expression <m>\frac{0}{0}</m> could represent either <m>0</m> or <m>1</m>.</em>
+				</p>
+</question>
+
+			</subsection>
+
+			<subsection xml:id="apples-and-oranges-units-and-dimensional-analysis">
+				<title>Apples and Oranges: Units and Dimensional Analysis</title>
+
+				<p>
+					So far we have only talked about multiplying and dividing fractions. These operations with fractions are fundamentally easier then addition and subtraction. In order to build a useful metaphor of how to add and subtract fractions, it will be useful to talk about units of measurement. Not only will understanding units and unit conversion be useful for understanding fractions, but it is extremely useful in the sciences.
+				</p>
+
+
+				<paragraphs xml:id="dimensional-analysis-and-the-factor-label-method-of-unit-conversion">
+					<title>Dimensional Analysis and the Factor-Label Method of Unit Conversion</title>
+
+					<p>
+						A very common task in physics or chemistry classes involves converting between units of measurement of quantities of the same dimension. The simplest way to do this is to treat the units of measurement as numbers multiplied by the numerical quantity in those units. So if we say a rod is two meters long, we would write the mathematical expression <me>\mbox{length} = 2 \mbox{m},</me> where <m>\mbox{m}</m> is the abbreviation for meters multiplied by the number <m>2</m>. Since the unit name (the label) is multiplied by a number it is a factor in that expression. This is why we call this treatment of unit names as numbers the <em>factor-label method</em>. By treating the units as number, we can use our prior knowledge of arithmetic operations to make conversions.
+					</p>
+
+<example>
+<statement>				
+						 Convert <m>12</m> ounces into milliliters. 
+</statement>
+<solution>						 
+						 This is a legal conversion because both ounces and milliliters have the same dimension; both units describe volume. In order to make the conversion, we write down an equation with the number of one of the units in another: <me>1 \mbox{oz} = 29.5735 \mbox{mL}.</me> Form this equation, we can divide to obtain <m>1</m> without units in two different ways: <me>1=\frac{1 \mbox{oz}}{29.5735\mbox{mL}}\ \ \mbox{and} \ \ 1=\frac{29.5735 \mbox{mL}}{1 \mbox{oz}}.</me> Multiplying the quantity <m>12 \mbox{oz}</m> by either of these expressions for <m>1</m> must leave it unchanged. In order to obtain final units of <m>\mbox{mL}</m>, we will multiply by the second because <m>\frac{\mbox{oz}}{\mbox{oz}} = 1</m> (we say the units of ounces cancel). 
+						 
+						 <md>
+						 <mrow>12\text{oz} \amp=\amp \frac{12\,\text{oz}}{1}\cdot\frac{29.5735\text{mL}}{1\,\text{oz}}\amp\amp \text{Units of oz may now cancel.}</mrow>
+						 <mrow>\amp = \amp 12\cdot 29.5735\, \text{mL}</mrow>
+						 <mrow>\amp = \amp 354.882\, \text{mL}.</mrow>
+						 </md>
+</solution>
+</example>
+
+
+<example>
+					<statement>
+						A <m>rope</m> is a unit of length equal to 20ft (it isn't used much anymore). Suppose an old city plan shows that the street is <m>2\ \mbox{rope}</m> wide with a sidewalk that is <m>2</m>yd on each side. What is the total width of the street plus both sidewalks? You may be able to see quickly that the answer is 52ft, but let's do all the conversions carefully.
+					</statement>
+
+					<solution>
+					You may be able to see quickly that the answer is 52ft, but let's do all the conversions carefully.
+					First, note that we will need to add the width of both sidewalks to the width of the street. It isn't convenient to convert ropes to yards or yards to ropes; it makes the most sense to convert everything to feet. Let's write all our conversion equations: <me>1 \mbox{street} = 2 \mbox{rope}\ ,\ 1\mbox{rope} = 20\mbox{ft}\ ,\ 1\mbox{sidewalk} = 2\mbox{yd}\ ,\ 1\mbox{yd} = 3\mbox{ft}.</me> So we get the following: 
+	<md>
+	<mrow>1\mbox{street} + 2\mbox{sidewalk} \amp = \amp 1\text{street}\cdot\frac{2\text{rope}}{\text{street}}\cdot\frac{20\text{ft}}{\text{rope}} + 2\text{sidewalk}\cdot\frac{2\text{yd}}{\text{sidewalk}}\cdot\frac{3\mbox{ft}}{\text{yd}}\amp\amp \text{cancel units}</mrow>
+	<mrow> \amp = \amp 40\text{ft}+12\text{ft} \amp= \amp 52\text{ft}</mrow>
+	</md>
+					</solution>
+</example>
+
+<question>
+					<p>
+						 <em>Suppose a person is on a train that is moving <m>100</m> km/hr and they run from the rear of the train to the front at a rate of <m>8</m> m/s. How fast is this person moving relative to the ground in m/s? Note that <m>1</m> km = <m>1000</m> m and <m>1</m> hr = <m>3600</m> s.</em>
+					</p>
+</question>
+
+<example>
+					<statement>
+						The factor-label method of dimensional analysis can also be used to change the way we look at a changing quantity through multiplication and division. For instance, suppose a tank contains a salt water solution with a concentration of <m>2</m> grams of salt per liter. If the tank is drained at a rate of <m>10</m> mL/s, at what rate is salt leaving the tank in g/s?
+					</statement>
+
+					<solution>
+						To solve this problem, let’s first convert the draining rate into L/s: <me>10 \frac{\mbox{mL}}{\mbox{s}} = 10 \frac{\mbox{mL}}{\mbox{s}}\cdot \frac{1}{1000}\frac{\mbox{L}}{\mbox{mL}} = \frac{1}{100} \frac{\mbox{L}}{\mbox{s}}.</me> Now we just need to multiply quantities to arrive at the correct units for the rate of salt leaving the tank: <me>2\frac{\mbox{g}}{\mbox{L}}\cdot\frac{1}{100}\frac{\mbox{L}}{\mbox{s}} = \frac{2}{100}\frac{\mbox{g}}{\mbox{s}} = 0.02\frac{\mbox{g}}{\mbox{s}}</me>
+					</solution>
+</example>
+
+<question>
+					<p>
+						<em>The cost of fuel for a riverboat is <m>\$100</m> per hour when moving <m>10</m> miles per hour. In addition to fuel costs, the operating cost (paying the crew etc.) is <m>\$625</m> per hour. What is the total cost in <m>\$</m>/mi when the boat is moving <m>10</m> miles per hour?</em>
+					</p>
+</question>
+				</paragraphs>
+			</subsection>
+
+			<subsection xml:id="adding-and-subtracting-fractions">
+				<title>Adding and Subtracting Fractions</title>
+
+
+				<p>
+					Now that we have thought about real world units of measurement, and we can convert units that measure the same dimensional quantity, we can introduce a useful metaphor for adding, subtracting, and comparing fractions:
+				</p>
+
+<!-- div attr= class="center"-->
+				<p>
+					Fractions as Units
+				</p>
+
+				<table>
+					<caption></caption>
+					<tabular top="medium">
+					<row bottom="medium">
+						<cell halign="left"><em>Units of Measurement</em></cell>
+						<cell halign="left"></cell>
+						<cell right="medium"><em>Numbers</em></cell>
+					</row>
+					<row>
+						<cell halign="left"></cell>
+						<cell halign="left"></cell>
+						<cell right="medium"></cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="left">Dimensional Unit of <q><m>b</m>-ths</q></cell>
+						<cell halign="left"><m>\rightarrow</m></cell>
+						<cell right="medium"><m>\frac{1}{b}</m></cell>
+					</row>
+					</tabular>
+				</table>
+
+				<p>
+					Often it will be best to think of fractions as units of length (like when we think of numbers as positions on a line), but they could be areas, volumes, etc. Here we will think of the number <m>1</m> as the basic unit of measurement. Then a <m>b</m>-th is the unit that goes into the basic unit <m>b</m> times. For instance, if we are thinking of <m>1</m> as <m>1</m> foot, then <m>\frac{1}{12}</m> is one inch because there are 12 inches in one foot.
+				</p>
+
+<question>
+				<p>
+					<em>For each of the following basic units, what fraction does the given quantity represent? For instance, if the basic unit is one yard, then <m>1</m> foot is <m>\frac{1}{3}</m> because there are three feet in a yard.</em> If you need to look up some unit conversions, Google them.
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em>Basic Unit: 1 kilometer. <m>100</m> meters <m>=\underline{\hspace{.5in}}</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Basic Unit: 1 cup. <m>1</m> ounce <m>=\underline{\hspace{.5in}}</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Basic Unit: 1 meter. <m>10</m> centimeters <m>=\underline{\hspace{.5in}}</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Basic Unit: 1 gallon. <m>3</m> quarts <m>=\underline{\hspace{.5in}}</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Basic Unit: 1 football field. <m>40</m> yards <m>=\underline{\hspace{.5in}}</m>.</em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em>Basic Unit: 1 tablespoon. <m>8</m> teaspoons <m>=\underline{\hspace{.5in}}</m>.</em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+				<p>
+					Now let’s revisit the example of ropes and yards from the last section. In order to add two ropes to four yards, it was necessary to convert both ropes and yards into a smaller unit that went into both ropes and yards evenly. Specifically, both were converted to feet to get a total of 52 feet. When we are just working with numbers we do something very similar; we find a common denominator.
+				</p>
+
+<example>
+				<statement>
+					Add <m>\frac{3}{5}</m> to <m>\frac{1}{2}</m>. 
+				</statement>	
+					
+				<solution>
+					To get started we can look at it pictorially with <m>\frac{3}{5}</m> and <m>\frac{1}{2}</m> on number lines:
+
+			
+<figure xml:id="addfracs1">
+	<image>
+	<latex-image>
+	\begin{tikzpicture}
+		\draw[ultra thick,red][|-] (-5,1) -- (-2.5,1);
+		\draw[ultra thick,red][|-|] (-2.5,1) -- (0,1);
+		\draw[ultra thick,blue][|-] (-5,.5) -- (-4,.5);
+		\draw[ultra thick,blue][|-] (-4,.5) -- (-3,.5);
+		\draw[ultra thick,blue][|-] (-3,.5) -- (-2,.5);
+		\draw[ultra thick,blue][|-] (-2,.5) -- (-1,.5);
+		\draw[ultra thick,blue][|-|] (-1,.5) -- (0,.5);
+		\draw[thick] [-{Latex}] (0,0) -- (6,0);
+		\draw[thick] [{Latex}-] (-7,0) -- (0,0);
+		\node[align=center,below] at (-5,0){$0$};\draw (-5,-.1) -- (-5,.1);
+		\node[align=center,below] at (0,0){$1$};\draw (0,-.1) -- (0,.1);
+		\node[align=center,below] at (-2,0){$\frac{3}{5}$};\draw[fill](-2,0)circle[radius=.05];
+		\node[align=center,below] at (-2.5,0){$\frac{1}{2}$};\draw[fill](-2.5,0)circle[radius=.05];
+	\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+
+				
+
+				<p>
+					If we divide <m>\frac{1}{5}</m> in half and <m>\frac{1}{2}</m> into five pieces, we find that <m>\frac{1}{10}</m> goes into both <m>\frac{1}{5}</m> and <m>\frac{1}{2}</m> evenly.
+				</p>
+
+
+<figure xml:id="addfracs2">
+	<image>
+	<latex-image>
+	\begin{tikzpicture}
+		\draw[ultra thick,green][|-] (-5,.5) -- (-4.5,.5);
+		\draw[ultra thick,green][|-] (-4.5,.5) -- (-4,.5);
+		\draw[ultra thick,green][|-] (-4,.5) -- (-3.5,.5);
+		\draw[ultra thick,green][|-] (-3.5,.5) -- (-3,.5);
+		\draw[ultra thick,green][|-] (-3,.5) -- (-2.5,.5);
+		\draw[ultra thick,green][|-] (-2.5,.5) -- (-2,.5);
+		\draw[ultra thick,green][|-] (-2,.5) -- (-1.5,.5);
+		\draw[ultra thick,green][|-] (-1.5,.5) -- (-1,.5);
+		\draw[ultra thick,green][|-] (-1,.5) -- (-.5,.5);
+		\draw[ultra thick,green][|-|] (-.5,.5) -- (0,.5);
+
+		\draw[thick] [-{Latex}] (0,0) -- (6,0);
+		\draw[thick] [{Latex}-] (-7,0) -- (0,0);
+		\node[align=center,below] at (-5,0){$0$};\draw (-5,-.1) -- (-5,.1);
+		\node[align=center,below] at (0,0){$1$};\draw (0,-.1) -- (0,.1);
+		\node[align=center,below] at (-2,0){$\frac{3}{5}$};\draw[fill](-2,0)circle[radius=.05];
+		\node[align=center,below] at (-2.5,0){$\frac{1}{2}$};\draw[fill](-2.5,0)circle[radius=.05];
+	\end{tikzpicture}
+	</latex-image>
+	</image>
+</figure>
+
+
+				<p>
+					Now we see the addition: <me>\frac{3}{5} + \frac{1}{2} = \frac{6}{10}+\frac{5}{10} = \frac{11}{10}.</me> This is the geometric way of visualizing the process known as known as <q>cross multiplying</q>. That is when you multiply each part of a fraction with a fraction equal to one in order to have a common denominator: <me>\frac{3}{5}+\frac{1}{2} = \frac{2}{2}\cdot\frac{3}{5} + \frac{5}{5}\cdot\frac{1}{2} = \frac{11}{10}.</me>
+				</p>
+</solution>
+</example>
+
+				<p>
+					One thing we usually try to find is the least common denominator between two fractions. Thinking in terms of units, this is like finding the largest possible unit that goes into both quantities evenly. In the example given above we could have used <m>\frac{1}{20}</m> to go into <m>\frac{1}{2}</m> and <m>\frac{3}{5}</m> evenly and obtained <me>\frac{3}{5}+\frac{1}{2} = \frac{22}{20}.</me> However, that makes the numbers we are dealing with larger for no reason. This would be like converting both ropes and yards into inches; it’s possible, but unnecessary.
+				</p>
+
+<question>
+				<p>
+					<em>Draw a picture to carefully perform the following:</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>\frac12 + \frac13</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac12+\frac14</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac13+\frac14</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+<question>
+				<p>
+					<em>Perform the indicated additions and subtractions:</em>
+				</p>
+
+				<p><ol>
+					<li>
+									<p>
+					<em><m>\frac{3}{7}+\frac{9}{8}</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac{7}{3}+\frac{8}{9}</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac{1}{2} + \frac{1}{3} - \frac{1}{4}</m></em>
+				</p>
+					</li>
+
+					<li>
+									<p>
+					<em><m>\frac{15}{3} + \frac{14}{7}</m></em>
+				</p>
+					</li>
+
+				</ol></p>
+</question>
+
+			</subsection>
+		</section>

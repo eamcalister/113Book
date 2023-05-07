@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec1_4_order_of_operations">
+
+			<title>Parentheses and Order of Operations</title>
+
+	  	<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Learn why correct order of operations is important.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Learn to read mathematical expressions in the order indicated by order of operations.
+	  			</p>
+	  		</li>
+			<li>
+				<p>
+				Become aware of <q>invisible parentheses</q>
+				</p>
+			</li>
+
+	  	</ul>
+		</objectives>
+
+			<p>
+				Each of the previous sections in this chapter have focused mostly on one mathematical operation at a time. However, it is often the case that more than one operation is performed. Difficulty arises because the order in which operations occur matters; different orders yield different results. For example, let's consider the two mathematical processes described below:
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				Take the number two, add three to it, then multiply the result by four.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Take the number two, multiply it by four, then add three to the result.
+			</p>
+				</li>
+
+			</ol></p>
+
+			<p>
+				The two operations are adding three and multiplying by four, but performed in different orders. In the first order, two gets shifted up to five, then stretched out by a factor of four, yielding an end result of 20. In the second, two gets stretched out to eight, then that is shifted up by three, yielding an end result of 11. In order to distinguish these two orders using mathematical notation, we use parentheses to enclose those procedures that are to be performed first. Specifically, we have the following symbolic representations corresponding to the verbal descriptions given above:
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<m>4(2+3) = 20</m>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<m>(4\cdot 2)+3 = 11</m>
+			</p>
+				</li>
+
+			</ol></p>
+
+			<p>
+				In a mathematical expression, any procedures that are enclosed in parentheses are meant to be performed before those procedures outside that set of parentheses. One way to think of parentheses is that whatever is inside them must be combined/simplified to a single quantity before proceeding.
+			</p>
+
+			<p>
+				What about the other operations? You probably have learned the answer earlier in your mathematical lives. Indeed, in the last section we used parentheses in expressions with exponents without really explaining their use. You may have even encountered some mnemonic device for remembering order of operations. Because being able to execute the operations is more important than just remembering, we will catalog the order of operations rules here, then use them in some problems.
+			</p>
+
+<identity>
+			<title>
+				<term>Order of Operations</term>
+			</title>
+
+			<p><ul>
+				<li>
+							<p>
+				Procedures enclosed in parentheses should be performed before any operations outside those parentheses.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Exponents should be applied second, but only to the object that the exponent is directly above and to the right of.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Multiplication and/or division should be performed before addition and/or subtraction unless otherwise indicated by parentheses. In other words, in an expression only involving addition and multiplication, those individual multiplications are in parentheses.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Division is just multiplication by the reciprocal, so division and multiplication can be performed in either order.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Subtraction is just addition of a negative, so subtraction and addition can be performed in either order.
+			</p>
+				</li>
+
+			</ul></p>
+</identity>
+
+			<p>
+				These aren't actually too hard to keep track of, just as long as you remember that their purpose is to remove ambiguity from mathematical notation. For instance, without these rules <m>4\cdot 2 +3</m> could be interpreted either as <m>11</m> or <m>20</m>. These rules make sure that we all agree that it is <m>11</m>.
+			</p>
+
+			<p>
+				In addition to multiplications having understood (but not written down) parentheses around them, there are often understood parentheses in fractions. For instance, if we write <me>\frac{1}{3+7},</me> we will understand that <m>3+7</m> is to be performed first. Usually this isn't an issue when fractions are written with horizontal lines, but we would have to use parentheses to write it on a single line as <m>1/(3+7)</m>.
+			</p>
+
+<question>
+			<p>
+				<em>Evaluate each of the following quantities without a calculator. If your answer is a fraction, give it in reduced form.</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>3\cdot 3^{-2}\cdot(-1)^2</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>-3^2+\frac{64}{2^3}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>(-5+2)^3+12</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\frac{(3+2)^2}{4} - \left(\frac{2-7}{2}\right)^2</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>4+5/7</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>(4+5)/7</m></em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+<question>
+			<p>
+			<em>Verbally describe the sequence of operations performed on the number <m>a</m> in the correct order.</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>2(a+1)</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>2a+1</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>1-3\left(\frac{a}{2}+4\right)</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>3-2(a+5)</m></em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+<subsection>
+<title> Implied (``Invisible'') Parentheses </title>
+
+<p>
+There are some mathematical operations that are common enough to have <em>implied</em> parentheses. That is, even though we don't write down parentheses in an expression, we mean for some operation to be done before another one. The common ones are as follows:
+<dl>
+<li><title>Fraction Bars:</title> A fraction written with a horizontal division bar has an implied set of parentheses on the numerator and denominator. So if a fraction has <m>computation\ \#1</m> in the numerator and <m>computation\ \#2</m> in the denominator, we have
+<me>
+\frac{computation\ \#1}{computation\ \#2} = \frac{(computation\ \#1)}{(computation\ \#2)}.
+</me>
+For example,
+<me>
+\frac{2\cdot 3+1}{5-1} = \frac{7}{4}.
+</me>
+</li>
+
+<li><title>Radicals:</title> Expressions under radicals (roots) are to be done before the root is taken. For example,
+<me>
+\sqrt[3]{5^2-8\cdot 2} = \sqrt[3]{25-16} = \sqrt[3]{9}\approx 2.08.
+</me>
+</li>
+
+<li><title>Exponents:</title> Expressions that appear in the exponent of a single number are evaluated before the power is taken. For example,
+<me>
+5^{2^4-3\cdot 4} = 5^{16-12} = 5^4 = 625.
+</me>
+</li>
+</dl>
+</p>
+
+<question>
+<em>Simplify the following expressions:</em>
+<ol>
+<li><m>\dfrac{20-4^2}{(4-6)^3}</m></li>
+<li><m>\dfrac{2(9-15)+1}{\sqrt{(-5)^2+12^2}}</m></li>
+<li><m>\dfrac{4^{\frac{3^3-4^2\cdot 5}{2}}}{3\cdot 2 - 4}</m></li>
+</ol>
+</question>
+
+
+</subsection>
+
+			<p>
+				Now we come to the end of our chapter on arithmetic with numbers. Those of you with some exposure to algebra may now say, <q>This is easy, but algebra is very different and difficult.</q> The truth is that is we keep the representations of arithmetic operations from this chapter in mind, algebra will not be that difficult.
+			</p>
+
+
+
+</section>

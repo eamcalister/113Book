@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="arithmetic-with-numbers">
+
+<!-- Change title when you have one: -->
+  <title>Arithmetic with Numbers</title>
+  <!-- If the chapter has sections, there may be an introduction -->
+  <!-- before those sections. Note the <p> tags around content.  -->
+
+<introduction>
+		<p>
+			Before we begin doing algebra we will take some time to discuss the arithmetic operations that are used in algebra. These operations (addition, subtraction, multiplication, division, and exponents) are familiar to anyone taking an algebra course. However, it's possible they were learned so long ago that a complete understanding was unnecessary at the time. In this chapter we will develop an intuitive understanding of these basic operations using practical terms and grounding metaphors as described in <q>Where Mathematics Comes From</q> by Lakoff and Nunez. Equipped with a fluent understanding of arithmetic, algebra (which is <q>just a variety of arithmetic</q> according to Isaac Asimov) will ultimately become as intuitive and useful as arithmetic.
+		</p>
+
+	<p>Our goal in this chapter is to understand the basic operations with real numbers in multiple ways visually, practically, and symbolically. Specifically, we will</p>
+	<ul>
+	  		<li>
+	  			<p>
+	  			Understand the basic operations of arithmetic (addition, subtraction, and multiplication) as movements of points on the number line.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Understand the concept of an inverse operations.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Review how one works with units and apply this knowledge to working with fractions.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Formalize our understanding of exponents. 
+	  			</p>
+	  		</li>
+			<li>
+				<p>
+				Become fluent with order of operations.
+				</p>
+			</li>
+	  	</ul>
+
+</introduction>
+
+<xi:include  href="./Sec1_1_add_subt_mult.ptx" />
+<xi:include  href="./Sec1_2_division_and_fractions.ptx" />
+<xi:include  href="./Sec1_3_exponents.ptx" />
+<xi:include  href="./Sec1_4_order_of_operations.ptx" />
+
+</chapter>

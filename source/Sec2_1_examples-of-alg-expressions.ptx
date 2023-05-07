@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec2_1_examples-of-alg-expressions">
+
+	<title>Examples of Algebraic Expressions</title>
+
+		<objectives>
+		<ul>
+	  		<li>
+	  			<p>
+				Understand algebraic expressions as procedures carried out on variables, usually with multiple steps carried out in a specific order.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Practice breaking down algebraic expressions into simple steps in the correct order.
+	  			</p>
+	  		</li>
+		</ul>
+		</objectives>
+
+			<p>
+				An <term>algebraic expression</term> is a mathematical expression formed using the normal operations of arithmetic (addition, subtraction, multiplication, division, and exponents for now) and one or more <em>variables</em> (unknown quantities for which we may substitute numbers). Let's look at some basic algebraic expressions, describe them verbally, and evaluate them for some values of the variables.
+			</p>
+
+<example xml:id="quad_breakdown">
+			<statement>
+				Consider the algebraic expression <me>(3x+1)^2-2.</me> This expression only contains one variable, <m>x</m>. We can substitute values for <m>x</m> and get values of the algebraic expression. Exaluate this expression when <m>x=2</m> and <m>x=-2</m>. Then describe what the expression <em> does to <m>x</m></em> in the correct order.
+			</statement>
+			<solution>
+			If we evaluate this expression at <m>x=2</m> we get <me>(3\cdot 2+1)^2 -2 = 7^2-2 = 47.</me> If we evaluate this expression at <m>x=-2</m> we have <me>(3\cdot(-2) +1)^2 -2 = (-5)^2 -2 = 23,</me> Evaluating algebraic expressions isn't that hard provided you keep track of your order of operations. An important related skill is to read an algebraic expression and verbally express what is being done to the variable(s) in the correct order. In this expression we start with the value of <m>x</m> and
+			<p><dl>
+				<li><title><em>Step 1:</em></title>
+							<p>
+				multiply <m>x</m> by three, (We'll label this <em>S1</em> for <em>Step One</em> and continue labeling steps this way.)
+			</p>
+				</li>
+
+				<li><title><em>S2:</em></title>
+							<p>
+				add one to the result of <em>S1</em>
+			</p>
+				</li>
+
+				<li><title><em>S3:</em></title>
+							<p>
+				square the result of <em>S2</em>, and finally
+			</p>
+				</li>
+
+				<li><title><em>S4:</em></title>
+							<p>
+				subtract two from the result of <em>S3</em>.
+			</p>
+				</li>
+
+			</dl></p>
+
+			<p>
+				
+			</p>
+			</solution>
+</example>
+
+			<p>
+				This idea of verbally describing algebraic expressions and understanding the steps that they represent is important for seeing algebraic expressions as something other than just a bunch of random symbols on a page. This task will become very powerful when solving equations and continue to be useful well into the study of Calculus (and beyond).
+			</p>
+
+<fact>
+			<title>
+				Algebraic Expressions Describe Processes Performed on Variables
+			</title>
+
+			<p>
+				An algebraic expression a symbolic representation of a sequence of arithmetic operations performed in a specific order on general numbers (variables).
+			</p>
+</fact>
+
+<question>
+			<p>
+			<em>Write an algebraic expression that represents the following process applied to <m>x</m>:</em>
+			</p>
+
+			<p><dl>
+				<li><title><em>S1:</em></title>
+							<p>
+				Add one to <m>x</m>,
+			</p>
+				</li>
+
+				<li><title><em>S2:</em></title>
+							<p>
+				square the result of <em>S1</em>
+			</p>
+				</li>
+
+				<li><title><em>S3:</em></title>
+							<p>
+				subtract two from the result of <em>S2</em>, and finally
+			</p>
+				</li>
+
+				<li><title><em>S4:</em></title>
+							<p>
+				multiply the result of <em>S3</em> by <m>5</m>.
+			</p>
+				</li>
+
+			</dl></p>
+
+			<p>
+				<em>Evaluate the expression you get at <m>x=2</m>, <m>x=-2</m>, and <m>x=0</m>.</em>
+			</p>
+</question>
+
+			<p>
+				We will often abbreviate the result of a step <em>Sn</em> by just writing <em>Sn</em>. For example, we could just write "multiply <em>S3</em> by <m>5</m>" for the last step above.
+			</p>
+
+<example xml:id="reciprocal_description">
+			<statement>
+				Describe the expression <m>\frac{2}{x+1}</m> as a sequence of steps. 
+			</statement>
+			<solution>
+			One way to describe this process is
+			<p><dl>
+				<li><title><em>S1:</em></title>
+							<p>
+				Add <m>1</m> to <m>x</m>,
+			</p>
+				</li>
+
+				<li><title><em>S2:</em></title>
+							<p>
+				divide <m>2</m> by <em>S1</em>.
+			</p>
+				</li>
+
+			</dl></p>
+
+			<p>
+				Note that we need to be careful in describing <em>S2</em>; we need to specify which quantity is divided by which here. We may want to think of this as a process which is being done primarily to <m>x</m>, and break it down as <m>2 \cdot \frac{1}{x+1}</m>. Then we could describe the expression by the following:
+			</p>
+
+			<p><dl>
+				<li><title><em>S1:</em></title>
+							<p>
+				Add <m>1</m> to <m>x</m>
+			</p>
+				</li>
+
+				<li><title><em>S2:</em></title>
+							<p>
+				Take the reciprocal of <em>S1</em>
+			</p>
+				</li>
+
+				<li><title><em>S3:</em></title>
+							<p>
+				multiply the result of <em>S2</em> by <m>2</m>.
+			</p>
+				</li>
+
+			</dl></p>
+			</solution>
+</example>
+
+			<p>
+				Sometimes a variable can appear more than once in an expression, which may make describing it as a single procedure more difficult. This difficulty is dealt with by thinking of a combination of procedures using order of operations.
+			</p>
+
+<example>
+			<statement>
+				 Verbally describe the expression <me>4s^2 + 2\sqrt{s+1}.</me> 
+			</statement>
+			<solution>
+
+			 If we were evaluating this at a specific value of <m>s</m>, we would perform the addition last. For this reason, we take each part that will be added together and describe them separately first. For the first term (a <em><term>term</term> is a part of an algebraic expression being added to other parts):</em>
+
+			<p><dl>
+				<li><title><em>S1:</em></title>
+							<p>
+				Square <m>s</m>, then
+			</p>
+				</li>
+
+				<li><title><em>S2:</em></title>
+							<p>
+				multiply <em>S1</em> by four.
+			</p>
+				</li>
+
+			</dl></p>
+
+			<p>
+				Then we pick up with the second term:
+			</p>
+
+			<p><dl>
+				<li><title><em>S3:</em></title>
+							<p>
+				Add one to <m>s</m>,
+			</p>
+				</li>
+
+				<li><title><em>S4:</em></title>
+							<p>
+				take the square root of <em>S3</em>, and
+			</p>
+				</li>
+
+				<li><title><em>S5:</em></title>
+							<p>
+				multiply <em>S4</em> by two.
+			</p>
+				</li>
+
+			</dl></p>
+
+			<p>
+				The last step is the last thing according to our order of operations:
+			</p>
+
+			<p><dl>
+				<li><title><em>S6:</em></title>
+				Add the result of <em>S2</em> to the result of steps <em>S5</em>. 
+				</li>
+
+			</dl></p>
+			</solution>
+</example>
+
+<question>
+			<p>
+				<em>List the steps being performed on <m>x</m>, in order, for each of the following algebraic expressions:</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em><m>\frac{6}{2+x}</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>2(x+1)^2 -5</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>3(x+2)-5(x-7)</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\frac{3}{x} - 4x^2 -1</m></em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em><m>\frac{1}{x-a}+\frac{3}{\sqrt{x+b}}</m></em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+			<p>
+				Let's finish this section with examples of algebraic expressions that you might come across in another class or the real world.
+			</p>
+
+<example>
+			<p>
+				An algebraic expression commonly encountered in a first year physics course gives the height <m>h</m> of a projectile, in meters, above the ground <m>t</m> seconds after it has been launched. This expression has parameters for initial height and initial upward velocity. The expression is <me>h = -4.9t^2+v_0 t + h_0,</me> where <m>v_0</m> is the initial upward velocity in m/s and <m>h_0</m> is the initial height in meters. For instance, if we knew the initial height was <m>40</m> meters and the initial velocity was <m>0</m> m/s (if the object was dropped, not thrown), then we would have <me>h = -4.9t^2 + 40.</me> 
+			</p>
+</example>
+
+<question>
+			<p>
+				<em>Using the expression above, with <m>h_0 = 40</m> and <m>v_0 = 0</m>, for the height, answer the following questions to the best of your ability (you may need a calculator).</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em>How high is the object after <m>2</m> seconds? <m>3</m> seconds?</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>When does the object hit the ground?</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>Is the object ever <m>50</m> meters above the ground? Justify your answer in practical terms and algebraically, if possible.</em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+<example>
+			<p>
+				The following table gives the men's world record times for running events as of Summer 2017, as well as the average speeds in m/s.
+			</p>
+
+
+			<table>
+				<caption></caption>
+				<tabular>
+				<row header="yes">
+					<cell halign="center"><m>d=</m> Distance (m)</cell>
+					<cell halign="center"><m>T=</m> time (s)</cell>
+					<cell halign="center"><m>S=</m> speed (m/s)</cell>
+				</row>
+				<row class="odd">
+					<cell halign="center">100</cell>
+					<cell halign="center">9.58</cell>
+					<cell halign="center">10.44</cell>
+				</row>
+				<row class="even">
+					<cell halign="center">200</cell>
+					<cell halign="center">19.19</cell>
+					<cell halign="center">10.42</cell>
+				</row>
+				<row class="odd">
+					<cell halign="center">400</cell>
+					<cell halign="center">43.03</cell>
+					<cell halign="center">9.3</cell>
+				</row>
+				<row class="even">
+					<cell halign="center">800</cell>
+					<cell halign="center">100.91</cell>
+					<cell halign="center">7.93</cell>
+				</row>
+				<row class="odd">
+					<cell halign="center">1500</cell>
+					<cell halign="center">206</cell>
+					<cell halign="center">7.28</cell>
+				</row>
+				<row class="even">
+					<cell halign="center">5000</cell>
+					<cell halign="center">757.35</cell>
+					<cell halign="center">6.6</cell>
+				</row>
+				</tabular>
+			</table>
+
+			<p>
+				Using techniques from statistics or linear algebra (data fitting), it is possible to give an algebraic expression involving the distance <m>d</m> that approximately tells you the record time <m>T</m>. The expression one finds this way is <me>T = .06640993d^{1.09689}.</me> Since speed is distance divided by time, we can then formulate an expression for the speed <m>S</m> in terms of the distance <m>d</m>: <me>S = \frac{d}{T}  = \frac{d}{.06640993 d^{1.09689}} = \frac{15.05798907}{d^{.09689}}.</me> 
+			</p>
+</example>
+
+<question>
+			<p>
+				<em>Use the expressions in the last example to answer the following questions.</em>
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				<em>The expressions given above only give approximations. After all, if we could find record times with a formula we wouldn’t need to have races. Use a calculator to evaluate the expression given for <m>T</m>, for each distance, and see how well it matches the data.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>What does the expression for <m>T</m> say the record time for <m>10000</m> meters should be? Is it accurate? (Use the internet to check.)</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>Two versions of the expression for <m>S</m> are shown. Use the rules for fractions and exponents from Chapter 1 to explain why these two versions are really the same.</em>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<em>In the expression for <m>S</m>, what happens to <m>S</m> as <m>d</m> gets very large (recall <xref ref="big_small_reciprocals"/>)? Does this make practical sense?</em>
+			</p>
+				</li>
+
+			</ol></p>
+</question>
+
+		</section>

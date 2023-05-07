@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec5_6_graphical-transformations">
+	<title>Graphical Transformations and Function Families</title>
+
+			<objectives>
+			blah
+			</objectives>
+
+			<p>
+				In this section we discuss transformations of functions built out of the basic operations of arithmetic, applied to the inputs and/or outputs of the function. Such transformations are called <term>graphical transformations</term> because they can be visualized as moving the graph of a parent function. The idea of graphical transformations brings together the concept of functions, as sequential processes applied to the inputs to yield the output, together with the geometric understanding of arithmetic presented in Chapter 1.
+			</p>
+
+
+		<subsection xml:id="basic-graphical-transformations">
+				<title>Basic Graphical Transformations</title>
+
+				<p>
+					Graphical transformations have two fundamental types: <em>inside transformations and </em>outside transformations. An inside transformation is some sequence of operations applied to the input before the function is evaluated, whereas an outside transformation is a sequence of operations applied after the function. For these transformations to have graphical meaning, we restrict ourselves to the following operations, applied to the input and/or output of a function <m>y=f(x)</m> (<m>y=f(x)</m> will be called the <term>parent function</term><idx>parent function</idx>:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+					We may add or subtract a positive constant <m>a</m> to/from <m>x</m>, before <m>f</m> is applied. Then we have a new function <m>y = f(x+a)</m> or <m>y=f(x-a)</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					We may multiply <m>x</m> by a constant <m>k</m>, before <m>f</m> is applied. Then we have a new function <m>y = f(kx)</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					We may add or subtract a positive constant <m>a</m> to/from <m>f(x)</m>, after evaluation. Then we have a new function <m>y = f(x)+a</m> or <m>y=f(x)-a</m>.
+				</p>
+					</li>
+
+					<li>
+									<p>
+					We may multiply <m>f(x)</m> by a constant <m>k</m>, after evaluation. Then we have a new function <m>y = kf(x)</m>.
+				</p>
+					</li>
+
+				</ul></p>
+
+				<p>
+					In this list, the first two transformations are our basic inside transformations, the last two are our basic outside transformations.
+				</p>
+
+				<p>
+					Because outside transformations are easier to explain, we will start with them. Consider a generic function <m>y = f(x)</m>, whose graph is shown in the Desmos element below (Don't worry about what <m>f(x)</m> is; it was just made to give a random graph. You can modify it if you want.). By varying <m>a</m> with the slider, describe how the graph changes under the transformation <m>f(x)\mapsto f(x)+a</m>. The answer to why it works the way it does follows.
+
+				<interactive desmos="x7s3l9h19c" width="100%" aspect="3:2" />
+				</p>
+<p>
+				<answer><title>Effect of <m>f(x)\mapsto f(x)+a</m></title>
+					If we build a new function <m>y = f(x) + a</m>, where <m>a</m> is a positive number, each output is increased by <m>a</m>. Hence, because of addition being represented as upward motion, the graph is shifted up by <m>a</m> units. Likewise, if the new function is <m>y = f(x)-a</m>, the graph is shifted down by <m>a</m> units (remember, we assumed <m>a</m> was positive).
+				</answer>
+</p>
+
+<question>
+				<p>
+					<em>Let <m>f(x) = 3(0.5)^x</m>. What is the range of <m>f</m>? What is the range of <m>f(x) + a</m> when <m>a</m> is any number (not necessarily just positive)? Explain. (You may us Desmos for this.)</em>
+				</p>
+</question>
+				<p>
+				Now we will move on to the effect of multiplication on the outside of a function. In the next Desmos graph, vary the value of <m>k</m> in <m>y=kf(x)</m> and describe the effect of the transformation of <m>f(x)\mapsto kf(x)</m> in your own words. You will probably need to give different descriptions for different values of <m>k</m>.
+				
+				<interactive desmos="hmnk1i2qve" width="100%" aspect="3:2" />
+				</p>
+
+				<p>
+				<answer><title>Effect of <m>f(x)\mapsto kf(x)</m></title>
+					Suppose our parent function is <m>y=f(x)</m> and <m>k&gt;1</m>, then <m>y = kf(x)</m> has a graph that is that of <m>f</m>, except stretched away from the <m>x</m>-axis by a factor of <m>k</m>. This is due to the geometric representation of multiplication by numbers greater than one being represented as a stretch away from zero. Likewise, if <m>0&lt;k&lt;1</m>, then the graph is compressed vertically by a factor of <m>k</m>. If <m>k</m> is negative, then the graph is first reflected across the <m>x</m>-axis, then stretched or compressed by the magnitude of <m>k</m>. This is due to our representation of multiplication by negative numbers as reflection, followed by a stretch or compression.
+				</answer>
+				</p>
+
+<question>
+				<p>
+					<em>Suppose <m>f</m> has a horizontal intercept at <m>x=r</m>. Symbolically, this means <m>f(r) = 0</m>. What happens to the location of this intercept when the function is transformed into <m>kf(x)</m>? Explain both graphically and symbolically.</em>
+				</p>
+</question>
+
+<question>
+				<p>
+					<em>Describe what happens to the <m>y</m>-intercept of a function under the action of each of the basic outside transformations.</em>
+				</p>
+</question>
+
+				<p>
+					Now we will investigate and describe the effect of inside transformations. First, consider adding a positive number <m>h</m> to <m>x</m>, before <m>f</m> is applied. This is the transformation <m>f(x)\mapsto f(x+h)</m>. Again, investigate this transformation in the Desmos element and describe it in your own words, then read the textbook description.
+					<interactive desmos="joogevt9j9" width="100%" aspect="3:2" />
+				</p>	
+
+			<p>
+			<answer>	<title>Effect of <m>f(x)\mapsto f(x+h)</m></title>	
+				Because <m>h</m> is added to <m>x</m> before <m>f</m> is applied, the output of <m>f(x+h)</m>, for any given <m>x</m>, will be equal to the output of <m>f(x)</m> at a point <m>h</m> units to the right of <m>x</m>. Hence, we have the following: 
+				
+				<ul><li>
+				<p>
+				The graph of <m>f(x+h)</m> is the graph of <m>f(x)</m>, except shifted <m>h</m> units to the left.
+				</p>
+				</li>
+				<li>
+				<p>
+					Likewise, the graph of <m>f(x-h)</m> is that of <m>f(x)</m>, except shifted to the right by <m>h</m> units.
+				</p>
+				</li>
+				</ul>
+			</answer>
+			</p>
+
+				<p>
+					This may seem counterintuitive at first, because adding should move things to the right. However, finding an <m>x</m>-value for a given <m>y</m>-value will involve solving for <m>x</m>, which means the last step we will do is subtract, i.e. move to the left. For instance, consider the following example:
+				</p>
+
+<example>
+				<p>
+					Let <m>f(x) = \sqrt{x-3} + 5</m>. One simple point on the graph of this function is <m>(4,6)</m>, because <m>f(4) = \sqrt{4-3} + 5 = 6</m>. Now let's consider the new function <m>g(x) = f(x+2) = \sqrt{(x+2)-3} + 5</m>. To find the transformed version of <m>(4,6)</m> on the graph of <m>g</m>, we must solve: <me>\begin{aligned}
+\sqrt{(x+2) - 3} + 5 &amp; = &amp; 6\\
+&amp; \updownarrow &amp; \\
+(x+2) - 3 &amp; = &amp; 1\\
+&amp; \updownarrow &amp; \\
+(x+2) &amp; = &amp; 4\\
+&amp; \updownarrow &amp; \\
+x = 2.\end{aligned}</me> Thus the transformed point is <m>(2,6)</m>, which is two units to the left of <m>(4,6)</m>.
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Let <m>f(x) = \frac{1}{(x+4)(x-5)}</m>. What is the domain of <m>f(x)</m>? What is the domain of <m>f(x-h)</m>, where <m>h</m> is a real number?</em>
+				</p>
+</question>
+				<p>
+				Finally, we consider multiplying <m>x</m> by some number <m>k</m> before applying the parent function <m>f</m>. Explore the effect of the transformation <m>f(x)\mapsto f(kx)</m> with the following Desmos graph, then read the text description.
+				<interactive desmos="j9wzj00xtv" width="100%" aspect="1:1" />
+				</p>
+
+		<p>
+		<answer><title>Effect of <m>f(x)\mapsto f(kx)</m></title>
+				<p>
+				Suppose <m>f</m> is a parent function, and we want to see the effect of multiplying <m>x</m> by some constant <m>k</m>, before <m>f</m> is applied. We have the following:
+				</p>
+			<ul>
+				<li>
+				<p>
+					If <m>k&gt;1</m>, then for any given <m>x</m>, the output of <m>f(kx)</m> will be that of <m>f(x)</m> at a point that is a factor of <m>k</m> further away from the <m>y</m>-axis. Thus, when <m>k&gt;1</m>, the graph of <m>f(kx)</m> is the graph of <m>f(x)</m>, except compressed by a factor of <m>\frac{1}{k}</m> toward the <m>y</m>-axis.
+				</p>
+				</li>
+				<li>
+				<p>
+					Likewise, the graph of <m>f(kx)</m> is that of <m>f(x)</m>, except stretched away from the <m>y</m>-axis by a factor of <m>\frac{1}{k}</m> when <m>0&lt;k&lt;1</m> (so <m>\frac{1}{k} &gt; 1</m>). 
+				</p>
+				</li>
+				<li>
+				<p>
+				If <m>k</m> is negative, the graph of <m>f(kx)</m> is first reflected over the <m>y</m>-axis, then compressed or stretched according to the absolute value of <m>k</m>.
+				</p>
+				</li>
+			</ul>
+		</answer>
+		</p>
+
+<question>
+				<p>
+					<em>Suppose <m>(2,3)</m> is on the graph of <m>y=f(x)</m>, that is <m>f(2) = 3</m>. What point is on the graph of <m>y = f(-2x) + 1</m>? Explain both graphically and symbolically.</em>
+				</p>
+</question>
+
+		</subsection>
+
+		<subsection xml:id="function-families-and-graphical-transformations">
+				<title>Function Families and Graphical Transformations</title>
+
+				<p>
+					Some of our important forms for certain function families may be thought of as graphical transformations of some building block members of the given family.
+				</p>
+
+<example>
+				<p>
+					Consider the basic linear function with slope <m>m</m>, <m>y = f(x) = mx</m>. The <m>y</m>-intercept of this function is at <m>(0,0)</m>. In order to obtain a new linear function whose graph passes through the point <m>(x_0,y_0)</m>, we can perform a horizontal shift to the right by <m>x_0</m> units and a vertical shift up by <m>y_0</m> units to obtain <me>y = f(x-x_0) + y_0 = m(x-x_0) + y_0.</me> This is simply the point-slope form for a line with slope <m>m</m> passing through the point <m>(x_0,y_0)</m>.
+				</p>
+</example>
+
+<example>
+				<p>
+					Consider a basic quadratic function <m>f(x) = ax^2</m>, where <m>a</m> is some given number. The vertex of its graph is at <m>(0,0)</m>. In order to have the vertex occur at <m>(h,k)</m>, we simply shift it to get <me>y = f(x-h)+k = a(x-h)^2 + k.</me> This is the vertex form of a quadratic.
+				</p>
+</example>
+
+<question>
+				<p>
+					<em>Use factored form to find the formula for a quadratic function <m>f(x)</m> whose <m>x</m>-intercepts are at <m>(1,0)</m> and <m>(4,0)</m>, and whose <m>y</m>-intercept is at <m>(0,7)</m>. What does the parameter <m>a</m> (which you must solve for) do graphically?</em>
+				</p>
+</question>
+
+<question>
+				<p>
+					<em>In building an exponential function, <m>Q = f(t)</m>, with an initial value of five that grows by <m>3\%</m> for each ten unit increase in <m>t</m>, we find <me>Q = f(t) = 5(1.03)^{t/10}.</me> Explain how this function can be built using two graphical transformations of <m>g(t) = (1.03)^t</m>.</em>
+				</p>
+</question>
+		</subsection>
+
+	</section>
+

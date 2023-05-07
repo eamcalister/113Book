@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec4_3_composite-and-inverse">
+			<title>Composite and Inverse Functions</title>
+
+			<objectives>
+			<ul>
+			<li>
+	  			<p>
+				Compose functions using function notation.
+	  			</p>
+	  		</li>
+	  		<li>
+	  			<p>
+	  			Decompose complicated functions as compositions of simpler functions by displaying the defining algebraic expression as a sequence of steps.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Find the inverse of a function using a sequence of inverse operations and by using algebra.
+	  			</p>
+	  		</li>
+			<li>
+	  			<p>
+	  			Graph an inverse function given the graph of a function.
+	  			</p>
+	  		</li>
+			</ul>
+			</objectives>
+
+			<p>
+				On many occasions we have broken down algebraic expressions as a sequence of steps, often determined by order of operations. Now that we have the concept of a function, we may view this breaking down in terms of function composition or decomposition. Simply put, we may view each step in a sequence of operations defining a function as a function in its own right. For instance, consider the function <m>h</m> defined by the algebraic expression in <xref ref="quad_breakdown"/>. This function is <me>y =  h(x) = (3x+1)^2-2.</me> When we broke down that expression, we noted that it takes <m>x</m> and does the following:
+			</p>
+
+			<p><dl>
+				<li><title><em> S1:</em></title>
+							<p>
+				multiplies <m>x</m> by <m>3</m>,
+			</p>
+				</li>
+
+				<li><title><em> S2:</em></title>
+							<p>
+				adds one to <em>S1</em>
+			</p>
+				</li>
+
+				<li><title><em> S3:</em></title>
+							<p>
+				squares <em>S2</em>, and finally
+			</p>
+				</li>
+
+				<li><title><em> S4:</em></title>
+							<p>
+				subtracts two from <em>S3</em>,
+			</p>
+				</li>
+
+			</dl></p>
+
+			<p>
+				For each <m>x</m>, this process produces an output <m>y</m>. Now, we can think about this as two processes, one that does the first two steps <term>S1</term> and <term>S2</term>, and one that does the last two steps <term>S3</term> and <term>S4</term>. For the first two steps, we can use the function <me>u = g(x) = 3x+1.</me> The last two steps then are performed on the output of <m>g</m> by another function <me>y = f(u) = u^2-2.</me> Symbolically, we substitute the expression for <m>g(x)</m> into <m>f(u)</m> for <m>u</m> to get our expression for <m>h(x)</m>: <me>y = h(x) = f(g(x)).</me> In general, a new function <m>h</m> constructed out of a pair of functions <m>g</m> and <m>f</m> is called the <em>composition of <m>f</m> with <m>g</m>. The function <m>g</m> is referred to as the </em>inside function and <m>f</m> is referred to as the <em>outside function. The inputs of the composition are the inputs of the inside function and the outputs are the outputs of the outside function.</em>
+			</p>
+
+<question>
+			<p>
+				<em>If <m>u = f(x) = 2+3x</m> and <m>x=g(u) = 5u+1</m>, then both <m>f(g(u))</m> and <m>g(f(x))</m> make sense. Find them. Are they the same?</em>
+			</p>
+</question>
+
+<example>
+			<statement>
+				Often we decompose functions by finding inside and outside functions that are easier to work with than the composite. One task that we do this for is finding domains and ranges of composites. For instance, consider the function <me>y = \sqrt{x^2-1}.</me> Decompose this function into a composition of simpler functions to find its domain and range.
+			</statement>	
+			<solution>	
+				This may be decomposed as <m>f(g(x))</m> where <m>u = g(x) = x^2-1</m> and <m>y=f(u) = \sqrt{u}</m>. The domain of the composite is those inputs of the inside function that, when the inside function is applied, result in legal inputs of the outside function. The domain of the outside function is <m>u\geq 0</m>, hence we must find <m>x</m>'s such that the output of <m>x^2-1</m> is non-negative. This occurs only if <m>x\geq 1</m> or <m>x\leq -1</m> as numbers between <m>-1</m> and <m>1</m> will square to something less than one. Thus the domain is <m>x\leq -1</m> or <m>x\geq 1</m>. The outputs of <m>u = x^2-1</m> over this domain are all <m>u\geq 0</m>, thus the entire range of <m>\sqrt{u}</m> will be covered. Thus the range of <m>y = \sqrt{x^2-1}</m> is all <m>y\geq 0</m>.
+			</solution>
+</example>
+
+<question>
+			<p>
+				<em>Decompose <m>y = h(x) = \dfrac{2}{x^2-9}</m> as an inside function and outside function and use that decomposition to find the domain of <m>h</m> as in the previous example.</em>
+			</p>
+</question>
+
+			<p>
+				One important application of the idea of function composition is that of <em>inverse functions</em>. In short, the inverse of a given function undoes the action of that function, so composition gets you back to where you started. This leads us to the following formal definition:
+			</p>
+
+<definition xml:id="inverse_fcn_def"><title>Inverse Function</title>
+			<p>
+				 Given a function <m>y = f(x)</m>, the <term>inverse function to <m>f</m></term> is the function <m>x = f^{-1}(y)</m> such that <me>f^{-1}(f(x)) = x\ \text{and}\ f(f^{-1}(y)) = y.</me> The inputs of the inverse function are the outputs of <m>f</m>, the outputs of the inverse function are the inputs of <m>f</m>, and the two functions undo one another.
+			</p>
+</definition>
+
+<remark>Note that the notation for an inverse function looks like an exponent of <m>-1</m>. It is not an exponent! This is just notation for the undoing function. It is kind of confusing and not confusing at the same time. On the one hand, you have to know it's not an exponent. On the other, remember that multiplying by the reciprocal undoes multiplication. This is similar because <em>applying</em> the inverse function to an output of a function undoes the function.
+</remark> 
+
+<example xml:id="shoes_socks_inverse">
+			<statement>
+				Consider the function defined by the expression <me>y = f(x) = (x-4)^3 + 3.</me> By breaking this down into steps (decomposing the function), construct the inverse function by reversing the order and inverting each operation.
+			</statement>	
+			<solution>	
+			The expression defining this function breaks down as follows:
+			<dl>
+			<li><title><em>S1:</em></title>
+			Subtract <m>4</m> from <m>x</m>. 
+			</li> 
+			<li><title><em>S2:</em></title>
+			Cube <em>S1</em>. 
+			</li> 
+			<li><title><em>S3:</em></title>
+			Add <m>3</m> to <em>S2</em>. 
+			</li> 
+			</dl>
+			The result of this process <m>y</m>. Now build the reverse-inverse process to get from <m>y</m> back to <m>x</m>:
+						<dl>
+			<li><title><em>S3<m>^{-1}</m>:</em></title>
+			Subtract <m>3</m> from <m>y</m>. 
+			</li> 
+			<li><title><em>S2<m>^{-1}</m>:</em></title>
+			Take the cube root of <em>S3<m>^{-1}</m></em>. 
+			</li> 
+			<li><title><em>S1<m>^{-1}</m>:</em></title>
+			Add <m>4</m> to <em>S2<m>^{-1}</m></em>. 
+			</li> 
+			</dl>
+			That process takes us from <m>y</m> back to <m>x</m>, thus we are able to sequentially build the inverse function <me>x = f^{-1}(y) = \sqrt[3]{y-3} + 4.</me>
+			</solution>
+
+
+</example>
+			<p>
+			In the definition of an inverse function (<xref ref="inverse_fcn_def"/>) we said that <m>f^{-1}</m> is the function that <q>undoes</q> <m>f</m>. Now let's think about how we can use that idea to solve equations. For instance, take the function 
+			<me> f(x) = (x-4)^3 + 3 </me> from <xref ref="shoes_socks_inverse"/>. Suppose we wish to solve the equation <me> f(x) = 17. </me> We can read that as asking, <q>If <m>y=17</m>, then what is the <m>x</m>?</q> The answer is simple; <em>if we apply the function that undoes <m>f</m> to <m>17</m>, then we'll find the <m>x</m></em>. Hence the solution is <me>x=f^{-1}(17) = \sqrt[3]{17-3}+4 = \sqrt[3]{14} + 4 \approx 6.41.</me> If we wanted to solve <me>f(x) = \text{any number},</me> then we just plug that number into the inverse function. This idea generalizes to the following: 
+			</p>
+<fact><title>Inverse Function as Equation Solver</title>
+<p>If <m>f</m> is an invertible function (see <xref ref="one_to_one_invertible"/>), then the solution to the equation <me>f(x) = b</me> is <me>x = f^{-1}(b).</me></p>
+</fact>
+
+
+			<p>
+				The characterization of an inverse function as an equation solving function allows us to give an algebraic procedure for finding expressions of inverse functions even when we may not see how to reverse the process of the given function; simply write down the equation defining the function <m>y=f(x)</m>, and solve for <m>x</m> in terms of <m>y</m>.
+			</p>
+
+<example>
+<statement>
+Find the inverse of the function
+<me> f(x) = \frac{6x+1}{x-5}</me>
+</statement>
+<solution>(Solving for <m>x</m> in terms of <m>y</m>.)
+Note that this function is the left-hand side of the equation we solved in <xref ref="not_shoes_socks_eq3"/>. In that example the right-hand side was <m>y=2</m>. Now we can just follow through the same solving procedure, except with a generic <m>y</m>: 
+
+<md>
+<mrow> \frac{6x+1}{x-5} \amp = \amp y</mrow>
+<mrow> \amp \updownarrow \amp (\text{multiply both sides by } x-5)</mrow>
+<mrow> 6x+1 \amp = \amp y(x-5)</mrow>
+<mrow> \amp \updownarrow \amp (\text{distribute})</mrow>
+<mrow> 6x+1 \amp = \amp yx-5y </mrow>
+<mrow> \amp \updownarrow \amp (\text{move (subtract) the } yx \text{ and the }1)</mrow>
+<mrow> 6x-yx \amp = \amp -5y-1.</mrow>
+<mrow> \amp \updownarrow \amp (\text{factor out } x \text{ on left})</mrow>
+<mrow> x(6-y) \amp =\amp -5y-1 </mrow>
+<mrow> \amp \updownarrow \amp (\text{divide to solve for } x)</mrow>
+<mrow> x\amp = \amp \frac{-5y-1}{6-y} </mrow>
+</md> 
+Thus we have <me> f^{-1}(y) = \frac{-5y-1}{6-y}.</me>
+</solution>
+<solution>(Undoing a process.)
+Another (not super obvious) way of expressing this function is
+<me>y =  f(x) = 6+\frac{31}{x-5}.</me>
+While this expression isn't a single fraction, it allows us to break <m>f</m> down to the process 
+		<dl>
+			<li><title><em>S1:</em></title>
+			Subtract <m>5</m> from <m>x</m>. 
+			</li> 
+			<li><title><em>S2:</em></title>
+			Take the reciprocal of <em>S1</em>. 
+			</li> 
+			<li><title><em>S3:</em></title>
+			Multiply <em>S2</em> by <m>31</m>. 
+			</li>
+			<li><title><em>S4:</em></title>
+			Add <em>S3</em> to <m>6</m>. 
+			</li>  
+		</dl>
+The result of this process is <m>y</m>. Now we may undo each step starting with <m>y</m>:
+		<dl>
+			<li><title><em>S4<m>^{-1}</m>:</em></title>
+			Subtract <m>6</m> from <m>y</m>. 
+			</li> 
+			<li><title><em>S3<m>^{-1}</m>:</em></title>
+			Divide <em>S4<m>^{-1}</m></em> by <m>31</m>. 
+			</li> 
+			<li><title><em>S2<m>^{-1}</m>:</em></title>
+			Take the reciprocal of <em>S3<m>^{-1}</m></em>. 
+			</li>
+			<li><title><em>S1<m>^{-1}</m>:</em></title>
+			Add <m>5</m> to <em>S2<m>^{-1}</m></em>. 
+			</li>  
+		</dl>
+The end result is <me>x = f^{-1}(y) = \frac{31}{y-6}+5,</me> which you may check is equivalent to the inverse function found by solving.
+
+</solution>
+
+</example>
+
+<question>
+			<p>
+				<em>Find the inverse <m>f^{-1}(y)</m> for the function <me>y = f(x) = \frac{4-9x}{7-9x}.</me></em> You may do this by either method shown in the previous example by noting that
+				<me>y = f(x) = \frac{4-9x}{7-9x} = 1-\frac{3}{7-9x}.</me>
+
+			</p>
+</question>
+
+			<p>
+				The graph of the inverse to a given function has a particularly nice relationship to the graph of its parent function. To graph the inverse to a function <m>y=f(x)</m>, simply take the entire picture of the graph of <m>f</m>, <em>including axis labels</em>, and reflect it across the line through the origin making a 45 degree angle with the positive <m>x</m> axis.
+			</p>
+
+<figure xml:id="inverse_graph">
+    <caption>Graph of <m>y=f(x)</m> and <m>x = f^{-1}(y)</m>.</caption>
+	<image>
+	<latex-image>
+\begin{minipage}[b]{0.5\textwidth}
+
+\begin{tikzpicture}[xscale=.6,yscale=.6]
+\foreach \x in {-2,-1,0,1,2,3,4,5}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\foreach \y in {-2,-1,0,1,2,3,4,5}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[thick] [{Latex}-{Latex}] (-2,0) -- (6,0);
+\draw[thick] [-{Latex}] (0,-2) -- (0,6);
+\draw [help lines] (-2,-2) grid (6,6);
+\node[align=center,right] at (6,0){$x$};
+\node[align=center,above] at (0,6){$y$};
+\node[align=center,above] at (5,5){$y=f(x)$};
+\draw[thick,{Latex}-{Latex},domain=-2:5.2] plot (\x, {-1+.05*\x*\x*\x});
+\draw[dashed,domain=-2:6] plot (\x,\x);
+\end{tikzpicture} 
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.5\textwidth}
+\begin{tikzpicture}[xscale=.6,yscale=.6]
+\foreach \x in {-2,-1,0,1,2,3,4,5}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\foreach \y in {-2,-1,0,1,2,3,4,5}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[thick] [{Latex}-{Latex}] (-2,0) -- (6,0);
+\draw[thick] [-{Latex}] (0,-2) -- (0,6);
+\draw [help lines] (-2,-2) grid (6,6);
+\node[align=center,right] at (6,0){$y$};
+\node[align=center,above] at (0,6){$x$};
+\node[align=center,above] at (5,5){$x=f^{-1}(y)$};
+\draw[thick,{Latex}-{Latex},domain=-2:5.2] plot ({-1+.05*\x*\x*\x},\x);
+\draw[dashed,domain=-2:6] plot (\x,\x);
+\end{tikzpicture}
+\end{minipage}
+	</latex-image>
+	</image>
+</figure>
+
+
+
+<question>
+			<p>
+				<em>Why does it not make sense to graph <m>f</m> and <m>f^{-1}</m> on the same set of axes?</em>
+			</p>
+</question>
+
+<remark xml:id="one_to_one_invertible"><title>Invertibility of a Function</title>
+<p>
+So far we have avoided too much discussion of the formal definition of a function given in <xref ref="function_definition"/>. The important detail is that a function may only have one input for each output. This makes a function <term>well-defined</term> in the sense that if we put an input in we know what we get out without having to choose one of many possibilities. Because the normal operations of arithmetic are well-defined, whenever we define a function of the form
+<me> y = \text{alegbraic expression with }x,</me>
+we get a well-defined function.  
+</p>
+
+<p>
+Now we need to refer to that definition more explicitly to say whether a function <em>has</em> an inverse <em>function.</em> To have an inverse function, a given function must have the property that for every output (<m>y</m>-value) there is only one input (<m>x</m>-value). Such functions are called <term>one-to-one</term>. If a function is not one-to-one, then the inverse is not a well-defined function. For instance,
+<me> y = f(x) = x^2</me> is not invertible. For every output <m>y</m>, there would be two possible inputs <m>x=\sqrt{y}</m> and <m>x=-\sqrt{y}</m> (this function is two-to-one). 
+</p>
+
+
+</remark>
+
+	</section>
