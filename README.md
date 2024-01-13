@@ -1,3 +1,3 @@
-# My Great Book
+# Fort Lewis College Math 113 text.
 
-Visit <https://pretextbook.org/documentation.html> to learn more.
+This pretext project is the current version of the text for Math 113 and Math 112 at Fort Lewis College.
