@@ -1,0 +1,72 @@
+INFO    : PreTeXt-CLI version: 2.4.0
+
+INFO    : PreTeXt project found in `C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book`.
+WARNING : Using CLI version 2.4.0 but project's `requirements.txt`
+WARNING : is configured to use 1.5.2. Consider either installing
+WARNING : CLI version 1.5.2 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.0.
+INFO    : converting latex-image pictures from C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\main.ptx to svg graphics for placement in C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\generated-assets\latex-image
+INFO    : extracting latex-image pictures from C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'publisher': 'C:/Users/mcalister_e/Desktop/Pretext_repositories/113Book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source
+INFO    : verifying and expanding input directory: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\../generated-assets
+INFO    : input directory expanded to absolute path: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\generated-assets
+INFO    : verifying and expanding input directory: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\assets
+INFO    : XSL conversion of C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\main.ptx by C:\Users\mcalister_e\.ptx\xsl\extract-latex-image.xsl
+INFO    : successful application of C:\Users\mcalister_e\.ptx\xsl\extract-latex-image.xsl
+INFO    : converting addfracs1-1.tex to addfracs1-1.pdf
+INFO    : cropping addfracs1-1.pdf to cropped-addfracs1-1.pdf
+INFO    : renaming cropped-addfracs1-1.pdf to addfracs1-1.pdf
+WARNING : Unable to generate some latex-image assets:
+ PTX:ERROR: cannot locate executable with configuration name `pdfsvg` as command `pdf2svg`
+***  Edit the configuration file  ("pretext.cfg" or "project.ptx") and/or install  ***
+***  the necessary program and/or make sure the executable is on your PATH         ***
+INFO    : Removing temporary directory C:\Users\MCALIS~1\AppData\Local\Temp\ptx-mav1gzxw
+INFO    : Preparing to build into C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\output\web.
+INFO    : discovering source file's directory name: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source
+INFO    : verifying and expanding input directory: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\../generated-assets
+INFO    : input directory expanded to absolute path: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\generated-assets
+INFO    : verifying and expanding input directory: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.2.15
+INFO    : Runestone Services (using newer, via online CDN query): version 7.2.18
+INFO    : converting C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\main.ptx to HTML in C:\Users\MCALIS~1\AppData\Local\Temp\ptx-jtu0do56
+INFO    : XSL conversion of C:\Users\mcalister_e\Desktop\Pretext_repositories\113Book\source\main.ptx by C:\Users\mcalister_e\.ptx\xsl\pretext-html.xsl
+INFO    : messages from the log for XSL processing (indented):
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec1_4_order_of_operations" (xml:id), "Parentheses and Order of Operations" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec2_2_equivalent-expressions" (xml:id), "Equivalent Algebraic Expressions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec4_1_inputs-and-outputs" (xml:id), "Inputs and Outputs" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_1_linear-functions" (xml:id), "Linear Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_2_quadratic-functions" (xml:id), "Quadratic Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_3_exponential-functions" (xml:id), "Exponential Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_4_power-functions" (xml:id), "Power Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_5_logarithms" (xml:id), "Logarithms" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_6_graphical-transformations" (xml:id), "Graphical Transformations and Function Families" (title)
+INFO    :     * PTX:DEPRECATE: (2019-06-28) the "table" element requires a "title", an existing "caption" is being ignored (10 times)
+INFO    :     *              located within: "adding-and-subtracting-fractions" (xml:id), "Adding and Subtracting Fractions" (title)
+INFO    :     *              located within: "Sec1_3_exponents" (xml:id), "Exponents" (title)
+INFO    :     *              located within: "Sec2_1_examples-of-alg-expressions" (xml:id), "Examples of Algebraic Expressions" (title)
+INFO    :     *              located within: "Sec5_1_linear-functions" (xml:id), "Linear Functions" (title)
+INFO    :     *              located within: "linear_fcn_def" (xml:id), "Linear Function" (title)
+INFO    :     *              located within: "intro-to-quadratic-functions" (xml:id), "Intro to Quadratic Functions" (title)
+INFO    :     *              located within: "intro-to-quadratic-functions" (xml:id), "Intro to Quadratic Functions" (title)
+INFO    :     *              located within: "applications-of-quadratic-functions" (xml:id), "Applications of Quadratic Functions" (title)
+INFO    :     *              located within: "Sec5_3_exponential-functions" (xml:id), "Exponential Functions" (title)
+INFO    :     *              located within: "intro-to-exponential-functions" (xml:id), "Intro to Exponential Functions" (title)
+INFO    :     * --------------
+INFO    :     * PTX:DEPRECATE: (2023-10-17) the "docinfo/latex-preamble" element no longer has a purpose.  Remove the element and adjust any contained "package" elements.  Then this warning will cease. (1 time)
+INFO    :     * --------------
+INFO    : successful application of C:\Users\mcalister_e\.ptx\xsl\pretext-html.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+

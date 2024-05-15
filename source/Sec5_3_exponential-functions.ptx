@@ -98,7 +98,7 @@
 
 				<p><ul>
 					<li>
-									<p>
+				<p>
 					First, notice that the <m>y</m>-intercept is at <m>(0,2)</m>. This is due to the fact that <m>f(0) = 2(1.5)^0</m>. Since any nonzero number raised to the zero power is <m>1</m>, we are just multiplying <m>2</m> by <m>1</m>.
 				</p>
 					</li>
@@ -150,8 +150,9 @@
 </question>
 
 <p> Now is a good time to once again explore how the graph of <m>f(x) = ab^x</m> changes when <m>a</m> and <m>b</m> change. Use the interactive graph below to change <m>a</m> and <m>b</m> and describe the changes in your own words. Again, the <q>math book</q> description follows.
+</p>
 
-
+<p>
 <interactive desmos="puum1xzp7f" width="60%" aspect="2:3" />
 </p>
 
