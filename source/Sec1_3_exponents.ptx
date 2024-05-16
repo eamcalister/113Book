@@ -47,7 +47,11 @@
 				</row>
 				</tabular>
 			</table>
-
+			<historical><title>Historical Note</title>
+				<p>
+					The first use of superscripts for exponents was by René Descartes in the 1637 text <em>La Geométrie</em>. Prior to this, all sorts of notations were used to describe repeated multiplication.
+				</p>
+			</historical>
 			<p>
 				Based on this idea, we can see the following properties of exponents:
 			</p>
