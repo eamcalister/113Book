@@ -1,0 +1,12 @@
+INFO    : PreTeXt-CLI version: 2.4.0
+
+INFO    : PreTeXt project found in `/workspaces/113Book`.
+WARNING : Using CLI version 2.4.0 but project's `requirements.txt`
+WARNING : is configured to use 1.5.2. Consider either installing
+WARNING : CLI version 1.5.2 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.0.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Running in a codespace, so using the codespace server instead of the standard python server.
+INFO    : Server will soon be available at https://zany-carnival-55v57w6qq99cv4px-8128.app.github.dev
+INFO    : Opening browser for target `web` at https://zany-carnival-55v57w6qq99cv4px-8128.app.github.dev/output/web in 5 seconds
