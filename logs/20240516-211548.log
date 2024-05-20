@@ -1,0 +1,185 @@
+INFO    : PreTeXt-CLI version: 2.4.0
+
+INFO    : PreTeXt project found in `/workspaces/113Book`.
+WARNING : Using CLI version 2.4.0 but project's `requirements.txt`
+WARNING : is configured to use 1.5.2. Consider either installing
+WARNING : CLI version 1.5.2 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.4.0.
+INFO    : converting latex-image pictures from /workspaces/113Book/source/main.ptx to svg graphics for placement in /workspaces/113Book/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /workspaces/113Book/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'publisher': '/workspaces/113Book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/113Book/source
+INFO    : verifying and expanding input directory: /workspaces/113Book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/113Book/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/113Book/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/113Book/assets
+INFO    : XSL conversion of /workspaces/113Book/source/main.ptx by /home/vscode/.ptx/xsl/extract-latex-image.xsl
+INFO    : successful application of /home/vscode/.ptx/xsl/extract-latex-image.xsl
+INFO    : converting addfracs2-1.tex to addfracs2-1.pdf
+INFO    : cropping addfracs2-1.pdf to cropped-addfracs2-1.pdf
+INFO    : renaming cropped-addfracs2-1.pdf to addfracs2-1.pdf
+INFO    : converting addfracs2-1.pdf to addfracs2-1.svg
+INFO    : converting fig1_2-2.tex to fig1_2-2.pdf
+INFO    : cropping fig1_2-2.pdf to cropped-fig1_2-2.pdf
+INFO    : renaming cropped-fig1_2-2.pdf to fig1_2-2.pdf
+INFO    : converting fig1_2-2.pdf to fig1_2-2.svg
+INFO    : converting parent_quadratic_graph-2.tex to parent_quadratic_graph-2.pdf
+INFO    : cropping parent_quadratic_graph-2.pdf to cropped-parent_quadratic_graph-2.pdf
+INFO    : renaming cropped-parent_quadratic_graph-2.pdf to parent_quadratic_graph-2.pdf
+INFO    : converting parent_quadratic_graph-2.pdf to parent_quadratic_graph-2.svg
+INFO    : converting fig_mult1-2.tex to fig_mult1-2.pdf
+INFO    : cropping fig_mult1-2.pdf to cropped-fig_mult1-2.pdf
+INFO    : renaming cropped-fig_mult1-2.pdf to fig_mult1-2.pdf
+INFO    : converting fig_mult1-2.pdf to fig_mult1-2.svg
+INFO    : converting third_power_graph-2.tex to third_power_graph-2.pdf
+INFO    : cropping third_power_graph-2.pdf to cropped-third_power_graph-2.pdf
+INFO    : renaming cropped-third_power_graph-2.pdf to third_power_graph-2.pdf
+INFO    : converting third_power_graph-2.pdf to third_power_graph-2.svg
+INFO    : converting sum_of_squares-1.tex to sum_of_squares-1.pdf
+INFO    : cropping sum_of_squares-1.pdf to cropped-sum_of_squares-1.pdf
+INFO    : renaming cropped-sum_of_squares-1.pdf to sum_of_squares-1.pdf
+INFO    : converting sum_of_squares-1.pdf to sum_of_squares-1.svg
+INFO    : converting first_power_graph-2.tex to first_power_graph-2.pdf
+INFO    : cropping first_power_graph-2.pdf to cropped-first_power_graph-2.pdf
+INFO    : renaming cropped-first_power_graph-2.pdf to first_power_graph-2.pdf
+INFO    : converting first_power_graph-2.pdf to first_power_graph-2.svg
+INFO    : converting pizza_graph-2.tex to pizza_graph-2.pdf
+INFO    : cropping pizza_graph-2.pdf to cropped-pizza_graph-2.pdf
+INFO    : renaming cropped-pizza_graph-2.pdf to pizza_graph-2.pdf
+INFO    : converting pizza_graph-2.pdf to pizza_graph-2.svg
+INFO    : converting geom_diff_squares1-1.tex to geom_diff_squares1-1.pdf
+INFO    : cropping geom_diff_squares1-1.pdf to cropped-geom_diff_squares1-1.pdf
+INFO    : renaming cropped-geom_diff_squares1-1.pdf to geom_diff_squares1-1.pdf
+INFO    : converting geom_diff_squares1-1.pdf to geom_diff_squares1-1.svg
+INFO    : converting inverse_graph-2.tex to inverse_graph-2.pdf
+INFO    : cropping inverse_graph-2.pdf to cropped-inverse_graph-2.pdf
+INFO    : renaming cropped-inverse_graph-2.pdf to inverse_graph-2.pdf
+INFO    : converting inverse_graph-2.pdf to inverse_graph-2.svg
+INFO    : converting fence_diagram-1.tex to fence_diagram-1.pdf
+INFO    : cropping fence_diagram-1.pdf to cropped-fence_diagram-1.pdf
+INFO    : renaming cropped-fence_diagram-1.pdf to fence_diagram-1.pdf
+INFO    : converting fence_diagram-1.pdf to fence_diagram-1.svg
+INFO    : converting fig_mult4-2.tex to fig_mult4-2.pdf
+INFO    : cropping fig_mult4-2.pdf to cropped-fig_mult4-2.pdf
+INFO    : renaming cropped-fig_mult4-2.pdf to fig_mult4-2.pdf
+INFO    : converting fig_mult4-2.pdf to fig_mult4-2.svg
+INFO    : converting quad_deriv_pic1-1.tex to quad_deriv_pic1-1.pdf
+INFO    : cropping quad_deriv_pic1-1.pdf to cropped-quad_deriv_pic1-1.pdf
+INFO    : renaming cropped-quad_deriv_pic1-1.pdf to quad_deriv_pic1-1.pdf
+INFO    : converting quad_deriv_pic1-1.pdf to quad_deriv_pic1-1.svg
+INFO    : converting second_power_graph-2.tex to second_power_graph-2.pdf
+INFO    : cropping second_power_graph-2.pdf to cropped-second_power_graph-2.pdf
+INFO    : renaming cropped-second_power_graph-2.pdf to second_power_graph-2.pdf
+INFO    : converting second_power_graph-2.pdf to second_power_graph-2.svg
+INFO    : converting first_exp_graph-2.tex to first_exp_graph-2.pdf
+INFO    : cropping first_exp_graph-2.pdf to cropped-first_exp_graph-2.pdf
+INFO    : renaming cropped-first_exp_graph-2.pdf to first_exp_graph-2.pdf
+INFO    : converting first_exp_graph-2.pdf to first_exp_graph-2.svg
+INFO    : converting vertex_find_formula_ex-1.tex to vertex_find_formula_ex-1.pdf
+INFO    : cropping vertex_find_formula_ex-1.pdf to cropped-vertex_find_formula_ex-1.pdf
+INFO    : renaming cropped-vertex_find_formula_ex-1.pdf to vertex_find_formula_ex-1.pdf
+INFO    : converting vertex_find_formula_ex-1.pdf to vertex_find_formula_ex-1.svg
+INFO    : converting addfracs1-1.tex to addfracs1-1.pdf
+INFO    : cropping addfracs1-1.pdf to cropped-addfracs1-1.pdf
+INFO    : renaming cropped-addfracs1-1.pdf to addfracs1-1.pdf
+INFO    : converting addfracs1-1.pdf to addfracs1-1.svg
+INFO    : converting fig1_1-2.tex to fig1_1-2.pdf
+INFO    : cropping fig1_1-2.pdf to cropped-fig1_1-2.pdf
+INFO    : renaming cropped-fig1_1-2.pdf to fig1_1-2.pdf
+INFO    : converting fig1_1-2.pdf to fig1_1-2.svg
+INFO    : converting geometric_mult_commutativity-2.tex to geometric_mult_commutativity-2.pdf
+INFO    : cropping geometric_mult_commutativity-2.pdf to cropped-geometric_mult_commutativity-2.pdf
+INFO    : renaming cropped-geometric_mult_commutativity-2.pdf to geometric_mult_commutativity-2.pdf
+INFO    : converting geometric_mult_commutativity-2.pdf to geometric_mult_commutativity-2.svg
+INFO    : converting geom_diff_squares2-1.tex to geom_diff_squares2-1.pdf
+INFO    : cropping geom_diff_squares2-1.pdf to cropped-geom_diff_squares2-1.pdf
+INFO    : renaming cropped-geom_diff_squares2-1.pdf to geom_diff_squares2-1.pdf
+INFO    : converting geom_diff_squares2-1.pdf to geom_diff_squares2-1.svg
+INFO    : converting perp_lines-2.tex to perp_lines-2.pdf
+INFO    : cropping perp_lines-2.pdf to cropped-perp_lines-2.pdf
+INFO    : renaming cropped-perp_lines-2.pdf to perp_lines-2.pdf
+INFO    : converting perp_lines-2.pdf to perp_lines-2.svg
+INFO    : converting geometric_distributive_rhs-2.tex to geometric_distributive_rhs-2.pdf
+INFO    : cropping geometric_distributive_rhs-2.pdf to cropped-geometric_distributive_rhs-2.pdf
+INFO    : renaming cropped-geometric_distributive_rhs-2.pdf to geometric_distributive_rhs-2.pdf
+INFO    : converting geometric_distributive_rhs-2.pdf to geometric_distributive_rhs-2.svg
+INFO    : converting basic_cartesian_plane-2.tex to basic_cartesian_plane-2.pdf
+INFO    : cropping basic_cartesian_plane-2.pdf to cropped-basic_cartesian_plane-2.pdf
+INFO    : renaming cropped-basic_cartesian_plane-2.pdf to basic_cartesian_plane-2.pdf
+INFO    : converting basic_cartesian_plane-2.pdf to basic_cartesian_plane-2.svg
+INFO    : converting quad_deriv_pic2-1.tex to quad_deriv_pic2-1.pdf
+INFO    : cropping quad_deriv_pic2-1.pdf to cropped-quad_deriv_pic2-1.pdf
+INFO    : renaming cropped-quad_deriv_pic2-1.pdf to quad_deriv_pic2-1.pdf
+INFO    : converting quad_deriv_pic2-1.pdf to quad_deriv_pic2-1.svg
+INFO    : converting vertex_ex_graph-2.tex to vertex_ex_graph-2.pdf
+INFO    : cropping vertex_ex_graph-2.pdf to cropped-vertex_ex_graph-2.pdf
+INFO    : renaming cropped-vertex_ex_graph-2.pdf to vertex_ex_graph-2.pdf
+INFO    : converting vertex_ex_graph-2.pdf to vertex_ex_graph-2.svg
+INFO    : converting squiggle_function_graph-2.tex to squiggle_function_graph-2.pdf
+INFO    : cropping squiggle_function_graph-2.pdf to cropped-squiggle_function_graph-2.pdf
+INFO    : renaming cropped-squiggle_function_graph-2.pdf to squiggle_function_graph-2.pdf
+INFO    : converting squiggle_function_graph-2.pdf to squiggle_function_graph-2.svg
+INFO    : converting fig_addsubt1-2.tex to fig_addsubt1-2.pdf
+INFO    : cropping fig_addsubt1-2.pdf to cropped-fig_addsubt1-2.pdf
+INFO    : renaming cropped-fig_addsubt1-2.pdf to fig_addsubt1-2.pdf
+INFO    : converting fig_addsubt1-2.pdf to fig_addsubt1-2.svg
+INFO    : converting fig_mult3-2.tex to fig_mult3-2.pdf
+INFO    : cropping fig_mult3-2.pdf to cropped-fig_mult3-2.pdf
+INFO    : renaming cropped-fig_mult3-2.pdf to fig_mult3-2.pdf
+INFO    : converting fig_mult3-2.pdf to fig_mult3-2.svg
+INFO    : converting geometric_distributive_lhs-2.tex to geometric_distributive_lhs-2.pdf
+INFO    : cropping geometric_distributive_lhs-2.pdf to cropped-geometric_distributive_lhs-2.pdf
+INFO    : renaming cropped-geometric_distributive_lhs-2.pdf to geometric_distributive_lhs-2.pdf
+INFO    : converting geometric_distributive_lhs-2.pdf to geometric_distributive_lhs-2.svg
+INFO    : converting first_function_graph-2.tex to first_function_graph-2.pdf
+INFO    : cropping first_function_graph-2.pdf to cropped-first_function_graph-2.pdf
+INFO    : renaming cropped-first_function_graph-2.pdf to first_function_graph-2.pdf
+INFO    : converting first_function_graph-2.pdf to first_function_graph-2.svg
+INFO    : Removing temporary directory /tmp/ptx-_ug356ls
+INFO    : Preparing to build into /workspaces/113Book/output/web.
+INFO    : discovering source file's directory name: /workspaces/113Book/source
+INFO    : verifying and expanding input directory: /workspaces/113Book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/113Book/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/113Book/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/113Book/assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.2.15
+INFO    : Runestone Services (using newer, via online CDN query): version 7.2.18
+INFO    : converting /workspaces/113Book/source/main.ptx to HTML in /tmp/ptx-dscgi986
+INFO    : XSL conversion of /workspaces/113Book/source/main.ptx by /home/vscode/.ptx/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing (indented):
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec1_4_order_of_operations" (xml:id), "Parentheses and Order of Operations" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec2_2_equivalent-expressions" (xml:id), "Equivalent Algebraic Expressions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec4_1_inputs-and-outputs" (xml:id), "Inputs and Outputs" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_1_linear-functions" (xml:id), "Linear Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_2_quadratic-functions" (xml:id), "Quadratic Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_3_exponential-functions" (xml:id), "Exponential Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_4_power-functions" (xml:id), "Power Functions" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_5_logarithms" (xml:id), "Logarithms" (title)
+INFO    :     * PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+INFO    :     *              located within: "Sec5_6_graphical-transformations" (xml:id), "Graphical Transformations and Function Families" (title)
+INFO    :     * PTX:DEPRECATE: (2019-06-28) the "table" element requires a "title", an existing "caption" is being ignored (10 times)
+INFO    :     *              located within: "adding-and-subtracting-fractions" (xml:id), "Adding and Subtracting Fractions" (title)
+INFO    :     *              located within: "Sec1_3_exponents" (xml:id), "Exponents" (title)
+INFO    :     *              located within: "Sec2_1_examples-of-alg-expressions" (xml:id), "Examples of Algebraic Expressions" (title)
+INFO    :     *              located within: "Sec5_1_linear-functions" (xml:id), "Linear Functions" (title)
+INFO    :     *              located within: "linear_fcn_def" (xml:id), "Linear Function" (title)
+INFO    :     *              located within: "intro-to-quadratic-functions" (xml:id), "Intro to Quadratic Functions" (title)
+INFO    :     *              located within: "intro-to-quadratic-functions" (xml:id), "Intro to Quadratic Functions" (title)
+INFO    :     *              located within: "applications-of-quadratic-functions" (xml:id), "Applications of Quadratic Functions" (title)
+INFO    :     *              located within: "Sec5_3_exponential-functions" (xml:id), "Exponential Functions" (title)
+INFO    :     *              located within: "intro-to-exponential-functions" (xml:id), "Intro to Exponential Functions" (title)
+INFO    :     * --------------
+INFO    :     * PTX:DEPRECATE: (2023-10-17) the "docinfo/latex-preamble" element no longer has a purpose.  Remove the element and adjust any contained "package" elements.  Then this warning will cease. (1 time)
+INFO    :     * --------------
+INFO    : successful application of /home/vscode/.ptx/xsl/pretext-html.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+
