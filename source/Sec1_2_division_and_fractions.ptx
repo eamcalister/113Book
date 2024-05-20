@@ -297,13 +297,7 @@ Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left
 					Now that we have thought about real world units of measurement, and we can convert units that measure the same dimensional quantity, we can introduce a useful metaphor for adding, subtracting, and comparing fractions:
 				</p>
 
-<!-- div attr= class="center"-->
-				<p>
-					Fractions as Units
-				</p>
-
-				<table>
-					<caption></caption>
+				<table><title>Denominators and Units</title>
 					<tabular top="medium">
 					<row bottom="medium">
 						<cell halign="left"><em>Units of Measurement</em></cell>

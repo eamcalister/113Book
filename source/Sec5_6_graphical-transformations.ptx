@@ -4,7 +4,23 @@
 	<title>Graphical Transformations and Function Families</title>
 
 			<objectives>
-			blah
+			<ul>
+				<li>
+					<p>
+					Describe horizontal and vertical shifts of graphs using addition and subtraction before or after (inside or outside) the application of a function.
+					</p>
+				</li>
+				<li>
+					<p>
+					Describe horizontal and vertical stretches of graphs using multiplication and division before or after (inside or outside) the application of a function.
+					</p>
+				</li>
+				<li>
+					<p>
+					Relate the effects of parameters in function families we have studied to graphical transformations. 	
+					</p>
+				</li>
+			</ul>
 			</objectives>
 
 			<p>
@@ -55,11 +71,13 @@
 
 				<interactive desmos="x7s3l9h19c" width="100%" aspect="3:2" />
 				</p>
-<p>
-				<answer><title>Effect of <m>f(x)\mapsto f(x)+a</m></title>
+
+				<insight><title>Effect of <m>f(x)\mapsto f(x)+a</m></title>
+					<p>
 					If we build a new function <m>y = f(x) + a</m>, where <m>a</m> is a positive number, each output is increased by <m>a</m>. Hence, because of addition being represented as upward motion, the graph is shifted up by <m>a</m> units. Likewise, if the new function is <m>y = f(x)-a</m>, the graph is shifted down by <m>a</m> units (remember, we assumed <m>a</m> was positive).
-				</answer>
-</p>
+					</p>
+				</insight>
+
 
 <question>
 				<p>
@@ -72,11 +90,13 @@
 				<interactive desmos="hmnk1i2qve" width="100%" aspect="3:2" />
 				</p>
 
-				<p>
-				<answer><title>Effect of <m>f(x)\mapsto kf(x)</m></title>
+				
+				<insight><title>Effect of <m>f(x)\mapsto kf(x)</m></title>
+					<p>
 					Suppose our parent function is <m>y=f(x)</m> and <m>k&gt;1</m>, then <m>y = kf(x)</m> has a graph that is that of <m>f</m>, except stretched away from the <m>x</m>-axis by a factor of <m>k</m>. This is due to the geometric representation of multiplication by numbers greater than one being represented as a stretch away from zero. Likewise, if <m>0&lt;k&lt;1</m>, then the graph is compressed vertically by a factor of <m>k</m>. If <m>k</m> is negative, then the graph is first reflected across the <m>x</m>-axis, then stretched or compressed by the magnitude of <m>k</m>. This is due to our representation of multiplication by negative numbers as reflection, followed by a stretch or compression.
-				</answer>
-				</p>
+					</p>
+				</insight>
+				
 
 <question>
 				<p>
@@ -95,8 +115,9 @@
 					<interactive desmos="joogevt9j9" width="100%" aspect="3:2" />
 				</p>	
 
+
+			<insight>	<title>Effect of <m>f(x)\mapsto f(x+h)</m></title>	
 			<p>
-			<answer>	<title>Effect of <m>f(x)\mapsto f(x+h)</m></title>	
 				Because <m>h</m> is added to <m>x</m> before <m>f</m> is applied, the output of <m>f(x+h)</m>, for any given <m>x</m>, will be equal to the output of <m>f(x)</m> at a point <m>h</m> units to the right of <m>x</m>. Hence, we have the following: 
 				
 				<ul><li>
@@ -110,8 +131,9 @@
 				</p>
 				</li>
 				</ul>
-			</answer>
 			</p>
+			</insight>
+
 
 				<p>
 					This may seem counterintuitive at first, because adding should move things to the right. However, finding an <m>x</m>-value for a given <m>y</m>-value will involve solving for <m>x</m>, which means the last step we will do is subtract, i.e. move to the left. For instance, consider the following example:
@@ -140,8 +162,8 @@ x = 2.\end{aligned}</me> Thus the transformed point is <m>(2,6)</m>, which is tw
 				<interactive desmos="j9wzj00xtv" width="100%" aspect="1:1" />
 				</p>
 
-		<p>
-		<answer><title>Effect of <m>f(x)\mapsto f(kx)</m></title>
+		
+		<insight><title>Effect of <m>f(x)\mapsto f(kx)</m></title>
 				<p>
 				Suppose <m>f</m> is a parent function, and we want to see the effect of multiplying <m>x</m> by some constant <m>k</m>, before <m>f</m> is applied. We have the following:
 				</p>
@@ -162,8 +184,8 @@ x = 2.\end{aligned}</me> Thus the transformed point is <m>(2,6)</m>, which is tw
 				</p>
 				</li>
 			</ul>
-		</answer>
-		</p>
+		</insight>
+
 
 <question>
 				<p>

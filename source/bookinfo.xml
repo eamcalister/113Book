@@ -23,11 +23,6 @@
   \usetikzlibrary{decorations.markings}
 </latex-image-preamble>
 
-<latex-preamble>
-  \usepackage{cancel}
-</latex-preamble>
-
-
 
   <macros>
 		\newcommand{\dollar}{\$}
@@ -61,6 +56,6 @@
   <rename element="principle" xml:lang="en-US">Key Concepts</rename>
   <rename element="identity" xml:lang="en-US">Fundamental Properties</rename>
   <rename element="algorithm" xml:lang="en-US">Basic Solving Procedure</rename>
-  <rename element="answer" xml:lang="en-US">Textbook Description</rename>
+  <rename element="insight" xml:lang="en-US">Textbook Description</rename>
   <rename element="computation" xml:lang="en-US">Function Building Procedure</rename>
   </docinfo>
