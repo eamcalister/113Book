@@ -299,6 +299,23 @@
 	</image>
 </figure>	
 
+<exercise>
+<p> 
+<webwork source="Library/NewHampshire/NECAP/grade3/gr3-2006/n3-2006-11s.pg" />
+</p>
+</exercise>
+
+<exercise>
+<p>
+<webwork source="Library/PCC/BasicAlgebra/NumberBasics/NumberLine50.pg" />
+</p>
+</exercise>
+
+  <subsection xml:id="Addition_and_Subtraction">
+  <title>Addition and Subtraction</title>
+  
+
+
 			<p>
 				To represent <m>a+b</m> and <m>a-b</m> geometrically, we first measure out the distance <m>b</m> is to the right of zero, then move that far to the right of <m>a</m> for <m>a+b</m> and move that distance to the left of <m>a</m> for <m>a-b</m>.
 			</p>
@@ -340,6 +357,13 @@
 				In Figure <xref ref="fig_addsubt1" />, since <m>b&gt;a</m> we end up to the left of zero when we subtract <m>b</m> from <m>a</m>. This should make sense; if you take away more than you started out with, you end up with a shortage.
 			</p>
 
+  <exercise> 
+  <p>   
+  <webwork source="Library/MC/PreAlgebra/setPreAlgebraC01S06/SubtractingIntegers07.pg" /> 
+  </p>     
+  </exercise>
+
+
 <question xml:id="commutative_addition">
 
 			<p><ol>
@@ -373,7 +397,12 @@
 			<p>
 				One of the important ideas in algebra is that of <term>inverse operations</term>. That is, two operations/actions that, when performed in succession on a number or variable, result in the original number or variable being unchanged. We can see this idea by looking at subtraction. Observe that if <m>a</m> and <m>b</m> are numbers, then <m>a+b-b = a</m>. This may seem obvious, especially if you draw it on the number line. However, the concept is very important; <em>the inverse of adding <m>b</m> to <m>a</m> is subtracting <m>b</m>. We may say that subtracting <q>undoes</q> addition or that when you add and subtract the same quantity they <q>cancel each other</q>.</em>
 			</p>
+  </subsection>     
 
+  <subsection xml:id="Multiplication">
+    <title>Multiplication as Number Line Movements</title>
+    
+  
 			<p>
 				Multiplication of real numbers is more difficult to visualize geometrically than addition or subtraction. The fundamental idea is that of stretching, with <m>1</m> being a basic unit of measurement. Let's start with <m>b</m> being any positive number and <m>a=1.5</m>. We see that <m>1</m> fits into <m>a</m> exactly <m>1.5</m> times. Since <m>ab</m> must have the same size relative to <m>b</m> as <m>a</m> does to <m>1</m>, <m>b</m> must fit into <m>ab</m> exactly <m>1.5</m> times. Think of this as stretching <m>b</m> by a factor of <m>a</m> when <m>a&gt;1</m>.
 			</p>
@@ -399,6 +428,15 @@
 	</image>	
 </figure>
 
+  <p>
+    One good way to think of multiplying by numbers less than one is by thinking of percents less than <m>100\%</m>.
+  </p>
+
+  <exercise>
+  <p>
+  <webwork source="Library/PCC/BasicAlgebra/NumberBasics/PercentDecimalConversion30.pg" /> 
+  </p>
+  </exercise>
 
 			<p>
 				If <m>a</m> is smaller than <m>1</m>, for example <m>a = 0.75</m>, then you don't get a whole copy of <m>1</m> in <m>a</m>, you only have <m>75\%</m> of one. This means you will only get <m>75\%</m> of a copy of <m>b</m> in <m>ab</m>. In the case when <m>a&lt;1</m>, we think of <m>ab</m> as a squeeze of <m>b</m> by a factor of <m>a</m>.
@@ -481,6 +519,9 @@
 			<p>
 				<em>Explain why <m>ab</m> is equal to <m>ba</m> when <m>a</m> and <m>b</m> are both positive integers.</em>
 			</p>
+      <p>
+        <alert>This question is pretty difficult.</alert> Giving a really good answer should start by thinking of <m>ab</m> as the number of objects when you take <m>a</m> piles of size <m>b</m>, since that is one way of visualizing <m>b</m> added to itself <m>a</m> times. Then describe how you could systematically rearrange those objects into <m>b</m> piles of size <m>a</m>.
+      </p>
 </question>
 			<p>
 				Lastly, let's think about multiplying with negative numbers. Recall from Table <xref ref="table1_1_1" /> that if <m>a</m> is a number, then <m>-a</m> is the same distance from <m>0</m>, but on the other side of <m>0</m> from <m>a</m>. Multiplying negative numbers extends this idea. When <m>b</m> is any number and <m>a</m> is a negative number, then <m>ab</m> is the number with the same squeeze or stretch factor applied to <m>b</m> as if <m>a</m> were positive, but flipped to the other side of zero. For instance if <m>b</m> is positive, then <m>-0.75b</m> is the number <m>75\%</m> as far from <m>0</m> as <m>b</m>, flipped to the other side of <m>0</m> from <m>b</m>.
@@ -541,4 +582,5 @@
 
 			</ol></p>
 </question>
+  </subsection>
 </section>
