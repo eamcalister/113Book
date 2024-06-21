@@ -45,6 +45,14 @@
   <latex print="no" sides="one">
     <asymptote links="no"/>
   </latex>
+
+  <common>
+    <!-- List Chapters and Sections in sidebar Table of Contents -->
+    <tableofcontents level="2" />
+    <exercise-inline statement="yes" hint="yes" answer="no" solution="no"/>
+    <!--exercise-divisional statement="yes" hint="yes" answer="yes" solution="yes"/-->
+    <!--exercise-project statement="yes" hint="yes" answer="yes" solution="yes" /-->
+  </common>
   
   <html>
     <!-- Whether to knowl a particular elements is set here    -->

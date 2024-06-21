@@ -44,7 +44,7 @@
 			</table>
 			<historical><title>Historical Note</title>
 				<p>
-					The first use of superscripts for exponents was by René Descartes in the 1637 text <em>La Geométrie</em>. Prior to this, all sorts of notations were used to describe repeated multiplication.
+					The first use of superscripts for exponents was by René Descartes in the 1637 text <em>La Geométrie</em>. Prior to this, all sorts of notations were used to describe repeated multiplication. For instance, Vieté would write "<m>A</m> Cubus" for <m>A^3</m>, as he insisted <m>A^3</m> represented the volume of a cube. 
 				</p>
 			</historical>
 			<p>
@@ -90,6 +90,70 @@
 			</ol></p>
 </identity>
 
+<p>
+	We can use these properties to re-write expressions with exponents in alternate forms. When we do this, it is helpful to do the following to solidify you understanding:
+	<ul>
+		<li>
+			<p>
+				Take it one step at a time and write down which exponent property you're using at each step.
+			</p>
+		</li>
+		<li>
+			<p>
+				If the exponents are positive whole numbers, try to write the expression out without exponents as an intermediate step, as in the "for example" lines in <xref ref="exponent_properties1"/>. 
+			</p>
+		</li>
+	</ul>
+</p>
+
+<example>
+	<p>
+	Suppose we are given the instruction to write the expression <m>\frac{2^a4^a}{8^b}</m> with a single exponent and base <m>8</m>. In other words, we want to find the expression for <m>x</m> in the equation 
+	<me>\frac{2^a4^a}{8^b} = 8^x</me>.
+	</p>
+	<p>
+	To do this, we'll use the exponent properties.
+	<md>
+		<mrow> \frac{2^a4^a}{8^b} \amp = \frac{(2\cdot 4)^a}{8^b} \amp \text{ using property } 4 </mrow>
+		<mrow> \amp =  \frac{8^a}{8^b} \amp \text{ multiply } </mrow>
+		<mrow> \amp =  8^{a-b} \amp \text{ using property } 2. </mrow>
+	</md>
+	Thus, our expression for <m>x</m> is <m>a-b</m>. 
+	</p>
+	<p>
+		To check whether this really makes sense, let <m>a = 7</m> and <m>b=3</m>. Then we can work it out without explicitly using any exponent properties to get the same answer.
+		<md>
+			<mrow> \frac{2^74^7}{8^3} \amp =  \frac{2\cdot 2 \cdot 2 \cdot 2 \cdot 2\cdot 2\cdot 2\cdot 4 \cdot 4\cdot 4\cdot 4\cdot 4\cdot 4\cdot 4 }{8\cdot 8\cdot 8} </mrow>
+			<mrow> \amp =  \frac{2\cdot 4 \cdot 2 \cdot 4 \cdot 2\cdot 4\cdot 2\cdot 4 \cdot 2\cdot 4\cdot 2\cdot 4\cdot 2\cdot 4}{8\cdot 8\cdot 8}  </mrow>
+			<mrow> \amp =  \frac{8\cdot 8\cdot 8\cdot 8\cdot \bcancel{8}\cdot \bcancel{8}\cdot \bcancel{8}}{\bcancel{8}\cdot \bcancel{8}\cdot \bcancel{8}} = 8^4 </mrow>
+		</md>
+		Observing that <m>4 = 7-3</m>, we're seeing the same answer as we got with exponent properties. Here we strictly used the <em>definition</em> of exponents.
+	</p>
+
+</example>
+
+<p>
+	Here are a some exercises for you to practice.
+</p>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/6-1-Exponent-rules/MCH1-6-1-32-Exponent-rules.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/6-1-Exponent-rules/MCH1-6-1-30-Exponent-rules.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Algebra/exponents_integers/exp_ints_12.pg" />
+	</p>
+</exercise>
+
 			<p>
 				More subtlety arises when making sense out of zero, negative, and fractional exponents. The problem is that we don't know what it means to multiply a number by itself zero times, a negative number of times, or a fractional number of times. Because of this, we use the properties listed above to define zero, negative, and fractional exponents.
 			</p>
@@ -102,15 +166,31 @@
 				Now consider a negative exponent, <m>a^{-n}</m>. Here we use the first two exponent properties to arrive at what <m>a^{-n}</m> must be. We have <me>a^{n}a^{-n} = a^{n+(-n)} = a^{n-n} = a^{0} = 1.</me> Shortening this string of equalities, we have <m>a^{n}a^{-n} = 1</m>. Now we divide both sides by <m>a^{n}</m> to get <m>a^{-n} = \frac{1}{a^{n}}</m>. In words, a negative exponent indicates division by the same number with a positive exponent.
 			</p>
 
+			<exercise>
+				<p> 
+				<webwork source="Library/Mizzou/Algebra/exponents_integers/exp_ints_three_parts_01_ia.pg" />
+				</p>
+			</exercise>
+
+			<p>
+				The next one looks daunting at first, but isn't that bad if you take it slow.
+			</p>
+			<exercise>
+				<p> 
+				<webwork source="Library/Mizzou/Algebra/exponents_integers/exp_ints_02.pg" />
+				</p>
+			</exercise>
+
 			<p>
 				Finally, let's consider what <m>a^{\frac{1}{n}}</m> should be. This time we'll use the third exponent property that a power raised to a power reults in the exponents being multiplied. Thus we have, <me>(a^{\frac{1}{n}})^n  = a^{\frac{n}{n}} = a^{1} = a.</me> So <m>a^{\frac{1}{n}}</m> is the number that when raised to the <m>n</m>-th power results in <m>a</m>. This is exactly a description of the <m>n</m>-th root, <m>\sqrt[n]{a}</m>. Going slightly further with the third exponent property, we have <m>a^\frac{m}{n} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m</m>.
 			</p>
 
-<question>
-			<p>
-				<em>Justify the last sentence of the last paragraph. <em>Hint:</em> First note that <m>\frac{m}{n}</m> can be written as <m>m\cdot\frac{1}{n}</m>, then apply property number three from <xref ref="exponent_properties1"/> </em>
-			</p>
-</question>
+	<question>
+		<p>
+			<em>Justify the last sentence of the last paragraph. <em>Hint:</em> First note that <m>\frac{m}{n}</m> can be written as <m>m\cdot\frac{1}{n}</m>, then apply property number three from <xref ref="exponent_properties1"/> </em>
+		</p>
+	</question>
+
 
 			<p>
 				So in summary we have the following:
@@ -143,50 +223,67 @@
 			</ol></p>
 </identity>
 
-<question>
-			<p>
-				<em>Evaluate the following without a calculator. Make sure you do it as efficiently as possible using properties of exponents.</em>
-			</p>
 
-			<p><ol>
-				<li>
-							<p>
-				<em><m>4^{\frac{3}{2}}</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>9^{-\frac{1}{2}}</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>(\frac{1}{27})^{-\frac{2}{3}}</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>\frac{1}{7^{-2}}</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>\frac{10^9}{10^7}</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>16^{\frac{5}{4}}</m></em>
-			</p>
-				</li>
-
-			</ol></p>
-</question>
+<exercise>
+	<webwork>
+		<pg-code>
+		loadMacros(
+		  "PGstandard.pl",
+		  "MathObjects.pl",
+		  "PGML.pl",
+		  "contextFraction.pl",
+		  "PGcourse.pl"
+		);
+		Context("Fraction");
+		$a = Compute("8");
+		$b = Compute("1/3");
+		$c = Compute("9");
+		$d = Compute("49");
+		$e = Compute("100");
+		$f = Compute("32");
+		</pg-code>
+	  
+		<statement>
+		<p>
+			Evaluate the following without a calculator. Make sure you do it as efficiently as possible using properties of exponents.
+		</p>
+		<ol>
+			<li>
+				<p>
+					<m>4^{\frac{3}{2}} = </m><var name="$a" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>9^{-\frac{1}{2}} =</m><var name="$b" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>(\frac{1}{27})^{-\frac{2}{3}} = </m><var name="$c" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>\frac{1}{7^{-2}} = </m><var name="$d" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>\frac{10^9}{10^7} = </m><var name="$e" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>16^{\frac{5}{4}} = </m><var name="$f" width="2"/>
+				</p>
+			</li>
+		</ol>
+		</statement>
+		
+	  
+	  </webwork>
+	</exercise>
 
 <question>
 			<p>
