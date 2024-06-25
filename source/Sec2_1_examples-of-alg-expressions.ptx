@@ -117,65 +117,65 @@
 				We will often abbreviate the result of a step <em>Sn</em> by just writing <em>Sn</em>. For example, we could just write "multiply <em>S3</em> by <m>5</m>" for the last step above.
 			</p>
 
-<example xml:id="reciprocal_description">
-			<statement>
-				Describe the expression <m>\frac{2}{x+1}</m> as a sequence of steps. 
-			</statement>
-			<solution>
-			One way to describe this process is
-			<p><dl>
-				<li><title><em>S1:</em></title>
-							<p>
-				Add <m>1</m> to <m>x</m>,
-			</p>
-				</li>
-
-				<li><title><em>S2:</em></title>
-							<p>
-				divide <m>2</m> by <em>S1</em>.
-			</p>
-				</li>
-
-			</dl></p>
-
+<remark xml:id="make-it-undoable"><title>(Try to) Make the Steps Undoable</title>
 			<p>
-				Note that we need to be careful in describing <em>S2</em>; we need to specify which quantity is divided by which here. We may want to think of this as a process which is being done primarily to <m>x</m>, and break it down as <m>2 \cdot \frac{1}{x+1}</m>. Then we could describe the expression by the following:
+				Eventually, our goal will be to solve equations invovling algebraic expressions. We will see that this often involves taking steps and undoing them in the correct (reverse) order. Sometimes this will mean we need to take some extra special care with out language for steps. 
 			</p>
-
-			<p><dl>
-				<li><title><em>S1:</em></title>
-							<p>
-				Add <m>1</m> to <m>x</m>
+			<p>
+				Take as an example the expression <me>\frac{1}{x}</me>. This seems like a one-step expression described as <dl><li><p>Step: Divide <m>1</m> by <m>x</m>.</p></li></dl> This is an adequate description until we want to solve for <m>x</m> in an equation (we'll do this in the next chapter). The problem with this description is that the action is being applied to <m>1</m> and not <m>x</m>. Thus, we cannot undo the action and get back to <m>x</m>. Instead, we introduce the phrase "take the reciprocal of" to mean divide <m>1</m> by some variable quantity. In this case, we would say
+				<dl>
+					<li>
+						<p>
+							Step: Take the reciprocal of <m>x</m>.
+						</p>
+					</li>
+				</dl> 
+			Undoing taking the reciprocal of a quantity is simple; you just take the reciprocal again (this is the "flip" operation with fractions, if you want another word).
 			</p>
-				</li>
+</remark>
 
-				<li><title><em>S2:</em></title>
-							<p>
-				Take the reciprocal of <em>S1</em>
-			</p>
-				</li>
+<exercise xml:id="expression-parsons-1" adaptive="yes">
+	<statement>
+	  <p>
+		Verbally describe the expression <me>\frac{1}{x+1}</me> by placing the steps in the correct order.
+	  </p>
+	</statement>
+	<blocks>
+	<block order="3">
+	<p>
+	  Add <m>1</m> to <m>x</m>.
+	</p>
+	</block>
+	<block order="1">
+	<p>
+		Take the reciprocal of the result of the previous step.
+	</p>
+</block>
+<block order="2">
+	<p>
+	  Multiply the result of the previous step by <m>2</m>.
+	</p>
+</block>
+</blocks>
+	<hint>
+	  <p>
+		Think of <m>\frac{2}{x+1}</m> as <m>2\cdot\frac{1}{x+1}</m>.
+	  </p>
+	</hint>
+  </exercise>
 
-				<li><title><em>S3:</em></title>
-							<p>
-				multiply the result of <em>S2</em> by <m>2</m>.
-			</p>
-				</li>
-
-			</dl></p>
-			</solution>
-</example>
 
 			<p>
 				Sometimes a variable can appear more than once in an expression, which may make describing it as a single procedure more difficult. This difficulty is dealt with by thinking of a combination of procedures using order of operations.
 			</p>
-
+		
 <example>
 			<statement>
 				 Verbally describe the expression <me>4s^2 + 2\sqrt{s+1}.</me> 
 			</statement>
 			<solution>
 
-			 If we were evaluating this at a specific value of <m>s</m>, we would perform the addition last. For this reason, we take each part that will be added together and describe them separately first. For the first term (a <em><term>term</term> is a part of an algebraic expression being added to other parts):</em>
+			 If we were evaluating this at a specific value of <m>s</m>, we would perform the addition of <m>4s^2</m> with last <m>2\sqrt{s+1}</m>. For this reason, we take each part that will be added together and describe them separately first. For the first term (a <em><term>term</term> is a part of an algebraic expression being added to other parts):</em>
 
 			<p><dl>
 				<li><title><em>S1:</em></title>

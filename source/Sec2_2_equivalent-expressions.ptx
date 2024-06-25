@@ -50,6 +50,12 @@ Again, the same result is obtained. You should try some of your own values of <m
 </solution>
 </example>
 
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/1-3-Equivalent-expressions/MCH1-1-3-06-Equivalent-expressions.pg" />
+	</p>
+</exercise>
+
 <remark>
 Note that testing values isn't really enough to <em> prove </em> two expressions are equivalent. It just provides evidence. We'll prove these expressions are equivalent in <xref ref="equiv_by_manip_ex"/>.
 </remark>
@@ -96,7 +102,7 @@ Note that testing values isn't really enough to <em> prove </em> two expressions
 			</p>
 
 			<p>
-				Another example of equivalent expressions is give by Example <xref ref="reciprocal_description" />. In this case, we used the fact that the expression <m>\frac{2}{x+1}</m> is equivalent to <m>2 \cdot \frac{1}{x+1}</m>.
+				Another example of equivalent expressions is give by the Checkpoint <xref ref="expression-parsons-1" />. In this case, we used the fact that the expression <m>\frac{2}{x+1}</m> is equivalent to <m>2 \cdot \frac{1}{x+1}</m>.
 			</p>
 
 
@@ -110,7 +116,7 @@ Note that testing values isn't really enough to <em> prove </em> two expressions
 				<title>Inequivalent Expressions</title>
 
 				<p>
-					Two expressions are not equivalent if there are some values of the variables in the expression that yield different numbers when you substitute. So, if you plug the same number into two expressions and get different results, then the two expressions are inequivalent (assuming you did the arithmetic correctly). With practice, you’ll get good at being able to detect inequivalent expressions without even needing to substitute anything. For now, we’ll look at some important examples that sometimes trip people up.
+					Two expressions are not equivalent if there are some values of the variables in the expression that yield different numbers when you substitute. So, if you plug the same number into two expressions and get different results, then the two expressions are inequivalent (assuming you did the arithmetic correctly). With practice, you'll get good at being able to detect inequivalent expressions without even needing to substitute anything. For now, we'll look at some important examples, that sometimes trip people up, and see them in a new (or maybe really old, see Historical Note) way.
 				</p>
 
 <example xml:id="first_geometric_factoring">
@@ -148,6 +154,12 @@ Note that testing values isn't really enough to <em> prove </em> two expressions
 					In this figure we see that the total shaded area is <m>x^2+y^2</m> while the area of the entire square is <m>(x+y)^2</m>. If you note that the unshaded portions of the square each have area <m>xy</m>, we can see that <m>(x+y)^2</m> is equivalent to <m>x^2+2xy+y^2</m> (That can be seen symbollically using the distributive law <xref ref="distributive_law"/>, which we will see soon.). 
 				</p>
 </example>
+
+<historical><title>Historical Note: The Original Algebra</title>
+	<p>
+		The geometric representation of squares of numbers as <em>actual</em> squares is perhaps the most ancient form of algebra, dating back to ancient Mesopotamia (modern day Iraq). This geometric representation is also the basis of Muhammad ibn Musa al-Khwarizmi's first text in algebra. The term "algebra" comes from the arabic Al-Jabr, which roughly translates to re-joining, as in putting together broken squares.
+	</p>
+</historical>
 
 <question>
 				<p>
@@ -285,6 +297,12 @@ are equivalent, the easiest way is to begin <m> 2-\frac{1}{x+3} </m> and turn it
 <mrow> \ \amp = \amp \frac{2x+5}{x+3}.</mrow>
 </md>
 </example>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/2-1-Reordering-and-regrouping/MCH1-2-1-07-10all-Reordering-and-regrouping.pg" />
+	</p>
+</exercise>
 
 <example>
 	<statement>
@@ -727,7 +745,7 @@ The second solution is the so-called <m>ac</m> method including the reasoning be
 				</p>
 </example>
 
-<question>
+<!--question>
 				<p>
 				<em>Factor each of the following expressions as completely as possible.</em>
 				</p>
@@ -770,7 +788,31 @@ The second solution is the so-called <m>ac</m> method including the reasoning be
 					</li>
 
 				</ol></p>
-</question>
+</question-->
+
+<exercise>
+	<p> 
+	<webwork source="Library/CollegeOfIdaho/setAlgebra_05_06_Factoring/56IntAlg_03_Factor.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/CollegeOfIdaho/setAlgebra_05_06_Factoring/56IntAlg_03_Factor.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/CollegeOfIdaho/setAlgebra_05_06_Factoring/56IntAlg_08_Factor.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/CollegeOfIdaho/setAlgebra_05_04_FactoringTrinomials/54IntAlg_27_FactorTrinomial.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>
