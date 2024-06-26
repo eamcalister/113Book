@@ -213,6 +213,20 @@
 			</ul></p>
 </principle>
 
+<exercise>
+	<p> 
+	<webwork source="Library/CollegeOfIdaho/setAlgebra_05_03_FactoringByGrouping/53IntAlg_32_Functions_Review.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Algebra/functions_evaluating/two_graphs_equal_inequal_compare_functions_to_zero.pg" />
+	</p>
+</exercise>
+
+
+
 <question>
 			<p>
 				<em>Consider the graph of the function shown below (the graph is shown).</em>
