@@ -23,8 +23,8 @@
 				What if we need to solve an equation with more than one variable? For instance, consider the equation <me>x+3y  = 0.</me> For such an equation, a solution is a <em>pair</em> of numbers, an <m>x</m>-value and a <m>y</m>-value, that make the equation true when they are both plugged in at the same time. We see that if <m>y=1</m>, then <m>x=-3</m> makes the equation true. If <m>y=2</m>, then the correct value for <m>x</m> is <m>-6</m>. Clearly we could go on like this, obtaining a different value of <m>x</m> for any given value of <m>y</m>. There is no way for us to say that this equation has a single solution; it has infinitely many. Often in problems the number of solutions is narrowed down by having more equations, which we call a <em>system of equations</em>. For instance, we may consider the system 
 				<me>
 				\begin{aligned}
-				x+3y \amp = \amp 0\\
-				2x-y \amp = \amp 1.
+				x+3y  = \amp\ 0\\
+				2x-y  = \amp\ 1.
 				\end{aligned}
 				</me> 
 				A solution to this system of two equations is again a pair of numbers, one for each variable, that make all the equations true at the same time. For instance <m>x=-3</m> and <m>y=1</m> is not a solution to this system; this pair makes the first equation true, but not the second. The pair <m>x=1</m> and <m>y=1</m> makes the second equation true, but not the first, so this is also not a solution to the system.**
@@ -79,31 +79,31 @@
 				Let's see this at work with the system given above. Using the first equation, we can solve for <m>x</m> in terms of <m>y</m> as follows: 
 				
 <md>
-<mrow> x+3y \amp = \amp 0</mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> x \amp = \amp -3y.</mrow>
+<mrow> x+3y = \amp\ 0</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow> x  = \amp\ -3y.</mrow>
 </md> 
 
 
 Now we substitute <m>-3y</m> every time we see an <m>x</m> in the second equation and solve for <m>y</m>: 
 
 <md>
-<mrow>2(-3y) - y \amp = \amp 1</mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> -7y \amp = \amp 1 </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> y \amp = \amp -\frac{1}{7}. </mrow>
+<mrow>2(-3y) - y  = \amp\ 1</mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> -7y  = \amp\ 1 </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> y = \amp\ -\frac{1}{7}. </mrow>
 </md> 
 
 Now we have <m>y=-\frac{1}{7}</m>, hence <m>x = -3y = \frac{3}{7}</m>. We can now check to make sure we obtained a correct solution by plugging these values into the original system: 
 
 <md>
-<mrow> \frac{3}{7} +3\left(\frac{-1}{7}\right) \amp = \amp \frac{3}{7}-\frac{3}{7} = 0 \checkmark </mrow>
-<mrow> 2\left(\frac{3}{7}\right) - \frac{-1}{7} \amp = \amp \frac{6}{7}+\frac{1}{7} = 1 \checkmark </mrow>
+<mrow> \frac{3}{7} +3\left(\frac{-1}{7}\right)  = \amp\ \frac{3}{7}-\frac{3}{7} = 0 \checkmark </mrow>
+<mrow> 2\left(\frac{3}{7}\right) - \frac{-1}{7}  = \amp\ \frac{6}{7}+\frac{1}{7} = 1 \checkmark </mrow>
 </md>
 			</p>
 
-<question>
+<!--question>
 			<p>
 			 <em>Solve the following systems of equations:</em>
 			</p>
@@ -113,8 +113,8 @@ Now we have <m>y=-\frac{1}{7}</m>, hence <m>x = -3y = \frac{3}{7}</m>. We can no
 							<p>
 				<em>
 <md>
-<mrow> x^2y \amp = \amp 1 </mrow>
-<mrow> 32xy^2 \amp = \amp x^2 </mrow>
+<mrow> x^2y  = \amp\ 1 </mrow>
+<mrow> 32xy^2  = \amp\ x^2 </mrow>
 </md>
 </em>
 			</p>
@@ -143,7 +143,110 @@ Now we have <m>y=-\frac{1}{7}</m>, hence <m>x = -3y = \frac{3}{7}</m>. We can no
 				</li>
 
 			</ol></p>
-</question>
+</question-->
+
+<exercise>
+	<webwork>
+		<pg-code>
+			loadMacros(
+				"PGstandard.pl",
+				"MathObjects.pl",
+				"PGcourse.pl"
+			  );
+		$ax = Compute("2");
+		$ay = Compute("1/4");
+		$bxPos = Compute("4");
+		$byPos = Compute("3");
+		$bxNeg = Compute("-4");
+		$byNeg = Compute("-3");
+		$ca = Compute("8/sqrt(2)");
+		$cb = Compute("1/sqrt(2)");
+		</pg-code>
+	  
+		<statement>
+		<p>
+			Solve the following systems of equations:
+		</p>
+		<ol>
+			<li>
+				<p>
+					<md>
+						<mrow> x^2y  = \amp\ 1 </mrow>
+						<mrow> 32xy^2  = \amp\ x^2 </mrow>
+					</md>
+				</p>
+				<p>
+					<m>x=</m><var name="$ax" width="4"/>
+				</p>
+				<p>
+					<m>y=</m><var name="$ay" width="4"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<md>
+						<mrow> x^2+y^2  = \amp\ 25 </mrow>
+						<mrow> 3x-4y  = \amp\ 0 </mrow>
+					</md>
+				</p>
+				<p>
+					Solution with positive value of <m>x</m>:
+				</p>
+				<p>
+					<m>x=</m><var name="$bxPos" width="4"/>
+				</p>
+				<p>
+					<m>y=</m><var name="$byPos" width="4"/>
+				</p>
+				<p>
+					Solution with negative value of <m>x</m>:
+				</p>
+				<p>
+					<m>x=</m><var name="$bxNeg" width="4"/>
+				</p>
+				<p>
+					<m>y=</m><var name="$byNeg" width="4"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<md>
+						<mrow> ab^3  = \amp\ 2 </mrow>
+						<mrow> ab^{-1}  = \amp\ 8 </mrow>
+					</md>
+				</p>
+				<p>
+					<m>a=</m><var name="$ca" width="4"/>
+				</p>
+				<p>
+					<m>b=</m><var name="$cb" width="4"/>
+				</p>
+			</li>
+		</ol>
+		</statement>
+		<hint>
+			<ol>
+				<li>
+					<p>
+						Use the first equation to solve for <m>y</m> in terms of <m>x</m> first.
+					</p>
+				</li>
+				<li>
+					<p>
+						There are two solution pairs. Use the second equation to solve for one of the variables first. There are two solution pairs.
+					</p>
+				</li>
+				<li>
+					<p>
+						The second equation allows you to say <m>a = 8b</m>. Use that.
+					</p>
+				</li>
+			</ol>
+		</hint>
+		
+	  
+	  </webwork>
+	</exercise>
 
 <question>
 			<p>
@@ -155,9 +258,9 @@ Now we have <m>y=-\frac{1}{7}</m>, hence <m>x = -3y = \frac{3}{7}</m>. We can no
 			<p>
 				<em>Typically you need as many equations as variables in order to not have infinitely many solutions. Use substitution to solve the following system of three equations and three unknowns: 
 <md>
-<mrow>2x+3y +z \amp = \amp 1</mrow>
-<mrow> x \amp = \amp 3y </mrow>
-<mrow> x+y \amp = z.</mrow>
+<mrow>2x+3y +z  = \amp\ 1</mrow>
+<mrow> x  = \amp\ 3y </mrow>
+<mrow> x+y =\amp\ z.</mrow>
 </md>
 </em>
 			</p>
@@ -170,11 +273,11 @@ Now we have <m>y=-\frac{1}{7}</m>, hence <m>x = -3y = \frac{3}{7}</m>. We can no
 <solution>				
 These two expressions are to be equivalent for all values of <m>x</m>, we need to solve for <m>A</m> and <m>B</m>. To do this, set the expressions equal to one another and do some manipulations. 
 <md>
-<mrow>\frac{A}{x-1} + \frac{B}{x+2} \amp = \amp \frac{4}{(x-1)(x+2)}</mrow>
-<mrow> \amp \updownarrow \amp (\text{combine fractions on left})</mrow>
-<mrow>\frac{A(x+2) + B(x-1)}{(x-1)(x+2)} \amp = \amp \frac{4}{(x-1)(x+2)}</mrow>
-<mrow> \amp \updownarrow \amp (\text{simplify the expression on the left})</mrow>
-<mrow>\frac{(A+B)x + 2A -B}{(x-1)(x+2)} \amp = \amp \frac{4}{(x-1)(x+2)}.</mrow>
+<mrow>\frac{A}{x-1} + \frac{B}{x+2} = \amp\ \frac{4}{(x-1)(x+2)}</mrow>
+<mrow>  \updownarrow \amp (\text{combine fractions on left})</mrow>
+<mrow>\frac{A(x+2) + B(x-1)}{(x-1)(x+2)}  = \amp\ \frac{4}{(x-1)(x+2)}</mrow>
+<mrow>  \updownarrow \amp (\text{simplify the expression on the left})</mrow>
+<mrow>\frac{(A+B)x + 2A -B}{(x-1)(x+2)} = \amp\ \frac{4}{(x-1)(x+2)}.</mrow>
 </md> 
 
 Now we set the numerators equal: 
@@ -183,8 +286,8 @@ Now we set the numerators equal:
 </me> 
 Note that like terms are grouped on both sides. Since there are zero <m>x</m>'s on the right, we must have <m>A+B = 0</m>. Since <m>A</m> and <m>B</m> are numbers, we must have <m>2A-B = 4</m>. Thus we have a system of equations 
 <md>
-<mrow>A+B \amp = \amp 0</mrow>
-<mrow>2A-B \amp = \amp 4.</mrow>
+<mrow>A+B = \amp\ 0</mrow>
+<mrow>2A-B = \amp\ 4.</mrow>
 </md> 
 
 Using the first equation we have <m>B = -A</m>. Substituting into the second equation we see <m>3A = 4</m>. Hence, <m>A = \frac{4}{3}</m> and <m>B=-\frac{4}{3}</m>.
