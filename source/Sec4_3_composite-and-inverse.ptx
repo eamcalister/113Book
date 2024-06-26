@@ -69,6 +69,19 @@
 			</p>
 </question>
 
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/8-2-Function-composition/MCH1-8-2-09-Function-composition.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/8-2-Function-composition/MCH1-8-2-20-Function-composition.pg" />
+	</p>
+</exercise>
+
+
 <example>
 			<statement>
 				Often we decompose functions by finding inside and outside functions that are easier to work with than the composite. One task that we do this for is finding domains and ranges of composites. For instance, consider the function <me>y = \sqrt{x^2-1}.</me> Decompose this function into a composition of simpler functions to find its domain and range.
@@ -78,11 +91,30 @@
 			</solution>
 </example>
 
+
 <question>
 			<p>
 				<em>Decompose <m>y = h(x) = \dfrac{2}{x^2-9}</m> as an inside function and outside function and use that decomposition to find the domain of <m>h</m> as in the previous example.</em>
 			</p>
 </question>
+
+<example xml:id="practical_composition">
+	Function composition occurs quite frequently in familiar practical applications when we have one quantity depending on another, which depends on another third quantity. For instance, let <m>d</m> be the distance, in miles, you have driven since you filled your tank and let 
+	<me>
+		A(d) = \text{the amount of fuel, in gallons, in your tank at distance }d.
+	</me>
+	If we have <m>d = f(t)</m> be the distance driven as a function of time, in hours, then 
+	<me>
+		A(f(t)) = \text{amount of fuel in your tank as a function of time}.
+	</me>	
+</example>
+
+<exercise>
+	<p> 
+	<webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-01-Composition-inverse.pg" />
+	</p>
+</exercise>
+
 
 			<p>
 				One important application of the idea of function composition is that of <em>inverse functions</em>. In short, the inverse of a given function undoes the action of that function, so composition gets you back to where you started. This leads us to the following formal definition:
@@ -135,6 +167,7 @@
 			In the definition of an inverse function (<xref ref="inverse_fcn_def"/>) we said that <m>f^{-1}</m> is the function that <q>undoes</q> <m>f</m>. Now let's think about how we can use that idea to solve equations. For instance, take the function 
 			<me> f(x) = (x-4)^3 + 3 </me> from <xref ref="shoes_socks_inverse"/>. Suppose we wish to solve the equation <me> f(x) = 17. </me> We can read that as asking, <q>If <m>y=17</m>, then what is the <m>x</m>?</q> The answer is simple; <em>if we apply the function that undoes <m>f</m> to <m>17</m>, then we'll find the <m>x</m></em>. Hence the solution is <me>x=f^{-1}(17) = \sqrt[3]{17-3}+4 = \sqrt[3]{14} + 4 \approx 6.41.</me> If we wanted to solve <me>f(x) = \text{any number},</me> then we just plug that number into the inverse function. This idea generalizes to the following: 
 			</p>
+
 <fact><title>Inverse Function as Equation Solver</title>
 <p>If <m>f</m> is an invertible function (see <xref ref="one_to_one_invertible"/>), then the solution to the equation <me>f(x) = b</me> is <me>x = f^{-1}(b).</me></p>
 </fact>
@@ -153,17 +186,17 @@ Find the inverse of the function
 Note that this function is the left-hand side of the equation we solved in <xref ref="not_shoes_socks_eq3"/>. In that example the right-hand side was <m>y=2</m>. Now we can just follow through the same solving procedure, except with a generic <m>y</m>: 
 
 <md>
-<mrow> \frac{6x+1}{x-5} \amp = \amp y</mrow>
-<mrow> \amp \updownarrow \amp (\text{multiply both sides by } x-5)</mrow>
-<mrow> 6x+1 \amp = \amp y(x-5)</mrow>
-<mrow> \amp \updownarrow \amp (\text{distribute})</mrow>
-<mrow> 6x+1 \amp = \amp yx-5y </mrow>
-<mrow> \amp \updownarrow \amp (\text{move (subtract) the } yx \text{ and the }1)</mrow>
-<mrow> 6x-yx \amp = \amp -5y-1.</mrow>
-<mrow> \amp \updownarrow \amp (\text{factor out } x \text{ on left})</mrow>
-<mrow> x(6-y) \amp =\amp -5y-1 </mrow>
-<mrow> \amp \updownarrow \amp (\text{divide to solve for } x)</mrow>
-<mrow> x\amp = \amp \frac{-5y-1}{6-y} </mrow>
+<mrow> \frac{6x+1}{x-5}  = \amp\ y</mrow>
+<mrow>  \updownarrow \amp (\text{multiply both sides by } x-5)</mrow>
+<mrow> 6x+1  = \amp\ y(x-5)</mrow>
+<mrow>  \updownarrow \amp (\text{distribute})</mrow>
+<mrow> 6x+1  = \amp\ yx-5y </mrow>
+<mrow>  \updownarrow \amp (\text{move (subtract) the } yx \text{ and the }1)</mrow>
+<mrow> 6x-yx  = \amp\ -5y-1.</mrow>
+<mrow>  \updownarrow \amp (\text{factor out } x \text{ on left})</mrow>
+<mrow> x(6-y) =\amp\ -5y-1 </mrow>
+<mrow>  \updownarrow \amp (\text{divide to solve for } x)</mrow>
+<mrow> x = \amp\ \frac{-5y-1}{6-y} </mrow>
 </md> 
 Thus we have <me> f^{-1}(y) = \frac{-5y-1}{6-y}.</me>
 </solution>
@@ -214,6 +247,23 @@ The end result is <me>x = f^{-1}(y) = \frac{31}{y-6}+5,</me> which you may check
 			</p>
 </question>
 
+<p>
+	A practical interpretation of inverse functions is evident when you want to reverse the roles of input and output in some situation, as the next two Checkpoints illustrate.
+</p>
+
+<exercise>
+	<p> 
+	<webwork source="Library/LoyolaChicago/Precalc/Chap8Sec2/Q32.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/LoyolaChicago/Precalc/Chap2Sec4/Connally3-2-4-40-Composition-inverse.pg" />
+	</p>
+</exercise>
+
+
 			<p>
 				The graph of the inverse to a given function has a particularly nice relationship to the graph of its parent function. To graph the inverse to a function <m>y=f(x)</m>, simply take the entire picture of the graph of <m>f</m>, <em>including axis labels</em>, and reflect it across the line through the origin making a 45 degree angle with the positive <m>x</m> axis.
 			</p>
@@ -260,7 +310,7 @@ The end result is <me>x = f^{-1}(y) = \frac{31}{y-6}+5,</me> which you may check
 
 <question>
 			<p>
-				<em>Why does it not make sense to graph <m>f</m> and <m>f^{-1}</m> on the same set of axes?</em>
+				<em>Why does it often not make sense to graph <m>f</m> and <m>f^{-1}</m> on the same set of axes? Hint: See the previous Checkpoints.</em>
 			</p>
 </question>
 
