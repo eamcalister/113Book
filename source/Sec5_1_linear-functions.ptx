@@ -183,6 +183,20 @@
 				</ul></p>
 </fact>
 
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/5-5-Linear-modeling/MCH1-5-5-01d-Linear-modeling.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/UMN/algebraKaufmannSchwitters/ks_8_2_3.pg" />
+	</p>
+</exercise>
+
+
+
 <example>
 				<statement>
 					Because a line is uniquely determined by two points, it is possible to find the formula for a linear function whose graph contains a given pair of points (provided the two points do not lie on a vertical line). For instance, suppose we are given that <m>(1,3)</m> and <m>(3,4)</m> are on the graph of <m>f(x) = mx +b</m>. Find the values of <m>m</m> and <m>b</m>, and hence the formula for <m>f(x)</m>. 
@@ -192,15 +206,21 @@
 					First we compute the slope: <me>m = \frac{4-3}{3-1} = \frac{1}{2}.</me> Then we use the facts that <m>f</m> is of the form <m>f(x) = \frac{1}{2}x+b</m> and one of the two points is on the graph by substituting and solving for <m>b</m>: 
 					
 <md>
-<mrow> 3 \amp = \amp \frac{1}{2}\cdot 1 + b </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> b \amp = \amp \frac{5}{2}. </mrow>
+<mrow> 3  = \amp\ \frac{1}{2}\cdot 1 + b </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> b  = \amp\ \frac{5}{2}. </mrow>
 </md> 
 
 Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this process works is by noting that <m>\frac{1}{2}</m> is added to the output for every extra unit of input. By starting at <m>(1,3)</m> and subtracting <m>\frac{1}{2}</m> once to get back to when <m>x=0</m>, we also get <m>b=f(0)=\frac{5}{2}</m>.
 				
 				</solution>
 </example>
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Algebra/linear_functions_eqns_of_lines/find_eqn_two_points_01.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>
@@ -224,7 +244,7 @@ Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this proce
 </question>
 
 				<p>
-					In practical applications, one can often recognize linear functions by noting a rate of change parameter.
+					In practical applications, one can often recognize linear functions by noting a constant rate of change parameter.
 				</p>
 
 <example>
@@ -233,9 +253,16 @@ Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this proce
 				</statement>	
 
 				<solution>	
-					Observe that the units of <m>\$ /\text{widget}</m> on the selling price and production cost are both rates of change of the form <m>(\text{function output})/(\text{function input})</m>. This indicates the function is likely a linear function. Going to the formula we get <me>P = (\text{revenue}) - (\text{cost}) = 35q - (1000 + 15q).</me> This simplifies to the linear function <me>P = 20q - 1000.</me> Here we see that <m>\$ 1000</m> will be spent no matter how many widgets are sold, and we get a net profit of <m>\$ 20</m> for each widget sold.
+					Observe that the units of <m>\$ /\text{widget}</m> on the selling price and production cost are both rates of change of the form <m>(\text{function output})/(\text{function input})</m>. This, along with the fact that these rates are constant, indicates the function is likely a linear function. Going to the formula we get <me>P = (\text{revenue}) - (\text{cost}) = 35q - (1000 + 15q).</me> This simplifies to the linear function <me>P = 20q - 1000.</me> Here we see that <m>\$ 1000</m> will be spent no matter how many widgets are sold, and we get a net profit of <m>\$ 20</m> for each widget sold.
 				</solution>
 </example>
+
+<exercise>
+	<p> 
+	<webwork source="Library/LoyolaChicago/Precalc/Chap1Sec5/Q32.pg" />
+	</p>
+</exercise>
+
 
 <question>
 				<p>
@@ -251,6 +278,12 @@ Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this proce
 				<p>
 					The form <m>y = f(x) = mx + b</m> of a linear function is known as <em>slope-intercept form</em>. It is a very useful form. A more general (but non-unique) form is known as <term>point-slope form</term>.
 				</p>
+
+<exercise>
+		<p> 
+		<webwork source="Library/FortLewis/Algebra/5-4-Equations-for-lines/MCH1-5-4-58a-Equations-for-lines.pg" />
+		</p>
+</exercise>
 
 <definition xml:id="point_slope_form"><title>Point-Slope Form of a Linear Function</title><idx>point-slope form</idx>
 				<p>
@@ -281,11 +314,24 @@ Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this proce
 					The graphical difference between point-slope form and slope-intercept form is that slope-intercept form puts on display the <m>y</m>-intercept, whereas slope-intercept form displays another point on the graph. Equipped with point-slope form, it is somewhat easier to find a formula for a linear function given two points; all you need to do is compute the slope.
 				</p>
 
-<question>
+<exercise>
+	<p> 
+		<webwork source="Library/PCC/BasicAlgebra/PointSlopeForm/PointSlopeBasicsORCCA10.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/5-4-Equations-for-lines/MCH1-5-4-16-Equations-for-lines.pg" />
+	</p>
+</exercise>
+
+
+<!--question>
 				<p>
 					<em>Use point-slope form to find a formula for the linear function whose graph passes through <m>(12,7)</m> and <m>(15,89)</m>. Once you have the formula in point slope form, find the <m>y</m>-intercept and write it in slope-intercept form.</em>
 				</p>
-</question>
+</question-->
 
 <question>
 				<p>
@@ -323,6 +369,18 @@ Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this proce
 				<p>
 					From this (with triangles added to illustrate slope), we see that the magnitude of the change in <m>y</m> for an associated change in <m>x</m> on one graph is the same as the magnitude of the change in <m>x</m> for an associated change in <m>y</m> on the perpendicular graph. Also, the sign of the slope is opposite. Hence the slope of a line perpendicular to a line of slope <m>m</m> is <m>-\dfrac{1}{m}</m>.
 				</p>
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Algebra/linear_functions_eqns_of_lines/parellel_or_perp_find_eqn_02.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/5-4-Equations-for-lines/MCH1-5-4-20-Equations-for-lines.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>
@@ -370,7 +428,7 @@ Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this proce
 					Each of these problems is actually relatively straightforward from an algebraic point of view, given that you have formulas for your functions. The main difficulty is turning the words of the real world into mathematics.
 				</p>
 
-<example>
+<example xml:id="mountain_temp">
 			<statement>
 				<p>
 					As one climbs a mountain, the air temperature decreases by about <m>3^{\circ}</m>F for every <m>1000</m> foot increase in elevation. Suppose the temperature is <m>60^{\circ}</m>F when at an elevation of <m>2000</m> feet above sea level. Suppose we want the answer to the following questions:
@@ -395,17 +453,23 @@ Thus <m>f(x) = \frac{1}{2}x + \frac{5}{2}</m>. Another way to see how this proce
 				<p>
 					Our first task must be to find a formula for temperature as a function of elevation. To achieve this, we first have to name variables (this can be hard at first). Let <m>T</m> be the temperature, in <m>^{\circ}</m>F, at an elevation <m>h</m> feet above sea level. The problem describes a rate of change of <m>-3/1000</m> in <m>^{\circ}</m>F/ft; this will be the slope of our linear function. This slope can often be seen using the units as the units of slope must be output units divided by input units. The sign is negative because the temperature decreases at this rate as <m>h</m> increases. The problem then describes a point on the graph of this function, <m>(2000,60)</m>. Using point-slope form, we have <me>T = -\frac{3}{1000}(h-2000) + 60.</me> The answer to part (a) is then obtained by substituting <m>14,493</m> for <m>h</m> to get <me>T = -\frac{3}{1000}(14493-2000) + 60\approx 22.521^{\circ}\mbox{F}.</me> To answer part (b), we need to substitute <m>65</m> for <m>T</m>, and solve for <m>h</m>: 
 <md>
-<mrow> 65 \amp = \amp -\frac{3}{1000}(h-2000) + 60</mrow> 
-<mrow>  \amp \updownarrow \amp </mrow> 
-<mrow> h \amp = \amp \frac{1000}{3}\approx 333.33\ \text{ft}.</mrow> 
+<mrow> 65 = \amp\ -\frac{3}{1000}(h-2000) + 60</mrow> 
+<mrow>   \updownarrow \amp </mrow> 
+<mrow> h  = \amp\ \frac{1000}{3}\approx 333.33\ \text{ft}.</mrow> 
 </md>
 				</p>
 			</solution>
 </example>
 
+<exercise>
+	<p> 
+	<webwork source="Library/LoyolaChicago/Precalc/Chap1Sec4/Q40.pg" />
+	</p>
+</exercise>
+
 <question>
 				<p>
-					<em>Why is the formula for <m>T</m> as a function of <m>h</m> given in the last example more useful to a climber whose elevation is near 2000 feet than to one near sea level? What equivalent formula would be more useful to someone near sea level? Explain.</em>
+					<em>Consider the example <xref ref="mountain_temp"/>. Why is the formula for <m>T</m> as a function of <m>h</m> given in the last example more useful to a climber whose elevation is near 2000 feet than to one near sea level? What equivalent formula would be more useful to someone near sea level? Explain.</em>
 				</p>
 </question>
 
