@@ -42,6 +42,18 @@
 				</p>
 			</definition>
 
+		<exercise>
+			<p> 
+				<webwork source="Library/FortLewis/Algebra/9-2-Quadratic-expressions/MCH1-9-2-16-Quadratic-expressions.pg" />
+			</p>
+		</exercise>	
+
+		<exercise>
+			<p> 
+				<webwork source="Library/FortLewis/Algebra/9-2-Quadratic-expressions/MCH1-9-2-22-Quadratic-expressions.pg" />
+			</p>
+		</exercise>
+
 <example>
 				<statement>
 					Let us consider the simplest possible quadratic function <m>f(x) = x^2</m>. Graph this function and describe its features.
@@ -97,10 +109,10 @@
 
 
 
-				<table>
-					<caption></caption>
+				<table><title>Values for <m>f(x) = x^2</m></title>
+					<caption>Input-output table for <m>f(x) = x^2.</m></caption>
 					<tabular>
-					<row header="yes">
+					<row header="yes" bottom="medium">
 						<cell halign="center"><m>x</m></cell>
 						<cell halign="right"><m>-3</m></cell>
 						<cell halign="right"><m>-2</m></cell>
@@ -127,10 +139,10 @@
 					we may construct an table of slopes:
 				</p>
 
-				<table>
-					<caption></caption>
+				<table><title>Slope Table for <m>f(x)= x^2</m></title>
+					<caption>Table of sloves between points on the graph of <m>f(x) = x^2.</m></caption>
 					<tabular>
-					<row header="yes">
+					<row header="yes" bottom="medium">
 						<cell halign="left">Points on the Graph</cell>
 						<cell halign="left"><m>(-3,9)</m> and <m>(-2,4)</m></cell>
 						<cell halign="left"><m>(-2,4)</m> and <m>(-1,1)</m></cell>
@@ -197,11 +209,29 @@
 				</li>
 				</ul>
 			</insight>
+
+<exercise>
+	<p> 
+		<webwork source="Library/Rochester/setDerivatives22Graphing/S04.03.DerivativesShapeGraph.PTP10.pg" />
+	</p>
+</exercise>
 				
 
 				<p>
 					One of the primary skills associated to any family of functions is solving equations of the form <me>f(x) = \text{a number}.</me> When <m>f</m> is a quadratic function, we have already discussed one of the most important solution methods: factoring. To solve an equation of the form <me>ax^2+bx+c = d,</me> one must just subtract <m>d</m> from both sides, factor, and use the zero factors principle to solve. The <m>x</m>-intercepts, or zeros, of a quadratic function can be seen when we write it in <em>factored form: <me>f(x) = ax^2 + bx+c = a(x-r)(x-s).</me> In this form <m>a</m> is the same as it is in the expanded form, while <m>r</m> and <m>s</m> are the zeros. Notice that not all quadratic functions can be put into factored form as they may not have any real zeros.</em>
 				</p>
+
+		<exercise>
+			<p>
+				<webwork source="Library/LoyolaChicago/Precalc/Chap2Sec6/Q08.pg" />
+			</p>
+		</exercise>
+		<exercise>
+			<p>
+				<webwork source="Library/LoyolaChicago/Precalc/Chap2Sec6/Q14.pg" />
+			</p>
+		</exercise>
+
 
 <question>
 				<p>
@@ -410,6 +440,13 @@
 </solution>
 </example>
 
+
+<exercise>
+	<p>
+		<webwork source="Library/FortLewis/Algebra/9-2-Quadratic-expressions/MCH1-9-2-54-Quadratic-expressions.pg" />
+	</p>
+</exercise>
+
 <question>
 				<p>
 					<em>In the last example, we found the zeros of <m>f(x) = -2(x-3)^2+5</m> to be <m>x=3\pm \sqrt{\frac{5}{2}}</m>. The zeros are also supposed to appear in the factored form as <m>r</m> and <m>s</m>. Expand the right-hand side of the equation and collect like terms to verify that <me>-2x^2+12x-13 = -2\left(x-\left(3-\sqrt{\frac{5}{2}}\right)\right)\left(x-\left(3+\sqrt{\frac{5}{2}}\right)\right).</me></em>
@@ -423,14 +460,22 @@
 <computation>
 To find the vertex form, proceed as follows:
 <ol>
-<li> Write down standard form equal to the proposed form with <m>h</m> and <m>k</m>. 
-<me> ax^2 + bx+c  = a(x-h)^2 + k </me>
+<li> <p>Write down standard form equal to the proposed form with <m>h</m> and <m>k</m>. 
+<me> ax^2 + bx+c  = a(x-h)^2 + k </me></p>
 </li>
-<li> Expand and collect like terms on the right-hand side.
-<me> ax^2+ bx + c = ax^2 - 2ha x + ah^2 + k </me>
+<li><p> Expand and collect like terms on the right-hand side.
+<me> ax^2+ bx + c = ax^2 - 2ha x + ah^2 + k </me></p>
 </li>
-<li> Match coefficients of powers of <m>x</m> on the left- and right-hand sides to obtain a system of equations to solve for <m>h</m> and <m>k</m>. 
+<li> <p>Match coefficients of powers of <m>x</m> on the left- and right-hand sides to obtain a system of equations to solve for <m>h</m> and <m>k</m>. 
 <me> {\color{red}a} x^2+ {\color{blue}b}x + {\color{green}c} = {\color{red}a}x^2 {\color{blue}- 2ha }x + {\color{green}ah^2 + k} </me>
+The color coding is equivalent to the system of equations
+<md>
+	<mrow>a =\amp\ a </mrow>
+	<mrow>b =\amp\ -2ha </mrow>
+	<mrow>c =\amp\ ah^2+ k </mrow>
+</md>
+Given <m>a</m>, <m>b</m>, and <m>c</m> we can solve this system for <m>a</m>, <m>h</m>, and <m>k</m>.
+</p>
 </li> 
 The following example illustrates this procedure nicely.
 </ol>
@@ -447,14 +492,14 @@ The following example illustrates this procedure nicely; once you have numbers i
 <solution>					
 					We see <m>a=5</m>, thus we must have 
 <md>
-<mrow> 5x^2-15x+11 \amp = \amp 5(x-h)^2+k</mrow>
-<mrow> \amp = \amp 5(x^2-2hx+h^2) + k</mrow>
-<mrow> \amp = \amp 5x^2 - 10hx + 5h^2 + k.</mrow>
+<mrow> 5x^2-15x+11  = \amp\ 5(x-h)^2+k</mrow>
+<mrow>  = \amp\ 5(x^2-2hx+h^2) + k</mrow>
+<mrow>  = \amp\ 5x^2 - 10hx + 5h^2 + k.</mrow>
 </md> 
 Now we match like terms on either side of the equation to obtain the system of equations 
 <md>
-<mrow>-10h \amp = \amp -15\ \text{(from the } x \text{ terms)}</mrow>
-<mrow>5h^2 + k\amp = \amp 11\ \text{(from the constant terms)}</mrow>
+<mrow>-10h  = \amp\ -15\ \text{(from the } x \text{ terms)}</mrow>
+<mrow>5h^2 + k = \amp\ 11\ \text{(from the constant terms)}</mrow>
 </md> 
 
 Solving this system we have <m>h = \frac{3}{2}</m> and <m>k = -\frac{1}{4}</m>. As in the last example, we can solve <me>5\left(x-\frac{3}{2}\right)^2 - \frac{1}{4} = 0</me> in a straightforward way to get <m>x = \frac{3}{2}\pm\frac{1}{\sqrt{20}} = \frac{3}{2}\pm\frac{1}{2\sqrt{5}}</m>.
@@ -470,6 +515,12 @@ Solving this system we have <m>h = \frac{3}{2}</m> and <m>k = -\frac{1}{4}</m>. 
 					<em>Use the quadratic formula to find the zeros of the function in the above example, <m>f(x) = 5x^2-15x+11</m>. Simplify your answer to show that it is equivalent to the answer given in the example.</em>
 				</p>
 </question>
+
+<exercise>
+	<p>
+		<webwork source="Library/FortLewis/Algebra/9-3-Completing-the-square/MCH1-9-3-38-Completing-the-square.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>
@@ -602,19 +653,37 @@ Solving this system we have <m>h = \frac{3}{2}</m> and <m>k = -\frac{1}{4}</m>. 
 </solution>
 </example>
 
-<question>
+<exercise>
+	<p>
+		<webwork source="Library/Mizzou/Algebra/graph_quadratic/determine_eqn_from_graph_02.pg" />
+	</p>
+</exercise>
+
+<!--question>
 				<p>
 					<em>Find a formula for a quadratic function whose graph has <m>x</m>-intercepts at <m>(1,0)</m> and <m>(5,0)</m>, and <m>y</m>-intercept at <m>(0,7)</m>.</em>
 				</p>
-</question>
+</question-->
+
+
 
 		</subsection>
 
 		<subsection xml:id="applications-of-quadratic-functions">
 				<title>Applications of Quadratic Functions</title>
 
+			<p>
+				When a quadratic function appears in an applied context, we can now answer many questions about it. We can find output values, zeros, and also its maximum or minimum output and what input causes them.
+			</p>
+
+				<exercise>
+					<p>
+						<webwork source="Library/CollegeOfIdaho/setAlgebra_02_01_IntroFunctions/21IntAlg_15_function.pg" />
+					</p>
+				</exercise>
+
 				<p>
-					The first application we can see for quadratic functions comes from their original purpose, finding areas. Now that we know how to find the vertex form of a quadratic function, we can find the maximum or minimum possible values of functions that describe area.
+					One application we can see for quadratic functions comes from their original purpose, finding areas. Now that we know how to find the vertex form of a quadratic function, we can find the maximum or minimum possible values of functions that describe area.
 				</p>
 
 <example xml:id="fence_problem">
@@ -647,6 +716,7 @@ Solving this system we have <m>h = \frac{3}{2}</m> and <m>k = -\frac{1}{4}</m>. 
 					Since she has <m>100</m> yards of fence to use, we have the relation <me>x+2w = 100.</me> The area is given by <m>A = xw</m>. To obtain the area as a function of <m>x</m>, we substitute <m>w=\frac{100-x}{2}</m> (from the constraint) for <m>w</m> to get <me>A(x) = x\left(\frac{100-x}{2}\right) = -\frac{x^2}{2}+50x.</me> When we find the vertex form of this function we find <m>h=50</m> and <m>-\frac{h^2}{2} + k = 0</m>, hence <m>k = 1250</m>. Thus <me>A(x) = -\frac{1}{2}(x-50)^2 + 1250.</me> This means the maximum area is <m>1,250</m> yd<m>{^2}</m>, which occurs when <m>x=50</m> and <m>w = 25</m>. 
 				</solution>
 </example>
+
 
 <question>
 				<p>
@@ -773,6 +843,14 @@ Solving this system we have <m>h = \frac{3}{2}</m> and <m>k = -\frac{1}{4}</m>. 
 
 				</ul></p>
 </example>
+
+<exercise>
+	<p>
+		<webwork source="Library/maCalcDB/setAlgebra20QuadraticFun/lh3-1_85.pg" />
+	</p>
+</exercise>
+
+
 
 <question>
 				<p>
