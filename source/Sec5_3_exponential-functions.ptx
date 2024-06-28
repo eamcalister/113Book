@@ -24,16 +24,15 @@
 			</objectives>
 
 
-
+<introduction>
 			<p>
 				Exponential functions are common in applications where the rate of change is not described in absolute terms, but in relative terms as a percent rate of change. For instance, suppose we say a population, <m>P</m>, is growing at a rate of <m>50\%</m> per year with an initial value of <m>1000</m>. This means that to find the population next year, we find the population of the current year, multiply it by <m>0.5</m>, and add it to the current population. Then we can construct a table of values, with the input <m>t</m> being measured in years:
 			</p>
 
-<!-- div attr= class="center"-->
-			<table>
-				<caption></caption>
+
+			<table><title>Input-Output Table for <m>P</m></title>
 				<tabular>
-				<row header="yes">
+				<row header="yes" bottom="medium">
 					<cell halign="right"><m>t</m></cell>
 					<cell halign="right"><m>0</m></cell>
 					<cell halign="right"><m>1</m></cell>
@@ -48,12 +47,12 @@
 					<cell halign="right"><m>3375</m></cell>
 				</row>
 				</tabular>
-			</table><!--</div attr= class="center">-->
+			</table>
 
 			<p>
 				We can notice that the slope, which is the absolute rate of change, is not constant. Between the points <m>(0,1000)</m> and <m>(1,1500)</m>, the slope is <m>500</m>. The slope between the points <m>(1,1500)</m> and <m>(2,2250)</m> is <m>750</m>. However, if we take the ratio of consecutive outputs, we get a constant: <me>\frac{1500}{1000} = \frac{2250}{1500} = \frac{3375}{2250}  = 1.5.</me> What this shows is that each time the input increases by <m>1</m>, the output gets multiplied by <m>1.5</m> one more time. Since repeated multiplication is denoted by an exponent, we see that <me>P = 1000(1.5)^t.</me> Functions with this basic form are known as exponential functions.
 			</p>
-
+</introduction>
 
 		<subsection xml:id="intro-to-exponential-functions">
 				<title>Intro to Exponential Functions</title>
@@ -62,6 +61,49 @@
 					An <term>exponential function</term> is a function of the form <m>f(x) = ab^x</m>, where <m>a\neq 0</m> and <m>b&gt;0</m>.
 				</p>
 </definition>
+
+<p>
+	As is always the case with functions of a specified form, we mean that through algebraic manipulation we can write it in that form. In the case of exponential functions, the parameters <m>a</m> and <m>b</m> have important meaning (see <xref ref="exp_ab_meaning"/> below). For this reason we note that when we are finding <m>a</m> and <m>b</m> for a specific exponential function, we are looking to write it in the form
+	<me>
+		f(x) = (\text{a number})\cdot(\text{another number})^{\text{a completely unmodified }x}.
+	</me>
+</p>
+
+<example>
+	<statement>
+		<p>
+			Consider the function
+			<me>
+				f(x) = 3\cdot 2^{5x-1}.
+			</me>
+			This is an exponential function. What are the parameters <m>a</m> and <m>b</m>?
+		</p>
+	</statement>
+	<solution>
+		<p>
+			It is tempting to say <m>a=3</m> and <m>b=2</m>. However, observe that the expression in the exponent of <m>2</m> is not just <m>x</m>. The <em>definition</em> of an exponential function, with its parameters <m>a</m> and <m>b</m> requires a form where the exponent is just <m>x</m>. To obtain this form, we must use some exponent properties as follows:
+			<md>
+				<mrow>f(x) = \amp\ 3\cdot 2^{5x-1} </mrow>
+				<mrow> = \amp\ 3\cdot 2^{5x}\cdot 2^{-1} </mrow>
+				<mrow> = \amp\ \frac{3}{2}\cdot (2^{5})^x </mrow>
+				<mrow> = \amp\ \frac{3}{2}\cdot (32)^x </mrow>.
+			</md>
+			Thus, we have <m>a=\frac{3}{2}</m> and <m>b=32</m>.
+		</p>
+	</solution>
+</example>
+
+<exercise>
+	<p> 
+		<webwork source="Library/LoyolaChicago/Precalc/Chap3Review/Q08.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+		<webwork source="Library/LoyolaChicago/Precalc/Chap3Review/Q02.pg" />
+	</p>
+</exercise>
 
 <example>
 				<p>
@@ -157,16 +199,33 @@
 </p>
 
 <p>
-<insight><title>The Meaning of <m>a</m> and <m>b</m> in Exponential Functions</title>
+<insight xml:id="exp_ab_meaning"><title>The Meaning of <m>a</m> and <m>b</m> in Exponential Functions</title>
+	<statement>
+		<p>
+			Let <m>f(x) = ab^x</m> where <m>a\neq 0</m> and <m>b>0</m>.
+		</p>
+	</statement>
 
 
 				<p><ul>
 					<li>
 									<p>
-					<m>b</m> is the growth factor. Each time the input increases by one unit, the output is multiplied by another factor of <m>b</m>.
+					<m>b</m> is the growth factor. Each time the input increases by one unit, the output is multiplied by another factor of <m>b</m>. Taking this statement algebraically, we have
+					<me>
+						f(x+1) = ab^{x+1} = ab^x\cdot b.
+					</me>
+					This leads us to the useful identity,
+					<me>
+						\frac{f(x+1)}{f(x)} = \frac{\bcancel{ab^x}\cdot b}{\bcancel{ab^x}} = b.
+					</me>
+					A more general version of this is given by
+					<me>
+						\frac{f(x+n)}{f(x)} = \frac{\bcancel{ab^x}\cdot b^n}{\bcancel{ab^x}} = b^n.
+					</me>
 				</p>
 
-				<p><ul>
+				<p>The following observations tell us how <m>b</m> affects the graph of <m>f</m>:
+					<ul>
 					<li>
 									<p>
 					If <m>b&gt;1</m>, then the graph diverges away from the <m>x</m>-axis from left to right and gets arbitrarily close to the <m>x</m>-axis as <m>x\to-\infty</m>.
@@ -198,24 +257,20 @@
 				</p>
 </question>
 
-				<p>
-					As with all function families, when we say that a function has a specific form, we really mean that its defining formula is equivalent to that form. Often it is the case that a function is not presented in a specific form, but algebraic manipulation shows it to be in the specified family.
-				</p>
-
 <example>
 				<p>
-					Let <m>f(x) = \dfrac{3(2)^{x+3}}{5^{x-1}}</m>. This function is not in the form <m>f(x) = ab^x</m>, but we may use some exponent rules to put it in that form: <me>f(x) = \frac{3(2)^{x+3}}{5^{x-1}} = \frac{3\cdot 2^3\cdot 2^{x}}{5^{-1}\cdot 5^{x}} = 120\left(\frac{2}{5}\right)^{x}.</me> Hence we see <m>a = 120</m> and <m>b=\frac{2}{5}</m>. Alternatively, we could use a table of outputs to decide this function is exponential and find its parameters:<!-- linebreak -->
+					Suppose outputs for the function <m>f(x) = ab^x</m> are given below.
 				</p>
 
-<!-- div attr= class="center"-->
-				<table>
-					<caption></caption>
+				<table><title>Input-Output Table for <m>f(x)=ab^x</m></title>
+				
+				
 					<tabular>
-					<row header="yes">
+					<row header="yes" bottom="medium">
 						<cell halign="right"><m>x</m></cell>
 						<cell halign="right"><m>0</m></cell>
-						<cell halign="right"><m>1</m></cell>
-						<cell halign="right"><m>2</m></cell>
+						<cell halign="right"><m>3</m></cell>
+						<cell halign="right"><m>6</m></cell>
 					</row>
 					<row class="odd">
 						<cell halign="right"><m>f(x)</m></cell>
@@ -224,12 +279,31 @@
 						<cell halign="right"><m>19.2</m></cell>
 					</row>
 					</tabular>
-				</table><!--</div attr= class="center">-->
+				</table>
 
 				<p>
-					The ratios of consecutive values are equal to <m>b</m>: <m>\frac{48}{120} = \frac{19.2}{48} =\frac{2}{5}</m>. The value at <m>t=0</m> is <m>a</m>. 
+					The ratios of consecutive values are equal to <m>b</m>: <me>\frac{f(0+3)}{f(0)}=\frac{2}{5} = \frac{48}{120} =\frac{2}{5} = \frac{\bcancel{ab^x}\cdot b^3}{\bcancel{ab^x}} = b^3.</me> Thus, <me>b = \sqrt[3]{\frac{2}{5}}. </me> 
+					
+					The value at <m>t=0</m> is <m>a</m>, so <m>a=120</m> and we have
+					<me>
+						f(x) = 120\cdot \left(\sqrt[3]{\frac{2}{5}}\right)^x.
+					</me>
+					 
 				</p>
 </example>
+
+<exercise>
+	<p> 
+		<webwork source="Library/LoyolaChicago/Precalc/Chap3Sec2/Q18.pg" />
+	</p>
+</exercise>
+
+
+<exercise>
+	<p> 
+		<webwork source="Library/LoyolaChicago/Precalc/Chap3Sec2/Connally3-3-2-08-Exponential-vs-linear.pg" />
+	</p>
+</exercise>
 
 				<p>
 					Generally, if you know one of the parameters of an exponential function and a point on its graph, you can solve for the other parameter. In the next section we will go into detail of how to find formulas for exponential functions from two points on the graph, similar to how we did it for linear functions. We will also see possible reasons for alternatives to the standard <m>ab^x</m> form.
@@ -246,16 +320,30 @@
 
 <example>
 				<p>
-					Suppose the points <m>(2,1)</m> and <m>(9,4)</m> are on the graph of <m>y=f(x) = ab^{x}</m>. We would like to determine <m>a</m> and <m>b</m>. To do this, we merely need to set up a system of equations and solve it. Using the input-output pairs, we have <me>\begin{aligned}
-1 &amp; = &amp; ab^{2}\\
-4 &amp; = &amp; ab^{9}.\end{aligned}</me> Using the first equation, we find <m>a = \frac{1}{b^2}</m>, which we can substitute into the second to get <me>\begin{aligned}
-4 &amp; = &amp; \frac{1}{b^2}\cdot b^{9}\\
- &amp; \updownarrow &amp; \\
-b^{7} &amp; = &amp; 4 \\
-&amp; \updownarrow &amp; \\
-b &amp; = &amp; \sqrt[7]{4}.\end{aligned}</me> Then we find <m>a = \frac{1}{(\sqrt[7]{4})^{2}}</m>. Thus we have <m>f(x) = \frac{1}{(\sqrt[7]{4})^{2}} (\sqrt[7]{4})^x</m>. 
+					Suppose the points <m>(2,1)</m> and <m>(9,4)</m> are on the graph of <m>y=f(x) = ab^{x}</m>. We would like to determine <m>a</m> and <m>b</m>. To do this, we merely need to set up a system of equations and solve it. Using the input-output pairs, we have 
+<md>
+<mrow> 1 = \amp ab^{2}</mrow>
+<mrow> 4 = \amp ab^{9}.</mrow>
+</md> 
+
+Using the first equation, we find <m>a = \frac{1}{b^2}</m>, which we can substitute into the second to get 
+<md>
+<mrow> 4  = \amp\ \frac{1}{b^2}\cdot b^{9} </mrow>
+<mrow>  \updownarrow \amp\ </mrow>
+<mrow> b^{7} = \amp\ 4 </mrow>
+<mrow>  \updownarrow \amp\ </mrow>
+<mrow> b  = \amp\ \sqrt[7]{4}.</mrow>
+</md> 
+
+Then we find <m>a = \frac{1}{(\sqrt[7]{4})^{2}}</m>. Thus we have <m>f(x) = \frac{1}{(\sqrt[7]{4})^{2}} (\sqrt[7]{4})^x</m>. 
 				</p>
 </example>
+
+<exercise>
+	<p> 
+		<webwork source="Library/UCSB/Stewart5_1_5/Stewart5_1_5_17/Stewart5_1_5_17.pg" />
+	</p>
+</exercise>
 
 				<p>
 					This process for finding the equation of an exponential function is straightforward, but the final answer does not show the points the graph passes through in a transparent way. Instead, we may write it in the form <me>f(x)  = \frac{1}{(\sqrt[7]{4})^{2}} (\sqrt[7]{4})^x = 1\cdot 4^{\frac{x-2}{7}}.</me> In this form we can see that <m>f(2) = 1</m> and <m>f(9) = 4</m> quite easily.
@@ -305,11 +393,13 @@ b &amp; = &amp; \sqrt[7]{4}.\end{aligned}</me> Then we find <m>a = \frac{1}{(\sq
 
 					<li>
 									<p>
-					Is <m>Q</m> multiplied by an additional factor of <m>1.25</m> each time <m>t</m> increases by <m>20</m>. Yes, observe <me>\begin{aligned}
-f(2) &amp; = &amp; 3\\
-f(22) &amp; = &amp; 3(1.25)^{\frac{20}{20}} = 3(1.25)\\
-f(42) &amp; = &amp; 3(1.25)^{\frac{40}{20}} = 3(1.25)^2\\
-\ &amp; \vdots &amp; \\\end{aligned}</me>
+					Is <m>Q</m> multiplied by an additional factor of <m>1.25</m> each time <m>t</m> increases by <m>20</m>. Yes, observe 
+<md>
+<mrow>f(2)  = \amp\ 3</mrow>
+<mrow>f(22)  = \amp\ 3(1.25)^{\frac{20}{20}} = 3(1.25)</mrow>
+<mrow>f(42)  = \amp\ 3(1.25)^{\frac{40}{20}} = 3(1.25)^2</mrow>
+<mrow>\  \vdots \amp\ </mrow>
+</md>
 				</p>
 					</li>
 
@@ -345,6 +435,12 @@ f(42) &amp; = &amp; 3(1.25)^{\frac{40}{20}} = 3(1.25)^2\\
 				</ul></p>
 </definition>
 
+<exercise>
+	<p> 
+		<webwork source="Library/FortLewis/Algebra/10-2-Working-with-the-Base/MCH-10-2-16.pg" />
+	</p>
+</exercise>
+
 <question>
 				<p>
 					<em>In the function <m>Q=f(t) = 3(1.25)^{\frac{t-2}{20}}</m>, by what percent does <m>Q</m> grow per unit increase in <m>t</m>?</em>
@@ -365,6 +461,12 @@ f(42) &amp; = &amp; 3(1.25)^{\frac{40}{20}} = 3(1.25)^2\\
 					Suppose a population of bacteria, <m>P</m>, in millions starts at <m>P = 4</m> and triples every six hours. Find a formula for <m>P</m> as a function of time <m>t</m>, in hours. By what percent does <m>P</m> change each hour? Using the point-factor-time interval idea, we find <me>P = 4(3)^{\frac{t}{6}}.</me> In order to find the growth rate, we must first find the growth factor <m>b</m>. This is done by applying exponent rules: <me>P = 4(\sqrt[6]{3})^{t}.</me> Hence the growth factor is <m>b = \sqrt[6]{3}\approx 1.201</m>. Hence the percent growth rate is about <m>20.1\%</m> per hour.
 				</p>
 </example>
+
+<exercise>
+	<p> 
+		<webwork source="Library/FortLewis/Algebra/10-5-Modeling-with-Exponentials/MCH-10-5-39.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>

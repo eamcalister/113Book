@@ -28,10 +28,11 @@
 			</ul>
 			</objectives>
 
-
-			<p>
-				Quadratic functions are probably the simplest non-linear functions to study. The adjective <em>quadratic</em> comes from the Latin word for square, <em>quadratus</em>. This is because the addition of a term involving <m>x^2</m> comes from measuring areas. Thinking of quadratic functions as ones that measure rectangular areas is what allows us to see that quadratic functions can be used to model positions of objects whose acceleration is constant.
-			</p>
+<introduction>
+	<p>
+		Quadratic functions are probably the simplest non-linear functions to study. The adjective <em>quadratic</em> comes from the Latin word for square, <em>quadratus</em>. This is because the addition of a term involving <m>x^2</m> comes from measuring areas. Thinking of quadratic functions as ones that measure rectangular areas is what allows us to see that quadratic functions can be used to model positions of objects whose acceleration is constant.
+	</p>
+</introduction>
 
 
 		<subsection xml:id="intro-to-quadratic-functions">
@@ -110,7 +111,6 @@
 
 
 				<table><title>Values for <m>f(x) = x^2</m></title>
-					<caption>Input-output table for <m>f(x) = x^2.</m></caption>
 					<tabular>
 					<row header="yes" bottom="medium">
 						<cell halign="center"><m>x</m></cell>
