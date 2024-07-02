@@ -23,10 +23,11 @@
 			</ul>
 			</objectives>
 
-
-			<p>
-				When working with any family of functions, two common tasks are finding a formula for a member of some specified family satisfying some conditions (often points on the graph), and solving equations involving members of that family. A little reflection on the last two families we studied (exponential and power functions) reveals that we did not solve equations involving exponential functions nor did we find formulas for power functions. This is because we need a way of solving for a variable in an exponent, which is exactly what <em>logarithms are for.</em>
-			</p>
+<introduction>
+	<p>
+		When working with any family of functions, two common tasks are finding a formula for a member of some specified family satisfying some conditions (often points on the graph), and solving equations involving members of that family. A little reflection on the last two families we studied (exponential and power functions) reveals that we did not solve equations involving exponential functions nor did we find formulas for power functions. This is because we need a way of solving for a variable in an exponent, which is exactly what <em>logarithms are for.</em>
+	</p>
+</introduction>
 
 			<p>
 				Before giving the definition of a logarithm, it may be helpful to think about the difference between a power function and an exponential function one more time. (<em><em>This is important, don't skip reading it!</em></em>) A power function is one of the form <me>f(x) = kx^p.</me> Thinking about such a function as a process applied to the input, <m>x</m>, we would say <m>f</m>
@@ -105,37 +106,34 @@
 			</ul></p>
 </definition>
 
+<remark>
+	<p>
+		The word "logarithm" combines two Greek words: <em>logos</em> for "ratio" and <em>arithmos</em> for "number". The meaning translates roughly to "number of ratios" <xref ref="Logarithms1"/>. Backing up to <xref ref="exp_ab_meaning"/>, we can recall that the base <m>b</m> of the exponential function <m>f(x) = ab^x</m> is the <em>ratio</em> of consecutive outputs. That is <me>b = \frac{f(x+1)}{f(x)}</me>. Since <m>\log_b(b^x) = x</m>, we can see this makes sense as <m>x</m> is precisely the number of ratios.  
+	</p>
+</remark>
+
+<historical>
+	<p>
+		The idea of a logarithm was originally introduced in 1614 by John Napier <xref ref="Logarithms1"/>. What's interesting is that the idea of a logarithm predates a full understanding of exponents; the notation for exponents we use today was not introduced until 1637. 
+	</p>
+</historical>
+
+<exercise>
+	<p> 
+	<webwork source="Library/UCSB/Stewart5_1_6/Stewart5_1_6_35.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/UMN/algebraKaufmannSchwitters/ks_10_4_28.pg" />
+	</p>
+</exercise>
+
 <question xml:id="log_of_one">
 			<p>
-				<em>Find the following logarithms:</em>
+				<em>What is <m>\log_b(1)</m>, no matter what <m>b</m> is. Why?</em>
 			</p>
-
-			<p><ol>
-				<li>
-							<p>
-				<em><m>\log_{2}(32)</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>\log_{3}\left(\frac{1}{9}\right)</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>\log_{100}(10)</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>\log_{b}(1)</m> (no matter what <m>b</m> is)</em>
-			</p>
-				</li>
-
-			</ol></p>
 </question>
 
 <question>
@@ -161,6 +159,20 @@
 <definition><title>The Common Logarithm</title><idx>common logarithm</idx>
 					The <term>common logarithm</term> is the base-<m>10</m> logarithm. That is, <me>\log(y) = \log_{10}(y)</me>.
 </definition>
+
+<exercise>
+	<p> 
+	<webwork source="Library/ASU-topics/setLogarithmicFunctions/beth4logfun.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/11-1-Intro-to-Logarithms/MCH-11-1-14.pg" />
+	</p>
+</exercise>
+
+
 
 From now on we will only use the common logarithm, as logarithm properties will allow us to calculate other logarithms using the common logarithm.
 
@@ -221,14 +233,26 @@ From now on we will only use the common logarithm, as logarithm properties will 
 				<p>
 					Suppose we wish to solve the equation <me>3\cdot 4^{x} = 5^{3x}.</me> A good first step in the process is to simplify this into an equivalent equation of the form <me>b^{x} = \mbox{a number}.</me> Then we can use our new tool to undo the exponentiation. Simplifying we have 
 <md>
-<mrow> 3\cdot 4^{x} \amp = \amp 5^{3x}</mrow>
-<mrow> \amp \updownarrow \amp \amp\text{divide by}\ 3\  \text{and}\  5^{3x}= 125^x</mrow>
-<mrow> \left(\frac{4}{125}\right)^{x} \amp = \amp \frac{1}{3}.</mrow>
+<mrow> 3\cdot 4^{x} = \amp\ 5^{3x}</mrow>
+<mrow> \updownarrow \amp \text{divide by}\ 3\  \text{and}\  5^{3x}= 125^x</mrow>
+<mrow> \left(\frac{4}{125}\right)^{x} = \amp\ \frac{1}{3}.</mrow>
 </md> 
 
 Now we take the common logarithm of both sides of the equation and use the third logarithm property to get <me>x\log\left(\frac{4}{125}\right) = \log\left(\frac{1}{3}\right).</me> Then we simply divide to solve for <m>x</m>: <me>x = \frac{\log\left(\frac{1}{3}\right)}{\log\left(\frac{4}{125}\right)}.</me>  This expression for <m>x</m> simplifies to <me>x = -\frac{\log{3}}{\log{4}-\log{125}}\approx .319.</me>
 				</p>
 </example>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/11-2-Solving-with-Logs/MCH-11-2-22.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/11-2-Solving-with-Logs/MCH-11-2-32.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>
@@ -254,36 +278,36 @@ Now we take the common logarithm of both sides of the equation and use the third
 					First, we need to find a formula for the amount <m>A</m> in the account, in dollars, as a function of the time <m>t</m>, in years. We can quickly determine this to be <me>A = 13000(1.022)^{t}.</me> Now we are faced with solving the equation <me>13000(1.022)^t = 20000.</me> Quick simplification and application of the technique from the previous section gives us 
 					
 <md>
-<mrow> (1.022)^t \amp =  \amp \frac{20}{13}</mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> \log((1.022)^t)) \amp = \amp \log\left(\frac{20}{13}\right)</mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> t\log(1.022) \amp = \amp  \log\left(\frac{20}{13}\right) </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> t \amp = \amp \frac{\log(20)-\log(13)}{\log(1.022)} \amp \approx \amp 19.8.</mrow>
+<mrow> (1.022)^t  =  \amp\ \frac{20}{13}</mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> \log((1.022)^t)) = \amp\ \log\left(\frac{20}{13}\right)</mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> t\log(1.022)  = \amp\  \log\left(\frac{20}{13}\right) </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> t  = \amp\ \frac{\log(20)-\log(13)}{\log(1.022)} \amp \approx \amp 19.8.</mrow>
 </md> 
 
 Hence there will be <m>\$20,000</m> in the account in about 19.8 years.
 				</p>
 </example>
 
-<question>
-				<p>
-					<em>Consider a bank account that initially begins with <m>\$20,000</m> and only earns a <m>1.5\%</m> annual interest rate. After how many years will the account from the previous example be worth more than this account? Give your answer in exact form (with logarithms) as well as a decimal approximation using a calculator.</em>
-				</p>
-</question>
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/10-5-Modeling-with-Exponentials/MCH-10-5-39.pg" />
+	</p>
+</exercise>
 
 <example>
 				<p>
-					Suppose a population of bacteria begins at 1,000 and grows at a rate of <m>6\%</m> per hour. What is the doubling-time of this population?<!-- linebreak --> First we find a formula for the population, <m>P</m>, as a function of time, <m>t</m>, in hours: <me>P  = 1000(1.06)^t.</me> The doubling-time will then be the time it takes for the population to be <m>2,000</m>, so we solve: 
+					Suppose a population of bacteria begins at 1,000 and grows at a rate of <m>6\%</m> per hour. What is the doubling-time of this population? First we find a formula for the population, <m>P</m>, as a function of time, <m>t</m>, in hours: <me>P  = 1000(1.06)^t.</me> The doubling-time will then be the time it takes for the population to be <m>2,000</m>, so we solve: 
 <md>
-<mrow> 1000(1.06)^t \amp = \amp 2000</mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> (1.06)^t \amp = \amp 2 </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> t\log(1.06) \amp = \amp \log(2) </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> t \amp = \amp \frac{\log(2)}{\log(1.06)}\amp \approx\amp  11.9.</mrow>
+<mrow> 1000(1.06)^t  = \amp 2000</mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> (1.06)^t  = \amp 2 </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> t\log(1.06)  = \amp \log(2) </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> t = \amp \frac{\log(2)}{\log(1.06)}\amp \approx\amp  11.9.</mrow>
 </md> 
 
 Thus the population will double in about 11.9 hours.
@@ -300,13 +324,13 @@ Thus the population will double in about 11.9 hours.
 				<p>
 					Find a formula for a power function <m>f(x) = kx^{p}</m> such that <m>f(1) = 3</m> and <m>f(4) = 7</m>. First we note that <m>f(1) = k\cdot 1^{p} = k</m>. Thus, <m>k=3</m>. We can substitute the other point and use logarithms to solve for <m>p</m>: 
 <md>
-<mrow> 3\cdot 4^{p} \amp = \amp 7 </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> 4^{p} \amp = \amp \frac{7}{3} </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> p\log(4) \amp = \amp\amp \log(7)-\log(3) </mrow>
-<mrow> \amp \updownarrow \amp </mrow>
-<mrow> p \amp = \amp \frac{\log(7)-\log(3)}{\log(4)} \amp \approx \amp 0.611.</mrow>
+<mrow> 3\cdot 4^{p}  = \amp\ 7 </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> 4^{p}  = \amp\ \frac{7}{3} </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> p\log(4)  = \amp\ \log(7)-\log(3) </mrow>
+<mrow>  \updownarrow \amp </mrow>
+<mrow> p = \amp\ \frac{\log(7)-\log(3)}{\log(4)}  \approx \amp 0.611.</mrow>
 </md> 
 Thus the function of interest is approximately (due to approximating the logarithms) <m>f(x) = 3x^{0.611}</m>. <term>Note:</term> You should leave logarithmic expressions in exact form when possible; if you substitute decimal approximations at various steps of the problem, the error can propagate very quickly.
 				</p>
@@ -332,6 +356,8 @@ Thus the function of interest is approximately (due to approximating the logarit
 
 				</ol></p>
 </question>
+
+
 
 		</subsection>
 	</section>

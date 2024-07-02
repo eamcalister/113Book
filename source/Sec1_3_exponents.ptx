@@ -44,7 +44,7 @@
 			</table>
 			<historical><title>Historical Note</title>
 				<p>
-					The first use of superscripts for exponents was by René Descartes in the 1637 text <em>La Geométrie</em>. Prior to this, all sorts of notations were used to describe repeated multiplication. For instance, Vieté would write "<m>A</m> Cubus" for <m>A^3</m>, as he insisted <m>A^3</m> represented the volume of a cube. 
+					The first use of superscripts for exponents was by René Descartes in the 1637 text <em>La Geométrie</em> <xref ref="Logarithms1"/>. Prior to this, all sorts of notations were used to describe repeated multiplication. For instance, Vieté would write "<m>A</m> Cubus" for <m>A^3</m>, as he insisted <m>A^3</m> represented the volume of a cube. 
 				</p>
 			</historical>
 			<p>
