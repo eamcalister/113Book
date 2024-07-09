@@ -22,10 +22,12 @@
 				</li>
 			</ul>
 			</objectives>
-
-			<p>
-				In this section we discuss transformations of functions built out of the basic operations of arithmetic, applied to the inputs and/or outputs of the function. Such transformations are called <term>graphical transformations</term> because they can be visualized as moving the graph of a parent function. The idea of graphical transformations brings together the concept of functions, as sequential processes applied to the inputs to yield the output, together with the geometric understanding of arithmetic presented in Chapter 1.
-			</p>
+<introduction>
+	<p>
+		In this section we discuss transformations of functions built out of the basic operations of arithmetic, applied to the inputs and/or outputs of the function. Such transformations are called <term>graphical transformations</term> because they can be visualized as moving the graph of a parent function. The idea of graphical transformations brings together the concept of functions, as sequential processes applied to the inputs to yield the output, together with the geometric understanding of arithmetic presented in Chapter 1.
+	</p>
+</introduction>
+			
 
 
 		<subsection xml:id="basic-graphical-transformations">
@@ -141,14 +143,17 @@
 
 <example>
 				<p>
-					Let <m>f(x) = \sqrt{x-3} + 5</m>. One simple point on the graph of this function is <m>(4,6)</m>, because <m>f(4) = \sqrt{4-3} + 5 = 6</m>. Now let's consider the new function <m>g(x) = f(x+2) = \sqrt{(x+2)-3} + 5</m>. To find the transformed version of <m>(4,6)</m> on the graph of <m>g</m>, we must solve: <me>\begin{aligned}
-\sqrt{(x+2) - 3} + 5 &amp; = &amp; 6\\
-&amp; \updownarrow &amp; \\
-(x+2) - 3 &amp; = &amp; 1\\
-&amp; \updownarrow &amp; \\
-(x+2) &amp; = &amp; 4\\
-&amp; \updownarrow &amp; \\
-x = 2.\end{aligned}</me> Thus the transformed point is <m>(2,6)</m>, which is two units to the left of <m>(4,6)</m>.
+					Let <m>f(x) = \sqrt{x-3} + 5</m>. One simple point on the graph of this function is <m>(4,6)</m>, because <m>f(4) = \sqrt{4-3} + 5 = 6</m>. Now let's consider the new function <m>g(x) = f(x+2) = \sqrt{(x+2)-3} + 5</m>. To find the transformed version of <m>(4,6)</m> on the graph of <m>g</m>, we must solve: 
+<md>
+<mrow>\sqrt{(x+2) - 3} + 5 = \amp\ 6</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow>(x+2) - 3 = \amp\ 1</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow>(x+2)  = \amp\ 4</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow>x =\amp\ 2.</mrow>
+</md> 
+Thus the transformed point is <m>(2,6)</m>, which is two units to the left of <m>(4,6)</m>.
 				</p>
 </example>
 
@@ -214,6 +219,18 @@ x = 2.\end{aligned}</me> Thus the transformed point is <m>(2,6)</m>, which is tw
 				</p>
 </example>
 
+<exercise>
+	<p> 
+	<webwork source="Library/LoyolaChicago/Precalc/Chap5Sec1/Q15.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Algebra/graph_transformations/words_quad_hshift_vshift_vstrshr_vreflrandom.pg" />
+	</p>
+</exercise>
+
 <question>
 				<p>
 					<em>Use factored form to find the formula for a quadratic function <m>f(x)</m> whose <m>x</m>-intercepts are at <m>(1,0)</m> and <m>(4,0)</m>, and whose <m>y</m>-intercept is at <m>(0,7)</m>. What does the parameter <m>a</m> (which you must solve for) do graphically?</em>
@@ -225,6 +242,14 @@ x = 2.\end{aligned}</me> Thus the transformed point is <m>(2,6)</m>, which is tw
 					<em>In building an exponential function, <m>Q = f(t)</m>, with an initial value of five that grows by <m>3\%</m> for each ten unit increase in <m>t</m>, we find <me>Q = f(t) = 5(1.03)^{t/10}.</me> Explain how this function can be built using two graphical transformations of <m>g(t) = (1.03)^t</m>.</em>
 				</p>
 </question>
+
+<exercise>
+	<p> 
+	<webwork source="Library/UCSB/Stewart5_1_5/Stewart5_1_5_8.pg" />
+	</p>
+</exercise>
+
+
 		</subsection>
 
 	</section>

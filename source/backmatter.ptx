@@ -58,6 +58,20 @@
   </solutions>
 
 -->
+
+<references xml:id="references-backmatter" label="references-backmatter">
+  <title>References</title>
+
+  <biblio type="raw" xml:id="Logarithms1" label="LogExp_History1">Florian Cajori, <title>History of the Exponential and Logarithmic Concepts</title> <journal>The American Mathematical Monthly </journal> <number> 1</number>, <volume>20</volume>, <pages>pp 5-14</pages>, <publisher>Mathematical Association of America</publisher>, <url href="http://www.jstor.org/stable/2973509" />, 1913.
+  </biblio>
+
+  <!--biblio type="raw" xml:id="Logarithms2" label="LogExp_History2">Florian Cajori, <title>History of the Exponential and Logarithmic Concepts</title> <journal>The American Mathematical Monthly </journal> <number> 2</number>, <volume>20</volume>, <pages>pp 35-47</pages>, <publisher>Mathematical Association of America</publisher>, <url href="http://www.jstor.org/stable/2974078" />, 1913.
+  </biblio-->
+
+  
+  
+
+</references>
   
 
   <index>

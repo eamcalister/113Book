@@ -140,10 +140,10 @@
 					This time, we think of <m>x+1</m> as our input, a quantity that must be evaluated before <m>f</m> is applied, so we enclose it in parentheses in the evaluation. Then we apply the steps and simplify by expanding and collecting like terms. 
 					
 		<md>
-		<mrow> f(x+1) \amp = \amp 3(x+1)^2 - 1</mrow>
-		<mrow> \amp = \amp 3(x^2+2x+1) - 1 \amp \text{ square } (x+1) </mrow>
-		<mrow> \amp = \amp 3x^2+6x +3 - 1   \amp \text{ multiply by  } 3 </mrow>
-		<mrow> \amp = \amp 3x^2+6x + 2. \amp \text{ subtract } 1 </mrow>
+		<mrow> f(x+1)  = \amp\ 3(x+1)^2 - 1</mrow>
+		<mrow> = \amp\ 3(x^2+2x+1) - 1 \amp \text{ square } (x+1) </mrow>
+		<mrow>  = \amp\ 3x^2+6x +3 - 1   \amp \text{ multiply by  } 3 </mrow>
+		<mrow>  = \amp\ 3x^2+6x + 2. \amp \text{ subtract } 1 </mrow>
 		 </md> 
 		 Note that <m>y=f(x+1)</m> does not define the same function as <m>y=f(x)</m>; for any <m>x</m>-value, <m>y=f(x+1)</m> says that we add <m>1</m> to <m>x</m> and then apply all the steps of <m>f</m>. This can be used to define another function, say <m>y = g(x) = f(x+1)</m>.
 				</p>
@@ -167,9 +167,9 @@
 					Here we think of <m>f(x)</m> as being enclosed in parentheses and simplify: 
 					
 					<md>
-					<mrow>2f(x) - 1 \amp = \amp 2(3x^2-1) -1 </mrow>
- 					<mrow>\amp = \amp 6x^2-2-1  </mrow> 
-  					<mrow>\amp = \amp 6x^2-3. </mrow>
+					<mrow>2f(x) - 1  = \amp\ 2(3x^2-1) -1 </mrow>
+ 					<mrow> = \amp\ 6x^2-2-1  </mrow> 
+  					<mrow> = \amp\ 6x^2-3. </mrow>
 					</md>
 				</p>
 					</li>
@@ -178,6 +178,18 @@
 				</solution>
 				
 </example>
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Intermediate_Algebra/Functions_Evaluating/Quad_No_Constant.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Intermediate_Algebra/Functions_Evaluating/Inverse.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>
@@ -281,38 +293,52 @@ One important question about any given function is, "What are its allowable inpu
 				</solution>
 </example>
 
+
+<exercise>
+	<p> 
+	<webwork source="Library/Mizzou/Algebra/functions_expressions/func_expn_02.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_01_MultDivRatExp.pg" />
+	</p>
+</exercise>
+
 <question>
-				<p>
-					<em>Find the domain of each of the following functions. Carefully explain how you found it, as illustrated in the previous example. Express your answer using inequalities and words, as well as using interval notation.</em>
-				</p>
+	<p>
+		<em>Find the domain of each of the following functions. Carefully explain how you found it, as illustrated in the previous example. Express your answer using inequalities and words, as well as using interval notation.</em>
+	</p>
 
-				<p><ol>
-					<li>
-									<p>
-					<em><m>f(x) = \sqrt{3x + 1-x}</m></em>
-				</p>
-					</li>
+	<p><ol>
+		<li>
+						<p>
+		<em><m>f(x) = \sqrt{3x + 1}</m></em>
+	</p>
+		</li>
 
-					<li>
-									<p>
-					<em><m>g(x) = \dfrac{1}{x^2-x-6}</m></em>
-				</p>
-					</li>
+		<!--li>
+						<p>
+		<em><m>g(x) = \dfrac{1}{x^2-x-6}</m></em>
+	</p>
+		</li-->
 
-					<li>
-									<p>
-					<em><m>h(x) = \dfrac{1}{\sqrt{x^2-x-6}}</m></em>
-				</p>
-					</li>
+		<!--li>
+						<p>
+		<em><m>h(x) = \dfrac{1}{\sqrt{x^2-x-6}}</m></em>
+	</p>
+		</li-->
 
-					<li>
-									<p>
-					<em><m>k(x) = f(x+1)</m>, where <m>f</m> is the function defined in part (1) of this problem.</em>
-				</p>
-					</li>
+		<li>
+						<p>
+		<em><m>k(x) = f(x+1)</m>, where <m>f</m> is the function defined in part (1) of this problem.</em>
+	</p>
+		</li>
 
-				</ol></p>
+	</ol></p>
 </question>
+
 
 
 
@@ -405,11 +431,11 @@ One important question about any given function is, "What are its allowable inpu
 									<p>
 					For (a) we use the fact that <m>g(x) = 2x-4</m>, so we get the following: 
 <md>
-<mrow>2x-4 \amp = \amp 8</mrow>
-<mrow>\amp \updownarrow \amp</mrow>
-<mrow>2x\amp = \amp 12</mrow> 
-<mrow>\amp \updownarrow \amp</mrow>
-<mrow>x\amp =\amp 6.</mrow>
+<mrow>2x-4 = \amp\ 8</mrow>
+<mrow> \updownarrow \amp</mrow>
+<mrow>2x = \amp\ 12</mrow> 
+<mrow> \updownarrow \amp</mrow>
+<mrow>x =\amp\ 6.</mrow>
 </md>
 				</p>
 					</li>
@@ -418,13 +444,13 @@ One important question about any given function is, "What are its allowable inpu
 									<p>
 					For (b), we use <m>f(x) = x^2-3x</m> and <m>g(x) = 2x+4</m>. Then we factor to solve: 
 <md>
-<mrow>x^2 - 3x  \amp = \amp 2x-4</mrow>
-<mrow>\amp \updownarrow \amp </mrow>
-<mrow>x^2-5x+4 \amp = \amp 0</mrow>
-<mrow>\amp \updownarrow \amp </mrow>
-<mrow>(x-4)(x-1) \amp = \amp 0</mrow>
-<mrow>\amp \updownarrow \amp </mrow>
-<mrow>x=4 \amp \mbox{or} \amp x=1.</mrow>
+<mrow>x^2 - 3x  = \amp\ 2x-4</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow>x^2-5x+4  = \amp\ 0</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow>(x-4)(x-1)  = \amp\ 0</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow>x=4 \mbox{or} \amp\ x=1.</mrow>
 </md>
 				</p>
 					</li>
@@ -434,13 +460,13 @@ One important question about any given function is, "What are its allowable inpu
 					For (c), we need to figure out what <m>f(x+1)</m> means. Now <m>f</m> is the function that takes any input, squares it, then multiplies a new copy of it by three, then finds the difference. In this case, our input is the quantity <m>(x+1)</m>. So we to is substitute <m>(x+1)</m> each time we see and <m>x</m> in the expression for <m>f(x)</m> and set it equal to <m>g(x)</m>: 
 
 <md>
-<mrow>(x+1)^2 - 3(x+1) \amp = \amp 2x-4</mrow>
-<mrow>\amp \updownarrow \amp \mbox{expand, group like terms on one side}</mrow>
-<mrow>x^2-3x+2 \amp = \amp 0</mrow>
+<mrow>(x+1)^2 - 3(x+1) = \amp\ 2x-4</mrow>
+<mrow> \updownarrow \amp \mbox{expand, group like terms on one side}</mrow>
+<mrow>x^2-3x+2  = \amp\ 0</mrow>
+<mrow> \updownarrow \amp </mrow>
+<mrow>(x-1)(x-2) = \amp\ 0</mrow>
 <mrow>\amp \updownarrow \amp </mrow>
-<mrow>(x-1)(x-2) \amp = \amp 0</mrow>
-<mrow>\amp \updownarrow \amp </mrow>
-<mrow>x=1 \amp \mbox{or} \amp x=2.</mrow>
+<mrow>x=1  \mbox{or} \amp\ x=2.</mrow>
 </md>
 				</p>
 					</li>
@@ -450,7 +476,7 @@ One important question about any given function is, "What are its allowable inpu
 </solution>
 </example>
 
-<question>
+<!--question>
 				<p>
 					<em>Let <m>f(x) = x-1</m>, and <m>g(x) = (x-3)^2</m>. Solve each of the following equations:</em>
 				</p>
@@ -475,7 +501,19 @@ One important question about any given function is, "What are its allowable inpu
 					</li>
 
 				</ol></p>
-</question>
+</question-->
+
+<exercise>
+	<p> 
+	<webwork source="Library/FortLewis/Algebra/5-3-Linear-equations/MCH1-5-3-03a-Linear-equations.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+	<webwork source="Library/LoyolaChicago/Precalc/Chap2Sec1/Connally3-2-1-03-Input-and-output.pg" />
+	</p>
+</exercise>
 
 <question>
 				<p>
@@ -505,7 +543,7 @@ One important question about any given function is, "What are its allowable inpu
 </question>
 
 				<p>
-					As seen in part (c) of the last question, some numbers may not appear as outputs of a given function. The set of numbers that <em>do </em> appear as outputs of a given function is called the <term>range</term><idx>range of a function</idx> of the function. Another way to say what the range of <m>f</m> is, is that it is the set of <m>y</m> such that there is a solution to the equation <m>y=f(x)</m>. Finding the range of a function is generally a more difficult task than finding its domain; being able to find the maximum and/or minimum possible outputs of a given function is one of the main achievements of Calculus. However, in many cases we can determine the range of an algebraically defined function by some combination of the following:
+					As seen in part (3) of the last question, some numbers may not appear as outputs of a given function. The set of numbers that <em>do </em> appear as outputs of a given function is called the <term>range</term><idx>range of a function</idx> of the function. Another way to say what the range of <m>f</m> is, is that it is the set of <m>y</m> such that there is a solution to the equation <m>y=f(x)</m>. Finding the range of a function is generally a more difficult task than finding its domain; being able to find the maximum and/or minimum possible outputs of a given function is one of the main achievements of Calculus. However, in many cases we can determine the range of an algebraically defined function by some combination of the following:
 				</p>
 
 				<p><ul>

@@ -19,16 +19,29 @@
 			</objectives>
 
 
-
-			<p>
-				The last basic family of functions we study, power functions, will also be a two-parameter family.
-			</p>
+<introduction>
+	<p>
+		The last basic family of functions we study, power functions, will also be a two-parameter family.
+	</p>
+</introduction>
 
 <definition><title>Power Function</title>
 <p>
 A <term>power function</term><idx>power function</idx> is one of the form <me>f(x) = kx^{p}.</me> We call <m>k</m> the <term>coefficient</term><idx>coefficitent of a power function</idx> of the power function and <m>p</m> the <term>exponent</term><idx>exponent of a power function</idx>. There are no restrictions placed on <m>k</m> and <m>p</m>; they can be any constant.
 </p>
 </definition>
+
+<exercise>
+	<p> 
+		<webwork source="Library/FortLewis/Algebra/7-2-Power-expressions/MCH1-7-2-12-Power-expressions.pg" />
+	</p>
+</exercise>
+
+<exercise>
+	<p> 
+		<webwork source="Library/FortLewis/Algebra/7-2-Power-expressions/MCH1-7-2-01-Power-expressions.pg" />
+	</p>
+</exercise>
 
 <p><idx>proportional to</idx>
 Power functions often occur in the context of <term>proportionality</term>. We say one quantity is <term>proportional to</term> another if the first is a constant multiple of the second. Hence, if we say <m>y</m> is proportional to <m>x^p</m>, then there is some constant <m>k</m> such that 
@@ -41,6 +54,13 @@ y=\frac{k}{x^p}.
 </me>
 
 </p>
+
+<exercise>
+	<p> 
+		<webwork source="Library/FortLewis/Algebra/7-4-Power-functions-modeling/MCH1-7-4-20-Power-functions-modeling.pg" />
+	</p>
+</exercise>
+
 
 <question>
 			<p>
@@ -184,6 +204,12 @@ y=\frac{k}{x^p}.
 
 				</ol></p>
 </question>
+
+<exercise>
+	<p> 
+		<webwork source="Library/FortLewis/Algebra/7-2-Power-expressions/MCH1-7-2-38-Power-expressions.pg" />
+	</p>
+</exercise>
 
 		</subsection>
 	</section>

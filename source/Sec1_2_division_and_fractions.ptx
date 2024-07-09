@@ -60,6 +60,12 @@
 					</tabular>
 				</table>
 
+	<exercise>
+				<p> 
+				<webwork source="Library/PCC/BasicMath/FractionsCalculation/FractionOnNumberLine10.pg" />
+				</p>
+	</exercise>
+
 
 				<p>
 					Since this table assumes <m>b</m> is a positive integer so that we may use the idea of multiplication as repeated addition to reach a more formal understanding of division.
@@ -84,9 +90,10 @@ To answer this we will explain why the left-hand side of this equation has the p
 <me> 
 b\cdot\left( a\cdot \frac{1}{b}  \right) = a\cdot\left(b\cdot \frac{1}{b}\right).
 </me>
-Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left-hand side has the property we wanted it to have. 
+Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left-hand side has the property we wanted it to have.
 </solution>
 </example>
+
 
 <question>
 				<p>
@@ -162,6 +169,12 @@ Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left
 					<em>(Multiplying Fractions) Explain why <m>\dfrac{a}{b}\cdot\dfrac{c}{d} = \dfrac{ac}{bd}</m> using the fundamental fraction properties.</em>
 				</p>
 </question>
+
+<exercise>
+	<p> 
+	<webwork source="Library/MC/PreAlgebra/setPreAlgebraC05S01/OrderingFractions02.pg" />
+	</p>
+</exercise>
 
 				<p>
 					We can also use the stretch/squeeze metaphor of multiplication to give a geometric interpretation of <m>\frac{a}{b}</m> when <m>b</m> is not an integer. To do this, let's let <m>r = \frac{a}{b}</m>, and assume <m>a</m> and <m>b</m> are still positive (since negatives just reflect to the other side of zero). Our goal is to figure out where <m>r</m> is on the number line. To do this, we first do a manipulation: <me>\frac{a}{b} = r \Longleftrightarrow a = rb.</me> This manipulation used the fact that multiplication by <m>b</m> undoes division by <m>b</m>. From this manipulated equation we see that <m>r = \frac{a}{b}</m> is the number that when stretched (if <m>b&gt;1</m>) or squeezed (if <m>0&lt;b&lt;1</m>) by <m>b</m> gives you <m>a</m>.
@@ -366,8 +379,18 @@ Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left
 				</ol></p>
 </question>
 
+<p>
+	Thinking of the denominator in terms of units, where a larger denominator represents a smaller unit, may help in comparing fractions, as in the following Checkpoint. 
+</p>
+
+<exercise>
+	<p> 
+	<webwork source="Library/MC/PreAlgebra/setPreAlgebraC05S01/OrderingFractions02.pg" />
+	</p>
+</exercise>
+
 				<p>
-					Now let’s revisit the example of ropes and yards from the last section. In order to add two ropes to four yards, it was necessary to convert both ropes and yards into a smaller unit that went into both ropes and yards evenly. Specifically, both were converted to feet to get a total of 52 feet. When we are just working with numbers we do something very similar; we find a common denominator.
+					Now let's revisit the example of ropes and yards from the last section. In order to add two ropes to four yards, it was necessary to convert both ropes and yards into a smaller unit that went into both ropes and yards evenly. Specifically, both were converted to feet to get a total of 52 feet. When we are just working with numbers we do something very similar; we find a common denominator.
 				</p>
 
 <example>
@@ -442,7 +465,7 @@ Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left
 </example>
 
 				<p>
-					One thing we usually try to find is the least common denominator between two fractions. Thinking in terms of units, this is like finding the largest possible unit that goes into both quantities evenly. In the example given above we could have used <m>\frac{1}{20}</m> to go into <m>\frac{1}{2}</m> and <m>\frac{3}{5}</m> evenly and obtained <me>\frac{3}{5}+\frac{1}{2} = \frac{22}{20}.</me> However, that makes the numbers we are dealing with larger for no reason. This would be like converting both ropes and yards into inches; it’s possible, but unnecessary.
+					One thing we usually try to find is the least common denominator between two fractions. Thinking in terms of units, this is like finding the largest possible unit that goes into both quantities evenly. In the example given above we could have used <m>\frac{1}{20}</m> to go into <m>\frac{1}{2}</m> and <m>\frac{3}{5}</m> evenly and obtained <me>\frac{3}{5}+\frac{1}{2} = \frac{22}{20}.</me> However, that makes the numbers we are dealing with larger for no reason. This would be like converting both ropes and yards into inches; it's possible, but unnecessary.
 				</p>
 
 <question>
@@ -472,38 +495,57 @@ Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left
 				</ol></p>
 </question>
 
-<question>
-				<p>
-					<em>Perform the indicated additions and subtractions:</em>
-				</p>
 
-				<p><ol>
-					<li>
-									<p>
-					<em><m>\frac{3}{7}+\frac{9}{8}</m></em>
-				</p>
-					</li>
+<exercise>
+<webwork>
+	<pg-code>
+	loadMacros(
+  	"PGstandard.pl",
+  	"MathObjects.pl",
+  	"PGML.pl",
+  	"contextFraction.pl",
+  	"PGcourse.pl"
+	);
+	Context("Fraction");
+    $a = Compute("87/56");
+	$b = Compute("87/27");
+	$c = Compute("13/12");
+	$d = Compute("5");
 
-					<li>
-									<p>
-					<em><m>\frac{7}{3}+\frac{8}{9}</m></em>
-				</p>
-					</li>
+	</pg-code>
+  
+	<statement>
+	<p>
+		Perform the indicated additions and subtractions. Leave your answers with the smallest possible denominators.
+	</p>
+	<ol>
+		<li>
+			<p>
+				<m>\frac{3}{7}+\frac{9}{8} = </m><var name="$a" width="2"/>
+			</p>
+		</li>
+		<li>
+			<p>
+				<m>\frac{7}{3}+\frac{8}{9} =</m><var name="$b" width="2"/>
+			</p>
+		</li>
+		<li>
+			<p>
+				<m>\frac{1}{2} + \frac{1}{3} - \frac{1}{4} = </m><var name="$c" width="2"/>
+			</p>
+		</li>
+		<li>
+			<p>
+				<m>\frac{15}{3} + \frac{14}{7} = </m><var name="$d" width="2"/>
+			</p>
+		</li>
+	</ol>
+	</statement>
+	
+  
+  </webwork>
+</exercise>
 
-					<li>
-									<p>
-					<em><m>\frac{1}{2} + \frac{1}{3} - \frac{1}{4}</m></em>
-				</p>
-					</li>
-
-					<li>
-									<p>
-					<em><m>\frac{15}{3} + \frac{14}{7}</m></em>
-				</p>
-					</li>
-
-				</ol></p>
-</question>
 
 			</subsection>
 		</section>

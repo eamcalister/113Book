@@ -118,54 +118,71 @@
 				In addition to multiplications having understood (but not written down) parentheses around them, there are often understood parentheses in fractions. For instance, if we write <me>\frac{1}{3+7},</me> we will understand that <m>3+7</m> is to be performed first. Usually this isn't an issue when fractions are written with horizontal lines, but we would have to use parentheses to write it on a single line as <m>1/(3+7)</m>.
 			</p>
 
+<exercise>
+	<webwork>
+		<pg-code>
+		loadMacros(
+		  "PGstandard.pl",
+		  "MathObjects.pl",
+		  "PGML.pl",
+		  "contextFraction.pl",
+		  "PGcourse.pl"
+		);
+		Context("Fraction");
+		$a = Compute("1/3");
+		$b = Compute("-1");
+		$c = Compute("-15");
+		$d = Compute("0");
+		$e = Compute("33/7");
+		$f = Compute("9/7");
+		</pg-code>
+	  
+		<statement>
+		<p>
+			Evaluate each of the following quantities without a calculator. If your answer is a fraction, give it in reduced form.
+		</p>
+		<ol>
+			<li>
+				<p>
+					<m>3\cdot 3^{-2}\cdot(-1)^2 = </m><var name="$a" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>-3^2+\frac{64}{2^3} =</m><var name="$b" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>(-5+2)^3+12 = </m><var name="$c" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>\frac{(3+2)^2}{4} - \left(\frac{2-7}{2}\right)^2 = </m><var name="$d" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>4+5/7 = </m><var name="$e" width="2"/>
+				</p>
+			</li>
+			<li>
+				<p>
+					<m>(4+5)/7 = </m><var name="$f" width="2"/>
+				</p>
+			</li>
+		</ol>
+		</statement>
+		
+	  
+	  </webwork>
+	</exercise>
+
+
 <question>
 			<p>
-				<em>Evaluate each of the following quantities without a calculator. If your answer is a fraction, give it in reduced form.</em>
-			</p>
-
-			<p><ol>
-				<li>
-							<p>
-				<em><m>3\cdot 3^{-2}\cdot(-1)^2</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>-3^2+\frac{64}{2^3}</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>(-5+2)^3+12</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>\frac{(3+2)^2}{4} - \left(\frac{2-7}{2}\right)^2</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>4+5/7</m></em>
-			</p>
-				</li>
-
-				<li>
-							<p>
-				<em><m>(4+5)/7</m></em>
-			</p>
-				</li>
-
-			</ol></p>
-</question>
-
-<question>
-			<p>
-			<em>Verbally describe the sequence of operations performed on the number <m>a</m> in the correct order.</em>
+			<em>Verbally describe the sequence of operations performed on the number <m>a</m> in the correct order. (Part (1) has been done as an example.)</em>
 			</p>
 
 			<p><ol>
@@ -173,6 +190,11 @@
 							<p>
 				<em><m>2(a+1)</m></em>
 			</p>
+			<solution>
+				<p>
+					First, <m>1</m> is added to <m>a</m>. The result is then multiplied by <m>2</m>.
+				</p>
+			</solution>
 				</li>
 
 				<li>
