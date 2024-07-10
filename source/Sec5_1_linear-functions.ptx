@@ -24,8 +24,10 @@
 			</ul>
 			</objectives>
 
+<introduction>
+		
 			<p>
-				Linear function make up perhaps the most important class of functions in mathematics. Indeed, the basic premise of Calculus is to approximate more complicated functions with linear ones. However, despite their importance to higher mathematics, they come up in rather simple real world settings.
+				Linear functions make up perhaps the most important class of functions in mathematics. Indeed, the basic premise of Calculus is to approximate more complicated functions with linear ones. However, despite their importance to higher mathematics, they come up in rather simple real world settings.
 			</p>
 
 <example>
@@ -37,7 +39,7 @@
 				We first give a table of values for its outputs for several inputs:
 
 				<table>
-				<caption></caption>
+				<title></title>
 				<tabular>
 				<row header="yes">
 					<cell halign="center"><m>n</m> toppings</cell>
@@ -95,7 +97,7 @@
 			</p>
 			</solution>
 </example>
-
+</introduction>
 
 		<subsection xml:id="intro-to-linear-functions">
 				<title>Intro to Linear Functions</title>
@@ -109,8 +111,7 @@
 					A <term>Linear Function is <m>\ldots</m></term>
 				</p>
 
-				<table>
-					<caption></caption>
+				<table><title></title>
 					<tabular>
 					<row class="odd">
 						<cell halign="left">Linear Function</cell>

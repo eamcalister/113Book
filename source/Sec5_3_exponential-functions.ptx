@@ -56,7 +56,7 @@
 
 		<subsection xml:id="intro-to-exponential-functions">
 				<title>Intro to Exponential Functions</title>
-<definition><title>Explonential Function</title>
+<definition><title>Explonential Function</title><idx>exponential function</idx>
 				<p>
 					An <term>exponential function</term> is a function of the form <m>f(x) = ab^x</m>, where <m>a\neq 0</m> and <m>b&gt;0</m>.
 				</p>

@@ -60,7 +60,7 @@
 			</dl></p>
 
 			<p>
-				For each <m>x</m>, this process produces an output <m>y</m>. Now, we can think about this as two processes, one that does the first two steps <term>S1</term> and <term>S2</term>, and one that does the last two steps <term>S3</term> and <term>S4</term>. For the first two steps, we can use the function <me>u = g(x) = 3x+1.</me> The last two steps then are performed on the output of <m>g</m> by another function <me>y = f(u) = u^2-2.</me> Symbolically, we substitute the expression for <m>g(x)</m> into <m>f(u)</m> for <m>u</m> to get our expression for <m>h(x)</m>: <me>y = h(x) = f(g(x)).</me> In general, a new function <m>h</m> constructed out of a pair of functions <m>g</m> and <m>f</m> is called the <em>composition of <m>f</m> with <m>g</m>. The function <m>g</m> is referred to as the </em>inside function and <m>f</m> is referred to as the <em>outside function. The inputs of the composition are the inputs of the inside function and the outputs are the outputs of the outside function.</em>
+				For each <m>x</m>, this process produces an output <m>y</m>. Now, we can think about this as two processes, one that does the first two steps <term>S1</term> and <term>S2</term>, and one that does the last two steps <term>S3</term> and <term>S4</term>. For the first two steps, we can use the function <me>u = g(x) = 3x+1.</me> The last two steps then are performed on the output of <m>g</m> by another function <me>y = f(u) = u^2-2.</me> Symbolically, we substitute the expression for <m>g(x)</m> into <m>f(u)</m> for <m>u</m> to get our expression for <m>h(x)</m>: <me>y = h(x) = f(g(x)).</me> In general, a new function <m>h</m> constructed out of a pair of functions <m>g</m> and <m>f</m> is called the <em>composition of <m>f</m> with <m>g</m></em><idx>function composition</idx>. The function <m>g</m> is referred to as the <em>inside function</em> and <m>f</m> is referred to as the <em>outside function</em>. The inputs of the composition are the inputs of the inside function and the outputs are the outputs of the outside function.
 			</p>
 
 <question>
@@ -120,7 +120,7 @@
 				One important application of the idea of function composition is that of <em>inverse functions</em>. In short, the inverse of a given function undoes the action of that function, so composition gets you back to where you started. This leads us to the following formal definition:
 			</p>
 
-<definition xml:id="inverse_fcn_def"><title>Inverse Function</title>
+<definition xml:id="inverse_fcn_def"><title>Inverse Function</title><idx>inverse function</idx>
 			<p>
 				 Given a function <m>y = f(x)</m>, the <term>inverse function to <m>f</m></term> is the function <m>x = f^{-1}(y)</m> such that <me>f^{-1}(f(x)) = x\ \text{and}\ f(f^{-1}(y)) = y.</me> The inputs of the inverse function are the outputs of <m>f</m>, the outputs of the inverse function are the inputs of <m>f</m>, and the two functions undo one another.
 			</p>

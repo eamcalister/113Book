@@ -20,7 +20,7 @@
 		</objectives>
 
 			<p>
-				An <term>algebraic expression</term> is a mathematical expression formed using the normal operations of arithmetic (addition, subtraction, multiplication, division, and exponents for now) and one or more <em>variables</em> (unknown quantities for which we may substitute numbers). Let's look at some basic algebraic expressions, describe them verbally, and evaluate them for some values of the variables.
+				An <term>algebraic expression</term><idx>algebraic expression</idx> is a mathematical expression formed using the normal operations of arithmetic (addition, subtraction, multiplication, division, and exponents for now) and one or more <em>variables</em> (unknown quantities for which we may substitute numbers). Let's look at some basic algebraic expressions, describe them verbally, and evaluate them for some values of the variables.
 			</p>
 
 <example xml:id="quad_breakdown">
@@ -312,8 +312,7 @@
 			</p>
 
 
-			<table>
-				<caption></caption>
+			<table><title></title>
 				<tabular>
 				<row header="yes">
 					<cell halign="center"><m>d=</m> Distance (m)</cell>

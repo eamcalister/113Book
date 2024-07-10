@@ -25,6 +25,9 @@
 	  	</ul>
 		</objectives>
 
+		<subsection xml:id="basic_order_of_ops">
+			<title>The Basic Order of Operations</title>
+			
 			<p>
 				Each of the previous sections in this chapter have focused mostly on one mathematical operation at a time. However, it is often the case that more than one operation is performed. Difficulty arises because the order in which operations occur matters; different orders yield different results. For example, let's consider the two mathematical processes described below:
 			</p>
@@ -73,7 +76,7 @@
 
 <identity>
 			<title>
-				<term>Order of Operations</term>
+				<term>Order of Operations</term><idx>order of operations</idx>
 			</title>
 
 			<p><ul>
@@ -217,12 +220,13 @@
 
 			</ol></p>
 </question>
+</subsection>
 
-<subsection>
+<subsection xml:id="impied_parentheses">
 <title> Implied (``Invisible'') Parentheses </title>
 
 <p>
-There are some mathematical operations that are common enough to have <em>implied</em> parentheses. That is, even though we don't write down parentheses in an expression, we mean for some operation to be done before another one. The common ones are as follows:
+There are some mathematical operations that are common enough to have <em>implied</em> parentheses <idx>implied parentheses</idx>. That is, even though we don't write down parentheses in an expression, we mean for some operation to be done before another one. The common ones are as follows:
 <dl>
 <li><title>Fraction Bars:</title> A fraction written with a horizontal division bar has an implied set of parentheses on the numerator and denominator. So if a fraction has <m>computation\ \#1</m> in the numerator and <m>computation\ \#2</m> in the denominator, we have
 <me>
@@ -260,10 +264,11 @@ For example,
 
 </subsection>
 
+		<conclusion>
 			<p>
 				Now we come to the end of our chapter on arithmetic with numbers. Those of you with some exposure to algebra may now say, <q>This is easy, but algebra is very different and difficult.</q> The truth is that is we keep the representations of arithmetic operations from this chapter in mind, algebra will not be that difficult.
 			</p>
-
+		</conclusion>
 
 
 </section>

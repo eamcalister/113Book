@@ -23,11 +23,10 @@
 	<p>
 		The last basic family of functions we study, power functions, will also be a two-parameter family.
 	</p>
-</introduction>
 
 <definition><title>Power Function</title>
 <p>
-A <term>power function</term><idx>power function</idx> is one of the form <me>f(x) = kx^{p}.</me> We call <m>k</m> the <term>coefficient</term><idx>coefficitent of a power function</idx> of the power function and <m>p</m> the <term>exponent</term><idx>exponent of a power function</idx>. There are no restrictions placed on <m>k</m> and <m>p</m>; they can be any constant.
+A <term>power function</term><idx>power function</idx> is one of the form <me>f(x) = kx^{p}.</me> We call <m>k</m> the <term>coefficient</term><idx>coefficient of a power function</idx> of the power function and <m>p</m> the <term>exponent</term><idx>exponent of a power function</idx>. There are no restrictions placed on <m>k</m> and <m>p</m>; they can be any constant.
 </p>
 </definition>
 
@@ -77,7 +76,7 @@ y=\frac{k}{x^p}.
 			<p>
 				While the class of power functions still only has two parameters, we will see they are somewhat more complicated than the families of linear and exponential functions. Power functions can have a much wider array of graphs and may exhibit more complicated domains and ranges than linear or exponential functions. However, much of the complication can be worked out by remembering our rules of arithmetic.
 			</p>
-
+		</introduction>
 
 		<subsection xml:id="intro-to-power-functions">
 				<title>Intro to Power Functions</title>

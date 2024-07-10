@@ -140,7 +140,6 @@
 				</p>
 
 				<table><title>Slope Table for <m>f(x)= x^2</m></title>
-					<caption>Table of sloves between points on the graph of <m>f(x) = x^2.</m></caption>
 					<tabular>
 					<row header="yes" bottom="medium">
 						<cell halign="left">Points on the Graph</cell>
@@ -797,8 +796,7 @@ Solving this system we have <m>h = \frac{3}{2}</m> and <m>k = -\frac{1}{4}</m>. 
 					A <term>Quadratic Function is <m>\ldots</m></term>
 				</p>
 
-				<table>
-					<caption></caption>
+				<table><title></title>
 					<tabular>
 					<row class="odd">
 						<cell halign="left">Linear Function</cell>

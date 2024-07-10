@@ -22,8 +22,11 @@
 		</ul>
 		</objectives>
 
-			<p>
-				Two algebraic expressions are <term> equivalent </term> if whenever particular values are substituted into both expressions, the end result is the same for both expressions. 
+		<subsection xml:id="examples_of_equivalence">
+			<title>Examples of Equivalent Expressions</title>
+	
+		<p>
+				Two algebraic expressions are <term> equivalent </term><idx>equivalent algebraic expressions</idx> if whenever particular values are substituted into both expressions, the end result is the same for both expressions. 
 			</p>
 
 <example>
@@ -110,7 +113,7 @@ Note that testing values isn't really enough to <em> prove </em> two expressions
 			<p>
 				Fundamentally, since algebraic expressions are built using the operations of arithmetic, equivalence of algebraic expressions is determined by using rules of arithmetic. We will discuss the most commonly used ways of manipulating expressions into equivalent ones in the remainder of this section. However, we will first discuss how to tell if two expressions are inequivalent.
 			</p>
-
+		</subsection>
 
 			<subsection xml:id="inequivalent-expressions">
 				<title>Inequivalent Expressions</title>

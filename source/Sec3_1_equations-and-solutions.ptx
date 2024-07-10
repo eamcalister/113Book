@@ -3,8 +3,6 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Sec3_1_equations-and-solutions">
 	<title>Equations and their Solutions</title>
 
-	<subsection xml:id="equations-as-questions">
-		<title>Algebraic Equations as Questions</title>
 
 	<objectives>
 		<ul>
@@ -21,9 +19,21 @@
 		</ul>
 	</objectives>
 
+	<introduction>
+		<definition xml:id="algebraic_equation"><idx>algebraic equation</idx>
+			<statement>
+				<p>
+					An <term>algebraic equation</term> is two algebraic expression separated by an equals sign.
+				</p>
+			</statement>
+		</definition>
 		<p>
 			Recall that we may think of an algebraic expression as a symbolic representation of some sequence of operations performed on the variable(s). Thus, an algebraic equation indicates that two different processes carried out on the same variable(s) result in the same output. Clearly, different processes typically lead to different results, so <term>solutions</term> (values of the variable for which both processes yield the same result) to equations are interesting. In our study of algebra, the most fruitful way of thinking of an equation is as a question.
 		</p>
+	</introduction>
+
+		<subsection xml:id="equations-as-questions">
+			<title>Algebraic Equations as Questions</title>
 
 <fact>
 		<title>

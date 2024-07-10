@@ -14,35 +14,6 @@
 			The concept of one variable being a function of another is central to the study of most modern pure and applied mathematics. The idea of a function allows us to bring together all the equivalent forms of an expression and solving algebraic equations under one unifying concept. It also provides us with new ways of visualizing algebraic processes via graphs of functions. In this chapter we will explore the different ways of thinking about functions.
 		</p>
 
-	<p>Our goals in this chapter are to gain literacy in reading algebraic expressions and understand their manipulation. Specifically, we will</p>
-	<ul>
-	  		<li>
-	  			<p>
-	  			One
-	  			</p>
-	  		</li>
-	  		<li>
-	  			<p>
-	  			Two
-	  			</p>
-	  		</li>
-			<li>
-	  			<p>
-	  			Three
-	  			</p>
-	  		</li>
-			<li>
-	  			<p>
-	  			Four 
-	  			</p>
-	  		</li>
-			<li>
-				<p>
-				Five
-				</p>
-			</li>
-	  	</ul>
-
 </introduction>
 
 <xi:include  href="./Sec4_1_inputs-and-outputs.ptx" />

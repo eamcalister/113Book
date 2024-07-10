@@ -60,7 +60,7 @@
 
 <definition>
 			
-				<title>The Graph of a Function</title>
+				<title>The Graph of a Function</title><idx>graph of a function</idx>
 				<p>
 				The <term> graph of <m>y = f(x)</m></term> is the set of all points in the <m>xy</m>-plane that satisfy the equation <m>y=f(x)</m>. Stated another way we have the following equivalence: <me>(a,b)\ \text{is on the graph of } y=f(x)\ \text{ if and only if }\ b = f(a).</me>
 				</p>
@@ -174,7 +174,7 @@
 				Equipped with graphs of functions, we may now catalog graphical interpretations of many of the skills and concepts we have encountered so far.
 			</p>
 
-<principle>
+<principle xml:id="graphical_algebra">
 			
 				<title>Graphical Interpretations of Algebraic Skills with Functions</title>
 			

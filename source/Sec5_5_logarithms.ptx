@@ -27,7 +27,7 @@
 	<p>
 		When working with any family of functions, two common tasks are finding a formula for a member of some specified family satisfying some conditions (often points on the graph), and solving equations involving members of that family. A little reflection on the last two families we studied (exponential and power functions) reveals that we did not solve equations involving exponential functions nor did we find formulas for power functions. This is because we need a way of solving for a variable in an exponent, which is exactly what <em>logarithms are for.</em>
 	</p>
-</introduction>
+
 
 			<p>
 				Before giving the definition of a logarithm, it may be helpful to think about the difference between a power function and an exponential function one more time. (<em><em>This is important, don't skip reading it!</em></em>) A power function is one of the form <me>f(x) = kx^p.</me> Thinking about such a function as a process applied to the input, <m>x</m>, we would say <m>f</m>
@@ -151,7 +151,7 @@
 			<p>
 				One of the major difficulties of logarithms is that they cannot easily be computed by hand unless the input is an obvious power of the base; a calculator is usually required. However, there are only two logarithms programmed into most calculators, the <em>common logarithm and the </em>natural logarithm. The common logarithm has a base of ten and the natural logarithm has a base of <m>e \approx 2.718</m>. We will focus our use on the common logarithm. We will see in the next section that you really only need one logarithm.**
 			</p>
-
+		</introduction>
 
 		<subsection xml:id="logarithm-properties-and-solving-equations">
 				<title>Logarithm Properties and Solving Equations</title>

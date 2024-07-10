@@ -29,7 +29,9 @@
 		</ul>
 			</objectives>
 
-			<definition xml:id="function_definition"><title>Function</title>
+			<introduction>
+
+			<definition xml:id="function_definition"><title>Function</title><idx>function</idx>
 			<p>
 				A <term>function</term> is a relation between two variables <m>x</m> (the input) and <m>y</m> (the output) where each input is related to only one output (the variables <m>x</m> and <m>y</m> are generic, different letters may be used). 
 			</p>
@@ -37,6 +39,7 @@
 			<p>
 				Because this is an algebra course, most such relations will be defined by an algebraic equation with <m>y</m> alone on one side and some algebraic expression involving <m>x</m> on the other. We use letters to name functions; often <m>f</m> is used if we are giving a name to a function when <m>f</m> isn't already in use elsewhere in the problem. If <m>y</m> is related to <m>x</m> by the function <m>f</m> we write <me>y = f(x).</me> We read this as <q><m>y</m> equals <m>f</m> of <m>x</m></q>.
 			</p>
+		</introduction>
 
 
 		<subsection xml:id="evaluating-functions-and-using-function-notation">
