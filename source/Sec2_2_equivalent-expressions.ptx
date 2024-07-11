@@ -676,7 +676,7 @@ The second solution is the so-called <m>ac</m> method including the reasoning be
       </p>
 </algorithm>
 
-<example>
+<example xml:id="geom_difference_of_squares">
 				<p>
 					<term>Example 2.25</term>. Any expression of the form <m>a^2-b^2</m> may be factored as <m>(a+b)(a-b)</m> (<m>a</m> and <m>b</m> may represent more complicated expressions in this). One may check this using the distributive law. To see how this factorization works geometrically, consider the following figure with <m>b</m> being thought of as a number smaller than <m>a</m>.
 				</p>

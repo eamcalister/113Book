@@ -86,11 +86,11 @@
 <me> a\cdot \frac{1}{b} = \frac{a}{b}?</me> 
 </statement>
 <solution>
-To answer this we will explain why the left-hand side of this equation has the property, given in <xref ref="mult_inverse"/>, that when it is multiplied by <m>b</m> the result is <m>a</m>. (Observe that we are using <xref ref="commutative_associative"/>, which we will justify inuitively in Chapter 2.) First, notice that
+To answer this we will explain why the left-hand side of this equation has the property, given in <xref ref="mult_inverse"/>, that when it is multiplied by <m>b</m> the result is <m>a</m>. First, notice that
 <me> 
 b\cdot\left( a\cdot \frac{1}{b}  \right) = a\cdot\left(b\cdot \frac{1}{b}\right).
 </me>
-Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left-hand side has the property we wanted it to have.
+(Observe that we are using <xref ref="commutative_associative"/>, which we will justify intuitively in Chapter 2.) Since <m>b\cdot\frac{1}{b} = 1</m> and <m>a\cdot 1=a</m>, we have shown the left-hand side has the property we wanted it to have.
 </solution>
 </example>
 

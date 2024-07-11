@@ -65,8 +65,13 @@
   <biblio type="raw" xml:id="Logarithms1" label="LogExp_History1">Florian Cajori, <title>History of the Exponential and Logarithmic Concepts</title> <journal>The American Mathematical Monthly </journal> <number> 1</number>, <volume>20</volume>, <pages>pp 5-14</pages>, <publisher>Mathematical Association of America</publisher>, <url href="http://www.jstor.org/stable/2973509" />, 1913.
   </biblio>
 
-  <!--biblio type="raw" xml:id="Logarithms2" label="LogExp_History2">Florian Cajori, <title>History of the Exponential and Logarithmic Concepts</title> <journal>The American Mathematical Monthly </journal> <number> 2</number>, <volume>20</volume>, <pages>pp 35-47</pages>, <publisher>Mathematical Association of America</publisher>, <url href="http://www.jstor.org/stable/2974078" />, 1913.
-  </biblio-->
+  
+  <biblio type="raw" xml:id="skemp">R.R. Skemp, <title>The Psychology of Learning Mathematics</title>, <pages>pp 152-163</pages>, <publisher>Routledge</publisher>, <url href="https://doi.org/10.4324/9780203396391" />, 1987.
+  </biblio>
+
+  <biblio type="raw" xml:id="Tall">D. Tall, <title>How Humans Learn to Think Mathematically: Exploring the Three Worlds of Mathematics</title>, <pages>pp 16-17</pages>, <publisher>Cambridge University Press</publisher>, 2013.
+  </biblio>
+
 
   
   
@@ -79,10 +84,6 @@
     <index-list />
   </index>
 
-  <colophon>
-    <p>
-      This book was authored in <pretext />.
-    </p>
-  </colophon>
+
 </backmatter>
 

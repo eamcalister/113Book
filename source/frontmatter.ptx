@@ -50,7 +50,7 @@
 
   </preface>
 
-  <preface>
+  <!--preface>
     <title>Features of the Text</title>
     <p>
       Instructors and students alike will find several consistent features in the presentation,
@@ -97,17 +97,184 @@
 
       </dl>
     </p>
-  </preface>
+  </preface-->
 
 
   <preface xml:id="preface">
     <title>Usage Guide for Students and Instructors</title>
+    <introduction>
+      This book (and class) is intended to be different from previous Algebra classes you may have encountered. The approach is the result of many years of teaching <em> and listening</em> to students who might find Algebra to be mysterious. For both students and teachers who are new to this text, it may take some getting used to. What follows should help you understand the intention behind the structure and some of the more unusual features.  
+    </introduction>
+    <subsection xml:id="tips_for_students"><title>Tips for Students</title>
+      <subsubsection><title>Types of Mathematical Understanding</title>
+      <p>
+        For you, the student, I reiterate that this text (and class) should be different from what you may have encountered in prior mathematics, specifically Algebra, courses. Some of the specific differences will be explained below, but I want to explain the overarching one first:
+      </p>  
+        <p>
+          <em>This text was written with the intention that this will not be the last mathematics course you take. I assume you will take further courses (Calculus, Differential Equations, etc.) and gain all sorts of exotic mathematical skills. The goal now is for you to gain some deep <alert>understanding</alert> of symbolic algebra beyond a collection of procedures. </em>  
+        </p>
+      <p>
+        I highlighted the word "understanding" above for a reason. It turns out that there are two types of understanding in mathematics, described by Skemp in <xref ref="skemp"/>. They are as follows:
+      </p>
+      <ol>
+        <li>
+          <p>
+            <term>Relational Understanding:</term> This is understanding at the level of knowing what to do, or how to arrive at an answer in a mathematical situation, <em>and why.</em>
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Instrumental Understanding:</term> This is understanding at the level of being able to apply rules without reasons to arrive at answers.
+          </p>
+        </li>
+      </ol>
     <p>
-      This book (and class) is different from previous Algebra classes you may have encountered.  
-    </p>  
+      Let's consider an example of each in the context of multiplying fractions (this one is from Skemp's book). (Click on the example to show it and click on the solutions to diplay them, read them carefully. You'll want to do this through the remainder of the text.)
+    </p>
+    <example>
+      <statement>
+        <p>
+          Perform the multiplication <m>\frac{2}{5}\cdot\frac{10}{13}.</m>
+        </p>
+        <solution><title>Instrumental Version</title>
+          <p>
+            <md>
+              <mrow>\frac{2}{5}\cdot\frac{10}{13} = \amp\ \frac{2\cdot 10}{5\cdot 13} </mrow>
+              <mrow> = \amp\ \frac{20}{65} </mrow>
+              <mrow> = \amp\ \frac{4\cdot\cancel{5}}{13\cdot\cancel{5}} </mrow>
+              <mrow> = \amp\ \frac{4}{13}.</mrow>
+            </md>
+          </p>
+        </solution>
+        <solution><title>Relational Version</title>
+          <p>
+            Notice that <m>\frac{10}{13}</m> is <m>10</m> times <m>\frac{1}{13}</m>. Then <m>\frac{1}{5}</m> of that is <m>\frac{2}{13}</m> because <m>\frac{1}{5}</m> of <m>10</m> is <m>2</m>. Then we take <m>2</m> of those to get <m>\frac{4}{13}</m>.
+          </p>
+        </solution>
+      </statement>
+    </example>
+    <p>
+      In that example, which one is easier to perform and which one makes more sense? The first solution is probably easier, but that's not the same thing as making sense. If you were given a different rule to follow for multiplying fractions, you couldn't check that it was correct or incorrect without the second solution, which better utilizes an understanding of what multiplying and dividing really are.  
+    </p>
+    <p>
+      "I prefer to understand mathematics instrumentally." This is something students have said when presented with the above distinction. The problem is that as you move further in your study of mathematics, instrumental understanding will greatly limit you; you can only memorize so many procedures and keep them straight. Relational understanding is the understanding that mathematicians seek to cultivate by relating new mathematical ideas to old ones and examining the properties of new mathematical objects and consequences of new mathematical ideas.   
+    </p>
+    <p>
+      Be aware, cultivating your own relational understanding of mathematics, specifically algebra, will not always be easy. Sometimes you'll find that applying procedures instrumentally is ok. For instance, you'll probably multiply fractions as in the first solution to the example problem; formally justufying that both solutions are equivalent is hard. However, you should always try to understand the "whys" of the math you're doing. Keep a growth mindset, and start your homework early, and you'll get it.
+    </p>
 
+      </subsubsection> 
+      <subsubsection><title>Text Specifics</title>
+        <p>
+          This text is meant for you to read the whole thing and answer all the questions in it. Make sure that you always know which section you are supposed to be in and read it both before and after the class period in which it is covered. The sections aren't usually very long. In each one, you will encounter some of the following things:
+        </p> 
+        <ul>
+          <li>
+            <p>
+              <term>Examples:</term> Click on these and read through them carefully. Each one has a problem statement, which should be understood well before clicking on the solution. When you read the solution, do so with a pencil and paper to make sure you can fill in any missing steps. 
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Checkpoints:</term> Checkpoints are online exercises that you can do to help make sure you're following what is being done. Click on the "Activate" button to make them interactive. These problems will often be in your Webwork homework assignments.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Questions:</term> These are questions that often have essay type answers. They are often difficult questions that are meant to be thought provoking and/or start a conversation with your instructor or a tutor. These might be collected by your instructor so that they can give informative feedback on your though processes. They will also help your instructor know where you may be having difficulty and address those areas.  
+            </p>
+          </li>
+        </ul>
+      </subsubsection> 
+    </subsection>
+    
+    <subsection>
+      <title>Tips for Teachers</title>
+      <introduction>
+        First, please read the guide for students. The first paragraph is meant for faculty as much as students. 
+      </introduction>
+      <subsubsection><title>The Ideas Behind the Text</title>
+        <p>
+          This text is written for a first-year college audience who will be going on to take a Precalculus (with trigonometry) course followed by the Calculus sequence (mostly STEM majors). This will not be the first exposure to Algebra for most of the students, but it might be for some of them. It is <em>not</em> intended to be a terminal mathematics course. It is assumed that subsequent courses will expose students to the idea of functions as the primary object of study. In this course our goal is for students to gain literacy with symbols in mathematics. However, we don't just mean the ability to follow rules to get correct answers. We mean for students to attach concrete (possibly geometric) meaning to the symbols they write and understand mathematical operations as real <em>actions</em>.
+        </p>
+        <p>
+          How do we help our students both build the ability to make meaning, while also making sure they obtain manipulative fluency? The approach of this text is to blend the so-called <em>three worlds</em> of mathematics as described by David Tall in <xref ref="Tall"/> (his descriptions in italics): 
+        </p>
+        <ul>
+          <li>
+            <p>
+              <em><term>Conceptual Embodiment</term> builds on human perceptions and actions developing mental images that are verbalized in increasingly sophisiticated ways and become perfect mental entities in our imaginations.</em>  
+            </p>
+            <p>
+              In this text, this approach to mathematics often takes form in geometric understanding. For instance, we think of the variable <m>x</m> as a length and manipulate geometric objects to make algebraic manipulations more concrete. For instance, we do this in <xref ref="first_geometric_factoring"/> and <xref ref="geom_difference_of_squares"/> to give extra meaning to things most students have previously encountered. 
+            </p>
+            <p>
+              It is the belief of this author that as mathematical ideas are understood, they all become somehow embodied.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em><term>Operational symbolism</term> grows out of physical actions into mathematical procedures. Whereas some learners may remain at the proceduaral level, others may concieve the symbols flexibly as operations to perform and also to be operated on through calculation and manipulation.</em>
+            </p>
+            <p>
+              It is often the case in Algebra courses that we jump straight to symbolism, and then are satisfied with students only gaining procedural competence. This is the "rules without reason" type of learing described in <xref ref="tips_for_students"/>. By making sure we only proceed when students understand the meaning of the symbols we can have students work with them more flexibly.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em><term>Axiomatic formalism</term> builds formal knowledge in axiomatic systems specified by set-theoretic definitions, whose properties are deduced my mathematical proof.</em>
+            </p>
+            <p>
+              It may appear that formalism is limited in an introductory algebra course. This isn't really true. Indeed, many of the things students have the most difficulty with are due to formality that is unexplained.
+            </p>
+          </li>
+        </ul>
 
-   
+        <example>
+          These three worlds of mathematics exist and feed off one-another in simple places. For instance, exponents are something many students continually have trouble with. We can briefly describe how they fall into each world:
+          <ul>
+            <li>
+              <p>
+                "Exponents represent repeated multiplication." This is very much embodied for students who are comfortable with mutliplication of numbers. This embodied form is limited to positive exponents only.
+              </p>
+            </li>
+            <li>
+              <p>
+                Exponent properties listed in <xref ref="exponent_properties1"/>. These are symbolic properties derived from our embodied understanding of positive exponents. Memorizing the properties without regular reference to embodied examples regularly leads to incorrect properties.
+              </p>
+            </li>
+            <li>
+              <p>
+                Negative, zero, and fractional exponents are formally derived from the properties of positive exponents. Letting students know this (in more informal language) can let them know that this is difficult and may need more attention.
+              </p>
+            </li>
+          </ul>
+        </example>
+      <p>
+        It is worthwhile to note as you teach from this text whether you are teaching something from an embodied, symbolic, or formal viewpoint. If you make a sudden swithch, make some sort of distinction of it for your students. As teachers of mathematics, we often move subconsciously between these three worlds. This can be jarring for students. If something is initially described in a way that is meant to be intuitive, but then moves to formal, students may think they missed something and are "just not a math person". 
+      </p>
+
+      </subsubsection>
+      <subsubsection><title>Text Specifics (for Faculty)</title>
+        <p>
+          This text is meant for students to read and answer all the questions in it. Be sure to let students know where you are and what they should be reading. There are two exercise types in the text that are meant as breakpoints in the exposition.
+        </p> 
+        <ul>
+
+          <li>
+            <p>
+              <term>Checkpoints:</term> Checkpoints are online exercises that you can do to help make sure everyone following what is being done. They are Webwork problems that are mostly included in set definition files for the course (available on request). Working through some of them in class will help students gain confidence without having the class bog down into a sequence of sample homework problems. 
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Questions:</term> These are questions that often have essay type answers. They are often difficult questions that are meant to be thought provoking and/or start a conversation with your instructor or a tutor. They are meant as formative assessment. Some subset of these should be collected and graded (perhaps with a generous rubric) weekly.
+            </p>
+          </li>
+        </ul>
+      
+      </subsubsection>
+    </subsection>
 
   </preface>
   
