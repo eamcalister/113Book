@@ -23,7 +23,7 @@
 	  	</ul>
   </objectives>
 
-	<introduction>
+	<subsection xml:id="operations_as_actions"><title>Operations on Numbers as Actions</title>
 
       <p>
 				Algebra is ultimately about applying some procedure, or sequence of procedures, to numbers, and asking which numbers yield some desired result. To this end, we need to conceptualize numbers more dynamically than just as a way of counting objects. In the following table we present a way to conceptualize numbers as positions on a line, and the basic operations as movements.
@@ -311,7 +311,9 @@
 <webwork source="Library/PCC/BasicAlgebra/NumberBasics/NumberLine50.pg" />
 </p>
 </exercise>
-</introduction>
+</subsection>
+
+
   <subsection xml:id="Addition_and_Subtraction">
   <title>Addition and Subtraction</title>
   
@@ -401,7 +403,7 @@
   </subsection>     
 
   <subsection xml:id="Multiplication">
-    <title>Multiplication as Number Line Movements</title>
+    <title>Multiplication as Motion and Repeated Addition</title>
     
   
 			<p>

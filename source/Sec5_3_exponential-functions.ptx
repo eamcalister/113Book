@@ -24,7 +24,8 @@
 			</objectives>
 
 
-<introduction>
+<subsection xml:id="intro-to-exponential-functions">
+		<title>Introduction to Exponential Functions</title>
 			<p>
 				Exponential functions are common in applications where the rate of change is not described in absolute terms, but in relative terms as a percent rate of change. For instance, suppose we say a population, <m>P</m>, is growing at a rate of <m>50\%</m> per year with an initial value of <m>1000</m>. This means that to find the population next year, we find the population of the current year, multiply it by <m>0.5</m>, and add it to the current population. Then we can construct a table of values, with the input <m>t</m> being measured in years:
 			</p>
@@ -52,10 +53,7 @@
 			<p>
 				We can notice that the slope, which is the absolute rate of change, is not constant. Between the points <m>(0,1000)</m> and <m>(1,1500)</m>, the slope is <m>500</m>. The slope between the points <m>(1,1500)</m> and <m>(2,2250)</m> is <m>750</m>. However, if we take the ratio of consecutive outputs, we get a constant: <me>\frac{1500}{1000} = \frac{2250}{1500} = \frac{3375}{2250}  = 1.5.</me> What this shows is that each time the input increases by <m>1</m>, the output gets multiplied by <m>1.5</m> one more time. Since repeated multiplication is denoted by an exponent, we see that <me>P = 1000(1.5)^t.</me> Functions with this basic form are known as exponential functions.
 			</p>
-</introduction>
 
-		<subsection xml:id="intro-to-exponential-functions">
-				<title>Intro to Exponential Functions</title>
 <definition><title>Explonential Function</title><idx>exponential function</idx>
 				<p>
 					An <term>exponential function</term> is a function of the form <m>f(x) = ab^x</m>, where <m>a\neq 0</m> and <m>b&gt;0</m>.

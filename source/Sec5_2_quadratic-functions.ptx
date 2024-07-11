@@ -28,15 +28,12 @@
 			</ul>
 			</objectives>
 
-<introduction>
+<subsection xml:id="intro-to-quadratic-functions">
+	<title>Introduction to Quadratic Functions</title>
 	<p>
 		Quadratic functions are probably the simplest non-linear functions to study. The adjective <em>quadratic</em> comes from the Latin word for square, <em>quadratus</em>. This is because the addition of a term involving <m>x^2</m> comes from measuring areas. Thinking of quadratic functions as ones that measure rectangular areas is what allows us to see that quadratic functions can be used to model positions of objects whose acceleration is constant.
 	</p>
-</introduction>
 
-
-		<subsection xml:id="intro-to-quadratic-functions">
-				<title>Intro to Quadratic Functions</title>
 			<definition xml:id="quadratic_definition"><idx>quadratic function</idx>
 				<p>
 					A <em>quadratic function is one of the form <m>y = f(x) = ax^2+bx+c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are constants with <m>a\neq 0</m>.</em>

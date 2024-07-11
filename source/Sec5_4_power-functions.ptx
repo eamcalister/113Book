@@ -19,7 +19,9 @@
 			</objectives>
 
 
-<introduction>
+<subsection xml:id="intro-to-power-functions"><title>Introduction to Power Functions</title>
+
+
 	<p>
 		The last basic family of functions we study, power functions, will also be a two-parameter family.
 	</p>
@@ -76,10 +78,10 @@ y=\frac{k}{x^p}.
 			<p>
 				While the class of power functions still only has two parameters, we will see they are somewhat more complicated than the families of linear and exponential functions. Power functions can have a much wider array of graphs and may exhibit more complicated domains and ranges than linear or exponential functions. However, much of the complication can be worked out by remembering our rules of arithmetic.
 			</p>
-		</introduction>
+		</subsection>
 
-		<subsection xml:id="intro-to-power-functions">
-				<title>Intro to Power Functions</title>
+		<subsection xml:id="examples-of-power-functions">
+				<title>Examples of Power Functions</title>
 
 				<p>
 					Consider the following three power functions:

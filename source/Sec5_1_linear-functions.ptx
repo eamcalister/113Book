@@ -24,7 +24,8 @@
 			</ul>
 			</objectives>
 
-<introduction>
+<subsection xml:id="intro-to-linear-functions">
+	<title>Introduction to Linear Functions</title>
 		
 			<p>
 				Linear functions make up perhaps the most important class of functions in mathematics. Indeed, the basic premise of Calculus is to approximate more complicated functions with linear ones. However, despite their importance to higher mathematics, they come up in rather simple real world settings.
@@ -97,10 +98,7 @@
 			</p>
 			</solution>
 </example>
-</introduction>
 
-		<subsection xml:id="intro-to-linear-functions">
-				<title>Intro to Linear Functions</title>
 
 				<p>
 					Using the introductory example given above, we may characterize linear functions as in the following table:
